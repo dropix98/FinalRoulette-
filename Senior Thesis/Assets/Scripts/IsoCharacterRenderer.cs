@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class IsoCharacterRenderer : MonoBehaviour
 {
+    #region Variables
+    // Direction used for calling Animator states
     public static readonly string[] staticDirections = { "Static N", "Static NW", "Static W", "Static SW", "Static S", "Static SE", "Static E", "Static NE" };
     public static readonly string[] runDirections = { "Static N", "Static NW", "Static W", "Static SW", "Static S", "Static SE", "Static E", "Static NE" };
     //public static readonly string[] runDirections = { "Run N", " Run NW", "Run W", "Run SW", "Run S", "Run SE", "Run E", "Run NE" };
@@ -11,12 +13,15 @@ public class IsoCharacterRenderer : MonoBehaviour
     Animator anim;
     int lastDirection;
 
-    // Start is called before the first frame update
+    #endregion
+    #region Methods
+    // Gets the Animator
     void Awake()
     {
         anim = GetComponent<Animator>();
     }
 
+    // Sets the direction of the player based on input
     public void SetDirection(Vector2 direction)
     {
         string[] directionArray = null;
@@ -33,6 +38,7 @@ public class IsoCharacterRenderer : MonoBehaviour
         anim.Play(directionArray[lastDirection]);
     }
 
+    // Indexes the input Vector2 to be an index of the directionArray
     public static int DirectionToIndex(Vector2 dir, int sliceCount)
     {
         Vector2 normDir = dir.normalized;
@@ -64,7 +70,7 @@ public class IsoCharacterRenderer : MonoBehaviour
             //do the hash and save it to our hash array
             hashArray[i] = Animator.StringToHash(animationArray[i]);
         }
-        //we're done!
         return hashArray;
     }
+    #endregion
 }
