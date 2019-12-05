@@ -24,6 +24,7 @@ namespace TMPro.Examples
         {
             textPrint2 = GetComponent<TextMeshPro>();
 
+            //set to false for final build
             GlobalVariables.talkedMY = true;
             GlobalVariables.talkedCS = true;
             GlobalVariables.talkedWY = true;

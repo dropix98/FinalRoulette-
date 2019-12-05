@@ -22,6 +22,7 @@ namespace TMPro.Examples
         {
             textPrint = GetComponent<TextMeshPro>();
 
+            //set to false for final build
             GlobalVariables.triedKeycardOnDoor = true;
             GlobalVariables.foundNewsArticle = true;
             GlobalVariables.foundEmail = true;
