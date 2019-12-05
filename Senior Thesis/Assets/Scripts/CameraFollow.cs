@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public GameObject player;
+    [SerializeField]
+    private Transform player;
 
-    private Vector3 offset;
-
-    void Start()
-    {
-        offset = transform.position - player.transform.position;
-    }
+    public float minX, minY, maxX, maxY;
 
     // Update is called once per frame
     void LateUpdate()
@@ -21,6 +17,6 @@ public class CameraFollow : MonoBehaviour
 
     void UpdatePosition()
     {
-        transform.position = player.transform.position + offset;
+        transform.position = new Vector3(Mathf.Clamp(player.position.x, minX, maxX), Mathf.Clamp(player.position.y, minY, maxY), transform.position.z);
     }
 }
