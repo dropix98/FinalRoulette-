@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TMPro.Examples
 {
@@ -87,6 +88,17 @@ namespace TMPro.Examples
             if (textPrint.text == "")
             {
               textPrint.text += "No Keycode Clues Found Yet...";
+            }
+
+            if (Input.GetKeyDown("n"))
+            {
+                print("N key was pressed");
+                SceneManager.LoadScene("NotebookFI");
+            }
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                print("Escape key was pressed");
+                SceneManager.LoadScene("TestScene");
             }
 
         }

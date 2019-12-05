@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Interact : MonoBehaviour
 {
@@ -33,7 +35,15 @@ public class Interact : MonoBehaviour
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
           }
       }
+
+      if (Input.GetKeyDown("n"))
+      {
+          print("N key was pressed");
+          SceneManager.LoadScene("NotebookHints");
+      }
     }
+
+
 
     //checks if in a collider or not;
     //eventually will have name checks for all key items to interact with;

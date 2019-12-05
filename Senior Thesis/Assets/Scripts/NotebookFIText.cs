@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace TMPro.Examples
 {
@@ -136,6 +137,18 @@ namespace TMPro.Examples
             {
               textPrint2.text += "Haven't Talked to Anybory Yet...";
             }
+
+            if (Input.GetKeyDown("n"))
+            {
+                print("N key was pressed");
+                SceneManager.LoadScene("NotebookHints");
+            }
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                print("Escape key was pressed");
+                SceneManager.LoadScene("TestScene");
+            }
+
 
         }
 
