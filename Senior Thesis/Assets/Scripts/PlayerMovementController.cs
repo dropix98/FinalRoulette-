@@ -11,12 +11,12 @@ public class PlayerMovementController : MonoBehaviour
 
     public float movementSpeed;
 
-    //IsoCharacterRenderer icr;
+    IsoCharacterRenderer icr;
     Rigidbody2D rb;
 
     void Awake()
     {
-        //icr = GetComponentInChildren<IsoCharacterRenderer>();
+        icr = GetComponent<IsoCharacterRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -34,7 +34,7 @@ public class PlayerMovementController : MonoBehaviour
         inputVector = Vector2.ClampMagnitude(inputVector, 1);
         Vector2 movement = inputVector * movementSpeed;
         Vector2 newPos = currentPos + movement * Time.fixedDeltaTime;
-        //IsoCharacterRenderer.MovePosition(movement);
+        icr.SetDirection(movement);
         rb.MovePosition(newPos);
     }
 }
