@@ -13,5 +13,15 @@ public static class GlobalVariables
     public static bool foundJanitorHint;
     public static bool foundSecretaryHint;
 
+    public static bool talkedMY;
+    public static bool talkedCS;
+    public static bool talkedWY;
+    public static bool talkedZX;
+    public static bool talkedZYH;
+    public static bool talkedWS;
+    public static bool talkedZYR;
+    public static bool talkedLP;
+    public static bool talkedLM;
+
 
 }
