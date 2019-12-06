@@ -23,5 +23,7 @@ public static class GlobalVariables
     public static bool talkedLP;
     public static bool talkedLM;
 
+    public static UnityEngine.Vector3 characterPosition1;
+    public static UnityEngine.Vector3 characterPosition2;
 
 }

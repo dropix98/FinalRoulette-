@@ -18,10 +18,26 @@ public class Interact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      Scene currentScene = SceneManager.GetActiveScene();
+
+      if (currentScene.name == "TestScene")
+      {
+        GlobalVariables.characterPosition1 = GameObject.Find ("Character").transform.position;
+      }
+      /*
+      if (currentScene.name == "SecondFloorScene")
+      {
+        GlobalVariables.characterPosition2 = GameObject.Find ("Character").transform.position;
+      }
+      */
+
+
       //'e' is interact key
       if (Input.GetKeyDown("e"))
       {
           print("E key was pressed");
+          Debug.Log(GlobalVariables.characterPosition1);
+          Debug.Log(GlobalVariables.characterPosition2);
 
           //checking if in collider and haven't pressed 'e' with it before;
           //eventually will have checks for all key items to interact with;
