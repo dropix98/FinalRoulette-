@@ -11,15 +11,14 @@ public class CharacterPosition : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
 
-        if (currentScene.name == "TestScene")
+        if (currentScene.name == "Floor1Final")
         {
           transform.position = GlobalVariables.characterPosition1;
         }
-        //for when there is a second floor
-        /*if (sceneName == "SecondFloorScene")
+        if (currentScene.name == "Floor2Final")
         {
           transform.position = GlobalVariables.characterPosition2;
-        }*/
+        }
     }
 
     // Update is called once per frame

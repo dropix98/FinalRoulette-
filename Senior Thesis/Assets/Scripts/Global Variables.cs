@@ -27,4 +27,15 @@ public static class GlobalVariables
     public static UnityEngine.Vector3 characterPosition2;
     public static string sceneNameSaver;
 
+    public static bool inElevatorCollider1;
+    public static bool inElevatorCollider2;
+    public static bool inMeetingRoomCollider1;
+    public static bool inMaleBathroomCollider1;
+    public static bool inFemaleBathroomCollider1;
+    public static bool inMeetingRoomCollider2;
+    public static bool inMaleBathroomCollider2;
+    public static bool inFemaleBathroomCollider2;
+    public static bool inKeycardCollider;
+
+
 }

@@ -17,4 +17,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NotebookFI.unity
     guid: ab18bd43ad3a940fe940775596460b45
+  - enabled: 1
+    path: Assets/Scenes/Floor2/Floor2Final.unity
+    guid: df27c8d68e1450042b5296234d88838d
+  - enabled: 1
+    path: Assets/Scenes/Floor2/MaleBathroom2.unity
+    guid: fdc269a838f4406479bbc3b3a6f2d5fd
+  - enabled: 1
+    path: Assets/Scenes/Floor2/MeetingRoom2.unity
+    guid: 4540a1cfa1fde4a42badbda71f76034d
+  - enabled: 1
+    path: Assets/Scenes/Floor2/FemaleBathroom2.unity
+    guid: 99c1a0fe0154ccb4b86933cc4432ee9b
+  - enabled: 1
+    path: Assets/Scenes/Floor1/FemaleBathroom1.unity
+    guid: 39fd31b41d3bab44dab2358d737ffc9e
+  - enabled: 1
+    path: Assets/Scenes/Floor1/Floor1MainRoom.unity
+    guid: ba316d205371c5d47af9d71c5a7ef793
+  - enabled: 1
+    path: Assets/Scenes/Floor1/MaleBathroom1.unity
+    guid: da5442b3a60b6174d8e64f3994ba4939
+  - enabled: 1
+    path: Assets/Scenes/Floor1/MeetingRoom1.unity
+    guid: 286c1cee10c57ee4a9dd64d182f24ae4
+  - enabled: 1
+    path: Assets/Scenes/Floor1/Floor1Final.unity
+    guid: 9de588429886fc34e936b74973f72604
   m_configObjects: {}
