@@ -11,8 +11,8 @@ public class Interact : MonoBehaviour
     {
       GlobalVariables.itemsFound = 0.0f;
       Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
-      GlobalVariables.inWallCollider = false;
-      GlobalVariables.foundWallColliderItem = false;
+      GlobalVariables.inEmailCollider = false;
+      GlobalVariables.foundEmail = false;
     }
 
     // Update is called once per frame
