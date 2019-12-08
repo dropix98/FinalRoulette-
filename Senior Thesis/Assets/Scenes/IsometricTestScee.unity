@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 761300820}
   - component: {fileID: 761300819}
   - component: {fileID: 761300818}
+  - component: {fileID: 761300821}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -197,12 +198,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761300817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.56, y: -1.01, z: -10}
+  m_LocalPosition: {x: 0.06, y: -0.49, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &761300821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761300817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed1d0f4ee4b42d4fb33f8127ead23dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  minX: 0
+  minY: 0
+  maxX: 0
+  maxY: 0
 --- !u!1 &788552726
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,12 +316,12 @@ PrefabInstance:
     - target: {fileID: 7064575215623002832, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.047
+      value: -0.54
       objectReference: {fileID: 0}
     - target: {fileID: 7064575215623002832, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.731
+      value: -1.02
       objectReference: {fileID: 0}
     - target: {fileID: 7064575215623002832, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}
@@ -475,13 +493,13 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5, y: 0.5, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
-  m_Mode: 0
+  m_Mode: 1
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!1839735485 &2092625803
