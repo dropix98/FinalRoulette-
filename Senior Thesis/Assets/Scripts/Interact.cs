@@ -43,11 +43,11 @@ public class Interact : MonoBehaviour
           //eventually will have checks for all key items to interact with;
           //also will have a similar check that checks if itemsFound variable
           ////is at proper value to allow completion of level when in that collider;
-          if (GlobalVariables.inWallCollider == true && GlobalVariables.foundWallColliderItem == false)
+          if (GlobalVariables.inEmailCollider == true && GlobalVariables.foundEmail == false)
           {
             Debug.Log("E key was pressed in wallCollider");
             GlobalVariables.itemsFound++;
-            GlobalVariables.foundWallColliderItem = true;
+            GlobalVariables.foundEmail = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
           }
       }
@@ -65,18 +65,18 @@ public class Interact : MonoBehaviour
     //eventually will have name checks for all key items to interact with;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "OfficeWalls 1")
+        if (other.name == "CheckEmailCollider")
         {
-          Debug.Log("Colliding with Wall");
-          GlobalVariables.inWallCollider = true;
+          Debug.Log("Colliding with Computer");
+          GlobalVariables.inEmailCollider = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.name == "OfficeWalls 1")
         {
-          Debug.Log("Not Colliding with Wall Anymore");
-          GlobalVariables.inWallCollider = false;
+          Debug.Log("Not Colliding with Computer Anymore");
+          GlobalVariables.inEmailCollider = false;
         }
     }
   }
