@@ -99,7 +99,7 @@ namespace TMPro.Examples
             if(Input.GetKeyDown(KeyCode.Escape))
             {
                 print("Escape key was pressed");
-                SceneManager.LoadScene("TestScene");
+                SceneManager.LoadScene(GlobalVariables.sceneNameSaver);
             }
 
         }

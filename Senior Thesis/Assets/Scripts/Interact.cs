@@ -20,16 +20,18 @@ public class Interact : MonoBehaviour
     {
       Scene currentScene = SceneManager.GetActiveScene();
 
-      if (currentScene.name == "TestScene")
+      if (currentScene.name == "Floor1Final")
       {
         GlobalVariables.characterPosition1 = GameObject.Find ("Character").transform.position;
       }
-      /*
-      if (currentScene.name == "SecondFloorScene")
+
+      if (currentScene.name == "Floor2Final")
       {
         GlobalVariables.characterPosition2 = GameObject.Find ("Character").transform.position;
       }
-      */
+
+      GlobalVariables.sceneNameSaver = currentScene.name;
+
 
 
       //'e' is interact key
@@ -45,7 +47,7 @@ public class Interact : MonoBehaviour
           ////is at proper value to allow completion of level when in that collider;
           if (GlobalVariables.inEmailCollider == true && GlobalVariables.foundEmail == false)
           {
-            Debug.Log("E key was pressed in wallCollider");
+            Debug.Log("E key was pressed in ComputerCollider");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundEmail = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
@@ -65,7 +67,7 @@ public class Interact : MonoBehaviour
     //eventually will have name checks for all key items to interact with;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.name == "CheckEmailCollider")
+        if (other.name == "CheckEmailCollider")// && other.isTrigger == true)
         {
           Debug.Log("Colliding with Computer");
           GlobalVariables.inEmailCollider = true;
@@ -73,7 +75,7 @@ public class Interact : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.name == "OfficeWalls 1")
+        if (other.name == "CheckEmailCollider")// && other.isTrigger == true)
         {
           Debug.Log("Not Colliding with Computer Anymore");
           GlobalVariables.inEmailCollider = false;

@@ -25,5 +25,6 @@ public static class GlobalVariables
 
     public static UnityEngine.Vector3 characterPosition1;
     public static UnityEngine.Vector3 characterPosition2;
+    public static string sceneNameSaver;
 
 }
