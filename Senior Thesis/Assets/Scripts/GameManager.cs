@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
-{
+{}
 
-    static bool clue1 = true;
+    /*static bool clue1 = true;
     static bool clue2 = false;
     static bool clue3 = false;
     static bool clue4 = false;
@@ -50,10 +50,10 @@ public class GameManager : MonoBehaviour
         */
 
 
-    }
+    //}
 
     //Get these all going by looking at trigger names and if they interact. then turn the object on to dispolay the text.
-    void Reset()
+    /*void Reset()
     {
         textScript1.gameObject.SetActive(false);
         textScript2.gameObject.SetActive(false);
@@ -69,8 +69,8 @@ public class GameManager : MonoBehaviour
     void Check()
     {
         /*GlobalVariables.inWallCollider == true*/
-        if (/*GlobalVariables.inWallCollider == true*/ Input.GetKeyDown(KeyCode.K))
-        {
+        /*if (/*GlobalVariables.inWallCollider == true*/ //Input.GetKeyDown(KeyCode.K))
+        /*{
             if(clue1 == true && clue2 == false)
             {
                 textScript4.gameObject.SetActive(true);
@@ -172,5 +172,5 @@ public class GameManager : MonoBehaviour
         {
             textScript2.gameObject.SetActive(false);
         }
-    }
-}
+    }*/
+//}

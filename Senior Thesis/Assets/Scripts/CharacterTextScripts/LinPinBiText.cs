@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LinPinBiText : MonoBehaviour
 {
     int counter = 0;
-    bool isDone = false;
-    public Text talkText;
+    public TextMeshPro talkText;
     //change and add the nuymber pf unique text amounts.
     public string npc1 = "\"Ah, the reporter. I’m Detective PinBi. What do you think is going on here?";
     public string npc2 = "Hah. Makes sense you don’t know yet. I don’t know why a novice journalist is on such a high profile case.";
@@ -18,23 +19,37 @@ public class LinPinBiText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //talkText.text = npc1;
+        talkText.text = "Press <Space>";
+        /*if (GlobalVariables.talkedLP == true)
+        {
+          GlobalVariables.talkedLP = false;
+        }*/
     }
 
 
     void Update()
     {
-        if (isDone == false)
+        if (GlobalVariables.talkedLP == false)
         {
             if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
             {
                 counter++;
+                if (counter > 3)
+                {
+                  SceneManager.LoadScene("Floor2Final");
+                  GlobalVariables.talkedLP = true;
+                  GlobalVariables.numberOfPeopleTalkedTo++;
+                }
                 DisplayText();
             }
         }
         else
         {
             talkText.text = "You've already talked with this person, look in your notebook to see the notes.";
+            if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
+            {
+              SceneManager.LoadScene("Floor2Final");
+            }
         }
     }
 
@@ -57,10 +72,9 @@ public class LinPinBiText : MonoBehaviour
         }
         else if (counter == 4)
         {
-            temp = npc4;
+            temp = npc3;
             UpdateText();
             UpdateInvClues();
-            isDone = true;
         }
         else
         {
@@ -78,9 +92,9 @@ public class LinPinBiText : MonoBehaviour
 
     }
 
-    public bool IsDone()
+    /*public bool IsDone()
     {
-        
+
         return isDone;
-    }
+    }*/
 }

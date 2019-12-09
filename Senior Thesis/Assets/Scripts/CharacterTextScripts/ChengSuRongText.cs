@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ChengSuRongText : MonoBehaviour
 {
 
     int counter = 0;
-    bool isDone = false;
-    public Text talkText;
+    public TextMeshPro talkText;
     //change and add the nuymber pf unique text amounts.
     public string npc1 = "\"What? Oh. Sorry, but you shouldn't sneak up on people like that. Especially not in this situation. I can't trust anyone anymore. Wait, who are you again?";
     public string npc2 = "Right. I'm SuRong. Do you know why we're here? I can't help but think this has everything to do with the accident";
@@ -18,29 +19,44 @@ public class ChengSuRongText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //talkText.text = npc1;
+        talkText.text = "Press <Space>";
+        /*if (GlobalVariables.talkedCS == true)
+        {
+          GlobalVariables.talkedCS = false;
+        }*/
     }
 
 
     void Update()
     {
-        if (isDone == false)
+        if (GlobalVariables.talkedCS == false)
         {
             if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
             {
                 counter++;
+                if (counter > 3)
+                {
+                  SceneManager.LoadScene("MaleBathroom1");
+                  GlobalVariables.talkedCS = true;
+                  GlobalVariables.numberOfPeopleTalkedTo++;
+                }
                 DisplayText();
             }
         }
         else
         {
             talkText.text = "You've already talked with this person, look in your notebook to see the notes.";
+            if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
+            {
+              SceneManager.LoadScene("MaleBathroom1");
+            }
+
         }
     }
 
     void DisplayText()
     {
-        if(counter == 1)
+        if (counter == 1)
         {
             temp = npc1;
             UpdateText();
@@ -55,8 +71,6 @@ public class ChengSuRongText : MonoBehaviour
             temp = npc3;
             UpdateText();
             UpdateInvClues();
-            isDone = true;
-            //IsDone();
         }
         else
         {
@@ -74,8 +88,9 @@ public class ChengSuRongText : MonoBehaviour
 
     }
 
-    public bool IsDone()
+    /*public bool IsDone()
     {
+
         return isDone;
-    }
+    }*/
 }

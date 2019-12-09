@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ZhenYingHeiText : MonoBehaviour
 {
     int counter = 0;
-    bool isDone = false;
-    public Text talkText;
+    public TextMeshPro talkText;
     //change and add the nuymber pf unique text amounts.
     public string npc1 = "\"Hello there. Can I help you?";
     public string npc2 = "Oh, yes. I have been expecting someone to come ask me questions. I am Zhen YingHei, JingHui’s lawyer. I still must uphold my client’s confidentiality, as you can understand. However, I am happy to provide you with any answers I can.";
@@ -18,23 +19,37 @@ public class ZhenYingHeiText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //talkText.text = npc1;
+        talkText.text = "Press <Space>";
+        /*if (GlobalVariables.talkedZYH == true)
+        {
+          GlobalVariables.talkedZYH = false;
+        }*/
     }
 
 
     void Update()
     {
-        if (isDone == false)
+        if (GlobalVariables.talkedZYH == false)
         {
             if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
             {
                 counter++;
+                if (counter > 3)
+                {
+                  SceneManager.LoadScene("MeetingRoom2");
+                  GlobalVariables.talkedZYH = true;
+                  GlobalVariables.numberOfPeopleTalkedTo++;
+                }
                 DisplayText();
             }
         }
         else
         {
             talkText.text = "You've already talked with this person, look in your notebook to see the notes.";
+            if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
+            {
+              SceneManager.LoadScene("MaleBathroom2");
+            }
         }
     }
 
@@ -57,10 +72,9 @@ public class ZhenYingHeiText : MonoBehaviour
         }
         else if (counter == 4)
         {
-            temp = npc4;
+            temp = npc3;
             UpdateText();
             UpdateInvClues();
-            isDone = true;
         }
         else
         {
@@ -78,9 +92,9 @@ public class ZhenYingHeiText : MonoBehaviour
 
     }
 
-    public bool IsDone()
+    /*public bool IsDone()
     {
-        
+
         return isDone;
-    }
+    }*/
 }

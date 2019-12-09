@@ -21,13 +21,6 @@ namespace TMPro.Examples
         void Start()
         {
             textPrint = GetComponent<TextMeshPro>();
-
-            //set to false for final build
-            GlobalVariables.triedKeycardOnDoor = true;
-            GlobalVariables.foundNewsArticle = true;
-            GlobalVariables.foundEmail = true;
-            GlobalVariables.foundJanitorHint = true;
-            GlobalVariables.foundSecretaryHint = true;
         }
 
 
@@ -63,7 +56,7 @@ namespace TMPro.Examples
                                  ">The email said the middle three letters are in alphabetical order.";
               }
             }
-            if (GlobalVariables.foundJanitorHint == true)
+            if (GlobalVariables.talkedLM == true)
             {
               if (textPrint.text == "")
               {
@@ -74,7 +67,7 @@ namespace TMPro.Examples
                 textPrint.text += "\n" + ">The Janitor is kind of odd. He won’t talk to me. He just keeps repeating the letter Z.";
               }
             }
-            if (GlobalVariables.foundSecretaryHint == true)
+            if (GlobalVariables.talkedZX == true)
             {
               if (textPrint.text == "")
               {

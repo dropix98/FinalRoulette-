@@ -10,25 +10,40 @@ public class FinalKeypad : MonoBehaviour
     bool escape;
     public string temp;
 
-    public GameObject tester;
+    //public GameObject tester;
     // Start is called before the first frame update
     void Start()
     {
-        tester.gameObject.SetActive(false);
+        //tester.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+      if(Input.GetKeyDown(KeyCode.Escape))
+      {
+          print("Escape key was pressed");
+          SceneManager.LoadScene("Floor1Final");
+      }
+
+
         keypad.ActivateInputField();
+        keypad.text = keypad.text.ToUpper();
         temp = keypad.text.ToString();
-        CheckCorrect();
-        if(CheckCorrect() == true)
+        if(Input.GetKeyDown(KeyCode.Return))
         {
-            //Some Scene for the door open to get out or something.
-            //SceneManager.LoadScene("DoorOpened");
-            tester.gameObject.SetActive(true);
+          CheckCorrect();
+
+          if(CheckCorrect() == true)
+          {
+              //Some Scene for the door open to get out or something.
+              SceneManager.LoadScene("Level1Done");
+              //tester.gameObject.SetActive(true);
+          }
+          //GlobalVariables.inKeycardGuesser = false;
         }
+
     }
 
     public bool CheckCorrect()
@@ -41,6 +56,7 @@ public class FinalKeypad : MonoBehaviour
         else
         {
             escape = false;
+            //GlobalVariables.inKeycardGuesser = false;
             return escape;
         }
     }

@@ -19,6 +19,35 @@ public class CharacterPosition : MonoBehaviour
         {
           transform.position = GlobalVariables.characterPosition2;
         }
+        if (currentScene.name == "MeetingRoom1")
+        {
+          transform.position = GlobalVariables.characterPosition1meeting;
+        }
+
+        if (currentScene.name == "MaleBathroom1")
+        {
+          transform.position = GlobalVariables.characterPosition1mbath;
+        }
+
+        if (currentScene.name == "FemaleBathroom1")
+        {
+          transform.position = GlobalVariables.characterPosition1fbath;
+        }
+
+        if (currentScene.name == "MeetingRoom2")
+        {
+          transform.position = GlobalVariables.characterPosition2meeting;
+        }
+
+        if (currentScene.name == "MaleBathroom2")
+        {
+          transform.position = GlobalVariables.characterPosition2mbath;
+        }
+
+        if (currentScene.name == "FemaleBathroom2")
+        {
+          transform.position = GlobalVariables.characterPosition2fbath = GameObject.Find ("Character").transform.position;
+        }
     }
 
     // Update is called once per frame

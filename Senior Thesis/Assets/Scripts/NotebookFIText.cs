@@ -24,16 +24,6 @@ namespace TMPro.Examples
         {
             textPrint2 = GetComponent<TextMeshPro>();
 
-            //set to false for final build
-            GlobalVariables.talkedMY = true;
-            GlobalVariables.talkedCS = true;
-            GlobalVariables.talkedWY = true;
-            GlobalVariables.talkedZX = true;
-            GlobalVariables.talkedZYH = true;
-            GlobalVariables.talkedWS = true;
-            GlobalVariables.talkedZYR = true;
-            GlobalVariables.talkedLP = true;
-            GlobalVariables.talkedLM = true;
         }
 
 
@@ -136,7 +126,7 @@ namespace TMPro.Examples
 
             if (textPrint2.text == "")
             {
-              textPrint2.text += "Haven't Talked to Anybory Yet...";
+              textPrint2.text += "Haven't Talked to Anybody Yet...";
             }
 
             if (Input.GetKeyDown("n"))

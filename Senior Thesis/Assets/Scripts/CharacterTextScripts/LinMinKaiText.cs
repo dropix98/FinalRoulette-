@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LinMinKaiText : MonoBehaviour
 {
     int counter = 0;
-    bool isDone = false;
-    public Text talkText;
+    public TextMeshPro talkText;
     //change and add the nuymber pf unique text amounts.
     public string npc1 = "\"Z. Z...Z… Z, I say! Z! Z! Z!\"";
     public string npc2 = "\"Z. Z...Z… Z, I say! Z! Z! Z!\"";
@@ -17,23 +18,37 @@ public class LinMinKaiText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //talkText.text = npc1;
+        talkText.text = "Press <Space>";
+        /*if (GlobalVariables.talkedLM == true)
+        {
+          GlobalVariables.talkedLM = false;
+        }*/
     }
 
 
     void Update()
     {
-        if (isDone == false)
+        if (GlobalVariables.talkedLM == false)
         {
             if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
             {
                 counter++;
+                if (counter > 3)
+                {
+                  SceneManager.LoadScene("MaleBathroom2");
+                  GlobalVariables.talkedLM = true;
+                  GlobalVariables.numberOfPeopleTalkedTo++;
+                }
                 DisplayText();
             }
         }
         else
         {
             talkText.text = "You've already talked with this person, look in your notebook to see the notes.";
+            if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
+            {
+              SceneManager.LoadScene("MaleBathroom2");
+            }
         }
     }
 
@@ -54,7 +69,6 @@ public class LinMinKaiText : MonoBehaviour
             temp = npc3;
             UpdateText();
             UpdateInvClues();
-            isDone = true;
         }
         else
         {
@@ -72,9 +86,9 @@ public class LinMinKaiText : MonoBehaviour
 
     }
 
-    public bool IsDone()
+    /*public bool IsDone()
     {
-        
+
         return isDone;
-    }
+    }*/
 }

@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ZhuangYongRuanText : MonoBehaviour
 {
     int counter = 0;
-    bool isDone = false;
-    public Text talkText;
+    public TextMeshPro talkText;
     //change and add the nuymber pf unique text amounts.
     public string npc1 = "\"Ugh, you, too? I don’t need more people suspecting me. I know ShaoTing has it out for me. She’s wrong, though. I might’ve been rivals with JingHui, but that’s it. I wouldn’t blow up his building. I’m not that petty.";
     public string npc2 = "Well, JingHui and I knew each other since college. He’s always been good at everything and never put much work into it. I’ve had to bust my ass to get where I am. And still, where does that leave me? A murder suspect! Jesus!";
@@ -17,23 +18,37 @@ public class ZhuangYongRuanText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //talkText.text = npc1;
+        talkText.text = "Press <Space>";
+        /*if (GlobalVariables.talkedZYR == true)
+        {
+          GlobalVariables.talkedZYR = false;
+        }*/
     }
 
 
     void Update()
     {
-        if (isDone == false)
+        if (GlobalVariables.talkedZYR == false)
         {
             if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
             {
                 counter++;
+                if (counter > 3)
+                {
+                  SceneManager.LoadScene("MeetingRoom1");
+                  GlobalVariables.talkedZYR = true;
+                  GlobalVariables.numberOfPeopleTalkedTo++;
+                }
                 DisplayText();
             }
         }
         else
         {
             talkText.text = "You've already talked with this person, look in your notebook to see the notes.";
+            if (Input.GetKeyDown(KeyCode.Space)) //&& if global varibale to meet is true to allow the texts to work.
+            {
+              SceneManager.LoadScene("MeetingRoom1");
+            }
         }
     }
 
@@ -54,7 +69,6 @@ public class ZhuangYongRuanText : MonoBehaviour
             temp = npc3;
             UpdateText();
             UpdateInvClues();
-            isDone = true;
         }
         else
         {
@@ -72,9 +86,9 @@ public class ZhuangYongRuanText : MonoBehaviour
 
     }
 
-    public bool IsDone()
+    /*public bool IsDone()
     {
-        
+
         return isDone;
-    }
+    }*/
 }
