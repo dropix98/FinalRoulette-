@@ -27,7 +27,7 @@ public static class GlobalVariables
     public static bool talkedLM = false;
 
     public static UnityEngine.Vector3 characterPosition1 = new Vector3(-1.3f, -3.52f, 0.0f);
-    public static UnityEngine.Vector3 characterPosition2 = new Vector3(-1.3f, -3.52f, 0.0f);
+    public static UnityEngine.Vector3 characterPosition2 = new Vector3(1.0f, -1.0f, 0.0f);
     public static UnityEngine.Vector3 characterPosition1meeting = new Vector3(-0.96f, -2.05f, 0.0f);
     public static UnityEngine.Vector3 characterPosition2meeting = new Vector3(-0.96f, -2.05f, 0.0f);
     public static UnityEngine.Vector3 characterPosition1mbath = new Vector3(-1.08f, -1.037f, 0.0f);
