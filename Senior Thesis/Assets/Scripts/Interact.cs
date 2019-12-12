@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 public class Interact : MonoBehaviour
 {
     // Start is called before the first frame update
+    public DialogueTrigger dTrigger; 
     void Start()
     {
       //GlobalVariables.itemsFound = 0;
       Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
       Debug.Log("Number of People Talked To: " + GlobalVariables.numberOfPeopleTalkedTo);
+      
 
       /*GlobalVariables.inEmailCollider = false;
       GlobalVariables.inNewsArticleCollider = false;
@@ -475,18 +477,21 @@ public class Interact : MonoBehaviour
 
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inSTCollider == true)
       {
-        Debug.Log("Moving to ST Text");
+        //Debug.Log("Moving to ST Text");
         //GlobalVariables.talkedWS = true;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         GlobalVariables.inSTCollider = false;
-        SceneManager.LoadScene("ShaoTingText");
-      }
+        GlobalVariables.numberOfPeopleTalkedTo++;
+
+
+        }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inMYCollider == true)
       {
         Debug.Log("Moving to MY Text");
         //GlobalVariables.talkedMY = true;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         GlobalVariables.inMYCollider = false;
+        GlobalVariables.numberOfPeopleTalkedTo++;
         SceneManager.LoadScene("YingText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inSRCollider == true)
@@ -494,8 +499,10 @@ public class Interact : MonoBehaviour
         Debug.Log("Moving to SR Text");
         //GlobalVariables.talkedCS = true;
         GlobalVariables.inSRCollider = false;
-        //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        SceneManager.LoadScene("SuRongText");
+        GlobalVariables.numberOfPeopleTalkedTo++;
+       //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
+       SceneManager.LoadScene("SuRongText");
+
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inYZCollider == true)
       {
