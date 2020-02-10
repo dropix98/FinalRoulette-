@@ -12,16 +12,16 @@ public class DialogueTrigger : MonoBehaviour
 
     }
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.name == "Character")
-        {
-            Debug.Log("Player Detected");
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                TriggerDialogue();
-            }
+    //void OnTriggerStay2D(Collider2D other)
+    //{
+    //    if (other.gameObject.name == "Character")
+    //    {
+    //        Debug.Log("Player Detected");
+    //        if (Input.GetKeyDown(KeyCode.Space))
+    //        {
+    //            TriggerDialogue();
+    //        }
             
-        }
-    }
+    //    }
+    //}
 }

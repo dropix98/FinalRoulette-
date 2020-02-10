@@ -477,13 +477,12 @@ public class Interact : MonoBehaviour
 
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inSTCollider == true)
       {
-        //Debug.Log("Moving to ST Text");
+        Debug.Log("Moving to ST Text");
         //GlobalVariables.talkedWS = true;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         GlobalVariables.inSTCollider = false;
         GlobalVariables.numberOfPeopleTalkedTo++;
-
-
+        
         }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inMYCollider == true)
       {
