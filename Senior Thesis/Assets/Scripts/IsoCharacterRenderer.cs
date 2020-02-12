@@ -7,8 +7,9 @@ public class IsoCharacterRenderer : MonoBehaviour
     #region Variables
     // Direction used for calling Animator states
     public static readonly string[] staticDirections = { "Static N", "Static NW", "Static W", "Static SW", "Static S", "Static SE", "Static E", "Static NE" };
-    public static readonly string[] runDirections = { "Static N", "Static NW", "Static W", "Static SW", "Static S", "Static SE", "Static E", "Static NE" };
-    //public static readonly string[] runDirections = { "Run N", " Run NW", "Run W", "Run SW", "Run S", "Run SE", "Run E", "Run NE" };
+    //public static readonly string[] runDirections = { "Static N", "Static NW", "Static W", "Static SW", "Static S", "Static SE", "Static E", "Static NE" };
+    public static readonly string[] runDirections = { "Run N", " Run NW", "Run W", "Run SW", "Run S", "Run SE", "Run E", "Run NE" };
+    //public static readonly string[] runDirections = { "Run N", "Run W", "Run S", "Run E" };
 
     Animator anim;
     int lastDirection;
