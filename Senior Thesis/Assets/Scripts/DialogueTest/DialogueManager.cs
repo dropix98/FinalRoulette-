@@ -42,11 +42,11 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-        /* (Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             TypeSentence(sentence);
         }
-        */
+        
     }
 
     IEnumerator TypeSentence (string sentence)
