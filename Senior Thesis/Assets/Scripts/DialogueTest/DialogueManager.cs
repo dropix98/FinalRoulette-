@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    private bool inDialogue = false;
 
     public Animator animator;
 
@@ -19,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
+        this.inDialogue = true;
 
         nameText.text = dialogue.name;
         sentences.Clear();
@@ -29,6 +31,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
+    }
+
+    public void Update()
+    {
+        if (this.inDialogue == true && Input.GetKeyUp(KeyCode.Space))
+            DisplayNextSentence();
     }
 
 
@@ -42,11 +50,6 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-        /* (Input.GetKeyDown(KeyCode.Space))
-        {
-            TypeSentence(sentence);
-        }
-        */
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -61,6 +64,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        this.inDialogue = false;
     }
 
 
