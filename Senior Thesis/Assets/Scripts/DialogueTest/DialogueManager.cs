@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    private bool inDialogue = false;
 
     public Animator animator;
 
@@ -19,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
+        this.inDialogue = true;
 
         nameText.text = dialogue.name;
         sentences.Clear();
@@ -29,6 +31,16 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
+    }
+
+    public void Update()
+    {
+        if(this.inDialogue == true && Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayNextSentence();
+        }
+        
+        
     }
 
 
