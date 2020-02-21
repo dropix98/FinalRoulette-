@@ -7,11 +7,11 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
-<<<<<<< Updated upstream
-=======
+
+
     private bool inDialogue = false;
     public bool done = false;
->>>>>>> Stashed changes
+
 
     public Animator animator;
 
@@ -25,11 +25,10 @@ public class DialogueManager : MonoBehaviour
     {
         done = false;
         animator.SetBool("IsOpen", true);
-<<<<<<< Updated upstream
-=======
+
         this.inDialogue = true;
         
->>>>>>> Stashed changes
+
 
         nameText.text = dialogue.name;
         sentences.Clear();
@@ -42,8 +41,7 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
-<<<<<<< Updated upstream
-=======
+
     public void Update()
     {
         if(this.inDialogue == true && Input.GetKeyDown(KeyCode.Space))
@@ -51,7 +49,7 @@ public class DialogueManager : MonoBehaviour
             DisplayNextSentence();
         }
     }
->>>>>>> Stashed changes
+
 
     public void DisplayNextSentence()
     {
