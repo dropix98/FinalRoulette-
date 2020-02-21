@@ -5,7 +5,12 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+<<<<<<< Updated upstream
 
+=======
+    DialogueManager dm = new DialogueManager();
+    
+>>>>>>> Stashed changes
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
@@ -22,6 +27,22 @@ public class DialogueTrigger : MonoBehaviour
                 TriggerDialogue();
             }
 
+<<<<<<< Updated upstream
+=======
+            if (Input.GetKeyDown(KeyCode.Space) && dm.CheckDone() == true)
+            {
+                TriggerSpokeDialogue();
+            }
+            
+>>>>>>> Stashed changes
         }
+
+
+    }
+
+    public void TriggerSpokeDialogue()
+    {
+        FindObjectOfType<DialogueManager>().AlreadyTalked(dialogue);
+
     }
 }
