@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class Interact : MonoBehaviour
 {
     // Start is called before the first frame update
-    public DialogueTrigger dTrigger; 
+    public DialogueTrigger dTrigger;
     void Start()
     {
       //GlobalVariables.itemsFound = 0;
       Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
       Debug.Log("Number of People Talked To: " + GlobalVariables.numberOfPeopleTalkedTo);
-      
+
 
       /*GlobalVariables.inEmailCollider = false;
       GlobalVariables.inNewsArticleCollider = false;
@@ -477,12 +477,11 @@ public class Interact : MonoBehaviour
 
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inSTCollider == true)
       {
-        //Debug.Log("Moving to ST Text");
+        Debug.Log("Moving to ST Text");
         //GlobalVariables.talkedWS = true;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         GlobalVariables.inSTCollider = false;
         GlobalVariables.numberOfPeopleTalkedTo++;
-
 
         }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inMYCollider == true)
@@ -492,7 +491,7 @@ public class Interact : MonoBehaviour
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         GlobalVariables.inMYCollider = false;
         GlobalVariables.numberOfPeopleTalkedTo++;
-        SceneManager.LoadScene("YingText");
+        //SceneManager.LoadScene("YingText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inSRCollider == true)
       {
@@ -501,7 +500,7 @@ public class Interact : MonoBehaviour
         GlobalVariables.inSRCollider = false;
         GlobalVariables.numberOfPeopleTalkedTo++;
        //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-       SceneManager.LoadScene("SuRongText");
+       //SceneManager.LoadScene("SuRongText");
 
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inYZCollider == true)
@@ -510,7 +509,7 @@ public class Interact : MonoBehaviour
         //GlobalVariables.talkedWY = true;
         GlobalVariables.inYZCollider = false;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        SceneManager.LoadScene("YiZhengText");
+        //SceneManager.LoadScene("YiZhengText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inPBCollider == true)
       {
@@ -518,7 +517,7 @@ public class Interact : MonoBehaviour
         //GlobalVariables.talkedLP = true;
         GlobalVariables.inPBCollider = false;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        SceneManager.LoadScene("PinBiText");
+        //SceneManager.LoadScene("PinBiText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inXJCollider == true)
       {
@@ -527,7 +526,7 @@ public class Interact : MonoBehaviour
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);\
         GlobalVariables.itemsFound++;
         GlobalVariables.inXJCollider = false;
-        SceneManager.LoadScene("XiaoJingText");
+        //SceneManager.LoadScene("XiaoJingText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inYRCollider == true)
       {
@@ -535,7 +534,7 @@ public class Interact : MonoBehaviour
         //GlobalVariables.talkedZYR = true;
         GlobalVariables.inYRCollider = false;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        SceneManager.LoadScene("YongRuanText");
+        //SceneManager.LoadScene("YongRuanText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inJHCollider == true)
       {
@@ -544,7 +543,7 @@ public class Interact : MonoBehaviour
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         GlobalVariables.itemsFound++;
         GlobalVariables.inJHCollider = false;
-        SceneManager.LoadScene("MinKaiText");
+        //SceneManager.LoadScene("MinKaiText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inYHCollider == true)
       {
@@ -552,7 +551,7 @@ public class Interact : MonoBehaviour
         //GlobalVariables.talkedZYH = true;
         GlobalVariables.inYHCollider = false;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        SceneManager.LoadScene("YingHeiText");
+        //SceneManager.LoadScene("YingHeiText");
       }
     }
 
