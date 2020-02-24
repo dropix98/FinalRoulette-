@@ -68,9 +68,4 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
             DontDestroyOnLoad(temp);
         }
     }
-
-    public void Rotate(GameObject obj1)
-    {
-        obj1.transform.Rotate(Vector3.forward * -90);
-    }
 }
