@@ -20,6 +20,7 @@ public class Interact : MonoBehaviour
       ToNewArea();
       Scene currentScene = SceneManager.GetActiveScene();
 
+      //constantly updates the global variables with positions for the character in specific scenes
       if (currentScene.name == "Floor1Final")
       {
         GlobalVariables.characterPosition1 = GameObject.Find ("Character").transform.position;
@@ -73,9 +74,6 @@ public class Interact : MonoBehaviour
           Debug.Log(GlobalVariables.characterPosition2);
 
           //checking if in collider and haven't pressed 'e' with it before;
-          //eventually will have checks for all key items to interact with;
-          //also will have a similar check that checks if itemsFound variable
-          ////is at proper value to allow completion of level when in that collider;
           if (GlobalVariables.inEmailCollider == true && GlobalVariables.foundEmail == false)
           {
             Debug.Log("E key was pressed in ComputerCollider");
@@ -110,8 +108,7 @@ public class Interact : MonoBehaviour
 
 
 
-    //checks if in a collider or not;
-    //eventually will have name checks for all key items to interact with;
+    //prints when entering a collider
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "ComputerColliders")
@@ -255,6 +252,7 @@ public class Interact : MonoBehaviour
         }
     }
 
+    //states when leaving a collider
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.name == "ComputerColliders")
@@ -368,7 +366,7 @@ public class Interact : MonoBehaviour
         }
     }
 
-
+    //loads a new scene based on collision with colliders
     void ToNewArea()
     {
       if (Input.GetKeyDown("e") && GlobalVariables.inElevatorCollider1 == true)
@@ -442,7 +440,7 @@ public class Interact : MonoBehaviour
 
       }
 
-
+      //changes variables after talking to players
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inSTCollider == true)
       {
         Debug.Log("Moving to ST Text");
