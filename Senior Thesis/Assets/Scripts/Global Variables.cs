@@ -56,6 +56,16 @@ public static class GlobalVariables
     public static bool inJHCollider;
     public static bool inYHCollider;
 
+    public static bool interrogatingYing;
+    public static bool interrogatingSuRong;
+    public static bool interrogatingYiZheng;
+    public static bool interrogatingXiaoJing;
+    public static bool interrogatingYingHei;
+    public static bool interrogatingShaoTing;
+    public static bool interrogatingYongRuan;
+    public static bool interrogatingPinBi;
+    public static bool interrogatingMinKai;
+
 
     //public static bool inKeycardGuesser;
 
