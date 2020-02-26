@@ -16,15 +16,15 @@ public static class GlobalVariables
     public static bool foundJanitorHint;
     public static bool foundSecretaryHint;
 
+    public static bool talkedST = false;
     public static bool talkedMY = false;
-    public static bool talkedCS = false;
-    public static bool talkedWY = false;
-    public static bool talkedZX = false;
-    public static bool talkedZYH = false;
-    public static bool talkedWS = false;
-    public static bool talkedZYR = false;
-    public static bool talkedLP = false;
-    public static bool talkedLM = false;
+    public static bool talkedSR = false;
+    public static bool talkedYZ = false;
+    public static bool talkedPB = false;
+    public static bool talkedXJ = false;
+    public static bool talkedYR = false;
+    public static bool talkedJH = false;
+    public static bool talkedYH = false;
 
     public static UnityEngine.Vector3 characterPosition1 = new Vector3(-1.3f, -3.52f, 0.0f);
     public static UnityEngine.Vector3 characterPosition2 = new Vector3(1.0f, -1.0f, 0.0f);

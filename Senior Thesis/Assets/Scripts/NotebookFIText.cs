@@ -9,7 +9,7 @@ namespace TMPro.Examples
     public class NotebookFIText : MonoBehaviour
     {
 
-        private TextMeshPro textPrint2;
+        /*private TextMeshPro textPrint2;
         private TextMeshPro talkedMY;
         private TextMeshPro talkedCS;
         private TextMeshPro talkedWY;
@@ -141,7 +141,7 @@ namespace TMPro.Examples
             }
 
 
-        }
+        }*/
 
     }
 }

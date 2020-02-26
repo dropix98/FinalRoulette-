@@ -9,7 +9,7 @@ namespace TMPro.Examples
     public class NotebookHintsText : MonoBehaviour
     {
 
-        private TextMeshPro textPrint;
+        /*private TextMeshPro textPrint;
         private TextMeshPro textKeycard;
         private TextMeshPro textNewsArticle;
         private TextMeshPro textEmail;
@@ -95,7 +95,7 @@ namespace TMPro.Examples
                 SceneManager.LoadScene(GlobalVariables.sceneNameSaver);
             }
 
-        }
+        }*/
 
     }
 }

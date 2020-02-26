@@ -480,26 +480,36 @@ public class Interact : MonoBehaviour
         Debug.Log("Moving to ST Text");
         //GlobalVariables.talkedWS = true;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        GlobalVariables.inSTCollider = false;
-        GlobalVariables.numberOfPeopleTalkedTo++;
-
+        //GlobalVariables.inSTCollider = false;
+        if (GlobalVariables.talkedST == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.talkedST = true;
         }
+      }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inMYCollider == true)
       {
         Debug.Log("Moving to MY Text");
-        //GlobalVariables.talkedMY = true;
+        if (GlobalVariables.talkedMY == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.talkedMY = true;
+        }
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        GlobalVariables.inMYCollider = false;
-        GlobalVariables.numberOfPeopleTalkedTo++;
+        //GlobalVariables.inMYCollider = false;
         //SceneManager.LoadScene("YingText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inSRCollider == true)
       {
         Debug.Log("Moving to SR Text");
         //GlobalVariables.talkedCS = true;
-        GlobalVariables.inSRCollider = false;
-        GlobalVariables.numberOfPeopleTalkedTo++;
-       //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
+        //GlobalVariables.inSRCollider = false;
+        if (GlobalVariables.talkedSR == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.talkedSR = true;
+        }
+        //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
        //SceneManager.LoadScene("SuRongText");
 
       }
@@ -507,7 +517,12 @@ public class Interact : MonoBehaviour
       {
         Debug.Log("Moving to YZ Text");
         //GlobalVariables.talkedWY = true;
-        GlobalVariables.inYZCollider = false;
+        //GlobalVariables.inYZCollider = false;
+        if (GlobalVariables.talkedYZ == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.talkedYZ = true;
+        }
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         //SceneManager.LoadScene("YiZhengText");
       }
@@ -515,7 +530,12 @@ public class Interact : MonoBehaviour
       {
         Debug.Log("Moving to PB Text");
         //GlobalVariables.talkedLP = true;
-        GlobalVariables.inPBCollider = false;
+        //GlobalVariables.inPBCollider = false;
+        if (GlobalVariables.talkedPB == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.talkedPB = true;
+        }
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         //SceneManager.LoadScene("PinBiText");
       }
@@ -524,15 +544,25 @@ public class Interact : MonoBehaviour
         Debug.Log("Moving to XJ Text");
         //GlobalVariables.talkedZX = true;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);\
-        GlobalVariables.itemsFound++;
-        GlobalVariables.inXJCollider = false;
+        //GlobalVariables.inXJCollider = false;
+        if (GlobalVariables.talkedXJ == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.itemsFound++;
+          GlobalVariables.talkedXJ = true;
+        }
         //SceneManager.LoadScene("XiaoJingText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inYRCollider == true)
       {
         Debug.Log("Moving to YR Text");
         //GlobalVariables.talkedZYR = true;
-        GlobalVariables.inYRCollider = false;
+        //GlobalVariables.inYRCollider = false;
+        if (GlobalVariables.talkedYR == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.talkedYR = true;
+        }
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         //SceneManager.LoadScene("YongRuanText");
       }
@@ -541,15 +571,25 @@ public class Interact : MonoBehaviour
         Debug.Log("Moving to JH Text");
         //GlobalVariables.talkedLM = true;
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
-        GlobalVariables.itemsFound++;
-        GlobalVariables.inJHCollider = false;
+        //GlobalVariables.inJHCollider = false;
+        if (GlobalVariables.talkedJH == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.itemsFound++;
+          GlobalVariables.talkedJH = true;
+        }
         //SceneManager.LoadScene("MinKaiText");
       }
       if (Input.GetKeyDown(KeyCode.Space) && GlobalVariables.inYHCollider == true)
       {
         Debug.Log("Moving to YH Text");
         //GlobalVariables.talkedZYH = true;
-        GlobalVariables.inYHCollider = false;
+        //GlobalVariables.inYHCollider = false;
+        if (GlobalVariables.talkedYH == false)
+        {
+          GlobalVariables.numberOfPeopleTalkedTo++;
+          GlobalVariables.talkedYH = true;
+        }
         //GlobalVariables.characterPosition2 = new Vector3(1, -1, 0);
         //SceneManager.LoadScene("YingHeiText");
       }
