@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ElectricSlidePuzzleScript : MonoBehaviour
 {
-    /*       public GameObject b1;
+      /*     public GameObject b1;
            public GameObject b2;
            public GameObject b3;
            public GameObject b4;
@@ -143,10 +143,12 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
 
     public bool Check()
     {
-        if(lanes[0].rotation.z == 90.00001)
+        //Rotation is on z and is 0,-90,-180,90
+        if (lanes[0].rotation.z == 90.00001 && lanes[1].rotation.z == 0.0 && lanes[2].rotation.z == 90.00001 && lanes[3].rotation.z == 0.0 && lanes[4].rotation.z == -90.00001 && lanes[5].rotation.z == -180.0 && lanes[6].rotation.z == 90.00001 && lanes[7].rotation.z == 0.0 && lanes[8].rotation.z == 0.0 && lanes[9].rotation.z == -180.0 && lanes[10].rotation.z == -90.00001 && lanes[11].rotation.z == -90.00001 && lanes[12].rotation.z == 90.00001 && lanes[13].rotation.z == 0.0 && lanes[14].rotation.z == -180.0 && lanes[15].rotation.z == 0.0 && lanes[16].rotation.z == -180.0 && lanes[17].rotation.z == -90.00001 && lanes[18].rotation.z == 0.0)
         {
-            return true;
+                return true;
         }
+        
         return false;
     }
 
@@ -156,6 +158,10 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
         if (Check() == false)
         {
             transform.Rotate(0f, 0f, 90f);
+        }
+        else
+        {
+            SceneManager.LoadScene(27);
         }
     }
 }
