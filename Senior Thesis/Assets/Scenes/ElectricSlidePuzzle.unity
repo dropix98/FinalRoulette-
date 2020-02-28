@@ -543,6 +543,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359346827}
   m_CullTransparentMesh: 0
+--- !u!1 &360644513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360644515}
+  - component: {fileID: 360644514}
+  m_Layer: 0
+  m_Name: Returntolevel2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &360644514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360644513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc6d68669bde3a4468d16cf2378353a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 27
+--- !u!4 &360644515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360644513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9744421, y: 3.3919697, z: -3.471375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374930689
 GameObject:
   m_ObjectHideFlags: 0
@@ -4062,29 +4106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f8d38e4f6c3b46c79409359d5d5a9d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  b1: {fileID: 735580129}
-  b2: {fileID: 324986598}
-  b3: {fileID: 805449776}
-  b4: {fileID: 1526645698}
-  b5: {fileID: 2012153173}
-  b6: {fileID: 359346827}
-  b7: {fileID: 1575046698}
-  b8: {fileID: 2040957705}
-  b9: {fileID: 1650907577}
-  b10: {fileID: 1913502365}
-  b11: {fileID: 1784434554}
-  b12: {fileID: 776759614}
-  b13: {fileID: 1120337087}
-  b14: {fileID: 641958443}
-  b15: {fileID: 440622022}
-  b16: {fileID: 1084940699}
-  b17: {fileID: 374930689}
-  b18: {fileID: 1335434697}
-  b19: {fileID: 563564065}
-  b20: {fileID: 1247355072}
-  fodder: {fileID: 0}
-  NullObject: {fileID: 0}
-  temp: {fileID: 0}
+  lanes: []
 --- !u!1 &1757039539
 GameObject:
   m_ObjectHideFlags: 0

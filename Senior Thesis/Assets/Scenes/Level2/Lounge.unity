@@ -484,7 +484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &546926785 stripped
 MonoBehaviour:
@@ -590,7 +590,7 @@ RectTransform:
   m_Children:
   - {fileID: 44750657}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -654,7 +654,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1055741740
 GameObject:
@@ -669,7 +669,7 @@ GameObject:
   - component: {fileID: 1055741742}
   - component: {fileID: 1055741741}
   m_Layer: 0
-  m_Name: PBCollider
+  m_Name: JanitorCollider
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -737,15 +737,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Someone
+    name: Lin MinKai (Janitor, JingHui in Disguise)
     sentences:
-    - 'some
-
-'
-    - 'some
-
-'
-    - line 3 temp
+    - Not dead, I say! Not dead! A different plane of existence, once again! All over
+      again!
+    - "Not real! It\u2019s not real!"
+    - Here, take. Take it! It will help!
 --- !u!61 &1055741743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -799,7 +796,7 @@ GameObject:
   - component: {fileID: 1143623901}
   - component: {fileID: 1143623900}
   m_Layer: 0
-  m_Name: PBCollider (1)
+  m_Name: SecCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -867,20 +864,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Someone
+    name: Zhen XiaoJing (Secretary)
     sentences:
-    - 'test
-
-'
-    - 'test
-
-'
-    - 'test
-
-'
-    - 'test
-
-'
+    - "Hey, I\u2019ve been meaning to talk to you."
+    - You know that janitor, right?
+    - Well, I know everyone in this building. I sign them in every morning.
+    - " Trust me when I say I\u2019ve never seen this man before."
+    - "He doesn\u2019t work here, I\u2019m sure of it."
+    - "Oh, that? That\u2019s a magnet, not a medical instrument."
+    - "It\u2019s a strong one, too. I remember some workers using it for one of JingHui\u2019s
+      crazy projects."
 --- !u!61 &1143623902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -920,6 +913,127 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1268543578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1268543582}
+  - component: {fileID: 1268543581}
+  - component: {fileID: 1268543580}
+  - component: {fileID: 1268543579}
+  m_Layer: 0
+  m_Name: GotoSlidePuzzleCollider
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1268543579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268543578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085687f333be6734b87fdf019cdcd6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 31
+--- !u!212 &1268543580
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268543578}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8996fcf75946c194faacc4e4882c38ad, type: 3}
+  m_Color: {r: 1, g: 0.61316854, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.1, y: 7.51}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &1268543581
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268543578}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015468091, y: 0.013648935}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 10.1, y: 7.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4149608, y: 0.40179944}
+  m_EdgeRadius: 0
+--- !u!4 &1268543582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268543578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.85, y: -1.84, z: -1.1734356}
+  m_LocalScale: {x: 1.479051, y: 1.479051, z: 1.479051}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1285545548
 GameObject:
@@ -1059,6 +1173,127 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca7622c1bbfeac844ab24f9e840845ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1380617141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1380617144}
+  - component: {fileID: 1380617143}
+  - component: {fileID: 1380617142}
+  - component: {fileID: 1380617145}
+  m_Layer: 0
+  m_Name: GotoBlockPuzzleCollider
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1380617142
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380617141}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8996fcf75946c194faacc4e4882c38ad, type: 3}
+  m_Color: {r: 1, g: 0.61316854, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.1, y: 7.51}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &1380617143
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380617141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015468091, y: 0.013648935}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 10.1, y: 7.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4149608, y: 0.40179944}
+  m_EdgeRadius: 0
+--- !u!4 &1380617144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380617141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.92, y: -0.39, z: -1.1734356}
+  m_LocalScale: {x: 1.479051, y: 1.479051, z: 1.479051}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1380617145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380617141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c01099823e6856479028cae4dc5ee7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 30
 --- !u!1 &1528151755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1307,7 @@ GameObject:
   - component: {fileID: 1528151757}
   - component: {fileID: 1528151756}
   m_Layer: 0
-  m_Name: PBCollider (2)
+  m_Name: BrotherCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1140,12 +1375,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Someone
+    name: "Wang YiZheng (JingHui\u2019s Brother)"
     sentences:
-    - words
-    - words
-    - words
-    - words
+    - Holy shit, reporter lady! Can you hurry up and solve this already?
+    - "I\u2019m tweaking now that people are dying, or going missing, or whatever!
+      How could they have just vanished into thin air like that? "
+    - Want to hear something, reporter lady? Just between us.
+    - ' Mei and JingHui were dating, as you know, and they were having relationship
+      problems. Like, major fucking problems.'
+    - "He told me himself. I wouldn\u2019t be surprised if she wanted to, you know,
+      END her problems."
+    - "I know I accused JingHui earlier, but then I really thought about it, and I
+      don\u2019t think he\u2019s crazy enough to bomb his own building. He is crazy
+      for sure, though."
+    - "Like, do you know he despised the color orange? Like, he wouldn\u2019t even
+      look at it. "
+    - Fucking weird, right?
 --- !u!61 &1528151758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1449,6 +1694,143 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1742448858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1742448862}
+  - component: {fileID: 1742448861}
+  - component: {fileID: 1742448860}
+  - component: {fileID: 1742448859}
+  m_Layer: 0
+  m_Name: ChengCollider
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1742448859
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742448858}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 8996fcf75946c194faacc4e4882c38ad, type: 3}
+  m_Color: {r: 0, g: 0.2466259, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 10.1, y: 7.51}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1742448860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742448858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f6b93df8355264289e665e6ac595b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Cheng SuRong
+    sentences:
+    - Need any help? I think I know who it is.
+    - "It\u2019s JingHui\u2019s brother, no doubt. He\u2019s always been jealous of
+      JingHui, and now he\u2019s just throwing around names like it\u2019s nothing."
+    - "Yes, he\u2019s accusing Mei, which is ridiculous! She\u2019s innocent. She
+      wouldn\u2019t hurt a fly."
+    - Well, um, yeah. I know her pretty well. Good friends, you know.
+    - "I was actually with her on the day of the accident. She wasn\u2019t doing anything,
+      I can vouch for her."
+    - "Well, Mei and I met at one of my basketball games. I\u2019m a famous basketball
+      player, if you didn\u2019t know. You don\u2019t look like you watch basketball."
+    - "But, um, yeah. She was with JingHui, sitting right on the sidelines. I met
+      him there, too. Weird guy\u2026"
+    - "Anyways, I\u2019m gonna go check on Mei. I can hear her sobs from all the way
+      over here."
+--- !u!61 &1742448861
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742448858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.015468091, y: 0.013648935}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 10.1, y: 7.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4149608, y: 0.40179944}
+  m_EdgeRadius: 0
+--- !u!4 &1742448862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742448858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7, y: -1.24, z: -1.1734356}
+  m_LocalScale: {x: 1.479051, y: 1.479051, z: 1.479051}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1860358318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1946,7 +2328,7 @@ GameObject:
   - component: {fileID: 2129478085}
   - component: {fileID: 2129478084}
   m_Layer: 0
-  m_Name: PBCollider (3)
+  m_Name: LinPiCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2014,11 +2396,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Someone
+    name: Detective Lin PinBi
     sentences:
-    - in elements
-    - in elements
-    - in elements
+    - "Got any answers yet? You better pick up the pace if people are vanishing. Because
+      I\u2019m so kind, I\u2019m going to help you out. Take a look at what I found
+      here."
+    - "It\u2019s explosive powder. Probably was used to make the bombs. And not just
+      any old shmuck could get a hold of powder like this."
+    - "Why? Because it\u2019s hard to get! You have to have some amount of power or
+      fame, obviously. Don\u2019t you research these things, novice?"
+    - "Anyways, I think whoever placed the bombs has knowledge about this building.
+      The pipes are like a damn maze, and you know who knew \u2018em best?"
+    - "Yes, Zhuang YongRuan, JingHui\u2019s old college rival. She was working in
+      the pipes for him, even walked through the pipeworks the day of the accident"
+    - How could she not have seen anything? How was she conveniently not at her post
+      during the time of the explosion? ... Seems suspicious to me.
 --- !u!61 &2129478086
 BoxCollider2D:
   m_ObjectHideFlags: 0

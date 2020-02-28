@@ -51,48 +51,63 @@ EditorBuildSettings:
     path: Assets/Scenes/Floor1/Level1Done.unity
     guid: cfc8cea8c759444f4bfe8cc3ad83879d
   - enabled: 1
-    path: Assets/Scenes/NPCText/MinKaiText.unity
+    path: Assets/Scenes/Materials/NPCText/MinKaiText.unity
     guid: 1f4daed6917bf404383c175987ea6a98
   - enabled: 1
-    path: Assets/Scenes/NPCText/PinBiText.unity
+    path: Assets/Scenes/Materials/NPCText/PinBiText.unity
     guid: 2c3b60104fd9f411aa860d7c5089f9fa
   - enabled: 1
-    path: Assets/Scenes/NPCText/ShaoTingText.unity
+    path: Assets/Scenes/Materials/NPCText/ShaoTingText.unity
     guid: 275e912647bd5466297814cd81f0aa0b
   - enabled: 1
-    path: Assets/Scenes/NPCText/SuRongText.unity
+    path: Assets/Scenes/Materials/NPCText/SuRongText.unity
     guid: 46c644d9835a64729b3cda0ee0541ce0
   - enabled: 1
-    path: Assets/Scenes/NPCText/XiaoJingText.unity
+    path: Assets/Scenes/Materials/NPCText/XiaoJingText.unity
     guid: ef74094e0c96a4fa7ba6c46efb4d1fa3
   - enabled: 1
-    path: Assets/Scenes/NPCText/YingHeiText.unity
+    path: Assets/Scenes/Materials/NPCText/YingHeiText.unity
     guid: b44e364dd24ed4119b9a5da6f908f047
   - enabled: 1
-    path: Assets/Scenes/NPCText/YingText.unity
+    path: Assets/Scenes/Materials/NPCText/YingText.unity
     guid: 7e4647f9d12324043a510373b8710782
   - enabled: 1
-    path: Assets/Scenes/NPCText/YiZhengText.unity
+    path: Assets/Scenes/Materials/NPCText/YiZhengText.unity
     guid: 2744fde81919a401eb767757e9542b44
   - enabled: 1
-    path: Assets/Scenes/NPCText/YongRuanText.unity
+    path: Assets/Scenes/Materials/NPCText/YongRuanText.unity
     guid: 7bb2fc321fc194cc18e4e07b5215de13
   - enabled: 1
-    path: Assets/Scenes/NPCText/KeycardText2.unity
+    path: Assets/Scenes/Materials/NPCText/KeycardText2.unity
     guid: 9bb3c7935bf5e411b8d8b4dc190bdde5
   - enabled: 1
-    path: Assets/Scenes/NPCText/NewsArticleText.unity
+    path: Assets/Scenes/Materials/NPCText/NewsArticleText.unity
     guid: f54d0b9c675d2412a9be3ea25ca28582
   - enabled: 1
-    path: Assets/Scenes/NPCText/EmailText.unity
+    path: Assets/Scenes/Materials/NPCText/EmailText.unity
     guid: cc59a5260ea6c43ad8170280c743d6ba
   - enabled: 1
-    path: Assets/Scenes/NPCText/KeycardText.unity
+    path: Assets/Scenes/Materials/NPCText/KeycardText.unity
     guid: 76192a0b2aab843d7a3ba1f8a473b02a
   - enabled: 1
-    path: Assets/Scenes/NPCText/Message.unity
+    path: Assets/Scenes/Materials/NPCText/Message.unity
     guid: fa9f3b30a8e194dcfa103632a24c1058
   - enabled: 1
-    path: Assets/Scenes/NPCText/Message2.unity
+    path: Assets/Scenes/Materials/NPCText/Message2.unity
     guid: ae31b1e99ceac4efd9bc67641b223c0b
+  - enabled: 1
+    path: Assets/Scenes/Level2/Lounge.unity
+    guid: f2a3d00d2726a9942a09c29ea400ed3c
+  - enabled: 1
+    path: Assets/Scenes/Level2/Infirmary.unity
+    guid: 699401439afb68b46bd2a92f2690d937
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level2.unity
+    guid: 5bab0cbaa48de4b62af4ff08c7e0092b
+  - enabled: 1
+    path: Assets/Scenes/BlockPuzzleTest.unity
+    guid: 68c1c7a87bb9b470e94bba5286beee4e
+  - enabled: 1
+    path: Assets/Scenes/ElectricSlidePuzzle.unity
+    guid: e58b9febe4d4844fdb1ff14ef4778d04
   m_configObjects: {}
