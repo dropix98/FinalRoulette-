@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Impression'sManager : MonoBehaviour
+public class ImpressionsManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
