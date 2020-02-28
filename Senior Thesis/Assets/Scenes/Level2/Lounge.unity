@@ -872,6 +872,15 @@ MonoBehaviour:
     - 'test
 
 '
+    - 'test
+
+'
+    - 'test
+
+'
+    - 'test
+
+'
 --- !u!61 &1143623902
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1133,6 +1142,9 @@ MonoBehaviour:
   dialogue:
     name: Someone
     sentences:
+    - words
+    - words
+    - words
     - words
 --- !u!61 &1528151758
 BoxCollider2D:
@@ -2004,6 +2016,8 @@ MonoBehaviour:
   dialogue:
     name: Someone
     sentences:
+    - in elements
+    - in elements
     - in elements
 --- !u!61 &2129478086
 BoxCollider2D:
