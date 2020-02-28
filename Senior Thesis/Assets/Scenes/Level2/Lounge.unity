@@ -745,9 +745,7 @@ MonoBehaviour:
     - 'some
 
 '
-    - 'some
-
-'
+    - line 3 temp
 --- !u!61 &1055741743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2167,17 +2165,17 @@ PrefabInstance:
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.56188595
+      value: 0.33061934
       objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.56188595
+      value: 0.33061934
       objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.56188595
+      value: 0.33061934
       objectReference: {fileID: 0}
     - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}

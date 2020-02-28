@@ -776,17 +776,17 @@ PrefabInstance:
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.54343
+      value: 0.3706627
       objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.54343
+      value: 0.3706627
       objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.54343
+      value: 0.3706627
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91701680737a6de49a3ab66ae1542d27, type: 3}
@@ -912,7 +912,7 @@ MonoBehaviour:
     - test
     - test
     - test
-    - test
+    - ' message 34'
 --- !u!61 &669380048
 BoxCollider2D:
   m_ObjectHideFlags: 0
