@@ -38,7 +38,7 @@ public class FinalKeypad : MonoBehaviour
           if(CheckCorrect() == true)
           {
               //Some Scene for the door open to get out or something.
-              SceneManager.LoadScene("Level1Done");
+              SceneManager.LoadScene("InterrogationIntro");
               //tester.gameObject.SetActive(true);
           }
           //GlobalVariables.inKeycardGuesser = false;

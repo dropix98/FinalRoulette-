@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interrogation : MonoBehaviour
 {
@@ -130,7 +131,7 @@ public class Interrogation : MonoBehaviour
       }
       if (round3Done == true && GlobalVariables.currentlyTalking == false)
       {
-        
+        SceneManager.LoadScene("Lounge");
       }
     }
 
