@@ -1343,30 +1343,30 @@ MonoBehaviour:
   YingHei22: {fileID: 1239456112}
   YingHei31: {fileID: 40222046}
   YingHei32: {fileID: 258387036}
-  ShaoTing11: {fileID: 0}
-  ShaoTing12: {fileID: 0}
-  ShaoTing21: {fileID: 0}
-  ShaoTing22: {fileID: 0}
-  ShaoTing31: {fileID: 0}
-  ShaoTing32: {fileID: 0}
-  YongRuan11: {fileID: 0}
-  YongRuan12: {fileID: 0}
-  YongRuan21: {fileID: 0}
-  YongRuan22: {fileID: 0}
-  YongRuan31: {fileID: 0}
-  YongRuan32: {fileID: 0}
-  PinBi11: {fileID: 0}
-  PinBi12: {fileID: 0}
-  PinBi21: {fileID: 0}
-  PinBi22: {fileID: 0}
-  PinBi31: {fileID: 0}
-  PinBi32: {fileID: 0}
-  MinKai11: {fileID: 0}
-  MinKai12: {fileID: 0}
-  MinKai21: {fileID: 0}
-  MinKai22: {fileID: 0}
-  MinKai31: {fileID: 0}
-  MinKai32: {fileID: 0}
+  ShaoTing11: {fileID: 783654808}
+  ShaoTing12: {fileID: 1461179634}
+  ShaoTing21: {fileID: 1368184709}
+  ShaoTing22: {fileID: 1273354633}
+  ShaoTing31: {fileID: 282822708}
+  ShaoTing32: {fileID: 1735740964}
+  YongRuan11: {fileID: 1204297463}
+  YongRuan12: {fileID: 1130136032}
+  YongRuan21: {fileID: 522337020}
+  YongRuan22: {fileID: 112524208}
+  YongRuan31: {fileID: 372571248}
+  YongRuan32: {fileID: 1174715926}
+  PinBi11: {fileID: 1437336807}
+  PinBi12: {fileID: 1273292073}
+  PinBi21: {fileID: 455314710}
+  PinBi22: {fileID: 2087619735}
+  PinBi31: {fileID: 870699289}
+  PinBi32: {fileID: 356106866}
+  MinKai11: {fileID: 1824126547}
+  MinKai12: {fileID: 593203620}
+  MinKai21: {fileID: 1289526477}
+  MinKai22: {fileID: 635525551}
+  MinKai31: {fileID: 1634624755}
+  MinKai32: {fileID: 1281630497}
 --- !u!1 &407059607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2215,18 +2215,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 405323161}
-        m_MethodName: Operation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 387906892}
-        m_MethodName: TriggerDialogue
+        m_MethodName: Round31
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2848,7 +2837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MeiYing
+    name: YiZheng
     sentences:
     - Uh, well I work part-time as an engineer, so I was doing that in the morning.
       You can check with my boss, if you want.
@@ -3211,7 +3200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MeiYing
+    name: YiZheng
     sentences:
     - Like what?
     - "I\u2019m an engineering student, twenty years old, single, if you\u2019re wondering."
@@ -4649,20 +4638,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 387906892}
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 405323161}
+        m_MethodName: Round22
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 977586237}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5241,7 +5219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MeiYing
+    name: YiZheng
     sentences:
     - Oh, god. How much time do you have?
     - "Our relationship is fucked up, and that\u2019s putting it lightly!"
@@ -6714,18 +6692,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 405323161}
-        m_MethodName: Round1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 387906892}
-        m_MethodName: TriggerDialogue
+        m_MethodName: Round21
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6898,7 +6865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MeiYing
+    name: YiZheng
     sentences:
     - Nope. Oh, I guess I found this piece of paper.
     - "I don\u2019t want it, but it looks important."
@@ -7144,20 +7111,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 387906892}
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 405323161}
+        m_MethodName: Round12
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1690484345}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7328,6 +7284,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -511.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 404.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91701680737a6de49a3ab66ae1542d27, type: 3}
@@ -8021,7 +7987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MeiYing
+    name: YiZheng
     sentences:
     - Nope. Oh, I guess I found this piece of paper.
     - "I don\u2019t want it, but it looks important."
@@ -8069,7 +8035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MeiYing
+    name: YiZheng
     sentences:
     - I think JingHui had way more enemies than he let on.
     - Not everyone can love that psychopath.
@@ -8608,7 +8574,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 405323161}
-        m_MethodName: Round1
+        m_MethodName: Round11
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9142,20 +9108,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 387906892}
-        m_MethodName: TriggerDialogue
+      - m_Target: {fileID: 405323161}
+        m_MethodName: Round32
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2046089750}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -86,6 +86,8 @@ public class Interrogation : MonoBehaviour
 
 
     private bool round1Done = false;
+    private bool round2Done = false;
+    private bool round3Done = false;
 
     // Start is called before the first frame update
     void Start()
@@ -120,6 +122,15 @@ public class Interrogation : MonoBehaviour
       {
         button21.SetActive(true);
         button22.SetActive(true);
+      }
+      if (round2Done == true && GlobalVariables.currentlyTalking == false)
+      {
+        button31.SetActive(true);
+        button32.SetActive(true);
+      }
+      if (round3Done == true && GlobalVariables.currentlyTalking == false)
+      {
+        
       }
     }
 
@@ -266,6 +277,346 @@ public class Interrogation : MonoBehaviour
         button12.SetActive(false);
         round1Done = true;
         MinKai11.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+
+    }
+
+    public void Round12()
+    {
+      if (GlobalVariables.interrogatingYing == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        Ying12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingSuRong == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        SuRong12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYiZheng == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        YiZheng12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingXiaoJing == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        XiaoJing12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYingHei == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        YingHei12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingShaoTing == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        ShaoTing12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYongRuan == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        YongRuan12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingPinBi == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        PinBi12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingMinKai == true)
+      {
+        button11.SetActive(false);
+        button12.SetActive(false);
+        round1Done = true;
+        MinKai12.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+
+    }
+
+    public void Round21()
+    {
+      if (GlobalVariables.interrogatingYing == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        Ying21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingSuRong == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        SuRong21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYiZheng == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        YiZheng21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingXiaoJing == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        XiaoJing21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYingHei == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        YingHei21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingShaoTing == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        ShaoTing21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYongRuan == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        YongRuan21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingPinBi == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        PinBi21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingMinKai == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        MinKai21.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+
+    }
+
+    public void Round22()
+    {
+      if (GlobalVariables.interrogatingYing == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        Ying22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingSuRong == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        SuRong22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYiZheng == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        YiZheng22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingXiaoJing == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        XiaoJing22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYingHei == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        YingHei22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingShaoTing == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        ShaoTing22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYongRuan == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        YongRuan22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingPinBi == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        PinBi22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingMinKai == true)
+      {
+        button21.SetActive(false);
+        button22.SetActive(false);
+        round2Done = true;
+        MinKai22.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+
+    }
+
+    public void Round31()
+    {
+      if (GlobalVariables.interrogatingYing == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        Ying31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingSuRong == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        SuRong31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYiZheng == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        YiZheng31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingXiaoJing == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        XiaoJing31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYingHei == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        YingHei31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingShaoTing == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        ShaoTing31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYongRuan == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        YongRuan31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingPinBi == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        PinBi31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingMinKai == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        MinKai31.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+
+    }
+
+    public void Round32()
+    {
+      if (GlobalVariables.interrogatingYing == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        Ying32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingSuRong == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        SuRong32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYiZheng == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        YiZheng32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingXiaoJing == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        XiaoJing32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYingHei == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        YingHei32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingShaoTing == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        ShaoTing32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingYongRuan == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        YongRuan32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingPinBi == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        PinBi32.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+      if (GlobalVariables.interrogatingMinKai == true)
+      {
+        button31.SetActive(false);
+        button32.SetActive(false);
+        round3Done = true;
+        MinKai32.GetComponent<DialogueTrigger>().TriggerDialogue();
       }
 
     }
