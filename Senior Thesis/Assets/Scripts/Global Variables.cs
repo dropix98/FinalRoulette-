@@ -68,6 +68,11 @@ public static class GlobalVariables
 
     public static bool currentlyTalking;
 
+    public static bool foundFuse;
+    public static bool foundBobbyPin;
+    public static bool foundMagnet;
+
+
 
     //public static bool inKeycardGuesser;
 
