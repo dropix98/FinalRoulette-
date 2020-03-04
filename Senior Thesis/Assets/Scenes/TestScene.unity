@@ -220,10 +220,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 620957012}
         m_MethodName: LoadImpression
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11289360}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1842,10 +1842,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 620957012}
         m_MethodName: LoadImpression
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 973536249}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3055,7 +3055,7 @@ PrefabInstance:
     - target: {fileID: 7064575215623002832, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.127
+      value: -6.78
       objectReference: {fileID: 0}
     - target: {fileID: 7064575215623002832, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}

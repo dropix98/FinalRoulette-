@@ -60,11 +60,12 @@ public class NotebookManager : MonoBehaviour
         descriptionUIMenu.SetActive(false);
     }
 
-    public void LoadImpression()
+    public void LoadImpression(GameObject x)
     {
         Debug.Log("Impression Loaded");
         impressionUIMenu.SetActive(false);
         mainScreen.SetActive(false);
+        Debug.Log(descriptionUIMenu.gameObject);
         descriptionUIMenu.SetActive(true);
     }
 
