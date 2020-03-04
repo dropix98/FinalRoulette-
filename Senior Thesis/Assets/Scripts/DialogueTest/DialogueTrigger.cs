@@ -22,14 +22,14 @@ public class DialogueTrigger : MonoBehaviour
         if (other.gameObject.name == "Character")
         {
             Debug.Log("Player Detected");
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 TriggerDialogue();
             }
 
 //<<<<<<< Updated upstream
 //=======
-            if (Input.GetKeyDown(KeyCode.Space) && dm.CheckDone() == true)
+            if (Input.GetKeyUp(KeyCode.Space) && dm.CheckDone() == true)
             {
                 TriggerSpokeDialogue();
             }

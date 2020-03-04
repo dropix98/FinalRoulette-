@@ -141,12 +141,49 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
     [SerializeField]
     private Transform[] lanes;
 
+    public int index;
+    public bool done;
+
+    public void Update()
+    {
+        if(Check() == true)
+        {
+            SceneManager.LoadScene(index);
+        }
+    }
+
     public bool Check()
     {
+        Debug.Log("first thing");
         //Rotation is on z and is 0,-90,-180,90
-        if (lanes[0].rotation.z == 90.00001 && lanes[1].rotation.z == 0.0 && lanes[2].rotation.z == 90.00001 && lanes[3].rotation.z == 0.0 && lanes[4].rotation.z == -90.00001 && lanes[5].rotation.z == -180.0 && lanes[6].rotation.z == 90.00001 && lanes[7].rotation.z == 0.0 && lanes[8].rotation.z == 0.0 && lanes[9].rotation.z == -180.0 && lanes[10].rotation.z == -90.00001 && lanes[11].rotation.z == -90.00001 && lanes[12].rotation.z == 90.00001 && lanes[13].rotation.z == 0.0 && lanes[14].rotation.z == -180.0 && lanes[15].rotation.z == 0.0 && lanes[16].rotation.z == -180.0 && lanes[17].rotation.z == -90.00001 && lanes[18].rotation.z == 0.0)
+        /*if (lanes[0].rotation.z == -90)// && lanes[1].rotation.z == 0 && lanes[2].rotation.z == -90 && lanes[3].rotation.z == 0 && lanes[4].rotation.z == 90 && lanes[5].rotation.z == -180 && lanes[6].rotation.z == -90 && lanes[7].rotation.z == 0 && lanes[8].rotation.z == 0 && lanes[9].rotation.z == -180 && lanes[10].rotation.z == 90 && lanes[11].rotation.z == 90 && lanes[12].rotation.z == -90 && lanes[13].rotation.z == 0 && lanes[14].rotation.z == -180 && lanes[15].rotation.z == 0 && lanes[16].rotation.z == -180 && lanes[17].rotation.z == 90 && lanes[18].rotation.z == 0)
         {
+            Debug.Log("inside statement");
                 return true;
+        }
+        Debug.Log("After statement");
+        */
+        int i = 0;
+
+        while(i < lanes.Length)
+        {
+            done = true;
+            if (lanes[i].rotation.z == 0)
+            {
+                i++;
+                Debug.Log(done);
+                continue;
+            }
+            else
+            {
+                done = false;
+                break;
+            }
+        }
+
+        if(done == true)
+        {
+            return true;
         }
         
         return false;
@@ -158,10 +195,11 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
         if (Check() == false)
         {
             transform.Rotate(0f, 0f, 90f);
+            //Debug.Log(lanes[0].gameObject.transform.rotation.z);
         }
         else
         {
-            SceneManager.LoadScene(27);
+            SceneManager.LoadScene(index);
         }
     }
 }

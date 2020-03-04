@@ -682,16 +682,16 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 52.4
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272564942302, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 1dca2cdf050a04262946aa0d146ec286, type: 3}
     - target: {fileID: 890219273046533319, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 890219272564942302, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 1dca2cdf050a04262946aa0d146ec286, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91701680737a6de49a3ab66ae1542d27, type: 3}
 --- !u!224 &313776717 stripped
@@ -1131,8 +1131,6 @@ MonoBehaviour:
   dialogue:
     name: MeiYing
     sentences:
-    - Oh, hi! I know you, you're that reporter, huh? I saw you poking around on the
-      day of the accident. What a horrible day, don't you think?
     - Oh, hi! I know you, you're that reporter, huh? I saw you poking around on the
       day of the accident. What a horrible day, don't you think?
     - Anyways, I'm Mei.  I'm glad someone is working hard to get us out of here.
@@ -1883,9 +1881,13 @@ MonoBehaviour:
       Sure, I\u2019m just an intern for JingHui, but I am really on to something!
       I mean was, before I got fired."
     - "Oh, sorry. My name\u2019s ShaoTing, but that\u2019s not important. I\u2019m
-      not a threat, I\u2019m on your side!"
+      not a threat, I\u2019m on your side!    Well, if I were you, I\u2019d talk to
+      Lin PinBi if you haven\u2019t already. He was the lead detective on the case,
+      but don\u2019t let that fool you."
     - "Well, if I were you, I\u2019d talk to Lin PinBi if you haven\u2019t already.
-      He was the lead detective on the case, but don\u2019t let that fool you."
+      He was the lead detective on the case, but don\u2019t let that fool you.    I
+      suspect he\u2019s covering something up for YongRuan. If you don\u2019t go interrogate
+      him, I will!"
     - "I suspect he\u2019s covering something up for YongRuan. If you don\u2019t go
       interrogate him, I will!"
 --- !u!1 &1189624888
