@@ -97,6 +97,10 @@ public class Interact : MonoBehaviour
             GlobalVariables.foundKeycard = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
           }
+          if (GlobalVariables.inKeycardItemCollider == true && GlobalVariables.foundKeycard == false)
+          {
+            
+          }
       }
 
       if (Input.GetKeyDown("n"))

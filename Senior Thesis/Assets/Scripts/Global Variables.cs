@@ -55,6 +55,11 @@ public static class GlobalVariables
     public static bool inXJCollider;
     public static bool inJHCollider;
     public static bool inYHCollider;
+    public static bool inBobbyPinCollider;
+    public static bool inHoleCollider;
+    public static bool inDrawerCollider;
+
+
 
     public static bool interrogatingYing;
     public static bool interrogatingSuRong;
