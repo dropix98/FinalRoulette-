@@ -387,6 +387,8 @@ MonoBehaviour:
     sentences:
     - "Ah, so you\u2019re the journalist. Yeah, I worked for JingHui. I was his secretary.
       My name\u2019s Zhen XiaoJing."
+    - "Ah, so you\u2019re the journalist. Yeah, I worked for JingHui. I was his secretary.
+      My name\u2019s Zhen XiaoJing."
     - "I don\u2019t really want to talk about the accident. I think it was a horrible,
       no doubt about it. Is there anything else I can help you with?"
     - "Sorry. I don\u2019t remember the door passcode anymore, or else we\u2019d already
@@ -509,26 +511,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -186.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 153.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 79.9
-      objectReference: {fileID: 0}
     - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -549,26 +531,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -43.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -30.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 414.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 61.1
-      objectReference: {fileID: 0}
     - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -588,6 +550,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1738145442}
+    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -186.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 153.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 79.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -43.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 414.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 61.1
       objectReference: {fileID: 0}
     - target: {fileID: 890219273046533318, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
@@ -613,16 +625,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1738145442}
-    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayNextSentence
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91701680737a6de49a3ab66ae1542d27, type: 3}
@@ -735,6 +737,7 @@ MonoBehaviour:
   dialogue:
     name: PinBi
     sentences:
+    - "Ah, the reporter. I\u2019m Detective PinBi. What do you think is going on here?"
     - "Ah, the reporter. I\u2019m Detective PinBi. What do you think is going on here?"
     - "Hah. Makes sense you don\u2019t know yet. I don\u2019t know why a novice journalist
       is on such a high profile case."
@@ -1553,6 +1556,8 @@ MonoBehaviour:
     sentences:
     - "Hey, reporter girl. I was wondering when you\u2019d come talk to me! This whole
       situation is fucking shitty. Leave it to JingHui to pull a stunt like this."
+    - "Hey, reporter girl. I was wondering when you\u2019d come talk to me! This whole
+      situation is fucking shitty. Leave it to JingHui to pull a stunt like this."
     - "Well, of course it\u2019s him who put us in here! It  makes the most sense,
       doesn\u2019t it? He wants to find out who nuked his building. Well, I bet he
       did it himself, honestly. He\u2019s always been in it for the publicity. This
@@ -1687,6 +1692,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 252159548}
   dialogueText: {fileID: 252159547}
+  done: 0
+  first: 0
   animator: {fileID: 252159546}
 --- !u!4 &1738145443
 Transform:

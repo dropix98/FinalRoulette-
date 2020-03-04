@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour
 
     private bool inDialogue = false;
     public bool done = false;
-
+    public bool first = false;
 
     public Animator animator;
 
@@ -44,7 +44,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        if(this.inDialogue == true && Input.GetKeyDown(KeyCode.Space))
+        if (this.inDialogue == true && Input.GetKeyDown(KeyCode.Space) && first == true)
         {
             DisplayNextSentence();
         }
@@ -53,6 +53,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        first = true;
         if (sentences.Count == 0){
             EndDialogue();
             done = true;

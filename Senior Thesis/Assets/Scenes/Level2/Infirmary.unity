@@ -910,6 +910,7 @@ MonoBehaviour:
     name: Zhuang YongRuan
     sentences:
     - What, come to accuse me, too?
+    - What, come to accuse me, too?
     - "Sure, I worked in the pipes. And sure, JingHui and I are rivals, or whatever
       you want to call it. That doesn\u2019t make me a murder suspect."
     - "The pipes are confusing. I\u2019m still not familiar with them. It\u2019s easy
@@ -1122,6 +1123,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2552504477123167770, guid: 9577fda63bbd86d49964f60eafde0c90,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 655302373}
+    - target: {fileID: 2552504477123167770, guid: 9577fda63bbd86d49964f60eafde0c90,
+        type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 655302372}
+    - target: {fileID: 2552504477123167770, guid: 9577fda63bbd86d49964f60eafde0c90,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 655302374}
     - target: {fileID: 2552504477123167769, guid: 9577fda63bbd86d49964f60eafde0c90,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1177,21 +1193,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2552504477123167770, guid: 9577fda63bbd86d49964f60eafde0c90,
-        type: 3}
-      propertyPath: nameText
-      value: 
-      objectReference: {fileID: 655302373}
-    - target: {fileID: 2552504477123167770, guid: 9577fda63bbd86d49964f60eafde0c90,
-        type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 655302372}
-    - target: {fileID: 2552504477123167770, guid: 9577fda63bbd86d49964f60eafde0c90,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 655302374}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9577fda63bbd86d49964f60eafde0c90, type: 3}
 --- !u!1001 &2005221667
@@ -1346,6 +1347,8 @@ MonoBehaviour:
   dialogue:
     name: Mei Ying
     sentences:
+    - "I\u2019m s-sorry, I\u2019m just - sob - so upset - sob - about what\u2019s
+      happening."
     - "I\u2019m s-sorry, I\u2019m just - sob - so upset - sob - about what\u2019s
       happening."
     - "- sniff - Sorry, I\u2019ll pull myself together. I want to help."
