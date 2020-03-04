@@ -1810,7 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085687f333be6734b87fdf019cdcd6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 31
+  num: 21
 --- !u!212 &1268543580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2220,7 +2220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c01099823e6856479028cae4dc5ee7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 30
+  num: 20
 --- !u!1001 &1570125109
 PrefabInstance:
   m_ObjectHideFlags: 0
