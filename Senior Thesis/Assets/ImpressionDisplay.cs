@@ -10,7 +10,7 @@ public class ImpressionDisplay : MonoBehaviour
     public Text nameCharacter;
     public Text impressionShort;
     public Text impressionDescription;  
-    void Start()
+    void Update()
     {
         nameCharacter.text = impression.nameOfCharacter;
         impressionShort.text = impression.impressionShort;
