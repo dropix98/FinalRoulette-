@@ -141,23 +141,27 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
     [SerializeField]
     private Transform[] lanes;
 
-    public int index;
-    public void Update()
+    public bool Check()
     {
-    
         //Rotation is on z and is 0,-90,-180,90
-        if (lanes[0].gameObject.transform.rotation.z == -90.00001 && lanes[1].gameObject.transform.rotation.z == 0.0 && lanes[2].gameObject.transform.rotation.z == -90.00001 && lanes[3].gameObject.transform.rotation.z == 0.0 && lanes[4].gameObject.transform.rotation.z == 90.00001 && lanes[5].gameObject.transform.rotation.z == -180.0 && lanes[6].gameObject.transform.rotation.z == -90.00001 && lanes[7].gameObject.transform.rotation.z == 0.0 && lanes[8].gameObject.transform.rotation.z == 0.0 && lanes[9].gameObject.transform.rotation.z == -90.00001 && lanes[10].gameObject.transform.rotation.z == 90.00001 && lanes[11].gameObject.transform.rotation.z == 90.00001 && lanes[12].gameObject.transform.rotation.z == -90.00001 && lanes[13].gameObject.transform.rotation.z == 0.0 && lanes[14].gameObject.transform.rotation.z == -180.0 && lanes[15].gameObject.transform.rotation.z == 0.0 && lanes[16].gameObject.transform.rotation.z == -180.0 && lanes[17].gameObject.transform.rotation.z == 90.00001 && lanes[18].gameObject.transform.rotation.z == 0.0)
+        if (lanes[0].rotation.z == 90.00001 && lanes[1].rotation.z == 0.0 && lanes[2].rotation.z == 90.00001 && lanes[3].rotation.z == 0.0 && lanes[4].rotation.z == -90.00001 && lanes[5].rotation.z == -180.0 && lanes[6].rotation.z == 90.00001 && lanes[7].rotation.z == 0.0 && lanes[8].rotation.z == 0.0 && lanes[9].rotation.z == -180.0 && lanes[10].rotation.z == -90.00001 && lanes[11].rotation.z == -90.00001 && lanes[12].rotation.z == 90.00001 && lanes[13].rotation.z == 0.0 && lanes[14].rotation.z == -180.0 && lanes[15].rotation.z == 0.0 && lanes[16].rotation.z == -180.0 && lanes[17].rotation.z == -90.00001 && lanes[18].rotation.z == 0.0)
         {
-            
-            SceneManager.LoadScene(index);
-             
+                return true;
         }
-
+        
+        return false;
     }
 
     private void OnMouseDown()
     {
         //once build the check to see if finished use an if statement.
+        if (Check() == false)
+        {
             transform.Rotate(0f, 0f, 90f);
+        }
+        else
+        {
+            SceneManager.LoadScene(27);
+        }
     }
 }
