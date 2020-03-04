@@ -105,7 +105,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2/Level2.unity
     guid: 5bab0cbaa48de4b62af4ff08c7e0092b
   - enabled: 1
-    path: Assets/Scenes/BlockPuzzleTest.unity
+    path: Assets/Scenes/BlockPuzzle.unity
     guid: 68c1c7a87bb9b470e94bba5286beee4e
   - enabled: 1
     path: Assets/Scenes/ElectricSlidePuzzle.unity

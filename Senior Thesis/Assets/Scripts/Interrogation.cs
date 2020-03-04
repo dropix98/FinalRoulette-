@@ -119,18 +119,20 @@ public class Interrogation : MonoBehaviour
 
       }
 
-      if (round1Done == true && GlobalVariables.currentlyTalking == false)
+      if (round1Done == true && GlobalVariables.currentlyTalking == false && round2Done == false)
       {
         button21.SetActive(true);
         button22.SetActive(true);
       }
-      if (round2Done == true && GlobalVariables.currentlyTalking == false)
+      if (round2Done == true && GlobalVariables.currentlyTalking == false && round3Done == false)
       {
         button31.SetActive(true);
         button32.SetActive(true);
       }
       if (round3Done == true && GlobalVariables.currentlyTalking == false)
       {
+        button31.SetActive(false);
+        button32.SetActive(false);
         SceneManager.LoadScene("Lounge");
       }
     }
