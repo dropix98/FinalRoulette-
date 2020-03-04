@@ -66,6 +66,8 @@ public static class GlobalVariables
     public static bool interrogatingPinBi;
     public static bool interrogatingMinKai;
 
+    public static bool currentlyTalking;
+
 
     //public static bool inKeycardGuesser;
 

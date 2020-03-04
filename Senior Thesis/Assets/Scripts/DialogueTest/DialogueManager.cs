@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
-    private Queue<string> sentences; 
+    private Queue<string> sentences;
     void Start()
     {
         sentences = new Queue<string>();
@@ -25,9 +25,10 @@ public class DialogueManager : MonoBehaviour
     {
         done = false;
         animator.SetBool("IsOpen", true);
+        GlobalVariables.currentlyTalking = true;
 
         this.inDialogue = true;
-        
+
 
 
         nameText.text = dialogue.name;
@@ -78,11 +79,13 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        GlobalVariables.currentlyTalking = false;
     }
 
     public void AlreadyTalked(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
+        GlobalVariables.currentlyTalking = true;
         this.inDialogue = true;
 
 
