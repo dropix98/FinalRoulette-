@@ -1492,6 +1492,7 @@ MonoBehaviour:
     name: YongRuan
     sentences:
     - What, come to accuse me, too?
+    - What, come to accuse me, too?
     - "Sure, I worked in the pipes. And sure, JingHui and I are rivals, or whatever
       you want to call it. That doesn\u2019t make me a murder suspect."
     - "he pipes are confusing. I\u2019m still not familiar with them. It\u2019s easy
@@ -2070,6 +2071,8 @@ MonoBehaviour:
     sentences:
     - "I\u2019m s-sorry, I\u2019m just - sob - so upset - sob - about what\u2019s
       happening."
+    - "I\u2019m s-sorry, I\u2019m just - sob - so upset - sob - about what\u2019s
+      happening. \t"
     - "- sniff - Sorry, I\u2019ll pull myself together. I want to help."
     - "Wang YiZheng is accusing me, and it\u2019s not fair! Newsflash, couples have
       relationship problems. JingHui and I weren\u2019t perfect, but we loved each

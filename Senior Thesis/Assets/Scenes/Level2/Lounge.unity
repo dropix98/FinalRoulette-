@@ -266,6 +266,7 @@ MonoBehaviour:
     name: YiZheng
     sentences:
     - Holy shit, reporter lady! Can you hurry up and solve this already?
+    - Holy shit, reporter lady! Can you hurry up and solve this already?
     - "I\u2019m tweaking now that people are dying, or going missing, or whatever!
       How could they have just vanished into thin air like that?"
     - Want to hear something, reporter lady? Just between us.
@@ -446,26 +447,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: DisplayNextSentence
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -186.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 153.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 79.9
-      objectReference: {fileID: 0}
     - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -505,6 +486,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -186.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 153.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 79.9
       objectReference: {fileID: 0}
     - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
@@ -1152,6 +1153,8 @@ MonoBehaviour:
     sentences:
     - Not dead, I say! Not dead! A different plane of existence, once again! All over
       again!
+    - Not dead, I say! Not dead! A different plane of existence, once again! All over
+      again!
     - "Not real! It\u2019s not real!"
     - Here, take. Take it! It will help!
 --- !u!61 &720646594
@@ -1277,6 +1280,7 @@ MonoBehaviour:
   dialogue:
     name: XiaoJing
     sentences:
+    - "Hey, I\u2019ve been meaning to talk to you."
     - "Hey, I\u2019ve been meaning to talk to you."
     - You know that janitor, right?
     - Well, I know everyone in this building. I sign them in every morning.
@@ -1408,6 +1412,9 @@ MonoBehaviour:
   dialogue:
     name: PinBi
     sentences:
+    - "Got any answers yet? You better pick up the pace if people are vanishing. Because
+      I\u2019m so kind, I\u2019m going to help you out. Take a look at what I found
+      here."
     - "Got any answers yet? You better pick up the pace if people are vanishing. Because
       I\u2019m so kind, I\u2019m going to help you out. Take a look at what I found
       here."
@@ -1592,7 +1599,7 @@ MonoBehaviour:
   dialogue:
     name: FuseBox
     sentences:
-    - 
+    - "This must turn on the power, but it\u2019s missing a fuse."
     - "This must turn on the power, but it\u2019s missing a fuse."
 --- !u!61 &1008471370
 BoxCollider2D:
@@ -1717,6 +1724,7 @@ MonoBehaviour:
   dialogue:
     name: SuRong
     sentences:
+    - Need any help? I think I know who it is.
     - Need any help? I think I know who it is.
     - "It\u2019s JingHui\u2019s brother, no doubt. He\u2019s always been jealous of
       JingHui, and now he\u2019s just throwing around names like it\u2019s nothing."
