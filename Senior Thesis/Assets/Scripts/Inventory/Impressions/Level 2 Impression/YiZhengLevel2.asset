@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4d30e640bb084549bae884a6c86863f, type: 3}
-  m_Name: PinBiLevel2
+  m_Name: YiZhengLevel2
   m_EditorClassIdentifier: 
-  nameOfCharacter: PinBi
-  impressionShort: 'Explosive Powder '
-  impressionDescription: Lin PinBi found some explosive powder down here. He thinks
-    the culprit needs special access to get this sort of powder. He suspects Zhuang
-    YongRuan since she's the most familiar with the pipes. She does seem suspcious.
+  nameOfCharacter: Wang YiZheng
+  impressionShort: The Color Orange
+  impressionDescription: Wang YiZheng is getting anxious. He accused Mei since she
+    apparently was having bad relationship problems with JingHui right before the
+    accident. Also, JingHui hates the color orange so much that he won't even look
+    at it.

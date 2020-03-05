@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4d30e640bb084549bae884a6c86863f, type: 3}
-  m_Name: PinBiLevel2
+  m_Name: MeiLevel2
   m_EditorClassIdentifier: 
-  nameOfCharacter: PinBi
-  impressionShort: 'Explosive Powder '
-  impressionDescription: Lin PinBi found some explosive powder down here. He thinks
-    the culprit needs special access to get this sort of powder. He suspects Zhuang
-    YongRuan since she's the most familiar with the pipes. She does seem suspcious.
+  nameOfCharacter: Mei Ying
+  impressionShort: Bobby Pin
+  impressionDescription: Mei won't stop crying because Wang YiZheng accused her. She
+    claims to love JingHui. She dropped a Bobby Pin. I took it.
