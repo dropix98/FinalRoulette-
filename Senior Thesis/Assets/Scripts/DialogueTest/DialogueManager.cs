@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    public GameObject characterSprite;
 
 
     private bool inDialogue = false;
@@ -16,9 +17,12 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> sentences;
+    private Queue<GameObject> spritesList;
+
     void Start()
     {
         sentences = new Queue<string>();
+        spritesList = new Queue<GameObject>();
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -33,10 +37,21 @@ public class DialogueManager : MonoBehaviour
 
         nameText.text = dialogue.name;
         sentences.Clear();
+        spritesList.Clear();
+
 
         foreach(string sentence in dialogue.sentences)
         {
+          print("sentence");
+
             sentences.Enqueue(sentence);
+        }
+
+        foreach(GameObject image in dialogue.characterSprites)
+        {
+            //print("image");
+
+            spritesList.Enqueue(image);
         }
 
         DisplayNextSentence();
@@ -61,10 +76,15 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
 
-
+        if (spritesList.Count != 0)
+        {
+          Sprite image = spritesList.Dequeue().GetComponent<SpriteRenderer>().sprite;
+          characterSprite.GetComponent<Image>().sprite = image;
+        }
     }
 
     IEnumerator TypeSentence (string sentence)

@@ -9,7 +9,7 @@ public class DialogueTrigger : MonoBehaviour
 
 //=======
     DialogueManager dm = new DialogueManager();
-    
+
 //>>>>>>> Stashed changes
     public void TriggerDialogue()
     {
@@ -21,7 +21,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.name == "Character")
         {
-            Debug.Log("Player Detected");
+            //Debug.Log("Player Detected");
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 TriggerDialogue();
@@ -33,7 +33,7 @@ public class DialogueTrigger : MonoBehaviour
             {
                 TriggerSpokeDialogue();
             }
-            
+
 //>>>>>>> Stashed changes
         }
 
