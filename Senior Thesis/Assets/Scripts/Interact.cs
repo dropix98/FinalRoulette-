@@ -8,10 +8,51 @@ public class Interact : MonoBehaviour
 {
     // Start is called before the first frame update
     public DialogueTrigger dTrigger;
+    public GameObject drawer;
+    public GameObject drawer2;
+    public GameObject FuseBox;
+    public GameObject FuseBox2;
+    public GameObject XJCollider;
+    public GameObject XJCollider2;
+    public GameObject Hole;
+    public GameObject Hole2;
+    public GameObject statue1;
+    public GameObject statue2;
+    public GameObject statue3;
+    public GameObject StatuesText;
+    public GameObject dragonButtonB;
+    public GameObject dragonButtonO;
+    public GameObject dragonButtonP;
+    public GameObject snakeButtonB;
+    public GameObject snakeButtonO;
+    public GameObject snakeButtonP;
+    public GameObject rabbitButtonB;
+    public GameObject rabbitButtonO;
+    public GameObject rabbitButtonP;
+    public GameObject Dragon;
+    public GameObject Snake;
+    public GameObject Rabbit;
+    public GameObject Dragon2;
+    public GameObject Snake2;
+    public GameObject Rabbit2;
+
+
+
     void Start()
     {
       Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
       Debug.Log("Number of People Talked To: " + GlobalVariables.numberOfPeopleTalkedTo);
+      drawer2.SetActive(false);
+      FuseBox2.SetActive(false);
+      dragonButtonB.SetActive(false);
+      dragonButtonO.SetActive(false);
+      dragonButtonP.SetActive(false);
+      snakeButtonB.SetActive(false);
+      snakeButtonO.SetActive(false);
+      snakeButtonP.SetActive(false);
+      rabbitButtonB.SetActive(false);
+      rabbitButtonO.SetActive(false);
+      rabbitButtonP.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,6 +107,79 @@ public class Interact : MonoBehaviour
 
 
 
+      //level2
+      if (GlobalVariables.inMYCollider2 == true && Input.GetKeyDown("space"))
+      {
+        GlobalVariables.hasBobbyPin = true;
+        drawer.SetActive(false);
+        drawer2.SetActive(true);
+      }
+      if (GlobalVariables.inDrawer2Collider == true && Input.GetKeyDown("space"))
+      {
+        GlobalVariables.hasMagnet = true;
+        GlobalVariables.hasMedReport = true;
+        XJCollider.SetActive(false);
+        XJCollider2.SetActive(true);
+      }
+      if (GlobalVariables.inXJCollider2 == true && Input.GetKeyDown("space"))
+      {
+        Hole.SetActive(false);
+        Hole2.SetActive(true);
+      }
+      if (GlobalVariables.inHoleCollider2 == true && Input.GetKeyDown("space"))
+      {
+        GlobalVariables.hasFuse = true;
+        FuseBox.SetActive(false);
+        FuseBox2.SetActive(true);
+      }
+      if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space"))
+      {
+        statue1.SetActive(true);
+        statue2.SetActive(true);
+        statue3.SetActive(true);
+        StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
+      }
+
+      if (GlobalVariables.inYZCollider == true && Input.GetKeyDown("space"))
+      {
+        GlobalVariables.talkedYZ2 = true;
+      }
+      if (GlobalVariables.talkedYZ2 == true && GlobalVariables.hasMedReport == true)
+      {
+        //GlobalVariables.level2CanButton = true;
+        Dragon.SetActive(false);
+        Dragon2.SetActive(true);
+        Snake.SetActive(false);
+        Snake2.SetActive(true);
+        Rabbit.SetActive(false);
+        Rabbit2.SetActive(true);
+      }
+
+
+
+      if (GlobalVariables.inDragonCollider2 == true && Input.GetKeyDown("space"))
+      {
+        dragonButtonB.SetActive(true);
+        dragonButtonO.SetActive(true);
+        dragonButtonP.SetActive(true);
+      }
+      if (GlobalVariables.inSnakeCollider2 == true && Input.GetKeyDown("space"))
+      {
+        snakeButtonB.SetActive(true);
+        snakeButtonO.SetActive(true);
+        snakeButtonP.SetActive(true);
+      }
+      if (GlobalVariables.inRabbitCollider2 == true && Input.GetKeyDown("space"))
+      {
+        rabbitButtonB.SetActive(true);
+        rabbitButtonO.SetActive(true);
+        rabbitButtonP.SetActive(true);
+      }
+
+
+
+
+
       //'e' is interact key
       if (Input.GetKeyDown("e"))
       {
@@ -99,7 +213,7 @@ public class Interact : MonoBehaviour
           }
           if (GlobalVariables.inKeycardItemCollider == true && GlobalVariables.foundKeycard == false)
           {
-            
+
           }
       }
 
@@ -109,7 +223,6 @@ public class Interact : MonoBehaviour
           SceneManager.LoadScene("NotebookHints");
       }
     }
-
 
 
     //prints when entering a collider
@@ -219,6 +332,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Ying");
           GlobalVariables.inMYCollider = true;
         }
+        if (other.name == "MYCollider2")
+        {
+          Debug.Log("Colliding with Ying2");
+          GlobalVariables.inMYCollider2 = true;
+        }
         if (other.name == "SRCollider")
         {
           Debug.Log("Colliding with SuRong");
@@ -234,6 +352,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with YiZheng");
           GlobalVariables.inYZCollider = true;
         }
+        if (other.name == "YZCollider2")
+        {
+          Debug.Log("Colliding with YiZheng2");
+          GlobalVariables.inYZCollider2 = true;
+        }
         if (other.name == "PBCollider")
         {
           Debug.Log("Colliding with PinBi");
@@ -244,6 +367,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with XiaoJing");
           GlobalVariables.inXJCollider = true;
         }
+        if (other.name == "XJCollider2")
+        {
+          Debug.Log("Colliding with XiaoJing2");
+          GlobalVariables.inXJCollider2 = true;
+        }
         if (other.name == "JHCollider")
         {
           Debug.Log("Colliding with JingHui");
@@ -253,6 +381,51 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with YingHei");
           GlobalVariables.inYHCollider = true;
+        }
+        if (other.name == "Drawer")
+        {
+          Debug.Log("Colliding with Drawer");
+          GlobalVariables.inDrawerCollider = true;
+        }
+        if (other.name == "Drawer2")
+        {
+          Debug.Log("Colliding with Drawer2");
+          GlobalVariables.inDrawer2Collider = true;
+        }
+        if (other.name == "FuseBox")
+        {
+          Debug.Log("Colliding with Fuse");
+          GlobalVariables.inFuseCollider = true;
+        }
+        if (other.name == "FuseBox2")
+        {
+          Debug.Log("Colliding with Fuse2");
+          GlobalVariables.inFuse2Collider = true;
+        }
+        if (other.name == "HoleInGround")
+        {
+          Debug.Log("Colliding with Hole");
+          GlobalVariables.inHoleCollider = true;
+        }
+        if (other.name == "HoleInGround2")
+        {
+          Debug.Log("Colliding with Hole2");
+          GlobalVariables.inHoleCollider2 = true;
+        }
+        if (other.name == "Dragon")
+        {
+          Debug.Log("Colliding with Dragon");
+          GlobalVariables.inDragonCollider2 = true;
+        }
+        if (other.name == "Snake")
+        {
+          Debug.Log("Colliding with Snake");
+          GlobalVariables.inSnakeCollider2 = true;
+        }
+        if (other.name == "Rabbit")
+        {
+          Debug.Log("Colliding with Rabbit");
+          GlobalVariables.inRabbitCollider2 = true;
         }
     }
 
@@ -333,6 +506,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Not Colliding with Ying");
           GlobalVariables.inMYCollider = false;
         }
+        if (other.name == "MYCollider2")
+        {
+          Debug.Log("Colliding with Ying2");
+          GlobalVariables.inMYCollider2 = false;
+        }
         if (other.name == "SRCollider")
         {
           Debug.Log("Not Colliding with SuRong");
@@ -348,6 +526,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Not Colliding with YiZheng");
           GlobalVariables.inYZCollider = false;
         }
+        if (other.name == "YZCollider2")
+        {
+          Debug.Log("Colliding with YiZheng2");
+          GlobalVariables.inYZCollider2 = false;
+        }
         if (other.name == "PBCollider")
         {
           Debug.Log("Not Colliding with PinBi");
@@ -358,6 +541,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Not Colliding with XiaoJing");
           GlobalVariables.inXJCollider = false;
         }
+        if (other.name == "XJCollider2")
+        {
+          Debug.Log("Colliding with XiaoJing2");
+          GlobalVariables.inXJCollider2 = false;
+        }
         if (other.name == "JHCollider")
         {
           Debug.Log("Not Colliding with JingHui");
@@ -367,6 +555,51 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Not Colliding with YingHei");
           GlobalVariables.inYHCollider = false;
+        }
+        if (other.name == "Drawer")
+        {
+          Debug.Log("Not Colliding with Drawer");
+          GlobalVariables.inDrawerCollider = false;
+        }
+        if (other.name == "Drawer2")
+        {
+          Debug.Log("Colliding with Drawer2");
+          GlobalVariables.inDrawer2Collider = false;
+        }
+        if (other.name == "FuseBox")
+        {
+          Debug.Log("Not Colliding with Fuse");
+          GlobalVariables.inFuseCollider = false;
+        }
+        if (other.name == "FuseBox2")
+        {
+          Debug.Log("Colliding with Fuse2");
+          GlobalVariables.inFuse2Collider = false;
+        }
+        if (other.name == "HoleInGround")
+        {
+          Debug.Log("Not Colliding with Hole");
+          GlobalVariables.inHoleCollider = false;
+        }
+        if (other.name == "HoleInGround2")
+        {
+          Debug.Log("Colliding with Hole2");
+          GlobalVariables.inHoleCollider2 = false;
+        }
+        if (other.name == "Dragon")
+        {
+          Debug.Log("Colliding with Dragon");
+          GlobalVariables.inDragonCollider2 = false;
+        }
+        if (other.name == "Snake")
+        {
+          Debug.Log("Colliding with Snake");
+          GlobalVariables.inSnakeCollider2 = false;
+        }
+        if (other.name == "Rabbit")
+        {
+          Debug.Log("Colliding with Rabbit");
+          GlobalVariables.inRabbitCollider2 = false;
         }
     }
 

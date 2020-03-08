@@ -48,16 +48,17 @@ public static class GlobalVariables
     public static bool inKeycardCollider;
     public static bool inSTCollider;
     public static bool inMYCollider;
+    public static bool inMYCollider2;
     public static bool inSRCollider;
     public static bool inYRCollider;
     public static bool inYZCollider;
+    public static bool inYZCollider2;
     public static bool inPBCollider;
     public static bool inXJCollider;
+    public static bool inXJCollider2;
     public static bool inJHCollider;
     public static bool inYHCollider;
-    public static bool inBobbyPinCollider;
-    public static bool inHoleCollider;
-    public static bool inDrawerCollider;
+
 
 
 
@@ -76,6 +77,32 @@ public static class GlobalVariables
     public static bool foundFuse;
     public static bool foundBobbyPin;
     public static bool foundMagnet;
+
+    public static bool inFuseCollider;
+    public static bool inFuse2Collider;
+    public static bool inHoleCollider;
+    public static bool inHoleCollider2;
+    public static bool inBobbyPinCollider;
+    public static bool inDrawerCollider;
+    public static bool inDrawer2Collider;
+    public static bool inDragonCollider2;
+    public static bool inSnakeCollider2;
+    public static bool inRabbitCollider2;
+    public static bool talkedYZ2;
+
+    public static string dragonColor;
+    public static string snakeColor;
+    public static string rabbitColor;
+
+
+
+    public static bool hasFuse;
+    public static bool hasWire;
+    public static bool hasCube;
+    public static bool hasBobbyPin;
+    public static bool hasMagnet;
+    public static bool hasMedReport;
+
 
 
 

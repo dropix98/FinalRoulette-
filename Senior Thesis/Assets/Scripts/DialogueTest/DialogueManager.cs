@@ -69,11 +69,17 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (sentences.Count == 0){
+        if (sentences.Count == 0)
+        {
             EndDialogue();
             done = true;
             return;
         }
+        /*if (spritesList.Count == 0)
+        {
+            characterSprite.GetComponent<Image>().sprite =
+        }*/
+
 
         string sentence = sentences.Dequeue();
 
