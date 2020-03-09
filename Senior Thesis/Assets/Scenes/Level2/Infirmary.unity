@@ -132,36 +132,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
-    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 13.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 159.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 449.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 604.9
-      objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -381,6 +351,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 13.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 159.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 449.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 604.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91701680737a6de49a3ab66ae1542d27, type: 3}
@@ -716,6 +716,7 @@ GameObject:
   - component: {fileID: 102880608}
   - component: {fileID: 102880607}
   - component: {fileID: 102880606}
+  - component: {fileID: 102880610}
   m_Layer: 0
   m_Name: ToLounge
   m_TagString: Untagged
@@ -730,7 +731,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102880605}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2461de77e1f674da1ad9c7c9ce916e98, type: 3}
   m_Name: 
@@ -818,13 +819,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102880605}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.47, y: -0.51, z: -1.1734356}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: -2.78, y: -0.43, z: -1.1734356}
   m_LocalScale: {x: 1.7629081, y: 1.7629081, z: 1.7629081}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+--- !u!114 &102880610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102880605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65922e8a120fad40ac1b0f0ebcc17a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Lounge
 --- !u!1 &183891448
 GameObject:
   m_ObjectHideFlags: 0

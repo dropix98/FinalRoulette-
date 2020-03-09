@@ -144,11 +144,17 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
     public int index;
     public bool done;
 
+    LoungeManager lm = new LoungeManager();
     public void Update()
     {
         if(Check() == true)
         {
-            SceneManager.LoadScene(index);
+            if (lm.GetBlock() == false)
+            {
+                //DontDestroyOnLoad(GameObject.Find("GameManager"));
+            }
+            lm.UpdateSlide(true);
+            SceneManager.LoadScene("Lounge");
         }
     }
 
@@ -197,9 +203,6 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
             transform.Rotate(0f, 0f, 90f);
             //Debug.Log(lanes[0].gameObject.transform.rotation.z);
         }
-        else
-        {
-            SceneManager.LoadScene(index);
-        }
+
     }
 }

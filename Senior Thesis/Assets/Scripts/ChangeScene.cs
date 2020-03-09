@@ -13,11 +13,15 @@ public class ChangeScene : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-      if (Input.GetKeyDown(KeyCode.Space))
-      {
-          SceneManager.LoadScene(sceneName);
-      }
+
+
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
+
+

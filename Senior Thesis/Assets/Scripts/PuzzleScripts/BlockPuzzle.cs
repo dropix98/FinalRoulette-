@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BlockPuzzle : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class BlockPuzzle : MonoBehaviour
     public bool startingPiece;
     public GameObject nextInLine;
     bool printBool = true;
-
+    LoungeManager lm = new LoungeManager();
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +31,13 @@ public class BlockPuzzle : MonoBehaviour
     {
       if (tile1.activeInHierarchy && tile2.activeInHierarchy && tile3.activeInHierarchy && tile4.activeInHierarchy && printBool)
       {
-        printBool = false;
-        print("Congrats");
+            printBool = false;
+            if (lm.GetSlide() == false)
+            {
+                //DontDestroyOnLoad(GameObject.Find("GameManager"));
+            }
+            lm.UpdateBlock(true);
+            SceneManager.LoadScene("Lounge");
       }
     }
 

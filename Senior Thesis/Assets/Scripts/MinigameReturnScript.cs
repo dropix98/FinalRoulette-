@@ -18,7 +18,7 @@ public class MinigameReturnScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(num);
+            SceneManager.LoadScene("Lounge");
         }
     }
 }
