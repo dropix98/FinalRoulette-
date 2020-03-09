@@ -262,6 +262,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf9bdb22db464bd4a30341c5f3a4eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragonButtonB: {fileID: 126791536}
+  dragonButtonO: {fileID: 126791536}
+  dragonButtonP: {fileID: 1048044694}
+  snakeButtonB: {fileID: 27156951}
+  snakeButtonO: {fileID: 718926656}
+  snakeButtonP: {fileID: 528995547}
+  rabbitButtonB: {fileID: 1630988376}
+  rabbitButtonO: {fileID: 885456618}
+  rabbitButtonP: {fileID: 370644428}
 --- !u!1 &70760996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,6 +2024,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &420096145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2155,6 +2175,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &431133615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,6 +2317,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 46784570}
         m_MethodName: DragonOrange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3310,6 +3352,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 46784570}
         m_MethodName: RabbitBlue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4468,6 +4521,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1201478583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5220,6 +5284,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 46784570}
         m_MethodName: SnakeOrange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6522,6 +6597,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1719243897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6653,6 +6739,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 46784570}
         m_MethodName: SnakePurple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7905,6 +8002,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 46784570}
         m_MethodName: SnakeBlue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 46784570}
+        m_MethodName: ColorButtonOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

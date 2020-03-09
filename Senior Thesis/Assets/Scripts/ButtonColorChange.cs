@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class ButtonColorChange : MonoBehaviour
 {
+    public GameObject dragonButtonB;
+    public GameObject dragonButtonO;
+    public GameObject dragonButtonP;
+    public GameObject snakeButtonB;
+    public GameObject snakeButtonO;
+    public GameObject snakeButtonP;
+    public GameObject rabbitButtonB;
+    public GameObject rabbitButtonO;
+    public GameObject rabbitButtonP;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +24,19 @@ public class ButtonColorChange : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void ColorButtonOff()
+    {
+      dragonButtonB.SetActive(false);
+      dragonButtonO.SetActive(false);
+      dragonButtonP.SetActive(false);
+      snakeButtonB.SetActive(false);
+      snakeButtonO.SetActive(false);
+      snakeButtonP.SetActive(false);
+      rabbitButtonB.SetActive(false);
+      rabbitButtonO.SetActive(false);
+      rabbitButtonP.SetActive(false);
     }
 
     public void DragonBlue()

@@ -52,6 +52,18 @@ public class Interact : MonoBehaviour
       }
       if (SceneManager.GetActiveScene().name == "Lounge")
       {
+        Dragon.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Snake.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Rabbit.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
         Dragon2.SetActive(false);
       }
       if (SceneManager.GetActiveScene().name == "Lounge")
@@ -178,6 +190,13 @@ public class Interact : MonoBehaviour
         drawer.SetActive(false);
         drawer2.SetActive(true);
       }
+      if (currentScene.name == "Lounge" && GlobalVariables.powerOn == true)
+      {
+        Dragon.SetActive(true);
+        Snake.SetActive(true);
+        Rabbit.SetActive(true);
+
+      }
 
       if (GlobalVariables.inMYCollider2 == true && Input.GetKeyDown("space"))
       {
@@ -201,17 +220,24 @@ public class Interact : MonoBehaviour
       }
       if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space"))
       {
-        statue1.SetActive(true);
-        statue2.SetActive(true);
-        statue3.SetActive(true);
+        //statue1.SetActive(true);
+        //statue2.SetActive(true);
+        //statue3.SetActive(true);
+        GlobalVariables.powerOn = true;
         StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
       }
 
-      if (GlobalVariables.inYZCollider == true && Input.GetKeyDown("space"))
+      if (GlobalVariables.inYZCollider2 == true && Input.GetKeyDown("space"))
       {
         GlobalVariables.talkedYZ2 = true;
       }
-      if (GlobalVariables.talkedYZ2 == true && GlobalVariables.hasMedReport == true)
+      if (currentScene.name == "Lounge" && GlobalVariables.powerOn == true)
+      {
+        Dragon.SetActive(true);
+        Snake.SetActive(true);
+        Rabbit.SetActive(true);
+      }
+      if (currentScene.name == "Lounge" && GlobalVariables.talkedYZ2 == true && GlobalVariables.hasMedReport == true && GlobalVariables.powerOn == true)
       {
         //GlobalVariables.level2CanButton = true;
         Dragon.SetActive(false);
@@ -221,6 +247,15 @@ public class Interact : MonoBehaviour
         Rabbit.SetActive(false);
         Rabbit2.SetActive(true);
       }
+
+      ////////////Temporary
+      ///////////
+      if (GlobalVariables.hasFuse)
+      {
+        GlobalVariables.powerOn = true;
+      }
+      ///////////
+      ///////////
 
 
 
@@ -290,6 +325,8 @@ public class Interact : MonoBehaviour
           SceneManager.LoadScene("NotebookHints");
       }
     }
+
+    
 
 
     //prints when entering a collider

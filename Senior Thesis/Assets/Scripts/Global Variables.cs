@@ -93,11 +93,14 @@ public static class GlobalVariables
     public static bool switchingFuseColliders;
     public static bool switchingXJColliders;
     public static bool switchingHoleColliders;
+    public static bool switchingDrawerColliders;
+    public static bool powerOn;
 
 
     public static string dragonColor;
     public static string snakeColor;
     public static string rabbitColor;
+    public static bool changedColor;
 
 
 
