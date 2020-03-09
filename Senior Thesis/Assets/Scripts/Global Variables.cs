@@ -90,6 +90,11 @@ public static class GlobalVariables
     public static bool inRabbitCollider2;
     public static bool talkedYZ2;
 
+    public static bool switchingFuseColliders;
+    public static bool switchingXJColliders;
+    public static bool switchingHoleColliders;
+
+
     public static string dragonColor;
     public static string snakeColor;
     public static string rabbitColor;

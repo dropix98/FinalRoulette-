@@ -42,17 +42,66 @@ public class Interact : MonoBehaviour
     {
       Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
       Debug.Log("Number of People Talked To: " + GlobalVariables.numberOfPeopleTalkedTo);
-      drawer2.SetActive(false);
-      FuseBox2.SetActive(false);
-      dragonButtonB.SetActive(false);
-      dragonButtonO.SetActive(false);
-      dragonButtonP.SetActive(false);
-      snakeButtonB.SetActive(false);
-      snakeButtonO.SetActive(false);
-      snakeButtonP.SetActive(false);
-      rabbitButtonB.SetActive(false);
-      rabbitButtonO.SetActive(false);
-      rabbitButtonP.SetActive(false);
+      if (SceneManager.GetActiveScene().name == "Infirmary")
+      {
+        drawer2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        FuseBox2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Dragon2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Snake2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Rabbit2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        dragonButtonB.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        dragonButtonO.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        dragonButtonP.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        snakeButtonB.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        snakeButtonO.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        snakeButtonP.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        rabbitButtonB.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        rabbitButtonO.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        rabbitButtonP.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        XJCollider2.SetActive(false);
+      }
     }
 
     // Update is called once per frame
@@ -103,34 +152,52 @@ public class Interact : MonoBehaviour
       }
 
 
+
       GlobalVariables.sceneNameSaver = currentScene.name;
 
 
 
       //level2
+      if (currentScene.name == "Lounge" && GlobalVariables.switchingFuseColliders == true)
+      {
+        FuseBox.SetActive(false);
+        FuseBox2.SetActive(true);
+      }
+      if (currentScene.name == "Lounge" && GlobalVariables.switchingXJColliders == true)
+      {
+        XJCollider.SetActive(false);
+        XJCollider2.SetActive(true);
+      }
+      if (currentScene.name == "Infirmary" && GlobalVariables.switchingHoleColliders == true)
+      {
+        Hole.SetActive(false);
+        Hole2.SetActive(true);
+      }
+      if (currentScene.name == "Infirmary" && GlobalVariables.switchingDrawerColliders == true)
+      {
+        drawer.SetActive(false);
+        drawer2.SetActive(true);
+      }
+
       if (GlobalVariables.inMYCollider2 == true && Input.GetKeyDown("space"))
       {
         GlobalVariables.hasBobbyPin = true;
-        drawer.SetActive(false);
-        drawer2.SetActive(true);
+        GlobalVariables.switchingDrawerColliders = true;
       }
       if (GlobalVariables.inDrawer2Collider == true && Input.GetKeyDown("space"))
       {
         GlobalVariables.hasMagnet = true;
         GlobalVariables.hasMedReport = true;
-        XJCollider.SetActive(false);
-        XJCollider2.SetActive(true);
+        GlobalVariables.switchingXJColliders = true;
       }
       if (GlobalVariables.inXJCollider2 == true && Input.GetKeyDown("space"))
       {
-        Hole.SetActive(false);
-        Hole2.SetActive(true);
+        GlobalVariables.switchingHoleColliders = true;
       }
       if (GlobalVariables.inHoleCollider2 == true && Input.GetKeyDown("space"))
       {
         GlobalVariables.hasFuse = true;
-        FuseBox.SetActive(false);
-        FuseBox2.SetActive(true);
+        GlobalVariables.switchingFuseColliders = true;
       }
       if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space"))
       {
@@ -412,17 +479,17 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Hole2");
           GlobalVariables.inHoleCollider2 = true;
         }
-        if (other.name == "Dragon")
+        if (other.name == "Dragon2")
         {
           Debug.Log("Colliding with Dragon");
           GlobalVariables.inDragonCollider2 = true;
         }
-        if (other.name == "Snake")
+        if (other.name == "Snake2")
         {
           Debug.Log("Colliding with Snake");
           GlobalVariables.inSnakeCollider2 = true;
         }
-        if (other.name == "Rabbit")
+        if (other.name == "Rabbit2")
         {
           Debug.Log("Colliding with Rabbit");
           GlobalVariables.inRabbitCollider2 = true;
@@ -586,17 +653,17 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Hole2");
           GlobalVariables.inHoleCollider2 = false;
         }
-        if (other.name == "Dragon")
+        if (other.name == "Dragon2")
         {
           Debug.Log("Colliding with Dragon");
           GlobalVariables.inDragonCollider2 = false;
         }
-        if (other.name == "Snake")
+        if (other.name == "Snake2")
         {
           Debug.Log("Colliding with Snake");
           GlobalVariables.inSnakeCollider2 = false;
         }
-        if (other.name == "Rabbit")
+        if (other.name == "Rabbit2")
         {
           Debug.Log("Colliding with Rabbit");
           GlobalVariables.inRabbitCollider2 = false;

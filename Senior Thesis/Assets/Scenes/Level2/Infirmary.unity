@@ -1562,7 +1562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Hole
+    name: Drawer
     sentences:
     - It's locked.
     characterSprites: []
@@ -2498,13 +2498,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Hole
+    name: Drawer
     sentences:
     - '*Unlocked the Drawer*'
     - "This looks like some sort of high-tech medical equipment. Maybe it\u2019ll
       come in handy."
     - There is also a Medical report in here.
-    - '*You picked up an OFF MEDICAL INSTRUMENT*'
+    - '*You picked up an ODD MEDICAL INSTRUMENT*'
     characterSprites: []
 --- !u!61 &1792151486
 BoxCollider2D:
