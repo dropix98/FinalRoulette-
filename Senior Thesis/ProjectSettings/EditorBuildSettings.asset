@@ -117,10 +117,10 @@ EditorBuildSettings:
     path: Assets/Scenes/ElectricSlidePuzzle.unity
     guid: e58b9febe4d4844fdb1ff14ef4778d04
   - enabled: 1
-    path: Assets/Scenes/Interrogation/Level1Interrogation.unity
+    path: Assets/Scenes/Level2/Interrogation/Level1Interrogation.unity
     guid: 5abd99dab8f164466b4240998c1e41f9
   - enabled: 1
-    path: Assets/Scenes/Interrogation/InterrogationIntro.unity
+    path: Assets/Scenes/Level2/Interrogation/InterrogationIntro.unity
     guid: befd9dc0dfcbd4a60931ee319ca9dc2e
   - enabled: 1
     path: Assets/Scenes/Level2/Level2-Elevator.unity

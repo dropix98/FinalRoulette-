@@ -37,6 +37,7 @@ public class BlockPuzzle : MonoBehaviour
                 //DontDestroyOnLoad(GameObject.Find("GameManager"));
             }
             lm.UpdateBlock(true);
+            GlobalVariables.finishedBlock = true;
             SceneManager.LoadScene("Lounge");
       }
     }

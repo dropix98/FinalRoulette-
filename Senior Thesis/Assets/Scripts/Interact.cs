@@ -46,7 +46,6 @@ public class Interact : MonoBehaviour
 
     void Start()
     {
-      GlobalVariables.hasCube = true;
       Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
       Debug.Log("Number of People Talked To: " + GlobalVariables.numberOfPeopleTalkedTo);
       if (SceneManager.GetActiveScene().name == "Infirmary")
@@ -297,7 +296,7 @@ public class Interact : MonoBehaviour
 
       if (GlobalVariables.finishedBlock == true && currentScene.name == "Lounge")
       {
-        finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        //finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.finishedBlock = false;
         GlobalVariables.hasWire = true;
       }

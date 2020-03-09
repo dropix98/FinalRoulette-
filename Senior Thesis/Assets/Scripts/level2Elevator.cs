@@ -28,7 +28,7 @@ public class level2Elevator : MonoBehaviour
 
     public void setColorBlue()
     {
-      Debug.Log("b");
+      print("b");
 
       colors[2] = 'b';
       colors[1] = colors[2];
