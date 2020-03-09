@@ -18,6 +18,8 @@ public class Interact : MonoBehaviour
     public GameObject Hole2;
     public GameObject Cube;
     public GameObject Cube2;
+    public GameObject Elevator;
+    public GameObject Elevator2;
     public GameObject statue1;
     public GameObject statue2;
     public GameObject statue3;
@@ -293,13 +295,17 @@ public class Interact : MonoBehaviour
         GlobalVariables.hasCube = true;
       }
 
-      if (GlobalVariables.finishedBlock == true)
+      if (GlobalVariables.finishedBlock == true && currentScene.name == "Lounge")
       {
         finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.finishedBlock = false;
         GlobalVariables.hasWire = true;
       }
-
+      if (GlobalVariables.hasWire == true && currentScene.name == "Lounge")
+      {
+        Elevator.SetActive(false);
+        Elevator2.SetActive(true);
+      }
 
 
       //'e' is interact key
