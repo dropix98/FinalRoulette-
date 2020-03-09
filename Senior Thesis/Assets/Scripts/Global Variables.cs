@@ -96,6 +96,10 @@ public static class GlobalVariables
     public static bool switchingDrawerColliders;
     public static bool powerOn;
 
+    public static bool displayedCubeText;
+
+    public static bool finishedBlock;
+
 
     public static string dragonColor;
     public static string snakeColor;

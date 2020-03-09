@@ -11,7 +11,7 @@ public class BlockPuzzleTriggerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+      GlobalVariables.finishedBlock = true;
     }
 
     // Update is called once per frame

@@ -16,10 +16,14 @@ public class Interact : MonoBehaviour
     public GameObject XJCollider2;
     public GameObject Hole;
     public GameObject Hole2;
+    public GameObject Cube;
+    public GameObject Cube2;
     public GameObject statue1;
     public GameObject statue2;
     public GameObject statue3;
     public GameObject StatuesText;
+    public GameObject CubeText;
+    public GameObject finishedCubeText;
     public GameObject dragonButtonB;
     public GameObject dragonButtonO;
     public GameObject dragonButtonP;
@@ -40,6 +44,7 @@ public class Interact : MonoBehaviour
 
     void Start()
     {
+      GlobalVariables.hasCube = true;
       Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
       Debug.Log("Number of People Talked To: " + GlobalVariables.numberOfPeopleTalkedTo);
       if (SceneManager.GetActiveScene().name == "Infirmary")
@@ -195,7 +200,11 @@ public class Interact : MonoBehaviour
         Dragon.SetActive(true);
         Snake.SetActive(true);
         Rabbit.SetActive(true);
-
+      }
+      if (currentScene.name == "Lounge" && GlobalVariables.hasCube == true)
+      {
+        Cube.SetActive(false);
+        Cube2.SetActive(true);
       }
 
       if (GlobalVariables.inMYCollider2 == true && Input.GetKeyDown("space"))
@@ -218,12 +227,11 @@ public class Interact : MonoBehaviour
         GlobalVariables.hasFuse = true;
         GlobalVariables.switchingFuseColliders = true;
       }
+
       if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space"))
       {
-        //statue1.SetActive(true);
-        //statue2.SetActive(true);
-        //statue3.SetActive(true);
         GlobalVariables.powerOn = true;
+        //move to after slide puzzle
         StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
       }
 
@@ -278,7 +286,19 @@ public class Interact : MonoBehaviour
         rabbitButtonP.SetActive(true);
       }
 
+      if (GlobalVariables.dragonColor == "blue" && GlobalVariables.snakeColor == "purple" && GlobalVariables.rabbitColor == "blue" && GlobalVariables.displayedCubeText == false)
+      {
+        CubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        GlobalVariables.displayedCubeText = true;
+        GlobalVariables.hasCube = true;
+      }
 
+      if (GlobalVariables.finishedBlock == true)
+      {
+        finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        GlobalVariables.finishedBlock = false;
+        GlobalVariables.hasWire = true;
+      }
 
 
 
@@ -326,7 +346,7 @@ public class Interact : MonoBehaviour
       }
     }
 
-    
+
 
 
     //prints when entering a collider
