@@ -120,6 +120,15 @@ public class Interact : MonoBehaviour
       {
         XJCollider2.SetActive(false);
       }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Elevator2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Elevator.SetActive(true);
+      }
+
     }
 
     // Update is called once per frame
@@ -259,10 +268,10 @@ public class Interact : MonoBehaviour
 
       ////////////Temporary
       ///////////
-      if (GlobalVariables.hasFuse)
-      {
-        GlobalVariables.powerOn = true;
-      }
+      //if (GlobalVariables.hasFuse)
+      //{
+      //  GlobalVariables.powerOn = true;
+      //}
       ///////////
       ///////////
 
@@ -296,7 +305,7 @@ public class Interact : MonoBehaviour
 
       if (GlobalVariables.finishedBlock == true && currentScene.name == "Lounge")
       {
-        //finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.finishedBlock = false;
         GlobalVariables.hasWire = true;
       }
