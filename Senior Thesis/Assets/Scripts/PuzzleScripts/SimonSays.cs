@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SimonSays : MonoBehaviour
 {
-    char[] colors = new char[3];
+    char[] colors = new char[7];
     bool level1 = false;
     bool level2 = false;
     bool level3 = false;
@@ -41,15 +41,16 @@ public class SimonSays : MonoBehaviour
       if (level1)
       {
         if(remainingTime > 0)
-          {
-            blue.SetActive(true);
-           remainingTime -= Time.deltaTime;
-          }
-          else
-          {
-           //remainingTime = delay;
-           blue.SetActive(false);
-          }
+        {
+          blue.SetActive(true);
+         remainingTime -= Time.deltaTime;
+        }
+        else
+        {
+         //remainingTime = delay;
+         blue.SetActive(false);
+        }
+
       }
     }
 
@@ -58,12 +59,21 @@ public class SimonSays : MonoBehaviour
       level1 = true;
     }
 
+    public void Level1Check()
+    {
+      
+    }
+
     public void setBlue()
     {
       print("b");
       colors[0] = colors[1];
       colors[1] = colors[2];
-      colors[2] = 'b';
+      colors[2] = colors[3];
+      colors[3] = colors[4];
+      colors[4] = colors[5];
+      colors[5] = colors[6];
+      colors[6] = 'b';
 
     }
     public void setPink()
@@ -71,7 +81,11 @@ public class SimonSays : MonoBehaviour
       Debug.Log("p");
       colors[0] = colors[1];
       colors[1] = colors[2];
-      colors[2] = 'r';
+      colors[2] = colors[3];
+      colors[3] = colors[4];
+      colors[4] = colors[5];
+      colors[5] = colors[6];
+      colors[6] = 'r';
 
     }
     public void setYellow()
@@ -79,7 +93,11 @@ public class SimonSays : MonoBehaviour
       Debug.Log("y");
       colors[0] = colors[1];
       colors[1] = colors[2];
-      colors[2] = 'g';
+      colors[2] = colors[3];
+      colors[3] = colors[4];
+      colors[4] = colors[5];
+      colors[5] = colors[6];
+      colors[6] = 'g';
 
     }
     public void setGreen()
@@ -87,7 +105,11 @@ public class SimonSays : MonoBehaviour
       Debug.Log("g");
       colors[0] = colors[1];
       colors[1] = colors[2];
-      colors[2] = 'g';
+      colors[2] = colors[3];
+      colors[3] = colors[4];
+      colors[4] = colors[5];
+      colors[5] = colors[6];
+      colors[6] = 'g';
 
     }
 }

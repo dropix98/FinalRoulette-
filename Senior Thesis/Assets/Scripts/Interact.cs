@@ -128,6 +128,10 @@ public class Interact : MonoBehaviour
       {
         Elevator.SetActive(true);
       }
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        Cube2.SetActive(false);
+      }
 
     }
 
