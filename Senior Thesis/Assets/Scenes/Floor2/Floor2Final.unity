@@ -392,6 +392,7 @@ MonoBehaviour:
     - "Sorry. I don\u2019t remember the door passcode anymore, or else we\u2019d already
       be out of this room. I think there\u2019s a J in there somewhere, but that\u2019s
       all I can remember. If that\u2019s all, I\u2019d like to be alone right now."
+    characterSprites: []
 --- !u!1001 &252159544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -509,25 +510,35 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -186.5
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1738145442}
+    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 27
+      propertyPath: m_FontData.m_FontSize
+      value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 153.7
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 79.9
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
@@ -549,6 +560,26 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -186.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 153.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734576, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 79.9
+      objectReference: {fileID: 0}
     - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -568,26 +599,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 61.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 890219273046533318, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
@@ -613,16 +624,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1738145442}
-    - target: {fileID: 890219273046533317, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayNextSentence
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91701680737a6de49a3ab66ae1542d27, type: 3}
@@ -742,6 +743,7 @@ MonoBehaviour:
       see that ShaoTing, YiZheng, and Mei Yin are top suspects. We should only interrogate
       them. They all have their own motives."
     - "Psh, ask them yourself if you\u2019re such a good journalist!"
+    characterSprites: []
 --- !u!1 &510389685
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +957,9 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -6.522621, y: -0.43669856}
-  - {x: 2.2103987, y: -5.3893585}
+  - {x: 0.38654578, y: -4.4876757}
+  - {x: 1.4720235, y: -5.1175394}
+  - {x: 1.870473, y: -4.8983555}
 --- !u!4 &636089022
 Transform:
   m_ObjectHideFlags: 0
@@ -1560,6 +1564,7 @@ MonoBehaviour:
     - "Yeah, I\u2019m technically his brother, but he\u2019s the worst fucking brother
       I ever had! Always trying to be the star of everything! Damn, I\u2019m getting
       worked up about this. Give me a sec to cool down."
+    characterSprites: []
 --- !u!1 &1476356233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,6 +1692,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 252159548}
   dialogueText: {fileID: 252159547}
+  characterSprite: {fileID: 0}
+  done: 0
   animator: {fileID: 252159546}
 --- !u!4 &1738145443
 Transform:
