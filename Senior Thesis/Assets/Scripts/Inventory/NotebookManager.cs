@@ -47,9 +47,11 @@ public class NotebookManager : MonoBehaviour
         NotebookOut = true; 
     }
 
-    public void QuitGame()
+    public void Exit()
     {
         Debug.Log("game quit");
+        notebookUI.SetActive(false);
+        mainScreen.SetActive(false);
     }
 
     public void ImpressionsOpen()
