@@ -20,7 +20,7 @@ public class level2Elevator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (colors[2] == 'b' && colors[1] == 'r' && colors[2] == 'g')
+      if (colors[2] == 'b' && colors[1] == 'r' && colors[0] == 'g')
       {
         SceneManager.LoadScene("Level1Done");
       }
@@ -29,26 +29,35 @@ public class level2Elevator : MonoBehaviour
     public void setColorBlue()
     {
       print("b");
-
-      colors[2] = 'b';
-      colors[1] = colors[2];
       colors[0] = colors[1];
+      colors[1] = colors[2];
+      colors[2] = 'b';
+      foreach( char x in colors)
+      {
+        Debug.Log( x.ToString());
+      }
     }
     public void setColorRed()
     {
       Debug.Log("r");
-
-      colors[2] = 'r';
-      colors[1] = colors[2];
       colors[0] = colors[1];
+      colors[1] = colors[2];
+      colors[2] = 'r';
+      foreach( char x in colors)
+      {
+        Debug.Log( x.ToString());
+      }
     }
     public void setColorGreen()
     {
       Debug.Log("g");
-
-      colors[2] = 'g';
-      colors[1] = colors[2];
       colors[0] = colors[1];
+      colors[1] = colors[2];
+      colors[2] = 'g';
+      foreach( char x in colors)
+      {
+        Debug.Log( x.ToString());
+      }
     }
 
     void OnTriggerStay2D(Collider2D other)

@@ -53,7 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Floor1/FinalKeycardGuesser.unity
     guid: e021b46467d054030ad0528e7ffa7dec
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Floor1/Level1Done.unity
     guid: cfc8cea8c759444f4bfe8cc3ad83879d
   - enabled: 0
