@@ -242,11 +242,12 @@ public class Interact : MonoBehaviour
         GlobalVariables.switchingFuseColliders = true;
       }
 
-      if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space"))
+      if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space") && GlobalVariables.displayedStatuesText == false)
       {
         GlobalVariables.powerOn = true;
         //move to after slide puzzle
         StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        GlobalVariables.displayedStatuesText = false;
       }
 
       if (GlobalVariables.inYZCollider2 == true && Input.GetKeyDown("space"))

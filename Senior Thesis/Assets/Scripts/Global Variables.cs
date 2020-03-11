@@ -97,6 +97,8 @@ public static class GlobalVariables
     public static bool powerOn;
 
     public static bool displayedCubeText;
+    public static bool displayedStatuesText;
+
 
     public static bool finishedBlock;
 
