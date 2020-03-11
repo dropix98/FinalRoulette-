@@ -2500,7 +2500,7 @@ MonoBehaviour:
   dialogue:
     name: Drawer
     sentences:
-    - '*Unlocked the Drawer*'
+    - '*Unlocked the Drawer using the BOBBY PIN*'
     - "This looks like some sort of high-tech medical equipment. Maybe it\u2019ll
       come in handy."
     - There is also a Medical report in here.
