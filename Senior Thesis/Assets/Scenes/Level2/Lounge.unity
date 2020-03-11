@@ -435,7 +435,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 75215363}
-  - component: {fileID: 75215362}
   - component: {fileID: 75215361}
   m_Layer: 0
   m_Name: StatuesText
@@ -463,19 +462,6 @@ MonoBehaviour:
     - Maybe I should check out the holographic statues.
     characterSprites:
     - {fileID: 1990891027}
---- !u!114 &75215362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75215360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a85f36a4166948e2b6e722dc4d1a53c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Voice: {fileID: 75215360}
 --- !u!4 &75215363
 Transform:
   m_ObjectHideFlags: 0
@@ -1512,7 +1498,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 331916165}
-  - component: {fileID: 331916164}
   - component: {fileID: 331916163}
   m_Layer: 0
   m_Name: CubeText
@@ -1540,19 +1525,6 @@ MonoBehaviour:
     - '*You obtained the STEEL CUBE*'
     characterSprites:
     - {fileID: 1990891027}
---- !u!114 &331916164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331916162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a85f36a4166948e2b6e722dc4d1a53c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Voice: {fileID: 331916162}
 --- !u!4 &331916165
 Transform:
   m_ObjectHideFlags: 0
@@ -6569,7 +6541,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1558098011}
-  - component: {fileID: 1558098010}
   - component: {fileID: 1558098009}
   m_Layer: 0
   m_Name: FinishedCubeText
@@ -6597,19 +6568,6 @@ MonoBehaviour:
     - '*You obtained the WIRE*'
     characterSprites:
     - {fileID: 1990891027}
---- !u!114 &1558098010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558098008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a85f36a4166948e2b6e722dc4d1a53c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Voice: {fileID: 1558098008}
 --- !u!4 &1558098011
 Transform:
   m_ObjectHideFlags: 0
