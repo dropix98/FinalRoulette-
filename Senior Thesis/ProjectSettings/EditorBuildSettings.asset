@@ -125,4 +125,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2/Level2-Elevator.unity
     guid: d7430c8784c9f4a80b8a0ed82c3c19a5
+  - enabled: 1
+    path: Assets/Scenes/Level3/SimonSays.unity
+    guid: 807e30a7557bb46e6838679193dc77c0
   m_configObjects: {}
