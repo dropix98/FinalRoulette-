@@ -181,6 +181,14 @@ public class Interact : MonoBehaviour
       {
         GlobalVariables.characterPosition2fbath = GameObject.Find ("Character").transform.position;
       }
+      if (currentScene.name == "Infirmary")
+      {
+        GlobalVariables.characterPositionInfirmary = GameObject.Find ("Character").transform.position;
+      }
+      if (currentScene.name == "Lounge")
+      {
+        GlobalVariables.characterPositionLounge = GameObject.Find ("Character").transform.position;
+      }
 
 
 
