@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NotebookManager : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class NotebookManager : MonoBehaviour
     public GameObject impressionUIMenu;
 
     public GameObject descriptionUIMenu;
+
+    public Text nameCharacter;
+
+    public Text impressionShort;
+
+    public Text impressionDescription;
 
     // Update is called once per frame
     void Update()
@@ -62,13 +69,16 @@ public class NotebookManager : MonoBehaviour
         descriptionUIMenu.SetActive(false);
     }
 
-    public void LoadImpression(GameObject x)
+    public void LoadImpression(Impression imp)
     {
         Debug.Log("Impression Loaded");
         impressionUIMenu.SetActive(false);
         mainScreen.SetActive(false);
         Debug.Log(descriptionUIMenu.gameObject);
         descriptionUIMenu.SetActive(true);
+        nameCharacter.text = imp.nameOfCharacter;
+        impressionShort.text = imp.impressionShort;
+        impressionDescription.text = imp.impressionDescription;
     }
 
     
