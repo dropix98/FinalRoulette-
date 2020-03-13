@@ -46,10 +46,11 @@ public class NotebookManager : MonoBehaviour
         NotebookOut = false; 
     }
 
-    void Open()
+    public void Open()
     {
         notebookUI.SetActive(true);
         mainScreen.SetActive(true);
+        impressionUIMenu.SetActive(false);
         Time.timeScale = 0f;
         NotebookOut = true; 
     }
