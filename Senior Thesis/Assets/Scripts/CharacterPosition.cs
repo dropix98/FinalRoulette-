@@ -48,6 +48,16 @@ public class CharacterPosition : MonoBehaviour
         {
           transform.position = GlobalVariables.characterPosition2fbath = GameObject.Find ("Character").transform.position;
         }
+
+        if (currentScene.name == "Lounge")
+        {
+          transform.position = GlobalVariables.characterPositionLounge;
+        }
+
+        if (currentScene.name == "Infirmary")
+        {
+          transform.position = GlobalVariables.characterPositionInfirmary;
+        }
     }
 
     // Update is called once per frame

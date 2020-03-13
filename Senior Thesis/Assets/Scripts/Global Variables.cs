@@ -34,6 +34,9 @@ public static class GlobalVariables
     public static UnityEngine.Vector3 characterPosition2mbath = new Vector3(-1.08f, -1.037f, 0.0f);
     public static UnityEngine.Vector3 characterPosition1fbath = new Vector3(-0.999f, -1.032f, 0.0f);
     public static UnityEngine.Vector3 characterPosition2fbath = new Vector3(-0.999f, -1.032f, 0.0f);
+    public static UnityEngine.Vector3 characterPositionInfirmary = new Vector3(-1.3f, -.95f, 0.0f);
+    public static UnityEngine.Vector3 characterPositionLounge = new Vector3(2.34f, -1.07f, 0.0f);
+
 
     public static string sceneNameSaver;
 
