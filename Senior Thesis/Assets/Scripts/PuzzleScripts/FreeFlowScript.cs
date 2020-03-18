@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FreeFlowScript : MonoBehaviour
 {
+    /*
 
     GameObject temp;
     public Material orange;
@@ -85,6 +86,38 @@ public class FreeFlowScript : MonoBehaviour
         if (temp == GameObject.Find("Lilac1") || temp == GameObject.Find("Lilac2"))
         {
             newMaterial = lilac;
+        }
+    }
+
+    */
+
+    public Material currentMaterial;
+
+    public Material[] materials;
+    public GameObject[] gameobjects;
+
+    public void Mouse(GameObject go)
+    {
+        Debug.Log("First part");
+        for (int i = 0; i < gameobjects.Length; i++)
+        {
+            Debug.Log("Second part");
+            if (go == gameobjects[i])
+            {
+                Debug.Log("Third part");
+                currentMaterial = go.GetComponent<MeshRenderer>().material;
+            }
+        }
+        Debug.Log("Fourth part");
+        for (int j = 0; j < materials.Length; j++)
+        {
+            Debug.Log("Fifth part");
+            //if (currentMaterial == materials[j])
+            //{
+                //Debug.Log("Six part");
+                go.GetComponent<MeshRenderer>().material = currentMaterial;
+
+           // }
         }
     }
 }
