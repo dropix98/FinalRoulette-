@@ -15,7 +15,7 @@ public class Notebook : MonoBehaviour
     public GameObject YiZheng;
     public GameObject YongRuan;
 
-    bool firstImpressionsUp;
+    bool firstImpressionsUp = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,23 +36,67 @@ public class Notebook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (!firstImpressionsUp)
+      if (Input.GetKeyDown("n"))
       {
-        if (Input.GetKeyDown("n"))
+        if (firstImpressionsUp == true)
         {
-          NotebookCanvas.SetActive(true);
+          firstImpressionsUp = false;
+        }
+        else
+        {
           firstImpressionsUp = true;
         }
       }
 
-      if (firstImpressionsUp)
-      {
-        if (Input.GetKeyDown("n"))
-        {
-          NotebookCanvas.SetActive(false);
-          firstImpressionsUp = false;
-        }
 
+
+      if (firstImpressionsUp == true)
+      {
+        NotebookCanvas.SetActive(true);
+
+        if (GlobalVariables.noteMei)
+        {
+          Mei.SetActive(true);
+        }
+        if (GlobalVariables.noteMinKai)
+        {
+          MinKai.SetActive(true);
+        }
+        if (GlobalVariables.notePinBi)
+        {
+          PinBi.SetActive(true);
+        }
+        if (GlobalVariables.noteShaoTing)
+        {
+          ShaoTing.SetActive(true);
+        }
+        if (GlobalVariables.noteSuRong)
+        {
+          SuRong.SetActive(true);
+        }
+        if (GlobalVariables.noteXiaoJing)
+        {
+          XiaoJing.SetActive(true);
+        }
+        if (GlobalVariables.noteYingHei)
+        {
+          YingHei.SetActive(true);
+        }
+        if (GlobalVariables.noteYiZheng)
+        {
+          YiZheng.SetActive(true);
+        }
+        if (GlobalVariables.noteYongRuan)
+        {
+          YongRuan.SetActive(true);
+        }
+      }
+
+
+
+      if (firstImpressionsUp == false)
+      {
+        NotebookCanvas.SetActive(false);
 
         if (GlobalVariables.noteMei)
         {
