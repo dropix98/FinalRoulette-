@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Notebook : MonoBehaviour
 {
@@ -36,6 +37,10 @@ public class Notebook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      if (SceneManager.GetActiveScene().name == "Lounge")
+      {
+        
+      }
       if (Input.GetKeyDown("n"))
       {
         if (firstImpressionsUp == true)

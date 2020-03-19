@@ -484,7 +484,6 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Ying");
           GlobalVariables.inMYCollider = true;
           GlobalVariables.noteMei = true;
-
         }
         if (other.name == "MYCollider2")
         {
