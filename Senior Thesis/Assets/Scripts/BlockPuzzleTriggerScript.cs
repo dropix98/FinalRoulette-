@@ -27,8 +27,13 @@ public class BlockPuzzleTriggerScript : MonoBehaviour
             Debug.Log("Player Detected");
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene("BlockPuzzle");
+                SceneManager.LoadScene("TileInstructions");
             }
         }
+    }
+
+    public void StartPuzzle()
+    {
+        SceneManager.LoadScene("BlockPuzzle");
     }
 }
