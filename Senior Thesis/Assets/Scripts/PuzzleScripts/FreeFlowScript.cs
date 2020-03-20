@@ -120,4 +120,10 @@ public class FreeFlowScript : MonoBehaviour
            // }
         }
     }
+
+
+    public void CheckDine()
+    {
+
+    }
 }
