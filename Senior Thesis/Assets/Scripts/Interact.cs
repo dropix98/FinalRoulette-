@@ -366,11 +366,11 @@ public class Interact : MonoBehaviour
           }
       }
 
-      if (Input.GetKeyDown("n"))
-      {
-          print("N key was pressed");
-          SceneManager.LoadScene("NotebookHints");
-      }
+      //if (Input.GetKeyDown("n"))
+      //{
+      //    print("N key was pressed");
+      //    SceneManager.LoadScene("NotebookHints");
+      //}
     }
 
 
@@ -477,11 +477,13 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with ShaoTing");
           GlobalVariables.inSTCollider = true;
+          GlobalVariables.noteShaoTing = true;
         }
         if (other.name == "MYCollider")
         {
           Debug.Log("Colliding with Ying");
           GlobalVariables.inMYCollider = true;
+          GlobalVariables.noteMei = true;
         }
         if (other.name == "MYCollider2")
         {
@@ -492,16 +494,19 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with SuRong");
           GlobalVariables.inSRCollider = true;
+          GlobalVariables.noteSuRong = true;
         }
         if (other.name == "YRCollider")
         {
           Debug.Log("Colliding with YongRuan");
           GlobalVariables.inYRCollider = true;
+          GlobalVariables.noteYongRuan = true;
         }
         if (other.name == "YZCollider")
         {
           Debug.Log("Colliding with YiZheng");
           GlobalVariables.inYZCollider = true;
+          GlobalVariables.noteYiZheng = true;
         }
         if (other.name == "YZCollider2")
         {
@@ -512,11 +517,13 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with PinBi");
           GlobalVariables.inPBCollider = true;
+          GlobalVariables.notePinBi = true;
         }
         if (other.name == "XJCollider")
         {
           Debug.Log("Colliding with XiaoJing");
           GlobalVariables.inXJCollider = true;
+          GlobalVariables.noteXiaoJing = true;
         }
         if (other.name == "XJCollider2")
         {
@@ -527,11 +534,13 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with JingHui");
           GlobalVariables.inJHCollider = true;
+          GlobalVariables.noteMinKai = true;
         }
         if (other.name == "YHCollider")
         {
           Debug.Log("Colliding with YingHei");
           GlobalVariables.inYHCollider = true;
+          GlobalVariables.noteYingHei = true;
         }
         if (other.name == "Drawer")
         {

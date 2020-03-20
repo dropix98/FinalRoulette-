@@ -123,6 +123,28 @@ public static class GlobalVariables
 
 
 
+    //Notebook
+    public static bool noteMei;
+    public static bool noteMinKai;
+    public static bool notePinBi;
+    public static bool noteShaoTing;
+    public static bool noteSuRong;
+    public static bool noteXiaoJing;
+    public static bool noteYingHei;
+    public static bool noteYiZheng;
+    public static bool noteYongRuan;
+
+    public static bool noteMei2;
+    public static bool noteMinKai2;
+    public static bool notePinBi2;
+    public static bool noteSuRong2;
+    public static bool noteXiaoJing2;
+    public static bool noteYiZheng2;
+    public static bool noteYongRuan2;
+
+
+
+
     //public static bool inKeycardGuesser;
 
 

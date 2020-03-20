@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: 0f02ace9cc00b4d498f0e6a681a67594
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2325258618321738459
+    second: BroadCastingSpriteSheet_0
+  - first:
+      213: -7824739606898616325
+    second: BroadCastingSpriteSheet_1
+  - first:
+      213: -4567765827270826465
+    second: BroadCastingSpriteSheet_2
+  - first:
+      213: -2623748381455210458
+    second: BroadCastingSpriteSheet_3
+  - first:
+      213: 4455990631410145903
+    second: BroadCastingSpriteSheet_4
+  - first:
+      213: -3500426075749178310
+    second: BroadCastingSpriteSheet_5
+  - first:
+      213: 8039951187101255302
+    second: BroadCastingSpriteSheet_6
+  - first:
+      213: -1110297585913070488
+    second: BroadCastingSpriteSheet_7
+  - first:
+      213: 6292624694254661853
+    second: BroadCastingSpriteSheet_8
+  - first:
+      213: -3209395184591473925
+    second: BroadCastingSpriteSheet_9
+  - first:
+      213: 5480652900928106017
+    second: BroadCastingSpriteSheet_10
+  - first:
+      213: 7054981028581578946
+    second: BroadCastingSpriteSheet_11
+  - first:
+      213: 2259088464185535988
+    second: BroadCastingSpriteSheet_12
+  - first:
+      213: 9037608824265509462
+    second: BroadCastingSpriteSheet_13
+  - first:
+      213: -367539065326376524
+    second: BroadCastingSpriteSheet_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 714
+        width: 1453
+        height: 1331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9e9e395ad9c404d9baa67607c34704
+      internalID: -2325258618321738459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1685
+        width: 549
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2711330fcfb76da489256493ac7744f9
+      internalID: -7824739606898616325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 1313
+        width: 474
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a197b4ecff7d024cae6b6387ecaf898
+      internalID: -4567765827270826465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1239
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91a249af0126284d92cda8111ed0f38
+      internalID: -2623748381455210458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 1236
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d768a85e1cd5245a75d7f4aa6387ef
+      internalID: 4455990631410145903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 958
+        width: 186
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82049aad227ab3844986bb70fff52008
+      internalID: -3500426075749178310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 1135
+        width: 78
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346a8f72ef49b554d89239d66ff73382
+      internalID: 8039951187101255302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1062
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea94a9217ee2e8488707ecbc9e95bd2
+      internalID: -1110297585913070488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 884
+        width: 157
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32545960a2efa0a4090609da4d1675ef
+      internalID: 6292624694254661853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 853
+        width: 115
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5aa8113e087bb04cb4a8238dbe4a3fe
+      internalID: -3209395184591473925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 769
+        width: 140
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6aa2a7167cc7b14eaabaf1fb2267335
+      internalID: 5480652900928106017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 734
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc27aae076c04eb45850841a64302f03
+      internalID: 7054981028581578946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 656
+        width: 152
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b57b3333f4a77479f1d7d3ff8b520f
+      internalID: 2259088464185535988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 686
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724a369454e94d24997354ead5d933ab
+      internalID: 9037608824265509462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BroadCastingSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 157
+        width: 177
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68eabda0a2162424ea406df716414cef
+      internalID: -367539065326376524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
