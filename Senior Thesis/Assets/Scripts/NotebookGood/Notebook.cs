@@ -31,16 +31,11 @@ public class Notebook : MonoBehaviour
       YingHei.SetActive(false);
       YiZheng.SetActive(false);
       YongRuan.SetActive(false);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-      if (SceneManager.GetActiveScene().name == "Lounge")
-      {
-        
-      }
       if (Input.GetKeyDown("n"))
       {
         if (firstImpressionsUp == true)

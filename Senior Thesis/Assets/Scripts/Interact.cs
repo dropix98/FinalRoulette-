@@ -489,18 +489,27 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with Ying2");
           GlobalVariables.inMYCollider2 = true;
+          GlobalVariables.noteMei2 = true;
         }
         if (other.name == "SRCollider")
         {
           Debug.Log("Colliding with SuRong");
           GlobalVariables.inSRCollider = true;
           GlobalVariables.noteSuRong = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteSuRong2 = true;
+          }
         }
         if (other.name == "YRCollider")
         {
           Debug.Log("Colliding with YongRuan");
           GlobalVariables.inYRCollider = true;
           GlobalVariables.noteYongRuan = true;
+          if (SceneManager.GetActiveScene().name == "Infirmary")
+          {
+            GlobalVariables.noteYongRuan2 = true;
+          }
         }
         if (other.name == "YZCollider")
         {
@@ -512,29 +521,50 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with YiZheng2");
           GlobalVariables.inYZCollider2 = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteYiZheng2 = true;
+          }
         }
         if (other.name == "PBCollider")
         {
           Debug.Log("Colliding with PinBi");
           GlobalVariables.inPBCollider = true;
           GlobalVariables.notePinBi = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.notePinBi2 = true;
+          }
         }
         if (other.name == "XJCollider")
         {
           Debug.Log("Colliding with XiaoJing");
           GlobalVariables.inXJCollider = true;
           GlobalVariables.noteXiaoJing = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteXiaoJing2 = true;
+          }
         }
         if (other.name == "XJCollider2")
         {
           Debug.Log("Colliding with XiaoJing2");
           GlobalVariables.inXJCollider2 = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteXiaoJing2 = true;
+          }
         }
         if (other.name == "JHCollider")
         {
           Debug.Log("Colliding with JingHui");
           GlobalVariables.inJHCollider = true;
           GlobalVariables.noteMinKai = true;
+        }
+        if (other.name == "MKCollider")
+        {
+          Debug.Log("Colliding with JingHui");
+          GlobalVariables.noteMinKai2 = true;
         }
         if (other.name == "YHCollider")
         {
