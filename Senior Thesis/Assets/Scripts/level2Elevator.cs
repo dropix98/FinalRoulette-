@@ -22,7 +22,7 @@ public class level2Elevator : MonoBehaviour
     {
       if (colors[2] == 'b' && colors[1] == 'r' && colors[0] == 'g')
       {
-        SceneManager.LoadScene("Level1Done");
+        SceneManager.LoadScene("Level2Interrogation");
       }
     }
 
