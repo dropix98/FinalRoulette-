@@ -295,7 +295,7 @@ public class FreeFlowScript : MonoBehaviour
         if (CheckDine() == true)
         {
             //Scene transistion
-            SceneManager.LoadScene("BroadcastingRoom");
+            SceneManager.LoadScene("MachineRoom");
         }
 
         //do a tag finder to add to array/list of the colors. need to tag each quad piece in unity that needs to be that color with the color name.
