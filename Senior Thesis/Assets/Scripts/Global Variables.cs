@@ -142,6 +142,11 @@ public static class GlobalVariables
     public static bool noteYiZheng2;
     public static bool noteYongRuan2;
 
+    //level3
+    public static bool inNoteTextCollider;
+    public static bool inPhotoCollider;
+    public static bool inMonitor2Collider;
+
 
 
 

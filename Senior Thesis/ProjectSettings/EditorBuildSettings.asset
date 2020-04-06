@@ -137,4 +137,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/MachineRoom.unity
     guid: e253196ca5e8b2e4da85dc3e19d1dcf0
+  - enabled: 1
+    path: Assets/Scenes/Level3/NoteText.unity
+    guid: 3b23e5177bb6b4501bf07b9ed6b21c02
+  - enabled: 1
+    path: Assets/Scenes/Level3/FreeFlow.unity
+    guid: 421a8f9502603b249aaa6f3a61a5e2b4
+  - enabled: 1
+    path: Assets/Scenes/Level3/Monitor.unity
+    guid: 7f9354e67540a4aaf89340b143e35a84
   m_configObjects: {}

@@ -42,6 +42,10 @@ public class Interact : MonoBehaviour
     public GameObject Snake2;
     public GameObject Rabbit2;
 
+    //level3
+    public GameObject Monitor1;
+    public GameObject Monitor2;
+
 
 
     void Start()
@@ -131,6 +135,10 @@ public class Interact : MonoBehaviour
       if (SceneManager.GetActiveScene().name == "Lounge")
       {
         Cube2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "BroadcastingRoom")
+      {
+        Monitor2.SetActive(false);
       }
 
     }
@@ -327,6 +335,35 @@ public class Interact : MonoBehaviour
         Elevator.SetActive(false);
         Elevator2.SetActive(true);
       }
+
+
+      //level3
+      if (GlobalVariables.inNoteTextCollider == true)
+      {
+        if (Input.GetKeyDown("e"))
+        {
+          SceneManager.LoadScene("NoteText");
+        }
+      }
+      if (GlobalVariables.inPhotoCollider == true)
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+          Monitor1.SetActive(false);
+          Monitor2.SetActive(true);
+        }
+      }
+      if (GlobalVariables.inMonitor2Collider == true)
+      {
+        if (Input.GetKeyDown("e"))
+        {
+          SceneManager.LoadScene("Monitor");
+        }
+      }
+
+
+
+
 
 
       //'e' is interact key
@@ -617,7 +654,25 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Rabbit");
           GlobalVariables.inRabbitCollider2 = true;
         }
+        if (other.name == "NoteCollider")
+        {
+          Debug.Log("Colliding with Note: Level3");
+          GlobalVariables.inNoteTextCollider = true;
+        }
+        if (other.name == "PhotoCollider")
+        {
+          Debug.Log("Colliding with Photo: Level3");
+          GlobalVariables.inPhotoCollider = true;
+        }
+        if (other.name == "Monitors2")
+        {
+          Debug.Log("Colliding with Monitor2");
+          GlobalVariables.inMonitor2Collider = true;
+        }
+
     }
+
+
 
     //states when leaving a collider
     void OnTriggerExit2D(Collider2D other)
@@ -773,23 +828,40 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "HoleInGround2")
         {
-          Debug.Log("Colliding with Hole2");
+          Debug.Log("Not Colliding with Hole2");
           GlobalVariables.inHoleCollider2 = false;
         }
         if (other.name == "Dragon2")
         {
-          Debug.Log("Colliding with Dragon");
+          Debug.Log("Not Colliding with Dragon");
           GlobalVariables.inDragonCollider2 = false;
         }
         if (other.name == "Snake2")
         {
-          Debug.Log("Colliding with Snake");
+          Debug.Log("Not Colliding with Snake");
           GlobalVariables.inSnakeCollider2 = false;
         }
         if (other.name == "Rabbit2")
         {
-          Debug.Log("Colliding with Rabbit");
+          Debug.Log("Not Colliding with Rabbit");
           GlobalVariables.inRabbitCollider2 = false;
+        }
+        if (other.name == "NoteCollider")
+        {
+          Debug.Log("Not Colliding with Note: Level3");
+          GlobalVariables.inNoteTextCollider = false;
+
+        }
+        if (other.name == "PhotoCollider")
+        {
+          Debug.Log("Not Colliding with Photo: Level3");
+          GlobalVariables.inPhotoCollider = false;
+
+        }
+        if (other.name == "Monitors2")
+        {
+          Debug.Log("Not Colliding with Monitor2");
+          GlobalVariables.inMonitor2Collider = false;
         }
     }
 
