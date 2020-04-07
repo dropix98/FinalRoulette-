@@ -9,10 +9,12 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public GameObject characterSprite;
 
+    public GameObject[] trig;
 
     private bool inDialogue = false;
     public bool done = false;
 
+    public PlayerMovementController pmc;
 
     public Animator animator;
 
@@ -27,11 +29,16 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        pmc.movementSpeed = 0;
+        for (int i = 0; i < trig.Length; i++) {
+            trig[i].gameObject.SetActive(false);
+        }
         done = false;
         animator.SetBool("IsOpen", true);
         GlobalVariables.currentlyTalking = true;
 
         this.inDialogue = true;
+
 
 
 
@@ -104,16 +111,25 @@ public class DialogueManager : MonoBehaviour
     }
     public void EndDialogue()
     {
+        pmc.movementSpeed = 3;
         animator.SetBool("IsOpen", false);
         GlobalVariables.currentlyTalking = false;
+        for (int i = 0; i < trig.Length; i++)
+        {
+            trig[i].gameObject.SetActive(true);
+        }
     }
 
     public void AlreadyTalked(Dialogue dialogue)
     {
+        for (int i = 0; i < trig.Length; i++)
+        {
+            trig[i].gameObject.SetActive(false);
+        }
+        pmc.movementSpeed = 0;
         animator.SetBool("IsOpen", true);
         GlobalVariables.currentlyTalking = true;
         this.inDialogue = true;
-
 
         nameText.text = dialogue.name;
         dialogueText.text = "You have already talked to this person";
