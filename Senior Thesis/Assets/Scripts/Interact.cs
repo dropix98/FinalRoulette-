@@ -319,14 +319,14 @@ public class Interact : MonoBehaviour
 
       if (GlobalVariables.dragonColor == "blue" && GlobalVariables.snakeColor == "purple" && GlobalVariables.rabbitColor == "blue" && GlobalVariables.displayedCubeText == false)
       {
-        CubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        //CubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.displayedCubeText = true;
         GlobalVariables.hasCube = true;
       }
 
       if (GlobalVariables.finishedBlock == true && currentScene.name == "Lounge")
       {
-        finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        //finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.finishedBlock = false;
         GlobalVariables.hasWire = true;
       }
@@ -367,16 +367,16 @@ public class Interact : MonoBehaviour
 
 
       //'e' is interact key
-      if (Input.GetKeyDown("e"))
+      if (Input.GetKeyDown(KeyCode.Space))
       {
-          print("E key was pressed");
+          print("Space key was pressed");
           Debug.Log(GlobalVariables.characterPosition1);
           Debug.Log(GlobalVariables.characterPosition2);
 
           //checking if in collider and haven't pressed 'e' with it before;
           if (GlobalVariables.inEmailCollider == true && GlobalVariables.foundEmail == false)
           {
-            Debug.Log("E key was pressed in ComputerCollider");
+            Debug.Log("Space key was pressed in ComputerCollider");
             //SceneManager.LoadScene("EmailText");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundEmail = true;
@@ -384,14 +384,14 @@ public class Interact : MonoBehaviour
           }
           if (GlobalVariables.inNewsArticleCollider == true && GlobalVariables.foundNewsArticle == false)
           {
-            Debug.Log("E key was pressed in NewsArticleCollider");
+            Debug.Log("Space key was pressed in NewsArticleCollider");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundNewsArticle = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
           }
           if (GlobalVariables.inKeycardItemCollider == true && GlobalVariables.foundKeycard == false)
           {
-            Debug.Log("E key was pressed in keycard collider");
+            Debug.Log("Space key was pressed in keycard collider");
             //SceneManager.LoadScene("KeycardText");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundKeycard = true;
