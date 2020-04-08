@@ -588,6 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97283898}
   - component: {fileID: 97283897}
+  - component: {fileID: 97283899}
   m_Layer: 0
   m_Name: EmailCollider
   m_TagString: Untagged
@@ -635,6 +636,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &97283899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97283896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f6b93df8355264289e665e6ac595b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Email
+    sentences:
+    - You Collected an Email!
+    - '[To: Random Employee. Subject: Re: Forgot Passcode]'
+    - Hey, Random Employee.
+    - "No worries at all. I don\u2019t blame you for forgetting. Wang JingHui keeps
+      changing the passcode on us, it\u2019s so hard to keep track of what it is.
+      But, you know him. Super secretive and all."
+    - "I can\u2019t send you the passcode over email. I can tell you that the last
+      letter is A. If you ask some of your other coworkers and take a look around
+      the room, I bet you can figure out the rest."
+    - "Also, don\u2019t forget the passcode isn\u2019t an actual word, just a random
+      combination of 5 letters. Don\u2019t bother trying to guess. If you need help
+      unscrambling, I think the middle three letters are in alphabetical order.\r\n"
+    - See you around!
+    - '--- Another Random Employee'
+    characterSprites: []
 --- !u!1 &166550720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,6 +1403,31 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 79.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9141216
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3911726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.893998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 151
+      objectReference: {fileID: 0}
     - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -1451,31 +1507,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 52.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.9141216
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.3911726
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.893998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 151
       objectReference: {fileID: 0}
     - target: {fileID: 890219273046533319, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}

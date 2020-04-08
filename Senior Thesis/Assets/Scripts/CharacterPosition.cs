@@ -58,6 +58,16 @@ public class CharacterPosition : MonoBehaviour
         {
           transform.position = GlobalVariables.characterPositionInfirmary;
         }
+
+        if (currentScene.name == "BroadcastingRoom")
+        {
+            transform.position = GlobalVariables.characterPositionInfirmary;
+        }
+
+        if (currentScene.name == "MachineRoom")
+        {
+            transform.position = GlobalVariables.characterPositionInfirmary;
+        }
     }
 
     // Update is called once per frame

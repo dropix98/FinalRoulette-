@@ -377,7 +377,7 @@ public class Interact : MonoBehaviour
           if (GlobalVariables.inEmailCollider == true && GlobalVariables.foundEmail == false)
           {
             Debug.Log("E key was pressed in ComputerCollider");
-            SceneManager.LoadScene("EmailText");
+            //SceneManager.LoadScene("EmailText");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundEmail = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
@@ -392,7 +392,7 @@ public class Interact : MonoBehaviour
           if (GlobalVariables.inKeycardItemCollider == true && GlobalVariables.foundKeycard == false)
           {
             Debug.Log("E key was pressed in keycard collider");
-            SceneManager.LoadScene("KeycardText");
+            //SceneManager.LoadScene("KeycardText");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundKeycard = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
