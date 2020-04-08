@@ -14,9 +14,15 @@ public class BlockPuzzle : MonoBehaviour
     public GameObject nextInLine;
     bool printBool = true;
     LoungeManager lm = new LoungeManager();
+
+    public GameObject fintext;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        fintext.gameObject.SetActive(false);
+
       if (!startingPiece)
       {
         this.gameObject.SetActive(false);
@@ -38,8 +44,12 @@ public class BlockPuzzle : MonoBehaviour
             }
             lm.UpdateBlock(true);
             GlobalVariables.finishedBlock = true;
-            SceneManager.LoadScene("Lounge");
-      }
+            fintext.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene("Lounge");
+            }
+        }
     }
 
     void OnMouseDown()
