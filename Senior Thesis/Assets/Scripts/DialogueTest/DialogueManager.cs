@@ -67,7 +67,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        if(this.inDialogue == true && Input.GetKeyDown(KeyCode.Space))
+        if(this.inDialogue == true && Input.GetKeyUp(KeyCode.Space))
         {
             DisplayNextSentence();
         }
@@ -134,7 +134,7 @@ public class DialogueManager : MonoBehaviour
         nameText.text = dialogue.name;
         dialogueText.text = "You have already talked to this person";
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             EndDialogue();
         }
