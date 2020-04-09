@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class FinalKeypad : MonoBehaviour
 {
-    public InputField keypad;
+    public TMPro.TMP_InputField keypad;
     bool escape;
     public string temp;
 

@@ -100,6 +100,15 @@ public class Interrogation : MonoBehaviour
       button31.SetActive(false);
       button32.SetActive(false);
 
+      GlobalVariables.interrogatingYing = false;
+      GlobalVariables.interrogatingSuRong = false;
+      GlobalVariables.interrogatingYiZheng = false;
+      GlobalVariables.interrogatingXiaoJing = false;
+      GlobalVariables.interrogatingYingHei = false;
+      GlobalVariables.interrogatingShaoTing = false;
+      GlobalVariables.interrogatingYongRuan = false;
+      GlobalVariables.interrogatingPinBi = false;
+      GlobalVariables.interrogatingMinKai = false;
     }
 
     // Update is called once per frame
@@ -133,7 +142,15 @@ public class Interrogation : MonoBehaviour
       {
         button31.SetActive(false);
         button32.SetActive(false);
-        SceneManager.LoadScene("Lounge");
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Level1Interrogation")
+        {
+          SceneManager.LoadScene("Lounge");
+        }
+        if (scene.name == "Level2Interrogation")
+        {
+          SceneManager.LoadScene("BroadcastingRoom");
+        }
       }
     }
 

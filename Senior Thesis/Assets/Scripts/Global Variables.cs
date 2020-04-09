@@ -34,7 +34,7 @@ public static class GlobalVariables
     public static UnityEngine.Vector3 characterPosition2mbath = new Vector3(-1.08f, -1.037f, 0.0f);
     public static UnityEngine.Vector3 characterPosition1fbath = new Vector3(-0.999f, -1.032f, 0.0f);
     public static UnityEngine.Vector3 characterPosition2fbath = new Vector3(-0.999f, -1.032f, 0.0f);
-    public static UnityEngine.Vector3 characterPositionInfirmary = new Vector3(-1.3f, -.95f, 0.0f);
+    public static UnityEngine.Vector3 characterPositionInfirmary = new Vector3(-0.91f, 1.21f, 0.0f);
     public static UnityEngine.Vector3 characterPositionLounge = new Vector3(2.34f, -1.07f, 0.0f);
 
 
@@ -92,6 +92,7 @@ public static class GlobalVariables
     public static bool inSnakeCollider2;
     public static bool inRabbitCollider2;
     public static bool talkedYZ2;
+    public static bool inElevatorLevel2;
 
     public static bool switchingFuseColliders;
     public static bool switchingXJColliders;
@@ -141,6 +142,19 @@ public static class GlobalVariables
     public static bool noteXiaoJing2;
     public static bool noteYiZheng2;
     public static bool noteYongRuan2;
+
+    public static bool ElevatorHint;
+    public static bool FuseHint;
+    public static bool HoleHint;
+    public static bool DrawerHint;
+    public static bool MagnetHint;
+    public static bool MedicalReportHint;
+    public static bool OrangeHint;
+
+    //level3
+    public static bool inNoteTextCollider;
+    public static bool inPhotoCollider;
+    public static bool inMonitor2Collider;
 
 
 

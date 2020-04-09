@@ -11,7 +11,7 @@ public class BlockPuzzleTriggerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      GlobalVariables.finishedBlock = true;
+
     }
 
     // Update is called once per frame
@@ -27,13 +27,8 @@ public class BlockPuzzleTriggerScript : MonoBehaviour
             Debug.Log("Player Detected");
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene("TileInstructions");
+                SceneManager.LoadScene("BlockPuzzle");
             }
         }
-    }
-
-    public void StartPuzzle()
-    {
-        SceneManager.LoadScene("BlockPuzzle");
     }
 }

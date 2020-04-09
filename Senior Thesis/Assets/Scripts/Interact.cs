@@ -42,6 +42,10 @@ public class Interact : MonoBehaviour
     public GameObject Snake2;
     public GameObject Rabbit2;
 
+    //level3
+    public GameObject Monitor1;
+    public GameObject Monitor2;
+
 
 
     void Start()
@@ -120,17 +124,21 @@ public class Interact : MonoBehaviour
       {
         XJCollider2.SetActive(false);
       }
-      if (SceneManager.GetActiveScene().name == "Lounge")
+      /*if (SceneManager.GetActiveScene().name == "Lounge")
       {
         Elevator2.SetActive(false);
       }
       if (SceneManager.GetActiveScene().name == "Lounge")
       {
         Elevator.SetActive(true);
-      }
+      }*/
       if (SceneManager.GetActiveScene().name == "Lounge")
       {
         Cube2.SetActive(false);
+      }
+      if (SceneManager.GetActiveScene().name == "BroadcastingRoom")
+      {
+        Monitor2.SetActive(false);
       }
 
     }
@@ -254,8 +262,8 @@ public class Interact : MonoBehaviour
       {
         GlobalVariables.powerOn = true;
         //move to after slide puzzle
-        StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
-        GlobalVariables.displayedStatuesText = false;
+        //StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        GlobalVariables.displayedStatuesText = true;
       }
 
       if (GlobalVariables.inYZCollider2 == true && Input.GetKeyDown("space"))
@@ -311,14 +319,14 @@ public class Interact : MonoBehaviour
 
       if (GlobalVariables.dragonColor == "blue" && GlobalVariables.snakeColor == "purple" && GlobalVariables.rabbitColor == "blue" && GlobalVariables.displayedCubeText == false)
       {
-        CubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        //CubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.displayedCubeText = true;
         GlobalVariables.hasCube = true;
       }
 
       if (GlobalVariables.finishedBlock == true && currentScene.name == "Lounge")
       {
-        finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        //finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.finishedBlock = false;
         GlobalVariables.hasWire = true;
       }
@@ -327,35 +335,106 @@ public class Interact : MonoBehaviour
         Elevator.SetActive(false);
         Elevator2.SetActive(true);
       }
+      //notebook hints level 2
+      if (GlobalVariables.inElevatorLevel2 == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.ElevatorHint = true;
+        }
+      }
+      if (GlobalVariables.inFuseCollider == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.FuseHint = true;
+        }
+      }
+      if (GlobalVariables.inHoleCollider == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.HoleHint = true;
+        }
+      }
+      if (GlobalVariables.inDrawerCollider == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.DrawerHint = true;
+        }
+      }
+      if (GlobalVariables.inDragonCollider2 == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.MagnetHint = true;
+            GlobalVariables.MedicalReportHint = true;
+        }
+      }
+      if (GlobalVariables.talkedYZ2 == true && currentScene.name == "Lounge")
+      {
+          GlobalVariables.OrangeHint = true;
+      }
+
+
+
+      //level3
+      if (GlobalVariables.inNoteTextCollider == true)
+      {
+        if (Input.GetKeyDown("e"))
+        {
+          SceneManager.LoadScene("NoteText");
+        }
+      }
+      if (GlobalVariables.inPhotoCollider == true)
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+          Monitor1.SetActive(false);
+          Monitor2.SetActive(true);
+        }
+      }
+      if (GlobalVariables.inMonitor2Collider == true)
+      {
+        if (Input.GetKeyDown("e"))
+        {
+          SceneManager.LoadScene("Monitor");
+        }
+      }
+
+
+
+
 
 
       //'e' is interact key
-      if (Input.GetKeyDown("e"))
+      if (Input.GetKeyDown(KeyCode.Space))
       {
-          print("E key was pressed");
+          print("Space key was pressed");
           Debug.Log(GlobalVariables.characterPosition1);
           Debug.Log(GlobalVariables.characterPosition2);
 
           //checking if in collider and haven't pressed 'e' with it before;
           if (GlobalVariables.inEmailCollider == true && GlobalVariables.foundEmail == false)
           {
-            Debug.Log("E key was pressed in ComputerCollider");
-            SceneManager.LoadScene("EmailText");
+            Debug.Log("Space key was pressed in ComputerCollider");
+            //SceneManager.LoadScene("EmailText");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundEmail = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
           }
           if (GlobalVariables.inNewsArticleCollider == true && GlobalVariables.foundNewsArticle == false)
           {
-            Debug.Log("E key was pressed in NewsArticleCollider");
+            Debug.Log("Space key was pressed in NewsArticleCollider");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundNewsArticle = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
           }
           if (GlobalVariables.inKeycardItemCollider == true && GlobalVariables.foundKeycard == false)
           {
-            Debug.Log("E key was pressed in keycard collider");
-            SceneManager.LoadScene("KeycardText");
+            Debug.Log("Space key was pressed in keycard collider");
+            //SceneManager.LoadScene("KeycardText");
             GlobalVariables.itemsFound++;
             GlobalVariables.foundKeycard = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
@@ -489,18 +568,27 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with Ying2");
           GlobalVariables.inMYCollider2 = true;
+          GlobalVariables.noteMei2 = true;
         }
         if (other.name == "SRCollider")
         {
           Debug.Log("Colliding with SuRong");
           GlobalVariables.inSRCollider = true;
           GlobalVariables.noteSuRong = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteSuRong2 = true;
+          }
         }
         if (other.name == "YRCollider")
         {
           Debug.Log("Colliding with YongRuan");
           GlobalVariables.inYRCollider = true;
           GlobalVariables.noteYongRuan = true;
+          if (SceneManager.GetActiveScene().name == "Infirmary")
+          {
+            GlobalVariables.noteYongRuan2 = true;
+          }
         }
         if (other.name == "YZCollider")
         {
@@ -512,29 +600,50 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with YiZheng2");
           GlobalVariables.inYZCollider2 = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteYiZheng2 = true;
+          }
         }
         if (other.name == "PBCollider")
         {
           Debug.Log("Colliding with PinBi");
           GlobalVariables.inPBCollider = true;
           GlobalVariables.notePinBi = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.notePinBi2 = true;
+          }
         }
         if (other.name == "XJCollider")
         {
           Debug.Log("Colliding with XiaoJing");
           GlobalVariables.inXJCollider = true;
           GlobalVariables.noteXiaoJing = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteXiaoJing2 = true;
+          }
         }
         if (other.name == "XJCollider2")
         {
           Debug.Log("Colliding with XiaoJing2");
           GlobalVariables.inXJCollider2 = true;
+          if (SceneManager.GetActiveScene().name == "Lounge")
+          {
+            GlobalVariables.noteXiaoJing2 = true;
+          }
         }
         if (other.name == "JHCollider")
         {
           Debug.Log("Colliding with JingHui");
           GlobalVariables.inJHCollider = true;
           GlobalVariables.noteMinKai = true;
+        }
+        if (other.name == "MKCollider")
+        {
+          Debug.Log("Colliding with JingHui");
+          GlobalVariables.noteMinKai2 = true;
         }
         if (other.name == "YHCollider")
         {
@@ -587,7 +696,30 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Rabbit");
           GlobalVariables.inRabbitCollider2 = true;
         }
+        if (other.name == "NoteCollider")
+        {
+          Debug.Log("Colliding with Note: Level3");
+          GlobalVariables.inNoteTextCollider = true;
+        }
+        if (other.name == "PhotoCollider")
+        {
+          Debug.Log("Colliding with Photo: Level3");
+          GlobalVariables.inPhotoCollider = true;
+        }
+        if (other.name == "Monitors2")
+        {
+          Debug.Log("Colliding with Monitor2");
+          GlobalVariables.inMonitor2Collider = true;
+        }
+        if (other.name == "Elevator")
+        {
+          Debug.Log("Colliding with Elevator Level2");
+          GlobalVariables.inElevatorLevel2 = true;
+        }
+
     }
+
+
 
     //states when leaving a collider
     void OnTriggerExit2D(Collider2D other)
@@ -688,7 +820,7 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "YZCollider2")
         {
-          Debug.Log("Colliding with YiZheng2");
+          Debug.Log("Not Colliding with YiZheng2");
           GlobalVariables.inYZCollider2 = false;
         }
         if (other.name == "PBCollider")
@@ -743,23 +875,45 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "HoleInGround2")
         {
-          Debug.Log("Colliding with Hole2");
+          Debug.Log("Not Colliding with Hole2");
           GlobalVariables.inHoleCollider2 = false;
         }
         if (other.name == "Dragon2")
         {
-          Debug.Log("Colliding with Dragon");
+          Debug.Log("Not Colliding with Dragon");
           GlobalVariables.inDragonCollider2 = false;
         }
         if (other.name == "Snake2")
         {
-          Debug.Log("Colliding with Snake");
+          Debug.Log("Not Colliding with Snake");
           GlobalVariables.inSnakeCollider2 = false;
         }
         if (other.name == "Rabbit2")
         {
-          Debug.Log("Colliding with Rabbit");
+          Debug.Log("Not Colliding with Rabbit");
           GlobalVariables.inRabbitCollider2 = false;
+        }
+        if (other.name == "NoteCollider")
+        {
+          Debug.Log("Not Colliding with Note: Level3");
+          GlobalVariables.inNoteTextCollider = false;
+
+        }
+        if (other.name == "PhotoCollider")
+        {
+          Debug.Log("Not Colliding with Photo: Level3");
+          GlobalVariables.inPhotoCollider = false;
+
+        }
+        if (other.name == "Monitors2")
+        {
+          Debug.Log("Not Colliding with Monitor2");
+          GlobalVariables.inMonitor2Collider = false;
+        }
+        if (other.name == "Elevator")
+        {
+          Debug.Log("Not Colliding with Elevator Level2");
+          GlobalVariables.inElevatorLevel2 = false;
         }
     }
 

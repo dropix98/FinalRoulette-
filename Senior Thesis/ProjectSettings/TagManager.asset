@@ -4,6 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Purple
+  - Orange
+  - Pink
+  - DarkBlue
+  - Green
+  - Teal
+  - Yellow
+  - LightBlue
+  - Red
+  - Lilac
   - NPC
   layers:
   - Default
