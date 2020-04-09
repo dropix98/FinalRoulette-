@@ -73,7 +73,6 @@ public class Notebook2 : MonoBehaviour
   public GameObject XiaoJingImpression2;
   public GameObject YiZhengImpression2;
   public GameObject YongRuanImpression2;
-  public GameObject BackButton7;
 
 
   public GameObject MeiImpression2Text;
@@ -83,8 +82,25 @@ public class Notebook2 : MonoBehaviour
   public GameObject XiaoJingImpression2Text;
   public GameObject YiZhengImpression2Text;
   public GameObject YongRuanImpression2Text;
-  public GameObject BackButton8;
 
+  public GameObject Level2Hints;
+  public GameObject IntroHint;
+  public GameObject ElevatorHint;
+  public GameObject FuseHint;
+  public GameObject DrawerHint;
+  public GameObject MagnetHint;
+  public GameObject HoleHint;
+  public GameObject MedicalReportHint;
+  public GameObject OrangeHint;
+
+  public GameObject IntroHintText;
+  public GameObject ElevatorHintText;
+  public GameObject FuseHintText;
+  public GameObject DrawerHintText;
+  public GameObject MagnetHintText;
+  public GameObject HoleHintText;
+  public GameObject MedicalReportHintText;
+  public GameObject OrangeHintText;
 
   //bool firstImpressionsUp = false;
   bool canvasActive = false;
@@ -172,7 +188,6 @@ public class Notebook2 : MonoBehaviour
     XiaoJingImpression2.SetActive(false);
     YiZhengImpression2.SetActive(false);
     YongRuanImpression2.SetActive(false);
-    BackButton7.SetActive(false);
 
     MeiImpression2Text.SetActive(false);
     MinKaiImpression2Text.SetActive(false);
@@ -181,7 +196,25 @@ public class Notebook2 : MonoBehaviour
     XiaoJingImpression2Text.SetActive(false);
     YiZhengImpression2Text.SetActive(false);
     YongRuanImpression2Text.SetActive(false);
-    BackButton8.SetActive(false);
+
+    Level2Hints.SetActive(false);
+    IntroHint.SetActive(false);
+    ElevatorHint.SetActive(false);
+    FuseHint.SetActive(false);
+    DrawerHint.SetActive(false);
+    MagnetHint.SetActive(false);
+    HoleHint.SetActive(false);
+    MedicalReportHint.SetActive(false);
+    OrangeHint.SetActive(false);
+
+    IntroHintText.SetActive(false);
+    ElevatorHintText.SetActive(false);
+    FuseHintText.SetActive(false);
+    DrawerHintText.SetActive(false);
+    MagnetHintText.SetActive(false);
+    HoleHintText.SetActive(false);
+    MedicalReportHintText.SetActive(false);
+    OrangeHintText.SetActive(false);
   }
 
   // Update is called once per frame
@@ -335,45 +368,7 @@ public class Notebook2 : MonoBehaviour
 
     public void BackButton2_()
     {
-      TurnOff();
-      if (GlobalVariables.noteMei)
-      {
-        Mei.SetActive(true);
-      }
-      if (GlobalVariables.noteMinKai)
-      {
-        MinKai.SetActive(true);
-      }
-      if (GlobalVariables.notePinBi)
-      {
-        PinBi.SetActive(true);
-      }
-      if (GlobalVariables.noteShaoTing)
-      {
-        ShaoTing.SetActive(true);
-      }
-      if (GlobalVariables.noteSuRong)
-      {
-        SuRong.SetActive(true);
-      }
-      if (GlobalVariables.noteXiaoJing)
-      {
-        XiaoJing.SetActive(true);
-      }
-      if (GlobalVariables.noteYingHei)
-      {
-        YingHei.SetActive(true);
-      }
-      if (GlobalVariables.noteYiZheng)
-      {
-        YiZheng.SetActive(true);
-      }
-      if (GlobalVariables.noteYongRuan)
-      {
-        YongRuan.SetActive(true);
-      }
-      BackButton1.SetActive(true);
-
+      Impressions();
     }
 
     public void MeiImp1()
@@ -440,6 +435,56 @@ public class Notebook2 : MonoBehaviour
 
     }
 
+    public void MeiImp2()
+    {
+      TurnOff();
+      MeiImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void MinKaiImp2()
+    {
+      TurnOff();
+      MinKaiImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void PinBiImp2()
+    {
+      TurnOff();
+      PinBiImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void SuRongImp2()
+    {
+      TurnOff();
+      SuRongImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void XiaoJingImp2()
+    {
+      TurnOff();
+      XiaoJingImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void YiZhengImp2()
+    {
+      TurnOff();
+      YiZhengImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void YongRuanImp2()
+    {
+      TurnOff();
+      YongRuanImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+
 
     /*public void BackButton3_()
     {
@@ -460,33 +505,20 @@ public class Notebook2 : MonoBehaviour
     {
       TurnOff();
       OfficeHints.SetActive(true);
+      Level2Hints.SetActive(true);
       BackButton4.SetActive(true);
     }
 
     public void OfficeHints_()
     {
       TurnOff();
-      if (GlobalVariables.triedKeycardOnDoor == true)
-      {
-        KeyCardHint.SetActive(true);
-      }
-      if (GlobalVariables.foundNewsArticle == true)
-      {
-        NewsHint.SetActive(true);
-      }
-      if (GlobalVariables.foundEmail == true)
-      {
-        EmailHint.SetActive(true);
-        Email2Hint.SetActive(true);
-      }
-      if (GlobalVariables.talkedJH == true)
-      {
-        JanitorHint.SetActive(true);
-      }
-      if (GlobalVariables.talkedXJ == true)
-      {
-        XiaoJingHint.SetActive(true);
-      }
+      KeyCardHint.SetActive(true);
+      NewsHint.SetActive(true);
+      EmailHint.SetActive(true);
+      Email2Hint.SetActive(true);
+      JanitorHint.SetActive(true);
+      XiaoJingHint.SetActive(true);
+
       BackButton5.SetActive(true);
     }
 
@@ -494,6 +526,7 @@ public class Notebook2 : MonoBehaviour
     {
       TurnOff();
       OfficeHints.SetActive(true);
+      Level2Hints.SetActive(true);
       BackButton4.SetActive(true);
     }
 
@@ -543,6 +576,105 @@ public class Notebook2 : MonoBehaviour
       BackButton6.SetActive(true);
 
     }
+
+    public void Level2Hints_()
+    {
+      TurnOff();
+      IntroHint.SetActive(true);
+      if (GlobalVariables.ElevatorHint == true)
+      {
+        ElevatorHint.SetActive(true);
+      }
+      if (GlobalVariables.FuseHint == true)
+      {
+        FuseHint.SetActive(true);
+      }
+      if (GlobalVariables.DrawerHint == true)
+      {
+        DrawerHint.SetActive(true);
+      }
+      if (GlobalVariables.MagnetHint == true)
+      {
+        MagnetHint.SetActive(true);
+      }
+      if (GlobalVariables.HoleHint == true)
+      {
+        HoleHint.SetActive(true);
+      }
+      if (GlobalVariables.MedicalReportHint == true)
+      {
+        MedicalReportHint.SetActive(true);
+      }
+      if (GlobalVariables.OrangeHint == true)
+      {
+        OrangeHint.SetActive(true);
+      }
+
+
+      BackButton5.SetActive(true);
+    }
+
+    public void IntroHint_()
+    {
+      TurnOff();
+      IntroHintText.SetActive(true);
+      BackButton6.SetActive(true);
+    }
+
+    public void ElevatorHint_()
+    {
+      TurnOff();
+      ElevatorHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void FuseHint_()
+    {
+      TurnOff();
+      FuseHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void DrawerHint_()
+    {
+      TurnOff();
+      DrawerHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void MagnetHint_()
+    {
+      TurnOff();
+      MagnetHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void HoleHint_()
+    {
+      TurnOff();
+      HoleHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+    public void MedicalReportHint_()
+    {
+      TurnOff();
+      MedicalReportHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+    public void OrangeHint_()
+    {
+      TurnOff();
+      OrangeHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
 
     public void Quit()
     {

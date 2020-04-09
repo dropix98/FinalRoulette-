@@ -13,6 +13,8 @@ public class BlockPuzzle : MonoBehaviour
     public bool startingPiece;
     public GameObject nextInLine;
     bool printBool = true;
+    bool completed = false;
+
     LoungeManager lm = new LoungeManager();
 
     public GameObject fintext;
@@ -38,6 +40,7 @@ public class BlockPuzzle : MonoBehaviour
       if (tile1.activeInHierarchy && tile2.activeInHierarchy && tile3.activeInHierarchy && tile4.activeInHierarchy && printBool)
       {
             printBool = false;
+            completed = true;
             if (lm.GetSlide() == false)
             {
                 //DontDestroyOnLoad(GameObject.Find("GameManager"));
@@ -45,10 +48,14 @@ public class BlockPuzzle : MonoBehaviour
             lm.UpdateBlock(true);
             GlobalVariables.finishedBlock = true;
             fintext.gameObject.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                SceneManager.LoadScene("Lounge");
-            }
+
+        }
+        if (completed)
+        {
+          if (Input.GetKeyDown(KeyCode.Space))
+          {
+              SceneManager.LoadScene("Lounge");
+          }
         }
     }
 
