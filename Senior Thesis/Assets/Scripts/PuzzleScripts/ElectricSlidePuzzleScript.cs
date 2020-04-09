@@ -144,7 +144,15 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
     public int index;
     public bool done;
 
+    public GameObject fintext;
+
     LoungeManager lm = new LoungeManager();
+
+
+    private void Start()
+    {
+        fintext.gameObject.SetActive(false);
+    }
     public void Update()
     {
         if(Check() == true)
@@ -154,7 +162,11 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
                 //DontDestroyOnLoad(GameObject.Find("GameManager"));
             }
             lm.UpdateSlide(true);
-            SceneManager.LoadScene("Lounge");
+            fintext.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene("Lounge");
+            }
         }
     }
 

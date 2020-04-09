@@ -13,10 +13,18 @@ public class BlockPuzzle : MonoBehaviour
     public bool startingPiece;
     public GameObject nextInLine;
     bool printBool = true;
+    bool completed = false;
+
     LoungeManager lm = new LoungeManager();
+
+    public GameObject fintext;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        fintext.gameObject.SetActive(false);
+
       if (!startingPiece)
       {
         this.gameObject.SetActive(false);
@@ -32,14 +40,23 @@ public class BlockPuzzle : MonoBehaviour
       if (tile1.activeInHierarchy && tile2.activeInHierarchy && tile3.activeInHierarchy && tile4.activeInHierarchy && printBool)
       {
             printBool = false;
+            completed = true;
             if (lm.GetSlide() == false)
             {
                 //DontDestroyOnLoad(GameObject.Find("GameManager"));
             }
             lm.UpdateBlock(true);
             GlobalVariables.finishedBlock = true;
-            SceneManager.LoadScene("Lounge");
-      }
+            fintext.gameObject.SetActive(true);
+
+        }
+        if (completed)
+        {
+          if (Input.GetKeyDown(KeyCode.Space))
+          {
+              SceneManager.LoadScene("Lounge");
+          }
+        }
     }
 
     void OnMouseDown()
