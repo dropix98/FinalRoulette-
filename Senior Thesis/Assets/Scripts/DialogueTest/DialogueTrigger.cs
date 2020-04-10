@@ -21,7 +21,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.gameObject.name == "Character")
         {
-            //Debug.Log("Player Detected");
+            Debug.Log("Player Detected");
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 TriggerDialogue();
