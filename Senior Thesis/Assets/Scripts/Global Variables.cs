@@ -92,6 +92,7 @@ public static class GlobalVariables
     public static bool inSnakeCollider2;
     public static bool inRabbitCollider2;
     public static bool talkedYZ2;
+    public static bool inElevatorLevel2;
 
     public static bool switchingFuseColliders;
     public static bool switchingXJColliders;
@@ -141,6 +142,14 @@ public static class GlobalVariables
     public static bool noteXiaoJing2;
     public static bool noteYiZheng2;
     public static bool noteYongRuan2;
+
+    public static bool ElevatorHint;
+    public static bool FuseHint;
+    public static bool HoleHint;
+    public static bool DrawerHint;
+    public static bool MagnetHint;
+    public static bool MedicalReportHint;
+    public static bool OrangeHint;
 
     //level3
     public static bool inNoteTextCollider;

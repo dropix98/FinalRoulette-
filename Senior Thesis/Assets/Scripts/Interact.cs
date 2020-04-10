@@ -124,14 +124,14 @@ public class Interact : MonoBehaviour
       {
         XJCollider2.SetActive(false);
       }
-      if (SceneManager.GetActiveScene().name == "Lounge")
+      /*if (SceneManager.GetActiveScene().name == "Lounge")
       {
         Elevator2.SetActive(false);
       }
       if (SceneManager.GetActiveScene().name == "Lounge")
       {
         Elevator.SetActive(true);
-      }
+      }*/
       if (SceneManager.GetActiveScene().name == "Lounge")
       {
         Cube2.SetActive(false);
@@ -262,8 +262,8 @@ public class Interact : MonoBehaviour
       {
         GlobalVariables.powerOn = true;
         //move to after slide puzzle
-        StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
-        GlobalVariables.displayedStatuesText = false;
+        //StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        GlobalVariables.displayedStatuesText = true;
       }
 
       if (GlobalVariables.inYZCollider2 == true && Input.GetKeyDown("space"))
@@ -335,6 +335,48 @@ public class Interact : MonoBehaviour
         Elevator.SetActive(false);
         Elevator2.SetActive(true);
       }
+      //notebook hints level 2
+      if (GlobalVariables.inElevatorLevel2 == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.ElevatorHint = true;
+        }
+      }
+      if (GlobalVariables.inFuseCollider == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.FuseHint = true;
+        }
+      }
+      if (GlobalVariables.inHoleCollider == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.HoleHint = true;
+        }
+      }
+      if (GlobalVariables.inDrawerCollider == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.DrawerHint = true;
+        }
+      }
+      if (GlobalVariables.inDragonCollider2 == true && currentScene.name == "Lounge")
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GlobalVariables.MagnetHint = true;
+            GlobalVariables.MedicalReportHint = true;
+        }
+      }
+      if (GlobalVariables.talkedYZ2 == true && currentScene.name == "Lounge")
+      {
+          GlobalVariables.OrangeHint = true;
+      }
+
 
 
       //level3
@@ -669,6 +711,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Monitor2");
           GlobalVariables.inMonitor2Collider = true;
         }
+        if (other.name == "Elevator")
+        {
+          Debug.Log("Colliding with Elevator Level2");
+          GlobalVariables.inElevatorLevel2 = true;
+        }
 
     }
 
@@ -773,7 +820,7 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "YZCollider2")
         {
-          Debug.Log("Colliding with YiZheng2");
+          Debug.Log("Not Colliding with YiZheng2");
           GlobalVariables.inYZCollider2 = false;
         }
         if (other.name == "PBCollider")
@@ -862,6 +909,11 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Not Colliding with Monitor2");
           GlobalVariables.inMonitor2Collider = false;
+        }
+        if (other.name == "Elevator")
+        {
+          Debug.Log("Not Colliding with Elevator Level2");
+          GlobalVariables.inElevatorLevel2 = false;
         }
     }
 

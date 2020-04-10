@@ -11,7 +11,6 @@ public class Notebook : MonoBehaviour
     public GameObject hints;
     public GameObject quit;
 
-
     public GameObject Mei;
     public GameObject MinKai;
     public GameObject PinBi;
