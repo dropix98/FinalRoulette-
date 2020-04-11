@@ -7675,7 +7675,9 @@ MonoBehaviour:
     name: Hole
     sentences:
     - '*You obtained the FUSE using the MAGNET*'
-    characterSprites: []
+    - '*You obtained the FUSE using the MAGNET*'
+    characterSprites:
+    - {fileID: 53353335}
 --- !u!61 &997320846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11663,6 +11665,7 @@ MonoBehaviour:
   dialogue:
     name: YongRuan
     sentences:
+    - What, come to accuse me, too?
     - What, come to accuse me, too?
     - "Sure, I worked in the pipes. And sure, JingHui and I are rivals, or whatever
       you want to call it. That doesn\u2019t make me a murder suspect."
@@ -19130,6 +19133,8 @@ MonoBehaviour:
   dialogue:
     name: MeiYing
     sentences:
+    - "I\u2019m s-sorry, I\u2019m just - sob - so upset - sob - about what\u2019s
+      happening."
     - "I\u2019m s-sorry, I\u2019m just - sob - so upset - sob - about what\u2019s
       happening."
     - "- sniff - Sorry, I\u2019ll pull myself together. I want to help."

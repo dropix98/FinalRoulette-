@@ -533,7 +533,7 @@ MonoBehaviour:
   dragonButtonO: {fileID: 126791536}
   dragonButtonP: {fileID: 1048044694}
   snakeButtonB: {fileID: 27156951}
-  snakeButtonO: {fileID: 0}
+  snakeButtonO: {fileID: 1477357918}
   snakeButtonP: {fileID: 528995547}
   rabbitButtonB: {fileID: 1630988376}
   rabbitButtonO: {fileID: 885456618}
@@ -1947,11 +1947,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Fuse Box
+    name: Snake Statue
     sentences:
     - 'A holographic statue of a Snake. I can change the color. '
+    - 'A holographic statue of a Snake. I can change the color. '
     - "I should make sure I\u2019m right before I start guessing."
-    characterSprites: []
+    characterSprites:
+    - {fileID: 1534483228}
 --- !u!61 &185912948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3117,6 +3119,7 @@ MonoBehaviour:
   dialogue:
     name: YiZheng
     sentences:
+    - Holy shit, reporter lady! Can you hurry up and solve this already?
     - Holy shit, reporter lady! Can you hurry up and solve this already?
     - "I\u2019m tweaking now that people are dying, or going missing, or whatever!
       How could they have just vanished into thin air like that?"
@@ -8962,6 +8965,8 @@ MonoBehaviour:
     sentences:
     - Not dead, I say! Not dead! A different plane of existence, once again! All over
       again!
+    - Not dead, I say! Not dead! A different plane of existence, once again! All over
+      again!
     - "Not real! It\u2019s not real!"
     - Here, take. Take it! It will help!
     characterSprites:
@@ -9878,6 +9883,7 @@ MonoBehaviour:
   dialogue:
     name: XiaoJing
     sentences:
+    - "Hey, I\u2019ve been meaning to talk to you."
     - "Hey, I\u2019ve been meaning to talk to you."
     - You know that janitor, right?
     - Well, I know everyone in this building. I sign them in every morning.
@@ -11355,6 +11361,9 @@ MonoBehaviour:
   dialogue:
     name: PinBi
     sentences:
+    - "Got any answers yet? You better pick up the pace if people are vanishing. Because
+      I\u2019m so kind, I\u2019m going to help you out. Take a look at what I found
+      here."
     - "Got any answers yet? You better pick up the pace if people are vanishing. Because
       I\u2019m so kind, I\u2019m going to help you out. Take a look at what I found
       here."
@@ -14084,6 +14093,7 @@ MonoBehaviour:
     name: SuRong
     sentences:
     - Need any help? I think I know who it is.
+    - Need any help? I think I know who it is.
     - "It\u2019s JingHui\u2019s brother, no doubt. He\u2019s always been jealous of
       JingHui, and now he\u2019s just throwing around names like it\u2019s nothing."
     - "Yes, he\u2019s accusing Mei, which is ridiculous! She\u2019s innocent. She
@@ -14437,11 +14447,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Fuse Box
+    name: Snake Statue
     sentences:
     - A holographic statue of a Snake. I can change the color. Which color should
       I make it?
-    characterSprites: []
+    - A holographic statue of a Snake. I can change the color. Which color should
+      I make it?
+    characterSprites:
+    - {fileID: 1534483228}
 --- !u!61 &1154461781
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15348,11 +15361,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Fuse Box
+    name: Rabbit Statue
     sentences:
     - 'A holographic statue of a Rabbit. I can change the color. '
+    - 'A holographic statue of a Rabbit. I can change the color. '
     - "I should make sure I\u2019m right before I start guessing."
-    characterSprites: []
+    characterSprites:
+    - {fileID: 1534483228}
 --- !u!61 &1193406257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15782,8 +15797,12 @@ MonoBehaviour:
     name: Dragon Statue
     sentences:
     - 'A holographic statue of a Dragon. I can change the color. '
+    - 'A holographic statue of a Dragon. I can change the color. '
     - "I should make sure I\u2019m right before I start guessing."
-    characterSprites: []
+    characterSprites:
+    - {fileID: 1534483228}
+    - {fileID: 0}
+    - {fileID: 0}
 --- !u!61 &1214717234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17463,11 +17482,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Fuse Box
+    name: Rabbit Statue
     sentences:
     - A holographic statue of a Rabbit. I can change the color. Which color should
       I make it?
-    characterSprites: []
+    - A holographic statue of a Rabbit. I can change the color. Which color should
+      I make it?
+    characterSprites:
+    - {fileID: 1534483228}
 --- !u!61 &1333196429
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23078,6 +23100,7 @@ MonoBehaviour:
     name: XiaoJing
     sentences:
     - "Hey, I\u2019ve been meaning to talk to you."
+    - "Hey, I\u2019ve been meaning to talk to you."
     - You know that janitor, right?
     - Well, I know everyone in this building. I sign them in every morning.
     - "Trust me when I say I\u2019ve never seen this man before."
@@ -24758,7 +24781,10 @@ MonoBehaviour:
     sentences:
     - A holographic statue of a Dragon. I can change the color. Which color should
       I make it?
-    characterSprites: []
+    - A holographic statue of a Dragon. I can change the color. Which color should
+      I make it?
+    characterSprites:
+    - {fileID: 1534483228}
 --- !u!61 &2064109393
 BoxCollider2D:
   m_ObjectHideFlags: 0
