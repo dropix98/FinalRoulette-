@@ -8953,6 +8953,7 @@ MonoBehaviour:
     name: Keycard
     sentences:
     - You collected a Keycard.
+    - You collected a Keycard.
     - '"Maybe I should try this keycard on the exit."'
     characterSprites:
     - {fileID: 402063375}

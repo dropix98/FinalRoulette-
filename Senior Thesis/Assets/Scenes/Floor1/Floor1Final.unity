@@ -515,6 +515,7 @@ MonoBehaviour:
     name: Email
     sentences:
     - You Collected an Email!
+    - You Collected an Email!
     - '[To: Random Employee. Subject: Re: Forgot Passcode]'
     - Hey, Random Employee.
     - "No worries at all. I don\u2019t blame you for forgetting. Wang JingHui keeps
@@ -1721,6 +1722,8 @@ MonoBehaviour:
   dialogue:
     name: MeiYing
     sentences:
+    - Oh, hi! I know you, you're that reporter, huh? I saw you poking around on the
+      day of the accident. What a horrible day, don't you think?
     - Oh, hi! I know you, you're that reporter, huh? I saw you poking around on the
       day of the accident. What a horrible day, don't you think?
     - Anyways, I'm Mei.  I'm glad someone is working hard to get us out of here.
@@ -7139,6 +7142,9 @@ MonoBehaviour:
   dialogue:
     name: ShaoTing
     sentences:
+    - "Hi, I\u2019ve been waiting to meet you! I\u2019m a bit of a detective myself.
+      Sure, I\u2019m just an intern for JingHui, but I am really on to something!
+      I mean was, before I got fired."
     - "Hi, I\u2019ve been waiting to meet you! I\u2019m a bit of a detective myself.
       Sure, I\u2019m just an intern for JingHui, but I am really on to something!
       I mean was, before I got fired."

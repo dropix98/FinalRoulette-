@@ -15,7 +15,7 @@ public class ExitScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (Input.GetKeyDown("e"))
+      if (Input.GetKeyDown(KeyCode.Space))
       {
           SceneManager.LoadScene(GlobalVariables.sceneNameSaver);
       }

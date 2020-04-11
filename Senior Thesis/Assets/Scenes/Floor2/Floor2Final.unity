@@ -1175,6 +1175,8 @@ MonoBehaviour:
     sentences:
     - "Ah, so you\u2019re the journalist. Yeah, I worked for JingHui. I was his secretary.
       My name\u2019s Zhen XiaoJing."
+    - "Ah, so you\u2019re the journalist. Yeah, I worked for JingHui. I was his secretary.
+      My name\u2019s Zhen XiaoJing."
     - "I don\u2019t really want to talk about the accident. I think it was a horrible,
       no doubt about it. Is there anything else I can help you with?"
     - "Sorry. I don\u2019t remember the door passcode anymore, or else we\u2019d already
@@ -2974,6 +2976,7 @@ MonoBehaviour:
   dialogue:
     name: PinBi
     sentences:
+    - "Ah, the reporter. I\u2019m Detective PinBi. What do you think is going on here?"
     - "Ah, the reporter. I\u2019m Detective PinBi. What do you think is going on here?"
     - "Hah. Makes sense you don\u2019t know yet. I don\u2019t know why a novice journalist
       is on such a high profile case."
@@ -7230,6 +7233,8 @@ MonoBehaviour:
   dialogue:
     name: YiZheng
     sentences:
+    - "Hey, reporter girl. I was wondering when you\u2019d come talk to me! This whole
+      situation is fucking shitty. Leave it to JingHui to pull a stunt like this."
     - "Hey, reporter girl. I was wondering when you\u2019d come talk to me! This whole
       situation is fucking shitty. Leave it to JingHui to pull a stunt like this."
     - "Well, of course it\u2019s him who put us in here! It  makes the most sense,
