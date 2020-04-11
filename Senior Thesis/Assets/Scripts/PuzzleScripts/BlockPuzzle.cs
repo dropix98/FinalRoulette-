@@ -54,7 +54,7 @@ public class BlockPuzzle : MonoBehaviour
         {
           if (Input.GetKeyDown(KeyCode.Space))
           {
-              SceneManager.LoadScene("Lounge");
+              SceneManager.LoadScene("FinishedCubePuzzle");
           }
         }
     }

@@ -44,7 +44,9 @@ public class Interact : MonoBehaviour
 
     public GameObject OminousVoice;
 
-
+    bool cubeIf;
+    bool wireIf;
+    bool powerIf;
     //level3
     public GameObject Monitor1;
     public GameObject Monitor2;
@@ -144,6 +146,9 @@ public class Interact : MonoBehaviour
         Monitor2.SetActive(false);
       }
 
+      cubeIf = true;
+      wireIf = true;
+      powerIf = true;
     }
 
     // Update is called once per frame
@@ -250,6 +255,8 @@ public class Interact : MonoBehaviour
         GlobalVariables.hasMagnet = true;
         GlobalVariables.hasMedReport = true;
         GlobalVariables.switchingXJColliders = true;
+        GlobalVariables.MagnetHint = true;
+        GlobalVariables.MedicalReportHint = true;
       }
       if (GlobalVariables.inXJCollider2 == true && Input.GetKeyDown("space"))
       {
@@ -267,6 +274,11 @@ public class Interact : MonoBehaviour
         //move to after slide puzzle
         //StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.displayedStatuesText = true;
+        /*if (powerIf = true)
+        {
+          SceneManager.LoadScene("FinishedSlidePuzzle");
+          powerIf = false;
+        }*/
       }
 
       if (GlobalVariables.inYZCollider2 == true && Input.GetKeyDown("space"))
@@ -325,13 +337,24 @@ public class Interact : MonoBehaviour
         //CubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.displayedCubeText = true;
         GlobalVariables.hasCube = true;
+        if (cubeIf = true)
+        {
+          SceneManager.LoadScene("FinishedStatuePuzzle");
+          cubeIf = false;
+        }
       }
 
       if (GlobalVariables.finishedBlock == true && currentScene.name == "Lounge")
       {
         //finishedCubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
+
         GlobalVariables.finishedBlock = false;
         GlobalVariables.hasWire = true;
+        /*if (wireIf = true)
+        {
+          SceneManager.LoadScene("FinishedCubePuzzle");
+          wireIf = false;
+        }*/
       }
       if (GlobalVariables.hasWire == true && currentScene.name == "Lounge")
       {
@@ -365,14 +388,6 @@ public class Interact : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GlobalVariables.DrawerHint = true;
-        }
-      }
-      if (GlobalVariables.inDragonCollider2 == true && currentScene.name == "Lounge")
-      {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            GlobalVariables.MagnetHint = true;
-            GlobalVariables.MedicalReportHint = true;
         }
       }
       if (GlobalVariables.talkedYZ2 == true && currentScene.name == "Lounge")
@@ -858,7 +873,7 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "Drawer2")
         {
-          Debug.Log("Colliding with Drawer2");
+          Debug.Log("Not Colliding with Drawer2");
           GlobalVariables.inDrawer2Collider = false;
         }
         if (other.name == "FuseBox")

@@ -111,10 +111,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Level2/Level2.unity
     guid: 5bab0cbaa48de4b62af4ff08c7e0092b
   - enabled: 1
-    path: Assets/Scenes/BlockPuzzle.unity
+    path: Assets/Scenes/Level2/BlockPuzzle.unity
     guid: 68c1c7a87bb9b470e94bba5286beee4e
   - enabled: 1
-    path: Assets/Scenes/ElectricSlidePuzzle.unity
+    path: Assets/Scenes/Level2/ElectricSlidePuzzle.unity
     guid: e58b9febe4d4844fdb1ff14ef4778d04
   - enabled: 1
     path: Assets/Scenes/Interrogation/Level1Interrogation.unity
@@ -146,4 +146,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/Monitor.unity
     guid: 7f9354e67540a4aaf89340b143e35a84
+  - enabled: 1
+    path: Assets/Scenes/Level2/OminousIntro.unity
+    guid: 1c8500c5cfdaa437cba85d47fe36db59
+  - enabled: 1
+    path: Assets/Scenes/Level2/FinishedSlidePuzzle.unity
+    guid: a92ca542eefb441baac6c7e5cd65beca
+  - enabled: 1
+    path: Assets/Scenes/Level2/FinishedCubePuzzle.unity
+    guid: ffcf5240a7d534e069c97801a0e01bff
+  - enabled: 1
+    path: Assets/Scenes/Level2/FinishedStatuePuzzle.unity
+    guid: 65ff4a46359dc40409a0005b80b01684
   m_configObjects: {}

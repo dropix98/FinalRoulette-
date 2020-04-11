@@ -881,6 +881,7 @@ MonoBehaviour:
     - I found this piece of information a few moments ago. It seems to be some sort
       of riddle.
     - I hope you can put it to some use.
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -1176,6 +1177,7 @@ MonoBehaviour:
     - "I wasn\u2019t digging through the trash, ew, I just saw it poking out."
     - "It looks important, like some sort of riddle, but I can\u2019t figure out what
       for."
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -1437,6 +1439,7 @@ MonoBehaviour:
       make you feel better."
     - To keep humoring you, I found this piece of paper back in the office area.
     - Maybe you can crack the case with it, heh, heh, heh.
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -2104,6 +2107,7 @@ MonoBehaviour:
       the office area.
     - Might be useful to your investigation. It looks like some sort of riddle.
     - Anyways, let me know if you need anymore help.
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -5805,6 +5809,7 @@ MonoBehaviour:
     name: YongRuan
     sentences:
     - "Here, take this trash. I don\u2019t want it."
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
 --- !u!1 &1189591315
@@ -6693,6 +6698,7 @@ MonoBehaviour:
     name: MinKai
     sentences:
     - Yes, yes! My, my, my. Take this, I say. Take it.
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
 --- !u!1 &1289526477
@@ -7532,6 +7538,7 @@ MonoBehaviour:
     - Here, take this.
     - "I think it\u2019s for a passcode in the building. I can\u2019t remember. JingHui
       was always changing passcodes."
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -8263,6 +8270,7 @@ MonoBehaviour:
     - "I confess -- I was digging through the trash. But I think this riddle goes
       to a passcode. It has to. It\u2019s classic JingHui."
     - Maybe you can help me solve it?
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -8945,6 +8953,7 @@ MonoBehaviour:
     sentences:
     - Nope. Oh, I guess I found this piece of paper.
     - "I don\u2019t want it, but it looks important."
+    - '*You got the Piece of Paper*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}

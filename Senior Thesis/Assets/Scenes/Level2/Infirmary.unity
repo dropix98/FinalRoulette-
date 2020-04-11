@@ -10842,7 +10842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JingHui despised the color orange.
+  m_text: JingHui despised the color ORANGE.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10870,7 +10870,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 46.8
+  m_fontSize: 40.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11923,10 +11923,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- JingHui said they found a sports jacket fiber at the crime scene. Cheng
-    SuRong wears a sports jacket. I should talk to him.
+  m_text: '- JingHui said they found a BLUE sports jacket fiber at the crime scene.
+    Cheng SuRong wears a sports jacket. I should talk to him.
 
-    - JingHui had a purple snake tattoo on his arm.
+    - JingHui had a PURPLE snake tattoo on his arm.
 
 '
   m_isRightToLeft: 0
@@ -11997,10 +11997,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: -163.94669, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1450280737}
-    characterCount: 174
+    characterCount: 179
     spriteCount: 0
-    spaceCount: 34
-    wordCount: 34
+    spaceCount: 35
+    wordCount: 35
     linkCount: 0
     lineCount: 10
     pageCount: 1
@@ -15039,9 +15039,15 @@ MonoBehaviour:
     name: Drawer
     sentences:
     - '*Unlocked the Drawer using the BOBBY PIN*'
+    - '*Unlocked the Drawer using the BOBBY PIN*'
     - "This looks like some sort of high-tech medical equipment. Maybe it\u2019ll
       come in handy."
     - There is also a Medical report in here.
+    - The Medical Report is on JingHui, a check-up from after the incident. There
+      is a transcript between him and his doctor.
+    - "JingHui mentions a Blue sports jacket fiber found at the scene.\nThe Medical
+      Report also states JingHui\u2019s physical characteristics. JingHui has a Purple
+      snake tattoo on his upper arm."
     - '*You picked up an ODD MEDICAL INSTRUMENT*'
     characterSprites:
     - {fileID: 53353335}

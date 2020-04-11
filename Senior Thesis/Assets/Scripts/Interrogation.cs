@@ -145,7 +145,7 @@ public class Interrogation : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Level1Interrogation")
         {
-          SceneManager.LoadScene("Lounge");
+          SceneManager.LoadScene("OminousIntro");
         }
         if (scene.name == "Level2Interrogation")
         {
