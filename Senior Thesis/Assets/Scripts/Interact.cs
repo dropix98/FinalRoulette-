@@ -42,6 +42,9 @@ public class Interact : MonoBehaviour
     public GameObject Snake2;
     public GameObject Rabbit2;
 
+    public GameObject OminousVoice;
+
+
     //level3
     public GameObject Monitor1;
     public GameObject Monitor2;
@@ -350,14 +353,14 @@ public class Interact : MonoBehaviour
             GlobalVariables.FuseHint = true;
         }
       }
-      if (GlobalVariables.inHoleCollider == true && currentScene.name == "Lounge")
+      if (GlobalVariables.inHoleCollider == true && currentScene.name == "Infirmary")
       {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GlobalVariables.HoleHint = true;
         }
       }
-      if (GlobalVariables.inDrawerCollider == true && currentScene.name == "Lounge")
+      if (GlobalVariables.inDrawerCollider == true && currentScene.name == "Infirmary")
       {
         if (Input.GetKeyDown(KeyCode.Space))
         {
