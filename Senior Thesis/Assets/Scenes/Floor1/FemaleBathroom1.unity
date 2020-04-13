@@ -11533,6 +11533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2071586915}
   - component: {fileID: 2071586914}
+  - component: {fileID: 2071586916}
   m_Layer: 0
   m_Name: FromFemaleBathroom1
   m_TagString: Untagged
@@ -11570,6 +11571,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2071586916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071586913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217819208325e034f93aa2b16c00093b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Floor1Final
 --- !u!1 &2130049553
 GameObject:
   m_ObjectHideFlags: 0
