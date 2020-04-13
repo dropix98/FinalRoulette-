@@ -540,6 +540,7 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Keycard Trigger");
           GlobalVariables.inKeycardCollider = true;
         }
+        /*
         if (other.name == "FromMeetingRoom1")
         {
           Debug.Log("Leaving Meeting Room Floor 1");
@@ -570,6 +571,7 @@ public class Interact : MonoBehaviour
           Debug.Log("Leaving Female Bathroom Floor 2");
           SceneManager.LoadScene("Floor2Final");
         }
+        */
         if (other.name == "STCollider")
         {
           Debug.Log("Colliding with ShaoTing");
