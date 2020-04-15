@@ -50,7 +50,16 @@ public class Interact : MonoBehaviour
     //level3
     public GameObject Monitor1;
     public GameObject Monitor2;
+    public GameObject Shelf;
+    public GameObject ToMachineRoom;
+    public GameObject YRCollider3;
+    public GameObject YRCollider3_2;
+    public GameObject YRCollider3_3;
+    public GameObject MYCollider3;
+    public GameObject MYCollider3_2;
 
+
+    bool donePainting;
 
 
     void Start()
@@ -144,11 +153,18 @@ public class Interact : MonoBehaviour
       if (SceneManager.GetActiveScene().name == "BroadcastingRoom")
       {
         Monitor2.SetActive(false);
+        ToMachineRoom.SetActive(false);
+        YRCollider3_2.SetActive(false);
+        YRCollider3_3.SetActive(false);
+        MYCollider3_2.SetActive(false);
       }
 
       cubeIf = true;
       wireIf = true;
       powerIf = true;
+
+      //Level3
+      donePainting = false;
     }
 
     // Update is called once per frame
@@ -204,6 +220,14 @@ public class Interact : MonoBehaviour
       if (currentScene.name == "Lounge")
       {
         GlobalVariables.characterPositionLounge = GameObject.Find ("Character").transform.position;
+      }
+      if (currentScene.name == "BroadcastingRoom")
+      {
+        GlobalVariables.characterPositionBroadcast = GameObject.Find ("Character").transform.position;
+      }
+      if (currentScene.name == "MachineRoom")
+      {
+        GlobalVariables.characterPositionMachineRoom = GameObject.Find ("Character").transform.position;
       }
 
 
@@ -400,7 +424,7 @@ public class Interact : MonoBehaviour
       //level3
       if (GlobalVariables.inNoteTextCollider == true)
       {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
           SceneManager.LoadScene("NoteText");
         }
@@ -415,11 +439,63 @@ public class Interact : MonoBehaviour
       }
       if (GlobalVariables.inMonitor2Collider == true)
       {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
           SceneManager.LoadScene("Monitor");
         }
       }
+      if (GlobalVariables.inPaintingCollider == true)
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+          if (!donePainting)
+          {
+            Vector3 temp = new Vector3(-1.46f,-0.3f,0f);
+            Shelf.transform.position += temp;
+            ToMachineRoom.SetActive(true);
+            donePainting = true;
+          }
+
+        }
+      }
+      if (GlobalVariables.inInvestigationReportCollider == true)
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+          GlobalVariables.sawInvestigationReport = true;
+        }
+      }
+      if (GlobalVariables.inSafeCollider == true)
+      {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+          GlobalVariables.hasMedicalPills = true;
+        }
+      }
+      if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom")
+      {
+        YRCollider3.SetActive(false);
+        YRCollider3_2.SetActive(true);
+      }
+      if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom")
+      {
+        YRCollider3.SetActive(false);
+        YRCollider3_2.SetActive(true);
+      }
+      if (GlobalVariables.hasMedicalPills == true && currentScene.name == "BroadcastingRoom")
+      {
+        MYCollider3.SetActive(false);
+        MYCollider3_2.SetActive(true);
+      }
+      if (GlobalVariables.beatFreeFlow = true)
+      {
+
+      }
+      if (GlobalVariables.beatSimonSays = true)
+      {
+
+      }
+
 
 
 
@@ -736,6 +812,21 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Elevator Level2");
           GlobalVariables.inElevatorLevel2 = true;
         }
+        if (other.name == "PaintingCollider")
+        {
+          Debug.Log("Colliding with Painting");
+          GlobalVariables.inPaintingCollider = true;
+        }
+        if (other.name == "InvestigationReport")
+        {
+          Debug.Log("Colliding with InvestigationReport");
+          GlobalVariables.inInvestigationReportCollider = true;
+        }
+        if (other.name == "Safe")
+        {
+          Debug.Log("Colliding with Safe");
+          GlobalVariables.inSafeCollider = true;
+        }
 
     }
 
@@ -934,6 +1025,21 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Not Colliding with Elevator Level2");
           GlobalVariables.inElevatorLevel2 = false;
+        }
+        if (other.name == "PaintingCollider")
+        {
+          Debug.Log("Not colliding with Painting");
+          GlobalVariables.inPaintingCollider = false;
+        }
+        if (other.name == "InvestigationReport")
+        {
+          Debug.Log("Not Colliding with InvestigationReport");
+          GlobalVariables.inInvestigationReportCollider = false;
+        }
+        if (other.name == "Safe")
+        {
+          Debug.Log("Not Colliding with Safe");
+          GlobalVariables.inSafeCollider = false;
         }
     }
 

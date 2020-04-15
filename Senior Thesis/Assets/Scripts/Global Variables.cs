@@ -36,6 +36,8 @@ public static class GlobalVariables
     public static UnityEngine.Vector3 characterPosition2fbath = new Vector3(-0.999f, -1.032f, 0.0f);
     public static UnityEngine.Vector3 characterPositionInfirmary = new Vector3(-0.91f, 1.21f, 0.0f);
     public static UnityEngine.Vector3 characterPositionLounge = new Vector3(2.34f, -2.85f, 0.0f);
+    public static UnityEngine.Vector3 characterPositionBroadcast = new Vector3(-0.26f, -0.7f, 0.0f);
+    public static UnityEngine.Vector3 characterPositionMachineRoom = new Vector3(-0.26f, -0.7f, 0.0f);
 
 
     public static string sceneNameSaver;
@@ -155,6 +157,16 @@ public static class GlobalVariables
     public static bool inNoteTextCollider;
     public static bool inPhotoCollider;
     public static bool inMonitor2Collider;
+    public static bool inPaintingCollider;
+    public static bool inInvestigationReportCollider;
+    public static bool inSafeCollider;
+    public static bool sawInvestigationReport;
+    public static bool hasMedicalPills;
+    public static bool beatSimonSays;
+    public static bool beatFreeFlow;
+
+
+
 
 
 

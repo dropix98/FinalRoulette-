@@ -61,12 +61,12 @@ public class CharacterPosition : MonoBehaviour
 
         if (currentScene.name == "BroadcastingRoom")
         {
-            transform.position = GlobalVariables.characterPositionInfirmary;
+            transform.position = GlobalVariables.characterPositionBroadcast;
         }
 
         if (currentScene.name == "MachineRoom")
         {
-            transform.position = GlobalVariables.characterPositionInfirmary;
+            transform.position = GlobalVariables.characterPositionMachineRoom;
         }
     }
 
