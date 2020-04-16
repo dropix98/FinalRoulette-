@@ -10,6 +10,7 @@ public class FinalKeypad : MonoBehaviour
     bool escape;
     public string temp;
 
+    bool ret = false;
     //public GameObject tester;
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,8 @@ public class FinalKeypad : MonoBehaviour
 
           if(CheckCorrect() == true)
           {
-              //Some Scene for the door open to get out or something.
+                //Some Scene for the door open to get out or something.
+                ret = true;
               SceneManager.LoadScene("InterrogationIntro");
               //tester.gameObject.SetActive(true);
           }
@@ -59,5 +61,10 @@ public class FinalKeypad : MonoBehaviour
             //GlobalVariables.inKeycardGuesser = false;
             return escape;
         }
+    }
+
+    public bool Ret()
+    {
+        return ret;
     }
 }
