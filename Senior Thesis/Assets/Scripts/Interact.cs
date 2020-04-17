@@ -1096,20 +1096,20 @@ public class Interact : MonoBehaviour
       }
       if (Input.GetKeyDown("e") && GlobalVariables.inKeycardCollider == true)
       {
-        if (GlobalVariables.itemsFound == 5 && GlobalVariables.numberOfPeopleTalkedTo == 9)
+        if (GlobalVariables.itemsFound == 5 && GlobalVariables.numberOfPeopleTalkedTo == 9 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
           Debug.Log("Starting Keycard Guesser");
           SceneManager.LoadScene("FinalKeycardGuesser");
         }
-        else if (GlobalVariables.itemsFound == 5)
+        else if (GlobalVariables.itemsFound == 5 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
           SceneManager.LoadScene("Message");
         }
-        else if (GlobalVariables.numberOfPeopleTalkedTo == 9)
+        else if (GlobalVariables.numberOfPeopleTalkedTo == 9 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
           SceneManager.LoadScene("Message2");
         }
-        else if (GlobalVariables.foundKeycard)
+        else if (GlobalVariables.foundKeycard && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
           SceneManager.LoadScene("KeycardText2");
           GlobalVariables.triedKeycardOnDoor = true;

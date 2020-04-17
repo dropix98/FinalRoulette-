@@ -7,7 +7,7 @@ public class FixKeycardTrigger : MonoBehaviour
 
     public GameObject trig;
 
-    FinalKeypad fk = new FinalKeypad();
+FinalKeypad fk = new FinalKeypad();
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class FixKeycardTrigger : MonoBehaviour
     {
         if (fk.Ret() == true)
         {
+            Destroy(trig.gameObject);
             trig.gameObject.SetActive(false);
         }
     }
