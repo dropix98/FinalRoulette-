@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -117,6 +118,41 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < trig.Length; i++)
         {
             trig[i].gameObject.SetActive(true);
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        {
+            trig[2].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(false);
+            trig[4].gameObject.SetActive(false);
+            trig[6].gameObject.SetActive(false);
+        }
+        else if (GlobalVariables.itemsFound == 5 && GlobalVariables.numberOfPeopleTalkedTo == 9 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        {
+            trig[2].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(false);
+            trig[4].gameObject.SetActive(false);
+            trig[5].gameObject.SetActive(false);
+        }
+        else if (GlobalVariables.itemsFound == 5 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        {
+            trig[5].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(false);
+            trig[4].gameObject.SetActive(false);
+            trig[6].gameObject.SetActive(false);
+        }
+        else if (GlobalVariables.numberOfPeopleTalkedTo == 9 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        {
+            trig[2].gameObject.SetActive(false);
+            trig[5].gameObject.SetActive(false);
+            trig[4].gameObject.SetActive(false);
+            trig[6].gameObject.SetActive(false);
+        }
+        else if (GlobalVariables.foundKeycard && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        {
+            trig[2].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(false);
+            trig[5].gameObject.SetActive(false);
+            trig[6].gameObject.SetActive(false);
         }
     }
 

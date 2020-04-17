@@ -23,5 +23,9 @@ FinalKeypad fk = new FinalKeypad();
             Destroy(trig.gameObject);
             trig.gameObject.SetActive(false);
         }
+
+        
     }
+
+    
 }

@@ -1096,12 +1096,12 @@ public class Interact : MonoBehaviour
       }
       if (Input.GetKeyDown("e") && GlobalVariables.inKeycardCollider == true)
       {
-        if (GlobalVariables.itemsFound == 5 && GlobalVariables.numberOfPeopleTalkedTo == 9 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        if (GlobalVariables.itemsFound == 5 && GlobalVariables.numberOfPeopleTalkedTo == 9 && GlobalVariables.foundKeycard && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
           Debug.Log("Starting Keycard Guesser");
           SceneManager.LoadScene("FinalKeycardGuesser");
         }
-        else if (GlobalVariables.itemsFound == 5 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        /*else if (GlobalVariables.itemsFound == 5 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
           SceneManager.LoadScene("Message");
         }
@@ -1114,7 +1114,11 @@ public class Interact : MonoBehaviour
           SceneManager.LoadScene("KeycardText2");
           GlobalVariables.triedKeycardOnDoor = true;
         }
-
+        else if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
+        {
+            SceneManager.LoadScene("NoKeycardMessage");
+        }
+        */
       }
 
       //changes variables after talking to players
