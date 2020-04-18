@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     public PlayerMovementController pmc;
 
     public Animator animator;
+    public Animator bounce;
 
     private Queue<string> sentences;
     private Queue<GameObject> spritesList;
@@ -31,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         pmc.movementSpeed = 0;
+        bounce.enabled = false;
         for (int i = 0; i < trig.Length; i++) {
             trig[i].gameObject.SetActive(false);
         }
@@ -217,6 +219,7 @@ public class DialogueManager : MonoBehaviour
             trig[4].gameObject.SetActive(false);
             trig[5].gameObject.SetActive(true);
         }
+        bounce.enabled = true;
     }
 
     public void AlreadyTalked(Dialogue dialogue)
