@@ -163,6 +163,8 @@ public class Interact : MonoBehaviour
       cubeIf = true;
       wireIf = true;
       powerIf = true;
+      GlobalVariables.powerOn = false;
+
 
       //Level3
       donePainting = false;
@@ -258,12 +260,12 @@ public class Interact : MonoBehaviour
         drawer.SetActive(false);
         drawer2.SetActive(true);
       }
-      if (currentScene.name == "Lounge" && GlobalVariables.powerOn == true)
-      {
-        Dragon.SetActive(true);
-        Snake.SetActive(true);
-        Rabbit.SetActive(true);
-      }
+      //if (currentScene.name == "Lounge" && GlobalVariables.powerOn == true)
+      //{
+      //  Dragon.SetActive(true);
+      //  Snake.SetActive(true);
+      //  Rabbit.SetActive(true);
+      //}
       if (currentScene.name == "Lounge" && GlobalVariables.hasCube == true)
       {
         Cube.SetActive(false);
@@ -293,12 +295,12 @@ public class Interact : MonoBehaviour
         GlobalVariables.switchingFuseColliders = true;
       }
 
-      if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space") && GlobalVariables.displayedStatuesText == false)
+      if (GlobalVariables.inFuse2Collider == true && Input.GetKeyDown("space"))// && GlobalVariables.displayedStatuesText == false)
       {
         GlobalVariables.powerOn = true;
         //move to after slide puzzle
         //StatuesText.GetComponent<DialogueTrigger>().TriggerDialogue();
-        GlobalVariables.displayedStatuesText = true;
+        //GlobalVariables.displayedStatuesText = true;
         /*if (powerIf = true)
         {
           SceneManager.LoadScene("FinishedSlidePuzzle");
@@ -535,11 +537,11 @@ public class Interact : MonoBehaviour
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
             Keycard.GetComponent<Renderer>().enabled = false;
           }
-          if (GlobalVariables.foundKeycard == true)
-          {
+          //if (GlobalVariables.foundKeycard == true)
+          //{
             //Vector3 tempKeycard = new Vector3(-0.1352f,2.0f,-0.0088f);
             //Keycard.transform.position += tempKeycard;
-          }
+          //}
       }
 
       //if (Input.GetKeyDown("n"))
@@ -979,7 +981,7 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "FuseBox2")
         {
-          Debug.Log("Colliding with Fuse2");
+          Debug.Log("Not Colliding with Fuse2");
           GlobalVariables.inFuse2Collider = false;
         }
         if (other.name == "HoleInGround")
