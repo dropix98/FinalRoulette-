@@ -154,6 +154,49 @@ public class DialogueManager : MonoBehaviour
             trig[5].gameObject.SetActive(false);
             trig[6].gameObject.SetActive(false);
         }
+        if (GlobalVariables.switchingFuseColliders == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge"))
+        {
+            //fuse switch
+            trig[7].gameObject.SetActive(false);
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.powerOn == false)
+        {
+            //dragon,snake,rabbit
+            trig[11].gameObject.SetActive(false);
+            trig[12].gameObject.SetActive(false);
+            trig[13].gameObject.SetActive(false);
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.powerOn == true)
+        {
+            trig[11].gameObject.SetActive(true);
+            trig[12].gameObject.SetActive(true);
+            trig[13].gameObject.SetActive(true);
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == true && GlobalVariables.hasMedReport == true && GlobalVariables.powerOn == true)
+        {
+            //drangon2,snake2,rabbit2 switch
+            trig[11].gameObject.SetActive(false);
+            trig[12].gameObject.SetActive(false);
+            trig[13].gameObject.SetActive(false);
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.switchingXJColliders == true)
+        {
+            //xjcollider2
+            trig[2].gameObject.SetActive(false);
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.switchingXJColliders == false)
+        {
+            trig[3].gameObject.SetActive(false);
+        }
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.hasCube == true)
+        {
+            //cube
+            trig[8].gameObject.SetActive(false);
+        }
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.hasWire == true)
+        {
+            trig[14].gameObject.SetActive(false);
+        }
     }
 
     public void AlreadyTalked(Dialogue dialogue)
