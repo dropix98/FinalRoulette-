@@ -14,6 +14,7 @@ public class Interact : MonoBehaviour
     public GameObject FuseBox2;
     public GameObject XJCollider;
     public GameObject XJCollider2;
+    public GameObject Keycard;
     public GameObject Hole;
     public GameObject Hole2;
     public GameObject Cube;
@@ -532,10 +533,12 @@ public class Interact : MonoBehaviour
             GlobalVariables.itemsFound++;
             GlobalVariables.foundKeycard = true;
             Debug.Log("Number of Items Found: " + GlobalVariables.itemsFound);
+            Keycard.GetComponent<Renderer>().enabled = false;
           }
-          if (GlobalVariables.inKeycardItemCollider == true && GlobalVariables.foundKeycard == false)
+          if (GlobalVariables.foundKeycard == true)
           {
-
+            //Vector3 tempKeycard = new Vector3(-0.1352f,2.0f,-0.0088f);
+            //Keycard.transform.position += tempKeycard;
           }
       }
 
