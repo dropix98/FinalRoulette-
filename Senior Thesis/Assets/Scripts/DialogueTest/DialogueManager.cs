@@ -197,6 +197,26 @@ public class DialogueManager : MonoBehaviour
         {
             trig[14].gameObject.SetActive(false);
         }
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary") && GlobalVariables.switchingDrawerColliders == false)
+        {
+            trig[3].gameObject.SetActive(false);
+            trig[2].gameObject.SetActive(true);
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary") && GlobalVariables.switchingDrawerColliders == true)
+        {
+            trig[2].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(true);
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary") && GlobalVariables.switchingHoleColliders == false)
+        {
+            trig[5].gameObject.SetActive(false);
+            trig[4].gameObject.SetActive(true);
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary") && GlobalVariables.switchingHoleColliders == true)
+        {
+            trig[4].gameObject.SetActive(false);
+            trig[5].gameObject.SetActive(true);
+        }
     }
 
     public void AlreadyTalked(Dialogue dialogue)
