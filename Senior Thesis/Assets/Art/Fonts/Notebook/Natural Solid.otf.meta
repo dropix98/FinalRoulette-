@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cb4f1c3c9739771418cd2c7f0f9d5f88
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Natural Solid
+  fontNames:
+  - Natural Solid
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 68d8891e42c9a974cb706221540bac99, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
