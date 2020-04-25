@@ -119,7 +119,7 @@ public class FreeFlowScript : MonoBehaviour
     GameObject[] lightblueTag;
     GameObject[] redTag;
     GameObject[] lilacTag;
-    
+
     public void Mouse(GameObject go)
     {
         Debug.Log("First part");
@@ -295,6 +295,7 @@ public class FreeFlowScript : MonoBehaviour
         if (CheckDine() == true)
         {
             //Scene transistion
+            GlobalVariables.beatFreeFlow = true;
             SceneManager.LoadScene("MachineRoom");
         }
 
