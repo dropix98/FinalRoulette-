@@ -794,6 +794,7 @@ MonoBehaviour:
     name: MinKai
     sentences:
     - "Secrets for everyone! \u2026 Here, take! Take! A gift for you!"
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
 --- !u!4 &156932466
@@ -1309,6 +1310,7 @@ MonoBehaviour:
     - Nope. Oh, and here. Take this.
     - It's some sort of fiber. I think it was the same as the one found at the crime
       scene.
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -1361,6 +1363,7 @@ MonoBehaviour:
     - "I\u2019ve literally told you everything I know."
     - "Also, here. Take this. It\u2019s some sort of fiber I found."
     - "If you can find a place to test it, maybe it\u2019ll give you some good evidence."
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -1428,6 +1431,7 @@ MonoBehaviour:
     - "It\u2019s some sort of fiber. I think it was the same as the one found at the
       crime scene."
     - Here, you can have it.
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -3504,6 +3508,7 @@ MonoBehaviour:
     - What, this?
     - "I was just going to throw it in the trash. You don\u2019t want it, do you?"
     - Okay. Suit yourself.
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -4024,6 +4029,7 @@ MonoBehaviour:
     sentences:
     - "Oh, yeah. This. Some sort of fiber. If you can find a place to test it, maybe
       it\u2019ll give you some good evidence."
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
 --- !u!1 &748968826
@@ -5140,6 +5146,7 @@ MonoBehaviour:
     - Nothing at all. Cross my heart, hope to die.
     - What, this? This is just trash.
     - Uh, sure. You can have trash, if you want. Suit yourself.
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
     - {fileID: 0}
@@ -5631,6 +5638,7 @@ MonoBehaviour:
     - "I\u2019ll prove it to ya. Take this evidence I found near the bar. It\u2019s
       bound to help."
     - "Yeah, you\u2019re welcome."
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 459265913}
     - {fileID: 459265913}
@@ -5686,6 +5694,7 @@ MonoBehaviour:
     - What, you mean this? This is just some weird hairs or something that I found.
     - Fine, you can have it if you want, I guess.
     - ' Can I go now?'
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 1504054924}
     - {fileID: 1504054924}
@@ -5984,6 +5993,7 @@ MonoBehaviour:
     sentences:
     - What?
     - Oh, yeah. I was gonna give this to you, I swear.
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 1543954582}
     - {fileID: 1543954582}
@@ -6645,6 +6655,7 @@ MonoBehaviour:
     - "What, this? Oh, it\u2019s nothing."
     - I mean, you can have it if you want, I guess.
     - Can I go now?
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 1504054924}
     - {fileID: 1504054924}
@@ -8247,6 +8258,7 @@ MonoBehaviour:
     - Oh, this. Some sort of jacket fiber. I found it near the bar in a little evidence
       bag.
     - "Just to prove I don\u2019t really destroy evidence, take it."
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 459265913}
     - {fileID: 459265913}
@@ -8608,6 +8620,7 @@ MonoBehaviour:
     name: MinKai
     sentences:
     - Take! A gift! A gift for you!
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 0}
 --- !u!1 &1894708364
@@ -9296,6 +9309,7 @@ MonoBehaviour:
     sentences:
     - Hiding? No.
     - Oh, wait! I forgot, I was going to give you this. Here.
+    - '*You got a Jacket Fiber*'
     characterSprites:
     - {fileID: 1543954582}
     - {fileID: 1543954582}
