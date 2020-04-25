@@ -480,11 +480,11 @@ public class Interact : MonoBehaviour
         YRCollider3.SetActive(false);
         YRCollider3_2.SetActive(true);
       }
-      if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom")
+      /*if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom")
       {
         YRCollider3.SetActive(false);
         YRCollider3_2.SetActive(true);
-      }
+      }*/
       if (GlobalVariables.hasMedicalPills == true && currentScene.name == "BroadcastingRoom")
       {
         MYCollider3.SetActive(false);

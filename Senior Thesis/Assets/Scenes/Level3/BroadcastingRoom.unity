@@ -1775,7 +1775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &195669078
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3288,7 +3288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &264923986
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8653,6 +8653,7 @@ MonoBehaviour:
     name: ToolBox
     sentences:
     - "It\u2019s locked with a key lock."
+    - "It\u2019s locked with a key lock."
     characterSprites:
     - {fileID: 905871631}
 --- !u!1 &747062646
@@ -11358,7 +11359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1016970570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12796,7 +12797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1172442125
 SpriteRenderer:
   m_ObjectHideFlags: 0
