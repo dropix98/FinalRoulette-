@@ -58,6 +58,8 @@ public class Interact : MonoBehaviour
     public GameObject YRCollider3_3;
     public GameObject MYCollider3;
     public GameObject MYCollider3_2;
+    public GameObject FreeFlowTrigger;
+    public GameObject DNATester;
 
 
     bool donePainting;
@@ -490,9 +492,10 @@ public class Interact : MonoBehaviour
         MYCollider3.SetActive(false);
         MYCollider3_2.SetActive(true);
       }
-      if (GlobalVariables.beatFreeFlow = true)
+      if (GlobalVariables.beatFreeFlow = true && currentScene.name == "MachineRoom")
       {
-
+        FreeFlowTrigger.SetActive(false);
+        DNATester.SetActive(true);
       }
       if (GlobalVariables.beatSimonSays = true)
       {
