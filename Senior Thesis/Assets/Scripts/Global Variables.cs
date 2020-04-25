@@ -54,10 +54,13 @@ public static class GlobalVariables
     public static bool inSTCollider;
     public static bool inMYCollider;
     public static bool inMYCollider2;
+    public static bool inMYCollider32;
     public static bool inSRCollider;
     public static bool inYRCollider;
+    public static bool inYRCollider33;
     public static bool inYZCollider;
     public static bool inYZCollider2;
+    public static bool inYZCollider33;
     public static bool inPBCollider;
     public static bool inXJCollider;
     public static bool inXJCollider2;
@@ -165,6 +168,16 @@ public static class GlobalVariables
     public static bool beatSimonSays;
     public static bool beatFreeFlow;
 
+    public static bool hasYingDNA;
+    public static bool hasSuRongDNA;
+    public static bool hasJanitorDNA;
+    public static bool hasYiZhengDNA;
+    public static bool hasYongRuanDNA;
+    public static bool hasDNAResults;
+
+    public static bool switchJanitor3Collider;
+    public static bool switchToolboxCollider;
+    public static bool hasCrowbar;
 
 
 

@@ -58,8 +58,22 @@ public class Interact : MonoBehaviour
     public GameObject YRCollider3_3;
     public GameObject MYCollider3;
     public GameObject MYCollider3_2;
+    public GameObject YZCollider3;
+    public GameObject YZCollider3_2;
+    public GameObject YZCollider3_3;
+    public GameObject SRCollider3;
+    public GameObject SRCollider3_2;
+    public GameObject SRCollider3_3;
+    public GameObject MKCollider3;
+    public GameObject MKCollider3_2;
     public GameObject FreeFlowTrigger;
     public GameObject DNATester;
+    public GameObject DNATesterResults;
+    public GameObject ToolboxCollider;
+    public GameObject ToolboxCollider2;
+    public GameObject ToLevel4;
+    public GameObject ToLevel4_2;
+
 
 
     bool donePainting;
@@ -477,16 +491,16 @@ public class Interact : MonoBehaviour
           GlobalVariables.hasMedicalPills = true;
         }
       }
-      if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom")
+      if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatFreeFlow == false)
       {
         YRCollider3.SetActive(false);
         YRCollider3_2.SetActive(true);
       }
-      /*if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom")
+      if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatFreeFlow == true)
       {
-        YRCollider3.SetActive(false);
-        YRCollider3_2.SetActive(true);
-      }*/
+        YRCollider3_2.SetActive(false);
+        YRCollider3_3.SetActive(true);
+      }
       if (GlobalVariables.hasMedicalPills == true && currentScene.name == "BroadcastingRoom")
       {
         MYCollider3.SetActive(false);
@@ -497,10 +511,50 @@ public class Interact : MonoBehaviour
         FreeFlowTrigger.SetActive(false);
         DNATester.SetActive(true);
       }
+      if (GlobalVariables.beatFreeFlow = true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatSimonSays == false)
+      {
+        YZCollider3.SetActive(false);
+        YZCollider3_2.SetActive(true);
+      }
+      if (GlobalVariables.beatFreeFlow = true && currentScene.name == "BroadcastingRoom" && GlobalVariables.hasDNAResults == false)
+      {
+        SRCollider3.SetActive(false);
+        SRCollider3_2.SetActive(true);
+      }
+      if (currentScene.name == "BroadcastingRoom" && GlobalVariables.hasDNAResults == true)
+      {
+        SRCollider3_2.SetActive(false);
+        SRCollider3_3.SetActive(true);
+      }
       if (GlobalVariables.beatSimonSays = true)
       {
-
+        YZCollider3.SetActive(false);
+        YZCollider3_2.SetActive(false);
+        YZCollider3_3.SetActive(true);
       }
+      if (GlobalVariables.hasSuRongDNA == true && GlobalVariables.hasYingDNA == true &&
+          GlobalVariables.hasYiZhengDNA == true && GlobalVariables.hasYongRuanDNA == true &&
+          GlobalVariables.hasJanitorDNA == true && currentScene.name == "MachineRoom")
+      {
+        DNATester.SetActive(false);
+        DNATesterResults.SetActive(true);
+      }
+      if (currentScene.name == "MachineRoom" && GlobalVariables.switchJanitor3Collider == true)
+      {
+        MKCollider3.SetActive(false);
+        MKCollider3_2.SetActive(true);
+      }
+      if (currentScene.name == "BroadcastingRoom" && GlobalVariables.switchToolboxCollider == true)
+      {
+        ToolboxCollider.SetActive(false);
+        ToolboxCollider2.SetActive(true);
+      }
+      if (currentScene.name == "BroadcastingRoom" && GlobalVariables.hasCrowbar == true)
+      {
+        ToLevel4.SetActive(false);
+        ToLevel4_2.SetActive(true);
+      }
+
 
 
 
@@ -674,6 +728,12 @@ public class Interact : MonoBehaviour
           GlobalVariables.inMYCollider2 = true;
           GlobalVariables.noteMei2 = true;
         }
+        if (other.name == "MYCollider3-2")
+        {
+          Debug.Log("Colliding with Ying3-2");
+          GlobalVariables.inMYCollider32 = true;
+          GlobalVariables.hasYingDNA = true;
+        }
         if (other.name == "SRCollider")
         {
           Debug.Log("Colliding with SuRong");
@@ -684,6 +744,16 @@ public class Interact : MonoBehaviour
             GlobalVariables.noteSuRong2 = true;
           }
         }
+        if (other.name == "SRCollider3_2")
+        {
+          Debug.Log("Colliding with SuRong3_2");
+          GlobalVariables.hasSuRongDNA = true;
+        }
+        if (other.name == "SRCollider3_3")
+        {
+          Debug.Log("Colliding with SuRong3_3");
+          GlobalVariables.switchJanitor3Collider = true;
+        }
         if (other.name == "YRCollider")
         {
           Debug.Log("Colliding with YongRuan");
@@ -693,6 +763,12 @@ public class Interact : MonoBehaviour
           {
             GlobalVariables.noteYongRuan2 = true;
           }
+        }
+        if (other.name == "YRCollider3-3")
+        {
+          Debug.Log("Colliding with YongRuan3-3");
+          GlobalVariables.inYRCollider33 = true;
+          GlobalVariables.hasYongRuanDNA = true;
         }
         if (other.name == "YZCollider")
         {
@@ -708,6 +784,12 @@ public class Interact : MonoBehaviour
           {
             GlobalVariables.noteYiZheng2 = true;
           }
+        }
+        if (other.name == "YZCollider3-3")
+        {
+          Debug.Log("Colliding with YiZheng3-3");
+          GlobalVariables.inYZCollider33 = true;
+          GlobalVariables.hasYiZhengDNA = true;
         }
         if (other.name == "PBCollider")
         {
@@ -748,6 +830,22 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with JingHui");
           GlobalVariables.noteMinKai2 = true;
+        }
+        if (other.name == "MKCollider3")
+        {
+          Debug.Log("Colliding with MinKai3");
+          GlobalVariables.hasJanitorDNA = true;
+        }
+
+        if (other.name == "MKCollider3")
+        {
+          Debug.Log("Colliding with MinKai3");
+          GlobalVariables.hasJanitorDNA = true;
+        }
+        if (other.name == "MKCollider3-2")
+        {
+          Debug.Log("Colliding with MinKai3-2");
+          GlobalVariables.switchToolboxCollider = true;
         }
         if (other.name == "YHCollider")
         {
@@ -835,6 +933,16 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Safe");
           GlobalVariables.inSafeCollider = true;
         }
+        if (other.name == "DNATesterResults")
+        {
+          Debug.Log("Colliding with DNATesterResults");
+          GlobalVariables.hasDNAResults = true;
+        }
+        if (other.name == "ToolboxCollider2")
+        {
+          Debug.Log("Colliding with ToolboxCollider2");
+          GlobalVariables.hasCrowbar = true;
+        }
 
     }
 
@@ -919,8 +1027,13 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "MYCollider2")
         {
-          Debug.Log("Colliding with Ying2");
+          Debug.Log("Not Colliding with Ying2");
           GlobalVariables.inMYCollider2 = false;
+        }
+        if (other.name == "MYCollider3-2")
+        {
+          Debug.Log("Not Colliding with Ying3-2");
+          GlobalVariables.inMYCollider32 = false;
         }
         if (other.name == "SRCollider")
         {
@@ -932,6 +1045,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Not Colliding with YongRuan");
           GlobalVariables.inYRCollider = false;
         }
+        if (other.name == "YRCollider3-3")
+        {
+          Debug.Log("Not Colliding with YongRuan3-3");
+          GlobalVariables.inYRCollider33 = false;
+        }
         if (other.name == "YZCollider")
         {
           Debug.Log("Not Colliding with YiZheng");
@@ -941,6 +1059,11 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Not Colliding with YiZheng2");
           GlobalVariables.inYZCollider2 = false;
+        }
+        if (other.name == "YZCollider3-3")
+        {
+          Debug.Log("Not Colliding with YiZheng3-3");
+          GlobalVariables.inYZCollider33 = false;
         }
         if (other.name == "PBCollider")
         {
@@ -961,6 +1084,10 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Not Colliding with JingHui");
           GlobalVariables.inJHCollider = false;
+        }
+        if (other.name == "MKCollider3")
+        {
+          Debug.Log("Not Colliding with MinKai3");
         }
         if (other.name == "YHCollider")
         {
