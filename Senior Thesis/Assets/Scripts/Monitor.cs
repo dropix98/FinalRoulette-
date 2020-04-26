@@ -24,5 +24,6 @@ public class Monitor : MonoBehaviour
     void PlayCCTV()
     {
       //plays video
+      GlobalVariables.CCTVHint = true;
     }
 }

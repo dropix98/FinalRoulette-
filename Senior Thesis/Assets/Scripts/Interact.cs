@@ -454,6 +454,7 @@ public class Interact : MonoBehaviour
         {
           Monitor1.SetActive(false);
           Monitor2.SetActive(true);
+          GlobalVariables.PhotoHint = true;
         }
       }
       if (GlobalVariables.inMonitor2Collider == true)
@@ -728,6 +729,11 @@ public class Interact : MonoBehaviour
           GlobalVariables.inMYCollider2 = true;
           GlobalVariables.noteMei2 = true;
         }
+        if (other.name == "MYCollider3")
+        {
+          Debug.Log("Colliding with MYCollider3");
+          GlobalVariables.MeiHealthHint = true;
+        }
         if (other.name == "MYCollider3-2")
         {
           Debug.Log("Colliding with Ying3-2");
@@ -935,6 +941,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Safe");
           GlobalVariables.inSafeCollider = true;
         }
+        if (other.name == "DNATester")
+        {
+          Debug.Log("Colliding with DNATester");
+          GlobalVariables.DNAHint = true;
+        }
         if (other.name == "DNATesterResults")
         {
           Debug.Log("Colliding with DNATesterResults");
@@ -942,8 +953,23 @@ public class Interact : MonoBehaviour
         }
         if (other.name == "ToolboxCollider2")
         {
+          Debug.Log("Colliding with ToolboxCollider");
+          GlobalVariables.ToolboxKeyHint = true;
+        }
+        if (other.name == "ToolboxCollider2")
+        {
           Debug.Log("Colliding with ToolboxCollider2");
           GlobalVariables.hasCrowbar = true;
+        }
+        if (other.name == "ToLevel4")
+        {
+          Debug.Log("Colliding with ToLevel4");
+          GlobalVariables.CrowbarHint = true;
+        }
+        if (other.name == "Monitors")
+        {
+          Debug.Log("Colliding with Monitors");
+          GlobalVariables.MonitorHint = true;
         }
 
     }

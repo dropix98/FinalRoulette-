@@ -116,6 +116,25 @@ public class Notebook3 : MonoBehaviour
   public GameObject YiZhengImpression3Text;
   public GameObject YongRuanImpression3Text;
 
+  public GameObject Level3Hints;
+  public GameObject IntroHint2;
+  public GameObject CrowbarHint;
+  public GameObject MonitorHint;
+  public GameObject PhotoHint;
+  public GameObject CCTVHint;
+  public GameObject MeiHealthHint;
+  public GameObject ToolboxKeyHint;
+  public GameObject DNAHint;
+
+  public GameObject IntroHint2Text;
+  public GameObject CrowbarHintText;
+  public GameObject MonitorHintText;
+  public GameObject PhotoHintText;
+  public GameObject CCTVHintText;
+  public GameObject MeiHealthHintText;
+  public GameObject ToolboxKeyHintText;
+  public GameObject DNAHintText;
+
   //bool firstImpressionsUp = false;
   bool canvasActive = false;
 
@@ -242,6 +261,25 @@ public class Notebook3 : MonoBehaviour
     SuRongImpression3Text.SetActive(false);
     YiZhengImpression3Text.SetActive(false);
     YongRuanImpression3Text.SetActive(false);
+
+    Level3Hints.SetActive(false);
+    IntroHint2.SetActive(false);
+    CrowbarHint.SetActive(false);
+    MonitorHint.SetActive(false);
+    PhotoHint.SetActive(false);
+    CCTVHint.SetActive(false);
+    MeiHealthHint.SetActive(false);
+    ToolboxKeyHint.SetActive(false);
+    DNAHint.SetActive(false);
+
+    IntroHint2Text.SetActive(false);
+    CrowbarHintText.SetActive(false);
+    MonitorHintText.SetActive(false);
+    PhotoHintText.SetActive(false);
+    CCTVHintText.SetActive(false);
+    MeiHealthHintText.SetActive(false);
+    ToolboxKeyHintText.SetActive(false);
+    DNAHintText.SetActive(false);
   }
 
   // Update is called once per frame
@@ -559,6 +597,7 @@ public class Notebook3 : MonoBehaviour
       TurnOff();
       OfficeHints.SetActive(true);
       Level2Hints.SetActive(true);
+      Level3Hints.SetActive(true);
       BackButton4.SetActive(true);
     }
 
@@ -580,6 +619,7 @@ public class Notebook3 : MonoBehaviour
       TurnOff();
       OfficeHints.SetActive(true);
       Level2Hints.SetActive(true);
+      Level3Hints.SetActive(true);
       BackButton4.SetActive(true);
     }
 
@@ -702,6 +742,103 @@ public class Notebook3 : MonoBehaviour
     {
       TurnOff();
       OrangeHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void Level3Hints_()
+    {
+      TurnOff();
+      IntroHint2.SetActive(true);
+      if (GlobalVariables.CrowbarHint == true)
+      {
+        CrowbarHint.SetActive(true);
+      }
+      if (GlobalVariables.MonitorHint == true)
+      {
+        MonitorHint.SetActive(true);
+      }
+      if (GlobalVariables.PhotoHint == true)
+      {
+        PhotoHint.SetActive(true);
+      }
+      if (GlobalVariables.CCTVHint == true)
+      {
+        CCTVHint.SetActive(true);
+      }
+      if (GlobalVariables.MeiHealthHint == true)
+      {
+        MeiHealthHint.SetActive(true);
+      }
+      if (GlobalVariables.ToolboxKeyHint == true)
+      {
+        ToolboxKeyHint.SetActive(true);
+      }
+      if (GlobalVariables.DNAHint == true)
+      {
+        DNAHint.SetActive(true);
+      }
+
+      BackButton5.SetActive(true);
+    }
+
+    public void IntroHint2_()
+    {
+      TurnOff();
+      IntroHint2Text.SetActive(true);
+      BackButton6.SetActive(true);
+    }
+
+    public void CrowbarHint_()
+    {
+      TurnOff();
+      CrowbarHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void MonitorHint_()
+    {
+      TurnOff();
+      MonitorHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void PhotoHint_()
+    {
+      TurnOff();
+      PhotoHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void CCTVHint_()
+    {
+      TurnOff();
+      CCTVHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+
+    public void MeiHealthHint_()
+    {
+      TurnOff();
+      MeiHealthHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+    public void ToolboxKeyHint_()
+    {
+      TurnOff();
+      ToolboxKeyHintText.SetActive(true);
+      BackButton6.SetActive(true);
+
+    }
+    public void DNAHint_()
+    {
+      TurnOff();
+      DNAHintText.SetActive(true);
       BackButton6.SetActive(true);
 
     }

@@ -4855,7 +4855,7 @@ GameObject:
   - component: {fileID: 1304861747}
   - component: {fileID: 1304861748}
   m_Layer: 0
-  m_Name: DNA Tester
+  m_Name: DNATester
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

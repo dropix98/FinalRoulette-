@@ -162,6 +162,14 @@ public static class GlobalVariables
     public static bool noteYiZheng3;
     public static bool noteYongRuan3;
 
+    public static bool CrowbarHint;
+    public static bool MonitorHint;
+    public static bool PhotoHint;
+    public static bool CCTVHint;
+    public static bool MeiHealthHint;
+    public static bool ToolboxKeyHint;
+    public static bool DNAHint;
+
     //level3
     public static bool inNoteTextCollider;
     public static bool inPhotoCollider;
