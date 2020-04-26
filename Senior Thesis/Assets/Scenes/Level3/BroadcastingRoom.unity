@@ -394,7 +394,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: MagnetHint_
         m_Mode: 1
         m_Arguments:
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: SuRong_
         m_Mode: 1
         m_Arguments:
@@ -944,7 +944,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: PinBiImp1
         m_Mode: 1
         m_Arguments:
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: MedicalReportHint_
         m_Mode: 1
         m_Arguments:
@@ -2263,7 +2263,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YongRuanImp1
         m_Mode: 1
         m_Arguments:
@@ -2869,7 +2869,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: Mei_
         m_Mode: 1
         m_Arguments:
@@ -3123,7 +3123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: SuRongImp2
         m_Mode: 1
         m_Arguments:
@@ -3473,7 +3473,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: Impressions
         m_Mode: 1
         m_Arguments:
@@ -3918,7 +3918,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: BackButton5_
         m_Mode: 1
         m_Arguments:
@@ -4414,7 +4414,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: PinBi_
         m_Mode: 1
         m_Arguments:
@@ -4937,7 +4937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YongRuanImp2
         m_Mode: 1
         m_Arguments:
@@ -5423,7 +5423,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: Hints
         m_Mode: 1
         m_Arguments:
@@ -5635,7 +5635,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: BackButton2_
         m_Mode: 1
         m_Arguments:
@@ -6469,7 +6469,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YingHei_
         m_Mode: 1
         m_Arguments:
@@ -6839,7 +6839,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: MinKaiImp1
         m_Mode: 1
         m_Arguments:
@@ -7514,7 +7514,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: PinBiImp2
         m_Mode: 1
         m_Arguments:
@@ -7924,7 +7924,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: JanitorHint_
         m_Mode: 1
         m_Arguments:
@@ -8235,7 +8235,7 @@ RectTransform:
   m_Children:
   - {fileID: 487264794}
   - {fileID: 246383968}
-  - {fileID: 712084849}
+  - {fileID: 1119945361}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8400,131 +8400,6 @@ RectTransform:
   m_AnchoredPosition: {x: -9.3, y: -29.9}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &712084848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 712084849}
-  - component: {fileID: 712084850}
-  m_Layer: 0
-  m_Name: GameObject-Notebook
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &712084849
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712084848}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 189.02547, y: 2.1170192, z: -14.96098}
-  m_LocalScale: {x: 0.4127967, y: 0.4127967, z: 0.4127967}
-  m_Children: []
-  m_Father: {fileID: 671020772}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &712084850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712084848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ec3dc4ac0cf41b38971b0b369da909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NotebookCanvas: {fileID: 246383965}
-  resume: {fileID: 1446232193}
-  impressions: {fileID: 315521740}
-  hints: {fileID: 449946698}
-  quit: {fileID: 1585930923}
-  Mei: {fileID: 235499396}
-  MinKai: {fileID: 814165982}
-  PinBi: {fileID: 365705671}
-  ShaoTing: {fileID: 1743715551}
-  SuRong: {fileID: 124271152}
-  XiaoJing: {fileID: 1237424912}
-  YingHei: {fileID: 509712363}
-  YiZheng: {fileID: 1005505756}
-  YongRuan: {fileID: 1279007639}
-  BackButton1: {fileID: 815621866}
-  MeiImpression1: {fileID: 1529238729}
-  MinKaiImpression1: {fileID: 520467957}
-  PinBiImpression1: {fileID: 133526113}
-  ShaoTingImpression1: {fileID: 1280010365}
-  SuRongImpression1: {fileID: 747062646}
-  XiaoJingImpression1: {fileID: 1632713969}
-  YingHeiImpression1: {fileID: 1372617256}
-  YiZhengImpression1: {fileID: 1312628320}
-  YongRuanImpression1: {fileID: 210726395}
-  BackButton2: {fileID: 1723082152}
-  MeiImpression1Text: {fileID: 649809277}
-  MinKaiImpression1Text: {fileID: 371696690}
-  PinBiImpression1Text: {fileID: 1167861290}
-  ShaoTingImpression1Text: {fileID: 1931058995}
-  SuRongImpression1Text: {fileID: 2093844770}
-  XiaoJingImpression1Text: {fileID: 1904455445}
-  YingHeiImpression1Text: {fileID: 1637569592}
-  YiZhengImpression1Text: {fileID: 486558115}
-  YongRuanImpression1Text: {fileID: 1366300490}
-  BackButton3: {fileID: 481089916}
-  OfficeHints: {fileID: 1563291857}
-  BackButton4: {fileID: 1095485911}
-  KeyCardHint: {fileID: 2024250975}
-  NewsHint: {fileID: 713909148}
-  EmailHint: {fileID: 1758646809}
-  Email2Hint: {fileID: 826055326}
-  JanitorHint: {fileID: 655372549}
-  XiaoJingHint: {fileID: 1002449591}
-  BackButton5: {fileID: 1080311383}
-  KeyCardHintText: {fileID: 995871760}
-  NewsHintText: {fileID: 2104656553}
-  EmailHintText: {fileID: 344033447}
-  Email2HintText: {fileID: 699096864}
-  JanitorHintText: {fileID: 360133846}
-  XiaoJingHintText: {fileID: 1555171141}
-  BackButton6: {fileID: 356590378}
-  MeiImpression2: {fileID: 1774300610}
-  MinKaiImpression2: {fileID: 1949544413}
-  PinBiImpression2: {fileID: 595150465}
-  SuRongImpression2: {fileID: 264467776}
-  XiaoJingImpression2: {fileID: 1035001832}
-  YiZhengImpression2: {fileID: 935843503}
-  YongRuanImpression2: {fileID: 409520919}
-  MeiImpression2Text: {fileID: 162773089}
-  MinKaiImpression2Text: {fileID: 876309269}
-  PinBiImpression2Text: {fileID: 200723236}
-  SuRongImpression2Text: {fileID: 220061746}
-  XiaoJingImpression2Text: {fileID: 205767309}
-  YiZhengImpression2Text: {fileID: 394903023}
-  YongRuanImpression2Text: {fileID: 1584460890}
-  Level2Hints: {fileID: 1411710766}
-  IntroHint: {fileID: 1643021141}
-  ElevatorHint: {fileID: 1831889758}
-  FuseHint: {fileID: 1320445602}
-  DrawerHint: {fileID: 1540755667}
-  MagnetHint: {fileID: 100126036}
-  HoleHint: {fileID: 1832138917}
-  MedicalReportHint: {fileID: 194097337}
-  OrangeHint: {fileID: 1027629125}
-  IntroHintText: {fileID: 1569078111}
-  ElevatorHintText: {fileID: 962238145}
-  FuseHintText: {fileID: 730100085}
-  DrawerHintText: {fileID: 1067410414}
-  MagnetHintText: {fileID: 1154284256}
-  HoleHintText: {fileID: 45390479}
-  MedicalReportHintText: {fileID: 520445075}
-  OrangeHintText: {fileID: 502580961}
 --- !u!1 &713909148
 GameObject:
   m_ObjectHideFlags: 0
@@ -8587,7 +8462,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: NewsHint_
         m_Mode: 1
         m_Arguments:
@@ -9029,7 +8904,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: SuRongImp1
         m_Mode: 1
         m_Arguments:
@@ -9345,7 +9220,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: MinKai_
         m_Mode: 1
         m_Arguments:
@@ -9555,7 +9430,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: BackButton1_
         m_Mode: 1
         m_Arguments:
@@ -9765,7 +9640,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: Email2Hint_
         m_Mode: 1
         m_Arguments:
@@ -10556,7 +10431,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YiZhengImp2
         m_Mode: 1
         m_Arguments:
@@ -11294,7 +11169,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: XiaoJingHint_
         m_Mode: 1
         m_Arguments:
@@ -11504,7 +11379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YiZheng_
         m_Mode: 1
         m_Arguments:
@@ -11846,7 +11721,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: OrangeHint_
         m_Mode: 1
         m_Arguments:
@@ -12056,7 +11931,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: XiaoJingImp2
         m_Mode: 1
         m_Arguments:
@@ -12421,7 +12296,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: BackButton5_
         m_Mode: 1
         m_Arguments:
@@ -12631,7 +12506,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: BackButton1_
         m_Mode: 1
         m_Arguments:
@@ -12779,6 +12654,131 @@ RectTransform:
   m_AnchoredPosition: {x: 7.4645767, y: -37.635635}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1119945360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1119945361}
+  - component: {fileID: 1119945362}
+  m_Layer: 0
+  m_Name: GameObject-Notebook
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1119945361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945360}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 189.02547, y: 2.1170192, z: -14.96098}
+  m_LocalScale: {x: 0.4127967, y: 0.4127967, z: 0.4127967}
+  m_Children: []
+  m_Father: {fileID: 671020772}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1119945362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119945360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b77bd45f87445eb8866fcfa0eb5724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NotebookCanvas: {fileID: 246383965}
+  resume: {fileID: 1446232193}
+  impressions: {fileID: 315521740}
+  hints: {fileID: 449946698}
+  quit: {fileID: 1585930923}
+  Mei: {fileID: 235499396}
+  MinKai: {fileID: 814165982}
+  PinBi: {fileID: 365705671}
+  ShaoTing: {fileID: 1743715551}
+  SuRong: {fileID: 124271152}
+  XiaoJing: {fileID: 1237424912}
+  YingHei: {fileID: 509712363}
+  YiZheng: {fileID: 1005505756}
+  YongRuan: {fileID: 1279007639}
+  BackButton1: {fileID: 815621866}
+  MeiImpression1: {fileID: 1529238729}
+  MinKaiImpression1: {fileID: 520467957}
+  PinBiImpression1: {fileID: 133526113}
+  ShaoTingImpression1: {fileID: 1280010365}
+  SuRongImpression1: {fileID: 747062646}
+  XiaoJingImpression1: {fileID: 1632713969}
+  YingHeiImpression1: {fileID: 1372617256}
+  YiZhengImpression1: {fileID: 1312628320}
+  YongRuanImpression1: {fileID: 210726395}
+  BackButton2: {fileID: 1723082152}
+  MeiImpression1Text: {fileID: 649809277}
+  MinKaiImpression1Text: {fileID: 371696690}
+  PinBiImpression1Text: {fileID: 1167861290}
+  ShaoTingImpression1Text: {fileID: 1931058995}
+  SuRongImpression1Text: {fileID: 2093844770}
+  XiaoJingImpression1Text: {fileID: 1904455445}
+  YingHeiImpression1Text: {fileID: 1637569592}
+  YiZhengImpression1Text: {fileID: 486558115}
+  YongRuanImpression1Text: {fileID: 1366300490}
+  BackButton3: {fileID: 481089916}
+  OfficeHints: {fileID: 1563291857}
+  BackButton4: {fileID: 1095485911}
+  KeyCardHint: {fileID: 2024250975}
+  NewsHint: {fileID: 713909148}
+  EmailHint: {fileID: 1758646809}
+  Email2Hint: {fileID: 826055326}
+  JanitorHint: {fileID: 655372549}
+  XiaoJingHint: {fileID: 1002449591}
+  BackButton5: {fileID: 1080311383}
+  KeyCardHintText: {fileID: 995871760}
+  NewsHintText: {fileID: 2104656553}
+  EmailHintText: {fileID: 344033447}
+  Email2HintText: {fileID: 699096864}
+  JanitorHintText: {fileID: 360133846}
+  XiaoJingHintText: {fileID: 1555171141}
+  BackButton6: {fileID: 356590378}
+  MeiImpression2: {fileID: 1774300610}
+  MinKaiImpression2: {fileID: 1949544413}
+  PinBiImpression2: {fileID: 595150465}
+  SuRongImpression2: {fileID: 264467776}
+  XiaoJingImpression2: {fileID: 1035001832}
+  YiZhengImpression2: {fileID: 935843503}
+  YongRuanImpression2: {fileID: 409520919}
+  MeiImpression2Text: {fileID: 162773089}
+  MinKaiImpression2Text: {fileID: 876309269}
+  PinBiImpression2Text: {fileID: 200723236}
+  SuRongImpression2Text: {fileID: 220061746}
+  XiaoJingImpression2Text: {fileID: 205767309}
+  YiZhengImpression2Text: {fileID: 394903023}
+  YongRuanImpression2Text: {fileID: 1584460890}
+  Level2Hints: {fileID: 1411710766}
+  IntroHint: {fileID: 1643021141}
+  ElevatorHint: {fileID: 1831889758}
+  FuseHint: {fileID: 1320445602}
+  DrawerHint: {fileID: 1540755667}
+  MagnetHint: {fileID: 100126036}
+  HoleHint: {fileID: 1832138917}
+  MedicalReportHint: {fileID: 194097337}
+  OrangeHint: {fileID: 1027629125}
+  IntroHintText: {fileID: 1569078111}
+  ElevatorHintText: {fileID: 962238145}
+  FuseHintText: {fileID: 730100085}
+  DrawerHintText: {fileID: 1067410414}
+  MagnetHintText: {fileID: 1154284256}
+  HoleHintText: {fileID: 45390479}
+  MedicalReportHintText: {fileID: 520445075}
+  OrangeHintText: {fileID: 502580961}
 --- !u!1 &1154284256
 GameObject:
   m_ObjectHideFlags: 0
@@ -13426,7 +13426,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: XiaoJing_
         m_Mode: 1
         m_Arguments:
@@ -13685,7 +13685,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YongRuan_
         m_Mode: 1
         m_Arguments:
@@ -13895,7 +13895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: ShaoTingImp1
         m_Mode: 1
         m_Arguments:
@@ -14105,7 +14105,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YiZhengImp1
         m_Mode: 1
         m_Arguments:
@@ -14315,7 +14315,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: FuseHint_
         m_Mode: 1
         m_Arguments:
@@ -14730,7 +14730,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: YingHeiImp1
         m_Mode: 1
         m_Arguments:
@@ -14940,7 +14940,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: Level2Hints_
         m_Mode: 1
         m_Arguments:
@@ -15208,7 +15208,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -15418,7 +15418,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: MeiImp1
         m_Mode: 1
         m_Arguments:
@@ -15628,7 +15628,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: DrawerHint_
         m_Mode: 1
         m_Arguments:
@@ -15994,7 +15994,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: OfficeHints_
         m_Mode: 1
         m_Arguments:
@@ -16645,7 +16645,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -16937,7 +16937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: XiaoJingImp1
         m_Mode: 1
         m_Arguments:
@@ -17303,7 +17303,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: IntroHint_
         m_Mode: 1
         m_Arguments:
@@ -17585,7 +17585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: BackButton2_
         m_Mode: 1
         m_Arguments:
@@ -17844,7 +17844,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: ShaoTing_
         m_Mode: 1
         m_Arguments:
@@ -18054,7 +18054,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: EmailHint_
         m_Mode: 1
         m_Arguments:
@@ -18264,7 +18264,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: MeiImp2
         m_Mode: 1
         m_Arguments:
@@ -18601,7 +18601,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: ElevatorHint_
         m_Mode: 1
         m_Arguments:
@@ -18891,7 +18891,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: HoleHint_
         m_Mode: 1
         m_Arguments:
@@ -19665,7 +19665,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: MinKaiImp2
         m_Mode: 1
         m_Arguments:
@@ -19875,7 +19875,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 712084850}
+      - m_Target: {fileID: 0}
         m_MethodName: KeyCardHint_
         m_Mode: 1
         m_Arguments:
