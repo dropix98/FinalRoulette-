@@ -156,6 +156,12 @@ public static class GlobalVariables
     public static bool MedicalReportHint;
     public static bool OrangeHint;
 
+    public static bool noteMei3;
+    public static bool noteMinKai3;
+    public static bool noteSuRong3;
+    public static bool noteYiZheng3;
+    public static bool noteYongRuan3;
+
     //level3
     public static bool inNoteTextCollider;
     public static bool inPhotoCollider;

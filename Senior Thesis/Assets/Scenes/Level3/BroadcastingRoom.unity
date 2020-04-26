@@ -1326,7 +1326,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1119945362}
-        m_MethodName: MeiImp2
+        m_MethodName: MeiImp3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8327,7 +8327,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1119945362}
-        m_MethodName: MeiImp2
+        m_MethodName: YiZhengImp3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10193,7 +10193,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1119945362}
-        m_MethodName: MeiImp2
+        m_MethodName: YongRuanImp3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16392,6 +16392,16 @@ MonoBehaviour:
   HoleHintText: {fileID: 2052357856}
   MedicalReportHintText: {fileID: 620193038}
   OrangeHintText: {fileID: 1453190071}
+  MeiImpression3: {fileID: 0}
+  MinKaiImpression3: {fileID: 0}
+  SuRongImpression3: {fileID: 0}
+  YiZhengImpression3: {fileID: 0}
+  YongRuanImpression3: {fileID: 0}
+  MeiImpression3Text: {fileID: 0}
+  MinKaiImpression3Text: {fileID: 0}
+  SuRongImpression3Text: {fileID: 0}
+  YiZhengImpression3Text: {fileID: 0}
+  YongRuanImpression3Text: {fileID: 0}
 --- !u!1 &1143705208
 GameObject:
   m_ObjectHideFlags: 0
@@ -23481,7 +23491,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1119945362}
-        m_MethodName: MeiImp2
+        m_MethodName: MinKaiImp3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23692,7 +23702,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1119945362}
-        m_MethodName: MeiImp2
+        m_MethodName: SuRongImp3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

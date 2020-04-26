@@ -733,6 +733,7 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with Ying3-2");
           GlobalVariables.inMYCollider32 = true;
           GlobalVariables.hasYingDNA = true;
+          GlobalVariables.noteMei3 = true;
         }
         if (other.name == "SRCollider")
         {
@@ -753,6 +754,7 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Colliding with SuRong3_3");
           GlobalVariables.switchJanitor3Collider = true;
+          GlobalVariables.noteSuRong3 = true;
         }
         if (other.name == "YRCollider")
         {
@@ -784,6 +786,11 @@ public class Interact : MonoBehaviour
           {
             GlobalVariables.noteYiZheng2 = true;
           }
+        }
+        if (other.name == "YZCollider3")
+        {
+          Debug.Log("Colliding with YiZheng3");
+          GlobalVariables.noteYiZheng3 = true;
         }
         if (other.name == "YZCollider3-3")
         {
@@ -836,16 +843,11 @@ public class Interact : MonoBehaviour
           Debug.Log("Colliding with MinKai3");
           GlobalVariables.hasJanitorDNA = true;
         }
-
-        if (other.name == "MKCollider3")
-        {
-          Debug.Log("Colliding with MinKai3");
-          GlobalVariables.hasJanitorDNA = true;
-        }
         if (other.name == "MKCollider3-2")
         {
           Debug.Log("Colliding with MinKai3-2");
           GlobalVariables.switchToolboxCollider = true;
+          GlobalVariables.noteMinKai3 = true;
         }
         if (other.name == "YHCollider")
         {
@@ -1049,6 +1051,7 @@ public class Interact : MonoBehaviour
         {
           Debug.Log("Not Colliding with YongRuan3-3");
           GlobalVariables.inYRCollider33 = false;
+          GlobalVariables.noteYongRuan3 = true;
         }
         if (other.name == "YZCollider")
         {

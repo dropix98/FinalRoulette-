@@ -102,6 +102,20 @@ public class Notebook3 : MonoBehaviour
   public GameObject MedicalReportHintText;
   public GameObject OrangeHintText;
 
+  //level3
+  public GameObject MeiImpression3;
+  public GameObject MinKaiImpression3;
+  public GameObject SuRongImpression3;
+  public GameObject YiZhengImpression3;
+  public GameObject YongRuanImpression3;
+
+
+  public GameObject MeiImpression3Text;
+  public GameObject MinKaiImpression3Text;
+  public GameObject SuRongImpression3Text;
+  public GameObject YiZhengImpression3Text;
+  public GameObject YongRuanImpression3Text;
+
   //bool firstImpressionsUp = false;
   bool canvasActive = false;
 
@@ -215,6 +229,19 @@ public class Notebook3 : MonoBehaviour
     HoleHintText.SetActive(false);
     MedicalReportHintText.SetActive(false);
     OrangeHintText.SetActive(false);
+
+    //Level3
+    MeiImpression3.SetActive(false);
+    MinKaiImpression3.SetActive(false);
+    SuRongImpression3.SetActive(false);
+    YiZhengImpression3.SetActive(false);
+    YongRuanImpression3.SetActive(false);
+
+    MeiImpression3Text.SetActive(false);
+    MinKaiImpression3Text.SetActive(false);
+    SuRongImpression3Text.SetActive(false);
+    YiZhengImpression3Text.SetActive(false);
+    YongRuanImpression3Text.SetActive(false);
   }
 
   // Update is called once per frame
@@ -279,6 +306,10 @@ public class Notebook3 : MonoBehaviour
       TurnOff();
       MeiImpression1.SetActive(true);
       MeiImpression2.SetActive(true);
+      if (GlobalVariables.noteMei3)
+      {
+        MeiImpression3.SetActive(true);
+      }
       BackButton2.SetActive(true);
     }
     public void MinKai_()
@@ -286,6 +317,10 @@ public class Notebook3 : MonoBehaviour
       TurnOff();
       MinKaiImpression1.SetActive(true);
       MinKaiImpression2.SetActive(true);
+      if (GlobalVariables.noteMinKai3)
+      {
+        MinKaiImpression3.SetActive(true);
+      }
       BackButton2.SetActive(true);
     }
     public void PinBi_()
@@ -306,6 +341,10 @@ public class Notebook3 : MonoBehaviour
       TurnOff();
       SuRongImpression1.SetActive(true);
       SuRongImpression2.SetActive(true);
+      if (GlobalVariables.noteSuRong3)
+      {
+        SuRongImpression3.SetActive(true);
+      }
       BackButton2.SetActive(true);
     }
     public void XiaoJing_()
@@ -326,6 +365,10 @@ public class Notebook3 : MonoBehaviour
       TurnOff();
       YiZhengImpression1.SetActive(true);
       YiZhengImpression2.SetActive(true);
+      if (GlobalVariables.noteYiZheng3)
+      {
+        YiZhengImpression3.SetActive(true);
+      }
       BackButton2.SetActive(true);
     }
     public void YongRuan_()
@@ -333,6 +376,10 @@ public class Notebook3 : MonoBehaviour
       TurnOff();
       YongRuanImpression1.SetActive(true);
       YongRuanImpression2.SetActive(true);
+      if (GlobalVariables.noteYongRuan3)
+      {
+        YongRuanImpression3.SetActive(true);
+      }
       BackButton2.SetActive(true);
     }
 
@@ -451,6 +498,42 @@ public class Notebook3 : MonoBehaviour
     {
       TurnOff();
       YongRuanImpression2Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+
+    public void MeiImp3()
+    {
+      TurnOff();
+      MeiImpression3Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void MinKaiImp3()
+    {
+      TurnOff();
+      MinKaiImpression3Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void SuRongImp3()
+    {
+      TurnOff();
+      SuRongImpression3Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void YiZhengImp3()
+    {
+      TurnOff();
+      YiZhengImpression3Text.SetActive(true);
+      BackButton3.SetActive(true);
+
+    }
+    public void YongRuanImp3()
+    {
+      TurnOff();
+      YongRuanImpression3Text.SetActive(true);
       BackButton3.SetActive(true);
 
     }
