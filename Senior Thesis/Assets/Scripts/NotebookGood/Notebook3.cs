@@ -278,92 +278,62 @@ public class Notebook3 : MonoBehaviour
     {
       TurnOff();
       MeiImpression1.SetActive(true);
-      if (GlobalVariables.noteMei2)
-      {
-        MeiImpression2.SetActive(true);
-      }
+      MeiImpression2.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void MinKai_()
     {
       TurnOff();
       MinKaiImpression1.SetActive(true);
-      if (GlobalVariables.noteMinKai2)
-      {
-        MinKaiImpression2.SetActive(true);
-      }
+      MinKaiImpression2.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void PinBi_()
     {
       TurnOff();
       PinBiImpression1.SetActive(true);
-      if (GlobalVariables.notePinBi2)
-      {
-        PinBiImpression2.SetActive(true);
-      }
+      PinBiImpression2.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void ShaoTing_()
     {
       TurnOff();
       ShaoTingImpression1.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void SuRong_()
     {
       TurnOff();
       SuRongImpression1.SetActive(true);
-      if (GlobalVariables.noteSuRong2)
-      {
-        SuRongImpression2.SetActive(true);
-      }
+      SuRongImpression2.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void XiaoJing_()
     {
       TurnOff();
       XiaoJingImpression1.SetActive(true);
-      if (GlobalVariables.noteXiaoJing2)
-      {
-        XiaoJingImpression2.SetActive(true);
-      }
+      XiaoJingImpression2.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void YingHei_()
     {
       TurnOff();
       YingHeiImpression1.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void YiZheng_()
     {
       TurnOff();
       YiZhengImpression1.SetActive(true);
-      if (GlobalVariables.noteYiZheng2)
-      {
-        YiZhengImpression2.SetActive(true);
-      }
+      YiZhengImpression2.SetActive(true);
       BackButton2.SetActive(true);
-
     }
     public void YongRuan_()
     {
       TurnOff();
       YongRuanImpression1.SetActive(true);
-      if (GlobalVariables.noteYongRuan2)
-      {
-        YongRuanImpression2.SetActive(true);
-      }
+      YongRuanImpression2.SetActive(true);
       BackButton2.SetActive(true);
-
     }
 
     public void BackButton2_()
@@ -581,35 +551,13 @@ public class Notebook3 : MonoBehaviour
     {
       TurnOff();
       IntroHint.SetActive(true);
-      if (GlobalVariables.ElevatorHint == true)
-      {
-        ElevatorHint.SetActive(true);
-      }
-      if (GlobalVariables.FuseHint == true)
-      {
-        FuseHint.SetActive(true);
-      }
-      if (GlobalVariables.DrawerHint == true)
-      {
-        DrawerHint.SetActive(true);
-      }
-      if (GlobalVariables.MagnetHint == true)
-      {
-        MagnetHint.SetActive(true);
-      }
-      if (GlobalVariables.HoleHint == true)
-      {
-        HoleHint.SetActive(true);
-      }
-      if (GlobalVariables.MedicalReportHint == true)
-      {
-        MedicalReportHint.SetActive(true);
-      }
-      if (GlobalVariables.OrangeHint == true)
-      {
-        OrangeHint.SetActive(true);
-      }
-
+      ElevatorHint.SetActive(true);
+      FuseHint.SetActive(true);
+      DrawerHint.SetActive(true);
+      MagnetHint.SetActive(true);
+      HoleHint.SetActive(true);
+      MedicalReportHint.SetActive(true);
+      OrangeHint.SetActive(true);
 
       BackButton5.SetActive(true);
     }
