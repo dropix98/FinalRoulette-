@@ -526,7 +526,7 @@ public class Interact : MonoBehaviour
         SRCollider3_2.SetActive(false);
         SRCollider3_3.SetActive(true);
       }
-      if (GlobalVariables.beatSimonSays = true)
+      if (GlobalVariables.beatSimonSays = true && currentScene.name == "BroadcastingRoom")
       {
         YZCollider3.SetActive(false);
         YZCollider3_2.SetActive(false);
