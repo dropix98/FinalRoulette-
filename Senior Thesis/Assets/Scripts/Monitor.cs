@@ -12,11 +12,14 @@ public class Monitor : MonoBehaviour
     public GameObject NewsButton;
 
     public double time;
-      public double currentTime;
+    public double time2;
+    public double currentTime;
     // Start is called before the first frame update
     void Start()
     {
       time = CCTVFootage.GetComponent<VideoPlayer>().clip.length;
+      time2 = NewsFootage.GetComponent<VideoPlayer>().clip.length;
+
     }
 
     // Update is called once per frame
@@ -58,7 +61,7 @@ public class Monitor : MonoBehaviour
      private void checkPlayingNews()
      {
        currentTime = NewsFootage.GetComponent<VideoPlayer>().time;
-        if (currentTime >= time)
+        if (currentTime >= time2)
         {
             Debug.Log ("Video Over");
             CCTVFootage.SetActive(false);
