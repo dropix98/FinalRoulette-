@@ -103,6 +103,7 @@ public class FreeFlowScript : MonoBehaviour
     public bool correctcolorred = false;
     public bool correctcolorlilac = false;
 
+    public GameObject fintext;
 
     public bool done = false;
     public Material currentMaterial;
@@ -125,24 +126,25 @@ public class FreeFlowScript : MonoBehaviour
 
     private void Start()
     {
-       /* orangeTag = GameObject.FindGameObjectsWithTag("Orange");
-        pinkTag = GameObject.FindGameObjectsWithTag("Pink");
-        darkblueTag = GameObject.FindGameObjectsWithTag("DarkBlue");
-        purpleTag = GameObject.FindGameObjectsWithTag("Purple");
-        greenTag = GameObject.FindGameObjectsWithTag("Green");
-        tealTag = GameObject.FindGameObjectsWithTag("Teal");
-        yellowTag = GameObject.FindGameObjectsWithTag("Yellow");
-        lightblueTag = GameObject.FindGameObjectsWithTag("LightBlue");
-        redTag = GameObject.FindGameObjectsWithTag("Red");
-        lilacTag = GameObject.FindGameObjectsWithTag("Lilac");
-        */
+        fintext.gameObject.SetActive(false);
+        /* orangeTag = GameObject.FindGameObjectsWithTag("Orange");
+         pinkTag = GameObject.FindGameObjectsWithTag("Pink");
+         darkblueTag = GameObject.FindGameObjectsWithTag("DarkBlue");
+         purpleTag = GameObject.FindGameObjectsWithTag("Purple");
+         greenTag = GameObject.FindGameObjectsWithTag("Green");
+         tealTag = GameObject.FindGameObjectsWithTag("Teal");
+         yellowTag = GameObject.FindGameObjectsWithTag("Yellow");
+         lightblueTag = GameObject.FindGameObjectsWithTag("LightBlue");
+         redTag = GameObject.FindGameObjectsWithTag("Red");
+         lilacTag = GameObject.FindGameObjectsWithTag("Lilac");
+         */
     }
     public void Mouse(GameObject go)
     {
         //Debug.Log("First part");
         for (int i = 0; i < gameobjects.Length; i++)
         {
-           // Debug.Log("Second part");
+            // Debug.Log("Second part");
             if (go == gameobjects[i])
             {
                 //Debug.Log("Third part");
@@ -155,20 +157,20 @@ public class FreeFlowScript : MonoBehaviour
             //Debug.Log("Fifth part");
             //if (currentMaterial == materials[j])
             //{
-                //Debug.Log("Six part");
-                go.GetComponent<MeshRenderer>().sharedMaterial = currentMaterial;
+            //Debug.Log("Six part");
+            go.GetComponent<MeshRenderer>().sharedMaterial = currentMaterial;
 
-           // }
+            // }
         }
-        
+        Checkit();
     }
 
 
-    public void Update()
+    public void Checkit()
     {
-        for(int k = 0; k < orangeTag.Length - 1; k++)
+        for (int k = 0; k < orangeTag.Length - 1; k++)
         {
-            if(orangeTag[k].gameObject.GetComponent<MeshRenderer>().sharedMaterial == materials[4])
+            if (orangeTag[k].gameObject.GetComponent<MeshRenderer>().sharedMaterial == materials[4])
             {
                 correctcolororange = true;
                 Debug.Log("HereO");
@@ -176,9 +178,10 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolororange = false;
+                break;
             }
 
-           // break;
+            // break;
         }
         for (int l = 0; l < pinkTag.Length - 1; l++)
         {
@@ -190,6 +193,7 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolorpink = false;
+                break;
             }
 
             //break;
@@ -204,6 +208,7 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolordarkblue = false;
+                break;
             }
 
             //  break;
@@ -218,6 +223,7 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolorpurple = false;
+                break;
             }
 
             // break;
@@ -232,6 +238,7 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolorgreen = false;
+                break;
             }
 
             // break;
@@ -246,6 +253,7 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolorteal = false;
+                break;
             }
 
             // break;
@@ -260,6 +268,7 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcoloryellow = false;
+                break;
             }
 
             // break;
@@ -274,6 +283,7 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolorlightblue = false;
+                break;
             }
 
             // break;
@@ -288,13 +298,14 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolorred = false;
+                break;
             }
 
             // break;
         }
-        for (int s = 0; s < lilacTag.Length -1; s++)
+        for (int s = 0; s < lilacTag.Length - 1; s++)
         {
-            
+
             if (lilacTag[s].gameObject.GetComponent<MeshRenderer>().sharedMaterial == materials[3])
             {
                 correctcolorlilac = true;
@@ -303,10 +314,14 @@ public class FreeFlowScript : MonoBehaviour
             else
             {
                 correctcolorlilac = false;
+                break;
             }
 
             //break;
         }
+    }
+    private void Update()
+    {
 
         if (correctcolororange == true && correctcolorpink == true && correctcolordarkblue == true && correctcolorpurple == true && correctcolorgreen == true && correctcolorteal == true && correctcoloryellow == true && correctcolorlightblue == true && correctcolorred == true && correctcolorlilac == true)
         {
@@ -324,8 +339,14 @@ public class FreeFlowScript : MonoBehaviour
             //Scene transistion
             Debug.Log("Hereupdate");
             GlobalVariables.beatFreeFlow = true;
-            SceneManager.LoadScene("MachineRoom");
+            fintext.gameObject.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene("MachineRoom");
+            }
+            
         }
+    }
 
         //do a tag finder to add to array/list of the colors. need to tag each quad piece in unity that needs to be that color with the color name.
         /*orangeTag = GameObject.FindGameObjectsWithTag("Orange");
@@ -340,5 +361,4 @@ public class FreeFlowScript : MonoBehaviour
         lilacTag = GameObject.FindGameObjectsWithTag("Lilac");
         */
     }
-    
-}
+
