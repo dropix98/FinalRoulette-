@@ -15536,6 +15536,11 @@ MonoBehaviour:
   characterSprite: {fileID: 774420422}
   trig:
   - {fileID: 1549034423}
+  - {fileID: 359234980}
+  - {fileID: 244988984}
+  - {fileID: 1304861746}
+  - {fileID: 950542895}
+  - {fileID: 1488168256}
   done: 0
   pmc: {fileID: 966104780}
   animator: {fileID: 1230981723}

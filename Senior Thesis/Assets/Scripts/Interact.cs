@@ -380,7 +380,7 @@ public class Interact : MonoBehaviour
         //CubeText.GetComponent<DialogueTrigger>().TriggerDialogue();
         GlobalVariables.displayedCubeText = true;
         GlobalVariables.hasCube = true;
-        if (cubeIf = true)
+        if (cubeIf == true)
         {
           SceneManager.LoadScene("FinishedStatuePuzzle");
           cubeIf = false;
@@ -512,12 +512,12 @@ public class Interact : MonoBehaviour
         FreeFlowTrigger.SetActive(false);
         DNATester.SetActive(true);
       }
-      if (GlobalVariables.beatFreeFlow = true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatSimonSays == false)
+      if (GlobalVariables.beatFreeFlow == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatSimonSays == false)
       {
         YZCollider3.SetActive(false);
         YZCollider3_2.SetActive(true);
       }
-      if (GlobalVariables.beatFreeFlow = true && currentScene.name == "BroadcastingRoom" && GlobalVariables.hasDNAResults == false)
+      if (GlobalVariables.beatFreeFlow == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.hasDNAResults == false)
       {
         SRCollider3.SetActive(false);
         SRCollider3_2.SetActive(true);

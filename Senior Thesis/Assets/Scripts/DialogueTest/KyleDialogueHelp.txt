@@ -1,0 +1,60 @@
+YR3-2 \ false on start
+YR3-3 \ false on start
+MY3-2 \ false on start
+
+
+
+ if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatFreeFlow == false)
+      {
+        YRCollider3.SetActive(false);
+        YRCollider3_2.SetActive(true);
+      }
+\\
+      if (GlobalVariables.sawInvestigationReport == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatFreeFlow == true)
+      {
+        YRCollider3_2.SetActive(false);
+        YRCollider3_3.SetActive(true);
+      }
+\\
+      if (GlobalVariables.hasMedicalPills == true && currentScene.name == "BroadcastingRoom")
+      {
+        MYCollider3.SetActive(false);
+        MYCollider3_2.SetActive(true);
+      }
+\\
+
+if (GlobalVariables.beatFreeFlow == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.beatSimonSays == false)
+      {
+        YZCollider3.SetActive(false);
+        YZCollider3_2.SetActive(true);
+      }
+\\
+      if (GlobalVariables.beatFreeFlow == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.hasDNAResults == false)
+      {
+        SRCollider3.SetActive(false);
+        SRCollider3_2.SetActive(true);
+      }
+\\
+      if (currentScene.name == "BroadcastingRoom" && GlobalVariables.hasDNAResults == true)
+      {
+        SRCollider3_2.SetActive(false);
+        SRCollider3_3.SetActive(true);
+      }
+//
+      if (GlobalVariables.beatSimonSays = true && currentScene.name == "BroadcastingRoom")
+      {
+        YZCollider3.SetActive(false);
+        YZCollider3_2.SetActive(false);
+        YZCollider3_3.SetActive(true);
+      }
+//
+ if (currentScene.name == "BroadcastingRoom" && GlobalVariables.switchToolboxCollider == true)
+      {
+        ToolboxCollider.SetActive(false);
+        ToolboxCollider2.SetActive(true);
+      }
+      if (currentScene.name == "BroadcastingRoom" && GlobalVariables.hasCrowbar == true)
+      {
+        ToLevel4.SetActive(false);
+        ToLevel4_2.SetActive(true);
+      }
