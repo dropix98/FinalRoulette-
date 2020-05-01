@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 102655182}
   - component: {fileID: 102655184}
   - component: {fileID: 102655185}
+  - component: {fileID: 102655186}
   m_Layer: 0
   m_Name: YRCollider
   m_TagString: Untagged
@@ -711,6 +712,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &102655186
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102655181}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
 --- !u!1 &155068052
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,6 +6431,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3732002
       objectReference: {fileID: 0}
+    - target: {fileID: 7064575215623002833, guid: 33643f9ac5432af4a840f3f618493f71,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
     - target: {fileID: 7064575215623002846, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}
       propertyPath: m_Offset.x
@@ -6437,11 +6459,6 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.8583198
       objectReference: {fileID: 0}
-    - target: {fileID: 7064575215623002833, guid: 33643f9ac5432af4a840f3f618493f71,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
 --- !u!1 &1335217607 stripped
@@ -11499,26 +11516,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11654,6 +11651,51 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 79.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.9141216
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3911726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.893998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 156.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -11718,31 +11760,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.9141216
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.3911726
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.893998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4902470702414880046, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 156.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91701680737a6de49a3ab66ae1542d27, type: 3}

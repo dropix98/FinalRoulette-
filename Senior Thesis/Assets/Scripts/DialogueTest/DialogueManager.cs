@@ -116,6 +116,7 @@ public class DialogueManager : MonoBehaviour
     {
         pmc.movementSpeed = 3;
         animator.SetBool("IsOpen", false);
+        bounce.enabled = true;
         GlobalVariables.currentlyTalking = false;
         for (int i = 0; i < trig.Length; i++)
         {
@@ -232,88 +233,88 @@ public class DialogueManager : MonoBehaviour
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MachineRoom") && GlobalVariables.beatFreeFlow == false)
         {
             
-            trig[3].SetActive(false);
+            trig[3].gameObject.SetActive(false);
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MachineRoom") && GlobalVariables.beatFreeFlow == true)
         {
 
-            trig[3].SetActive(true);
+            trig[3].gameObject.SetActive(true);
         }
         if(GlobalVariables.hasSuRongDNA == true && GlobalVariables.hasYingDNA == true &&
           GlobalVariables.hasYiZhengDNA == true && GlobalVariables.hasYongRuanDNA == true &&
           GlobalVariables.hasJanitorDNA == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MachineRoom"))
         {
-            trig[3].SetActive(false);
-            trig[4].SetActive(true);
+            trig[3].gameObject.SetActive(false);
+            trig[4].gameObject.SetActive(true);
         }
         else if(GlobalVariables.hasSuRongDNA == false || GlobalVariables.hasYingDNA == false ||
           GlobalVariables.hasYiZhengDNA || false || GlobalVariables.hasYongRuanDNA == false ||
           GlobalVariables.hasJanitorDNA || false && GlobalVariables.beatFreeFlow == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MachineRoom"))
         {
-            trig[4].SetActive(false);
-            trig[3].SetActive(true);
+            trig[4].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(true);
         }
         if (GlobalVariables.switchJanitor3Collider == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MachineRoom"))
         {
-            trig[5].SetActive(false);
-            trig[0].SetActive(true);
+            trig[5].gameObject.SetActive(false);
+            trig[0].gameObject.SetActive(true);
         }
         else if (GlobalVariables.switchJanitor3Collider == false && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MachineRoom"))
         {
-            trig[0].SetActive(false);
-            trig[5].SetActive(true);
+            trig[0].gameObject.SetActive(false);
+            trig[5].gameObject.SetActive(true);
         }
 
 
         //
         if (GlobalVariables.sawInvestigationReport == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.beatFreeFlow == false)
         {
-            trig[0].SetActive(false);
-            trig[10].SetActive(true);
+            trig[0].gameObject.SetActive(false);
+            trig[10].gameObject.SetActive(true);
         }
 
             if (GlobalVariables.sawInvestigationReport == false && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.beatFreeFlow == false)
         {
-            trig[0].SetActive(true);
-            trig[10].SetActive(false);
-            trig[11].SetActive(false);
+            trig[0].gameObject.SetActive(true);
+            trig[10].gameObject.SetActive(false);
+            trig[11].gameObject.SetActive(false);
         }
 
         if (GlobalVariables.sawInvestigationReport == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.beatFreeFlow == true)
         {
-            trig[10].SetActive(false);
-            trig[11].SetActive(true);
+            trig[10].gameObject.SetActive(false);
+            trig[11].gameObject.SetActive(true);
         }
         
 
         if (GlobalVariables.hasMedicalPills == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom"))
         {
-            trig[3].SetActive(false);
-            trig[16].SetActive(true);
+            trig[3].gameObject.SetActive(false);
+            trig[16].gameObject.SetActive(true);
         }
         if (GlobalVariables.hasMedicalPills == false && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom"))
         {
-            trig[16].SetActive(false);
-            trig[3].SetActive(true);
+            trig[16].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(true);
         }
 
 
         if (GlobalVariables.beatFreeFlow == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.beatSimonSays == false)
         {
-            trig[2].SetActive(false);
-            trig[14].SetActive(true);
+            trig[2].gameObject.SetActive(false);
+            trig[14].gameObject.SetActive(true);
         }
         if (GlobalVariables.beatFreeFlow == false && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.beatSimonSays == false)
         {
-            trig[14].SetActive(false);
-            trig[2].SetActive(true);
+            trig[14].gameObject.SetActive(false);
+            trig[2].gameObject.SetActive(true);
         }
 
 
         if (GlobalVariables.beatFreeFlow == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.hasDNAResults == false)
         {
-            trig[1].SetActive(false);
-            trig[12].SetActive(true);
+            trig[1].gameObject.SetActive(false);
+            trig[12].gameObject.SetActive(true);
         }
         if (GlobalVariables.beatFreeFlow == false && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.hasDNAResults == false)
         {
@@ -324,41 +325,53 @@ public class DialogueManager : MonoBehaviour
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.hasDNAResults == true)
         {
-            trig[1].SetActive(false);
-            trig[12].SetActive(false);
-            trig[13].SetActive(true);
+            trig[1].gameObject.SetActive(false);
+            trig[12].gameObject.SetActive(false);
+            trig[13].gameObject.SetActive(true);
         }
-     
-
-        if (GlobalVariables.beatSimonSays = true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom"))
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom"))
         {
-            trig[2].SetActive(false);
-            trig[14].SetActive(false);
-            trig[15].SetActive(true);
+            trig[1].gameObject.SetActive(true);
+            trig[12].gameObject.SetActive(false);
+            trig[13].gameObject.SetActive(false);
+        }
+
+
+        if (GlobalVariables.beatSimonSays == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.beatFreeFlow == true)
+        {
+            trig[2].gameObject.SetActive(false);
+            trig[14].gameObject.SetActive(false);
+            trig[15].gameObject.SetActive(true);
+        }
+        else if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom"))
+        {
+            trig[2].gameObject.SetActive(true);
+            trig[14].gameObject.SetActive(false);
+            trig[15].gameObject.SetActive(false);
         }
         
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.switchToolboxCollider == true)
         {
-            trig[5].SetActive(false);
-            trig[6].SetActive(true);
+            trig[5].gameObject.SetActive(false);
+            trig[6].gameObject.SetActive(true);
         }
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.switchToolboxCollider == false)
         {
-            trig[6].SetActive(false);
-            trig[5].SetActive(true);
+            trig[6].gameObject.SetActive(false);
+            trig[5].gameObject.SetActive(true);
         }
 
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom") && GlobalVariables.hasCrowbar == true)
         {
-            trig[8].SetActive(false);
+            trig[8].gameObject.SetActive(false);
         }
 
         if (GlobalVariables.PhotoHint == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BroadcastingRoom"))
         {
-            trig[9].SetActive(false);
-            trig[4].SetActive(false);
+            trig[9].gameObject.SetActive(false);
+            trig[4].gameObject.SetActive(false);
         }
        
 
