@@ -48,7 +48,7 @@ public class FinalRouletteGame : MonoBehaviour
       SubmitButton.SetActive(false);
       Dropdown.SetActive(false);
 
-      time = WheelFootage.GetComponent<VideoPlayer>().clip.length;
+      time = 2.0;// WheelFootage.GetComponent<VideoPlayer>().clip.length;
 
     }
 
