@@ -34,7 +34,21 @@ public class DialogueManager : MonoBehaviour
         pmc.movementSpeed = 0;
         bounce.enabled = false;
         for (int i = 0; i < trig.Length; i++) {
-            trig[i].gameObject.SetActive(false);
+            //trig[i].gameObject.SetActive(false);
+            //trig[i].gameObject.GetComponent<DialogueManager>().enabled = false;
+            //if (trig[i].gameObject.GetComponent<SpriteRenderer>().sprite == true) {
+            //    trig[i].gameObject.GetComponent<DialogueTrigger>().enabled = true;
+            //}
+            if (trig[i].gameObject.GetComponent<SpriteRenderer>())
+            {
+                Debug.Log("if");
+                trig[i].gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            else
+            {
+                Debug.Log("else");
+                trig[i].gameObject.SetActive(false);
+            }
         }
         done = false;
         animator.SetBool("IsOpen", true);
@@ -120,10 +134,22 @@ public class DialogueManager : MonoBehaviour
         GlobalVariables.currentlyTalking = false;
         for (int i = 0; i < trig.Length; i++)
         {
-            trig[i].gameObject.SetActive(true);
+            //trig[i].gameObject.SetActive(true);
+            //trig[i].gameObject.GetComponent<DialogueManager>().enabled = true;
+            if (trig[i].gameObject.GetComponent<SpriteRenderer>())
+            {
+                
+                trig[i].gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            else
+            {
+                
+                trig[i].gameObject.SetActive(true);
+            }
         }
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
+            
             trig[2].gameObject.SetActive(false);
             trig[3].gameObject.SetActive(false);
             trig[4].gameObject.SetActive(false);
@@ -164,6 +190,7 @@ public class DialogueManager : MonoBehaviour
         {
             //fuse switch
             trig[7].gameObject.SetActive(false);
+            //trig[7].gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.powerOn == false)
         {
