@@ -22,13 +22,7 @@ public class level2Elevator : MonoBehaviour
     {
       if (colors[2] == 'b' && colors[1] == 'r' && colors[0] == 'g')
       {
-            //CHANGE THIS PART BACK
-            //
-            //
-            //
-            //
-            //THIS NEEDS TO GO TO INTERROGATION LEVEL2 INSTEAD
-        SceneManager.LoadScene("TempTBCScene");
+        SceneManager.LoadScene("Loading3");
       }
     }
 

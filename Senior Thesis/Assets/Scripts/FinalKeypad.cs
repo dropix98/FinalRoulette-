@@ -40,7 +40,7 @@ public class FinalKeypad : MonoBehaviour
           {
                 //Some Scene for the door open to get out or something.
                 ret = true;
-              SceneManager.LoadScene("InterrogationIntro");
+              SceneManager.LoadScene("Loading1");
               //tester.gameObject.SetActive(true);
           }
           //GlobalVariables.inKeycardGuesser = false;
