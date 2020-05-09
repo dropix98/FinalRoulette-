@@ -12,4 +12,9 @@ public class Dialogue
 
     public GameObject[] characterSprites;
 
+
+    public void setName(string newName)
+    {
+        name = newName;
+    }
 }

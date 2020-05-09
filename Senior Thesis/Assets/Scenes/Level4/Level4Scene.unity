@@ -120,6 +120,149 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &14996041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14996043}
+  - component: {fileID: 14996042}
+  m_Layer: 0
+  m_Name: blank-png-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &14996042
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14996041}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ea2bdda770507470482bad147d197d92, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 7.2, y: 7.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &14996043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14996041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.32, y: -3.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &653846369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653846370}
+  - component: {fileID: 653846371}
+  m_Layer: 0
+  m_Name: StartingDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &653846370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653846369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.46, y: -1.64, z: 1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653846371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653846369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f6b93df8355264289e665e6ac595b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Cheng SuRong
+    sentences:
+    - "Where\u2019s Mei Ying?!"
+    - "Where\u2019s Mei Ying?!"
+    - Probably got snatched.
+    - Snatched?! Could you be any more insensitive?
+    - Hahahahaha!!
+    - Hey, shut the hell up, old man. What a whacko.
+    - Can we all calm down? Geez. Get a hold of yourselves.
+    - "You know what? I\u2019m outta here."
+    - "Oh, that\u2019s a great idea. I wish I thought of that."
+    - "Dude, I don\u2019t need your sarcasm. I\u2019m finding my own way out. Smell
+      ya later.\r"
+    - "Well, fine! I\u2019m leaving, too. But I\u2019m going a different way. Hmfph."
+    - HAHAHAH!!
+    - "Uhhh, yeah. I\u2019m gonna leave, too. Sorry, lady."
+    - Where will YOU go? Hahahah! Where, where?!!
+    characterSprites:
+    - {fileID: 14996041}
 --- !u!1 &829084503
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,4 +345,144 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1194553009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194553011}
+  - component: {fileID: 1194553010}
+  m_Layer: 0
+  m_Name: InOfficeDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1194553010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194553009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f6b93df8355264289e665e6ac595b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Wang YiZheng
+    sentences:
+    - "See? I told ya she\u2019d make it. Took you long  enough, though."
+    - "See? I told ya she\u2019d make it. Took you long  enough, though."
+    - Hmph. Whatever.
+    - "I\u2019m sorry, what are we waiting for again? Where are we, anyways?"
+    - My office!
+    - '...'
+    - '...'
+    - '...'
+    - "What, we\u2019re not tongue-tied now, are we?"
+    - Is this a joke?
+    - Since when can the janitor speak in full sentences?
+    - Hahaha!!! It is kind of a joke, yes.
+    - "What\u2019s going on?"
+    - "What\u2019s going on is that I\u2019m not a janitor at all! I am\u2026"
+    - JingHui!!!!
+    - Are you kidding me?!
+    - "What the hell\u2026"
+    - "It\u2019s been me the whole time! Hahaha!"
+    - "I don\u2019t know why I\u2019m surprised."
+    - "I don\u2019t know why, either, my old friend. You know me better than my own
+      \rbrother, who seems very quiet for once, might I add.\r\n"
+    - Fuck off.
+    - "Haha! That\u2019s more like it. Now"
+    - "You all have questions for me, yes? Well, let me cover the basics first, before
+      you all shout at once. Haha!\r\n"
+    - "I brought in my nine lead suspects so that I could find the person who bombed
+      my life\u2019s work. You all could have guessed that far, I presume. However,
+      I couldn\u2019t do it alone.\r\n"
+    - "I needed someone trustworthy and random enough for you all to feel comfortable
+      enough to tell your secrets to, which is our little journalist here.\r\n"
+    - "And because she\u2019s such a wonderful detective, I\u2019ll let her ask the
+      questions! Haha! Fire away!\r\n"
+    characterSprites:
+    - {fileID: 14996041}
+--- !u!4 &1194553011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194553009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.46, y: -1.64, z: 1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1612967646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1612967648}
+  - component: {fileID: 1612967647}
+  m_Layer: 0
+  m_Name: AfterQuestionsDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1612967647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612967646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f6b93df8355264289e665e6ac595b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: JingHui
+    sentences:
+    - "Now, enough blabbering! Too much talk, not enough play! I\u2019m sure you have
+      noticed my roulette table behind me. It is a prized possession of mine. Let\u2019s
+      play a game, shall we?"
+    - "Now, enough blabbering! Too much talk, not enough play! I\u2019m sure you have
+      noticed my roulette table behind me. It is a prized possession of mine. Let\u2019s
+      play a game, shall we?"
+    - "You\u2019re insane. I\u2019m not playing any game with you."
+    - "But you already have! You\u2019ve been playing a game this entire time! Hahahah!!!\r\n"
+    - "This isn\u2019t fair, JingHui. Our fate can\u2019t depend on some girl! It\u2019s
+      fucked up!"
+    - "Language, my brother! Your fate does belong with our journalist here, and I\u2019ll
+      prove it to you through this game!!!\r\n"
+    characterSprites:
+    - {fileID: 14996041}
+--- !u!4 &1612967648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612967646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.46, y: -1.64, z: 1.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

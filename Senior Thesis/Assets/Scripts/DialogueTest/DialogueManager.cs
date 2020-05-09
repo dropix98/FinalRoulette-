@@ -23,6 +23,9 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private Queue<GameObject> spritesList;
 
+    public Dialogue nd;
+
+    public int sentCount = 0;
     void Start()
     {
         sentences = new Queue<string>();
@@ -93,6 +96,16 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        //Debug.Log("++");
+        sentCount++;
+
+        //LEVEL 4 DIALOGUE NAME FIXES. SENTCOUNT IS 1 LESS THAN THE ELEMENT NUMBER OF THE DIALOGUE ELEMENT IN THE DIALOGUE TRIGGER SENTENCES PART. IF IT IS THE 4TH SENTENCE THE SENTCOUNT IS 3
+        //sentcount needs to change fyi kyle burack
+        if (sentCount == 4 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Level4Scene"))
+        {
+            
+            //nameText.text = "TESTNAME";
+        }
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -400,8 +413,9 @@ public class DialogueManager : MonoBehaviour
             trig[9].gameObject.SetActive(false);
             trig[4].gameObject.SetActive(false);
         }
-       
 
+        nameText.text = "";
+        sentCount = 0;
         bounce.enabled = true;
     }
 
