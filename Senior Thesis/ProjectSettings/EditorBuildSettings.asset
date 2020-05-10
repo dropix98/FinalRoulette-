@@ -158,4 +158,43 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2/FinishedStatuePuzzle.unity
     guid: 65ff4a46359dc40409a0005b80b01684
+  - enabled: 1
+    path: Assets/Scenes/Level3/OminousIntro3.unity
+    guid: 6551fa99aba834a6f98cacf8cc0e7260
+  - enabled: 0
+    path: Assets/Scenes/Level4/Ignore.unity
+    guid: d4b69252e8be54718be3745d0a9fa668
+  - enabled: 1
+    path: Assets/Scenes/Interrogation/Level3Interrogation.unity
+    guid: 036e4bb46b00444ec9fdaf385617794d
+  - enabled: 1
+    path: Assets/Scenes/LoadingScenes/Loading1.unity
+    guid: 09e1025fcf2c5469480c3b2381ba0470
+  - enabled: 1
+    path: Assets/Scenes/LoadingScenes/Loading2.unity
+    guid: 24d0963bacd2a43178f0036e327a9deb
+  - enabled: 1
+    path: Assets/Scenes/LoadingScenes/Loading3.unity
+    guid: bd51c088989a54eb5b82c5d9acc1d549
+  - enabled: 1
+    path: Assets/Scenes/LoadingScenes/Loading4.unity
+    guid: 66139cb6512b44fe0853d58ba54542e7
+  - enabled: 1
+    path: Assets/Scenes/LoadingScenes/Loading5.unity
+    guid: a52468ef9613c4caaa7ed46a91dfdcf0
+  - enabled: 1
+    path: Assets/Scenes/LoadingScenes/Loading6.unity
+    guid: f506b9375d8744c3d8cd01fd79df5ba0
+  - enabled: 1
+    path: Assets/Scenes/Level4/OminousIntro4.unity
+    guid: 662ce39bf206c423aa29dd069e2fa71d
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level4.unity
+    guid: 689e2a418425c436c92a73bb3f6ad86e
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level4Office.unity
+    guid: 921406c11f1e44cb1b99d805fc8a826f
+  - enabled: 1
+    path: Assets/Scenes/Level4/FinalRouletteGame.unity
+    guid: f49960ced83e84038823413168966032
   m_configObjects: {}

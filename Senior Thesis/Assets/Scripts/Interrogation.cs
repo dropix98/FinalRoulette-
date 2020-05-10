@@ -151,6 +151,10 @@ public class Interrogation : MonoBehaviour
         {
           SceneManager.LoadScene("Loading4");
         }
+        if (scene.name == "Level3Interrogation")
+        {
+          SceneManager.LoadScene("Loading6");
+        }
       }
     }
 
