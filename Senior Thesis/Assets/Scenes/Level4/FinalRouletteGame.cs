@@ -14,6 +14,10 @@ public class FinalRouletteGame : MonoBehaviour
     public GameObject buttonSuRong;
     public GameObject buttonYongRuan;
 
+    public GameObject background;
+    public GameObject background2;
+
+
     public GameObject JingHui1;
     public GameObject JingHui2;
     public GameObject JingHui3;
@@ -137,6 +141,8 @@ public class FinalRouletteGame : MonoBehaviour
         buttonYiZheng.SetActive(true);
         buttonSuRong.SetActive(true);
         buttonYongRuan.SetActive(true);
+        background.SetActive(false);
+        background2.SetActive(true);
       }
 
       if(SubmitButton.active == false)
