@@ -11,10 +11,15 @@ public class FinalKeypad : MonoBehaviour
     public string temp;
 
     bool ret = false;
+
+    public GameObject red;
+    public GameObject green;
     //public GameObject tester;
     // Start is called before the first frame update
     void Start()
     {
+        green.gameObject.SetActive(false);
+        red.gameObject.SetActive(false);
         //tester.gameObject.SetActive(false);
     }
 
@@ -29,10 +34,10 @@ public class FinalKeypad : MonoBehaviour
       }
 
 
-        keypad.ActivateInputField();
-        keypad.text = keypad.text.ToUpper();
-        temp = keypad.text.ToString();
-        if(Input.GetKeyDown(KeyCode.Return))
+        //keypad.ActivateInputField();
+        //keypad.text = keypad.text.ToUpper();
+        //temp = keypad.text.ToString();
+        /*if(Input.GetKeyDown(KeyCode.Return))
         {
           CheckCorrect();
 
@@ -45,6 +50,7 @@ public class FinalKeypad : MonoBehaviour
           }
           //GlobalVariables.inKeycardGuesser = false;
         }
+        */
 
     }
 
@@ -66,5 +72,48 @@ public class FinalKeypad : MonoBehaviour
     public bool Ret()
     {
         return ret;
+    }
+
+
+    public void ButtonPress(string letr)
+    {
+        Resetred();
+        keypad.text += letr;
+        temp = keypad.text.ToString();
+        CheckCorrect();
+        if (CheckCorrect() == true)
+        {
+            //Some Scene for the door open to get out or something.
+            green.gameObject.SetActive(true);
+            Pause();
+            ret = true;
+            SceneManager.LoadScene("Loading1");
+            //tester.gameObject.SetActive(true);
+        }
+        if(keypad.text.ToString().Length == 5 && CheckCorrect() == false)
+        {
+            red.gameObject.SetActive(true);
+            Pause();
+            Reseti();
+        }
+    }
+
+    public void Reseti()
+    {
+        keypad.text = "";
+        temp = "";
+        green.gameObject.SetActive(false);
+       // red.gameObject.SetActive(false);
+        ret = false;
+    }
+
+    public void Resetred()
+    {
+        red.gameObject.SetActive(false);
+    }
+
+    private IEnumerator Pause()
+    {
+        yield return new WaitForSeconds(3f);
     }
 }
