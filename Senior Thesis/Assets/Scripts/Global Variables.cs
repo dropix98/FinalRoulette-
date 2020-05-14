@@ -194,6 +194,11 @@ public static class GlobalVariables
     public static bool hasCrowbar;
 
 
+    //Music
+    public static bool music1Started;
+    public static bool music2Started;
+
+
 
 
 
