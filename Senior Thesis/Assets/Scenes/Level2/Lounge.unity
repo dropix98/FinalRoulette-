@@ -502,6 +502,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &29224644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 29224646}
+  - component: {fileID: 29224645}
+  m_Layer: 0
+  m_Name: HoloFix
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &29224645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29224644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e28cb117483e449ae36e4ae2b61553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  one: {fileID: 1214717231}
+  two: {fileID: 185912945}
+  three: {fileID: 1193406254}
+--- !u!4 &29224646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29224644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 270.3742, y: 99.38841, z: -354.08698}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 57
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &32067541
 GameObject:
   m_ObjectHideFlags: 0
@@ -25909,6 +25955,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7064575215623002846, guid: 33643f9ac5432af4a840f3f618493f71,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.016858848
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064575215623002846, guid: 33643f9ac5432af4a840f3f618493f71,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.2044393
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064575215623002846, guid: 33643f9ac5432af4a840f3f618493f71,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919031153, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09816148
+      objectReference: {fileID: 0}
+    - target: {fileID: 919031153, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8583198
+      objectReference: {fileID: 0}
+    - target: {fileID: 919031153, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064575215623002833, guid: 33643f9ac5432af4a840f3f618493f71,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
     - target: {fileID: 7064575215623002847, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}
       propertyPath: FuseBox
@@ -26044,38 +26122,6 @@ PrefabInstance:
       propertyPath: OminousVoice
       value: 
       objectReference: {fileID: 117096187}
-    - target: {fileID: 7064575215623002846, guid: 33643f9ac5432af4a840f3f618493f71,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.016858848
-      objectReference: {fileID: 0}
-    - target: {fileID: 7064575215623002846, guid: 33643f9ac5432af4a840f3f618493f71,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.2044393
-      objectReference: {fileID: 0}
-    - target: {fileID: 7064575215623002846, guid: 33643f9ac5432af4a840f3f618493f71,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919031153, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.09816148
-      objectReference: {fileID: 0}
-    - target: {fileID: 919031153, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8583198
-      objectReference: {fileID: 0}
-    - target: {fileID: 919031153, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7064575215623002833, guid: 33643f9ac5432af4a840f3f618493f71,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
 --- !u!1 &1860358319 stripped

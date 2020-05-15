@@ -246,7 +246,7 @@ public class DialogueManager : MonoBehaviour
 
 
 
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary") && GlobalVariables.switchingDrawerColliders == false)
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary"))
         {
             trig[3].gameObject.SetActive(false);
             trig[2].gameObject.SetActive(true);
@@ -256,7 +256,7 @@ public class DialogueManager : MonoBehaviour
             trig[2].gameObject.SetActive(false);
             trig[3].gameObject.SetActive(true);
         }
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary") && GlobalVariables.switchingHoleColliders == false)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Infirmary"))
         {
             trig[5].gameObject.SetActive(false);
             trig[4].gameObject.SetActive(true);
