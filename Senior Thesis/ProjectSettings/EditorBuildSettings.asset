@@ -206,4 +206,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BeginAnimatic.unity
     guid: 6af13bf47804d4f6fb51e081ac862d5c
+  - enabled: 1
+    path: Assets/Scenes/Level2/BlockTutorial.unity
+    guid: 5c92604d4000d47268d303caca92d437
+  - enabled: 1
+    path: Assets/Scenes/Level3/SimonSaysTutorial.unity
+    guid: cb14af13643c74cbf96c99790ca517da
   m_configObjects: {}
