@@ -1266,7 +1266,7 @@ public class Interact : MonoBehaviour
         if (GlobalVariables.itemsFound == 5 && GlobalVariables.numberOfPeopleTalkedTo == 9 && GlobalVariables.foundKeycard && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
           Debug.Log("Starting Keycard Guesser");
-          SceneManager.LoadScene("FinalKeycardGuesser");
+          SceneManager.LoadScene("KeycardTutorial");
         }
         /*else if (GlobalVariables.itemsFound == 5 && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {

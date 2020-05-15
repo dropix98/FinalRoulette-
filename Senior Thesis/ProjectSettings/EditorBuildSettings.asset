@@ -212,4 +212,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/SimonSaysTutorial.unity
     guid: cb14af13643c74cbf96c99790ca517da
+  - enabled: 1
+    path: Assets/Scenes/Floor1/KeycardTutorial.unity
+    guid: 25badb8370d8644d7a1e6b52243cd1d4
   m_configObjects: {}

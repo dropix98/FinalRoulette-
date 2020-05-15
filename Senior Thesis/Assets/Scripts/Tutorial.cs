@@ -27,7 +27,7 @@ public class Tutorial : MonoBehaviour
     {
       Scene currentScene = SceneManager.GetActiveScene();
       currentTime = Footage.GetComponent<VideoPlayer>().time;
-       if (currentTime >= time)
+       if (currentTime >= time-.0000006)
        {
            Debug.Log ("Video Over");
            if (currentScene.name == "BlockTutorial")
@@ -37,6 +37,10 @@ public class Tutorial : MonoBehaviour
            if (currentScene.name == "SimonSaysTutorial")
            {
              SceneManager.LoadScene("SimonSays");
+           }
+           if (currentScene.name == "KeycardTutorial")
+           {
+             SceneManager.LoadScene("FinalKeycardGuesser");
            }
        }
      }
