@@ -34,6 +34,10 @@ public class Tutorial : MonoBehaviour
            {
              SceneManager.LoadScene("BlockPuzzle");
            }
+           if (currentScene.name == "ElectricSlideTutorial")
+           {
+             SceneManager.LoadScene("ElectricSlidePuzzle");
+           }
            if (currentScene.name == "SimonSaysTutorial")
            {
              SceneManager.LoadScene("SimonSays");
