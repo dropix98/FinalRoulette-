@@ -27,7 +27,7 @@ public class SlidePuzzleTriggerScript : MonoBehaviour
             Debug.Log("Player Detected");
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene("ElectricSlidePuzzle");
+                SceneManager.LoadScene("ElectricSlideTutorial");
             }
         }
     }
