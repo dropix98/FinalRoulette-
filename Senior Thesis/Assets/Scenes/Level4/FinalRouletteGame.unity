@@ -9383,26 +9383,25 @@ MonoBehaviour:
   dialogue:
     name: Group
     sentences:
-    - "YONGRUAN: Wow. I can\u2019t believe you actually think it was me. Do you really
-      think I\u2019d do something like this?"
-    - "YONGRUAN: It\u2019s because I worked in the pipes, isn\u2019t it? Or was it
-      my past with JingHui?"
-    - "YONGRUAN: Doesn\u2019t matter, because you\u2019re wrong.  \n"
-    - 'JINGHUI: Ahh, my old friend. Tread lightly. Another reset, and you could perish.
-      Do you understand?
-
-'
-    - "YONGRUAN: Yeah, I do understand! I understand that I\u2019m being falsely accused!
-      Go ahead, reset it!"
-    - 'JINGHUI: Hm. All right. (to player) Ah, well, little journalist. Seems you
+    - "YONGRUAN: \"Wow. I can\u2019t believe you actually think it was me. Do you
+      really think I\u2019d do something like this?\""
+    - "YONGRUAN: \"It\u2019s because I worked in the pipes, isn\u2019t it? Or was
+      it my past with JingHui?\""
+    - "YONGRUAN: \"Doesn\u2019t matter, because you\u2019re wrong.\"\n"
+    - 'JingHui: "Ahh, my old friend. Tread lightly. Another reset, and you could perish.
+      Do you understand?"'
+    - "YONGRUAN: \"Yeah, I do understand! I understand that I\u2019m being falsely
+      accused! Go ahead, reset it!\""
+    - 'JingHui: "Hm. All right. (to player) Ah, well, little journalist. Seems you
       have failed me once again. I have to say, I am disappointed. I expected better
       from you. I felt that you had it this time, why with all my help, laying clues
-      out for you!'
-    - 'JINGHUI: I know it may seem silly. My brother here could be lying about his
-      innocence, of course.'
-    - 'JINGHUI: But from testing out this little charade, my results have shown that,
-      under the circumstances, the culprit will always confess if he is truly guilty.'
-    - "JINGHUI: Oh, well. You can just try again, as long as you\u2019re alive! Hahaha!\n"
+      out for you!"'
+    - 'JingHui: "I know it may seem silly. My brother here could be lying about his
+      innocence, of course."'
+    - 'JingHui: "But from testing out this little charade, my results have shown that,
+      under the circumstances, the culprit will always confess if he is truly guilty."'
+    - "JingHui: \"Oh, well. You can just try again, as long as you\u2019re alive!
+      Hahaha!\"\n"
     characterSprites:
     - {fileID: 295487314}
     - {fileID: 295487314}
@@ -10279,23 +10278,24 @@ MonoBehaviour:
   dialogue:
     name: Group
     sentences:
-    - "YIZHENG: What? Is this a fucking joke, reporter lady?! It\u2019s not me! I\u2019m
-      innocent!"
-    - 'JINGHUI: Ahhh, be careful, my brother. Do you remember what another reset could
-      do to you?'
-    - "YIZHENG: Screw you. At this point, I wish it was me. Like I\u2019ve said before,
-      I would never try and kill my brother, but now I kinda want to!"
-    - "YIZHENG: So go ahead, reset the simulation! It\u2019s not like I can be mad
-      about this later.\n"
-    - 'JINGHUI: Hm. All right. (to player) Ah, well, little journalist. Seems you
+    - "YiZheng: \"What? Is this a fucking joke, reporter lady?! It\u2019s not me!
+      I\u2019m innocent!\""
+    - 'JingHui: "Ahhh, be careful, my brother. Do you remember what another reset
+      could do to you?"'
+    - "YiZheng: \"Screw you. At this point, I wish it was me. Like I\u2019ve said
+      before, I would never try and kill my brother, but now I kinda want to!\""
+    - "YiZheng: \"So go ahead, reset the simulation! It\u2019s not like I can be mad
+      about this later.\"\n"
+    - 'JingHui: "Hm. All right. (to player) Ah, well, little journalist. Seems you
       have failed me once again. I have to say, I am disappointed. I expected better
       from you. I felt that you had it this time, why with all my help, laying clues
-      out for you!'
-    - 'JINGHUI: I know it may seem silly. My brother here could be lying about his
-      innocence, of course.'
-    - 'JINGHUI: But from testing out this little charade, my results have shown that,
-      under the circumstances, the culprit will always confess if he is truly guilty.'
-    - "JINGHUI: Oh, well. You can just try again, as long as you\u2019re alive! Hahaha!\n"
+      out for you!"'
+    - 'JingHui: "I know it may seem silly. My brother here could be lying about his
+      innocence, of course."'
+    - 'JingHui: "But from testing out this little charade, my results have shown that,
+      under the circumstances, the culprit will always confess if he is truly guilty."'
+    - "JingHui: \"Oh, well. You can just try again, as long as you\u2019re alive!
+      Hahaha!\""
     characterSprites:
     - {fileID: 1167258854}
     - {fileID: 155990663}
@@ -11032,41 +11032,35 @@ MonoBehaviour:
   dialogue:
     name: Group
     sentences:
-    - "SURONG: Psh. It wasn\u2019t me. She\u2019s lying."
-    - "JINGHUI: Are you sure? Tread lightly, friend. Another reset, and you and everyone
-      in here could perish. Do you understand? \n"
-    - 'SURONG: Even Mei Ying?
+    - "SURONG: \"Psh. It wasn\u2019t me. She\u2019s lying.\""
+    - 'JingHui: "Are you sure? Tread lightly, friend. Another reset, and you and everyone
+      in here could perish. Do you understand?"
 
 '
-    - "JINGHUI: Yes. \n"
-    - "SURONG: But that\u2019s not fair! She didn\u2019t even do anything! No wonder
-      she got tired of you. You\u2019re insane! You\u2019ve completely lost it!\n"
-    - "JINGHUI: \u2026\n"
-    - "SURONG: Oh, you\u2019re speechless now, huh? Don\u2019t want to be a man and
-      talk to me? Well, fine. You know what, JingHui? You\u2019re pathetic! I don\u2019t
-      care that you\u2019re famous, I don\u2019t care that I stole your girlfriend,
-      and I don\u2019t care that I did it!!!"
-    - 'JINGHUI: Is this you confessing, SuRong?
-
-'
-    - "SURONG: I\u2019m confessing that Mei Ying wanted you out of her life, you crazy
-      piece of shit. And I was the only one who knew how to help her. She got me an
-      early access tour of your building, and I knew it was my chance. "
-    - "SURONG: I snuck away from the tour group and planted some homemade bombs in
-      the pipes before anyone would notice. Hah! You\u2019re all so dumb! I snuck
-      right by everyone, and I did it all for Mei!\n"
-    - "YONGRUAN: Don\u2019t you have any remorse? Any empathy for the woman that you
-      killed? For all the people you injured?\n"
-    - "SURONG: Life\u2019s a game, YongRuan. Some people get dealt bad cards, or make
-      bad bets, or whatever analogy you want. But if you don\u2019t play to win, then
-      you lose. And I was playing to win.\n"
-    - 'YIZHENG: Well, it looks like today, you lost. You sicko.
-
-'
-    - 'JINGHUI: This is all very eye opening information. Thank you, SuRong. At least
-      you redeemed yourself slightly through this confession. Goodbye.
-
-'
+    - 'SuRong: "Even Mei Ying?"'
+    - 'JingHui: "Yes."'
+    - "SuRong: \"But that\u2019s not fair! She didn\u2019t even do anything! No wonder
+      she got tired of you. You\u2019re insane! You\u2019ve completely lost it!\""
+    - "JingHui: \"\u2026\"\n"
+    - "SuRong: \"Oh, you\u2019re speechless now, huh? Don\u2019t want to be a man
+      and talk to me? Well, fine. You know what, JingHui? You\u2019re pathetic! I
+      don\u2019t care that you\u2019re famous, I don\u2019t care that I stole your
+      girlfriend, and I don\u2019t care that I did it!!!\""
+    - 'JingHui: "Is this you confessing, SuRong?"'
+    - "SuRong: \"I\u2019m confessing that Mei Ying wanted you out of her life, you
+      crazy piece of shit. And I was the only one who knew how to help her. She got
+      me an early access tour of your building, and I knew it was my chance.\""
+    - "SuRong: \"I snuck away from the tour group and planted some homemade bombs
+      in the pipes before anyone would notice. Hah! You\u2019re all so dumb! I snuck
+      right by everyone, and I did it all for Mei!\""
+    - "YongRuan: \"Don\u2019t you have any remorse? Any empathy for the woman that
+      you killed? For all the people you injured?\""
+    - "SuRong: \"Life\u2019s a game, YongRuan. Some people get dealt bad cards, or
+      make bad bets, or whatever analogy you want. But if you don\u2019t play to win,
+      then you lose. And I was playing to win.\""
+    - 'YiZheng: "Well, it looks like today, you lost. You sicko."'
+    - 'JingHui: "This is all very eye opening information. Thank you, SuRong. At least
+      you redeemed yourself slightly through this confession. Goodbye."'
     characterSprites:
     - {fileID: 1122161061}
     - {fileID: 155990663}
@@ -11556,6 +11550,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11730,31 +11749,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}

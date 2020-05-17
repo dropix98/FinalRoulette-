@@ -1866,29 +1866,30 @@ MonoBehaviour:
   dialogue:
     name: Group
     sentences:
-    - "See? I told ya she\u2019d make it. Took you long  enough, though."
-    - "See? I told ya she\u2019d make it. Took you long  enough, though."
-    - Hmph. Whatever.
-    - "I\u2019m sorry, what are we waiting for again? Where are we, anyways?"
-    - My office!
-    - '...'
-    - '...'
-    - '...'
-    - "What, we\u2019re not tongue-tied now, are we?"
-    - Is this a joke?
-    - Since when can the janitor speak in full sentences?
-    - Hahaha!!! It is kind of a joke, yes.
-    - "What\u2019s going on?"
-    - "What\u2019s going on is that I\u2019m not a janitor at all! I am\u2026"
-    - JingHui!!!!
-    - Are you kidding me?!
-    - "What the hell\u2026"
-    - "It\u2019s been me the whole time! Hahaha!"
-    - "I don\u2019t know why I\u2019m surprised."
-    - "I don\u2019t know why, either, my old friend. You know me better than my own
-      \rbrother, who seems very quiet for once, might I add.\r\n"
-    - Fuck off.
-    - "Haha! That\u2019s more like it. Now"
+    - "YiZheng: \u201CSee? I told ya she\u2019d make it. Took you long  enough, though.\u201D\n"
+    - "SuRong: \u201CHmph. Whatever.\u201D\n"
+    - "YongRuan: \u201CI\u2019m sorry, what are we waiting for again? Where are we,
+      anyways?\u201D\n"
+    - "Lin Minkai: \u201CMy office!\u201D\n"
+    - "YongRuan: \u201C...\u201D\n"
+    - "SuRong: \u201C...\u201D\n"
+    - "YiZheng: \u201C...\u201D\n"
+    - "Lin Minkai: \u201CWhat, we\u2019re not tongue-tied now, are we?\u201D\n"
+    - "SuRong: \u201CIs this a joke?\u201D\n"
+    - "YiZheng: \u201CSince when can the janitor speak in full sentences?\u201D\n"
+    - "Lin Minkai: \u201CHahaha!!! It is kind of a joke, yes.\u201D\n"
+    - "YongRuan: \u201CWhat\u2019s going on?\u201D\n"
+    - "Lin Minkai: \u201CWhat\u2019s going on is that I\u2019m not a janitor at all!
+      I am\u2026..\u201D"
+    - "\u201CJingHui!!!!\u201D\n"
+    - "YongRuan: \u201CAre you kidding me?!\u201D\n"
+    - "SuRong: \u201CWhat the hell\u2026\u201D\n"
+    - "JingHui: \u201CIt\u2019s been me the whole time! Hahaha!\u201D\n"
+    - "YongRuan: \u201CI don\u2019t know why I\u2019m surprised.\u201D\n"
+    - "JingHui: \u201CI don\u2019t know why, either, my old friend. You know me better
+      than my own brother, who seems very quiet for once, might I add.\u201D\n"
+    - "YiZheng: \u201CFuck off.\u201D\n"
+    - "JingHui: \u201CHaha! That\u2019s more like it. Now\u2026 "
     - "You all have questions for me, yes? Well, let me cover the basics first, before
       you all shout at once. Haha!\r\n"
     - "I brought in my nine lead suspects so that I could find the person who bombed
@@ -1897,7 +1898,7 @@ MonoBehaviour:
     - "I needed someone trustworthy and random enough for you all to feel comfortable
       enough to tell your secrets to, which is our little journalist here.\r\n"
     - "And because she\u2019s such a wonderful detective, I\u2019ll let her ask the
-      questions! Haha! Fire away!\r\n"
+      questions! Haha! Fire away!\""
     characterSprites:
     - {fileID: 0}
 --- !u!4 &243233465
@@ -5510,18 +5511,16 @@ MonoBehaviour:
   dialogue:
     name: Group
     sentences:
-    - "Now, enough blabbering! Too much talk, not enough play! I\u2019m sure you have
-      noticed my roulette table behind me. It is a prized possession of mine. Let\u2019s
-      play a game, shall we?"
-    - "Now, enough blabbering! Too much talk, not enough play! I\u2019m sure you have
-      noticed my roulette table behind me. It is a prized possession of mine. Let\u2019s
-      play a game, shall we?"
-    - "You\u2019re insane. I\u2019m not playing any game with you."
-    - "But you already have! You\u2019ve been playing a game this entire time! Hahahah!!!\r\n"
-    - "This isn\u2019t fair, JingHui. Our fate can\u2019t depend on some girl! It\u2019s
-      fucked up!"
-    - "Language, my brother! Your fate does belong with our journalist here, and I\u2019ll
-      prove it to you through this game!!!\r\n"
+    - "JingHui: \u201CNow, enough blabbering! Too much talk, not enough play! I\u2019m
+      sure you have noticed my roulette table behind me. It is a prized possession
+      of mine. Let\u2019s play a game, shall we?\u201D\n"
+    - "SuRong: \u201CYou\u2019re insane. I\u2019m not playing any game with you.\u201D\n"
+    - "JingHui: \u201CBut you already have! You\u2019ve been playing a game this entire
+      time! Hahahah!!!\u201D"
+    - "YiZheng: \u201CThis isn\u2019t fair, JingHui. Our fate can\u2019t depend on
+      some girl! It\u2019s fucked up!\u201D\n"
+    - "JingHui: \u201CLanguage, my brother! Your fate does belong with our journalist
+      here, and I\u2019ll prove it to you through this game!!!\u201D"
     characterSprites:
     - {fileID: 591249173}
 --- !u!4 &1021950950
@@ -9849,6 +9848,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10023,16 +10032,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Text
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
