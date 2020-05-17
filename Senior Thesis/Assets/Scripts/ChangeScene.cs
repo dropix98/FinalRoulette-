@@ -22,6 +22,9 @@ public class ChangeScene : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         }
     }
+
+    public void ChangeSceneButton()
+    {
+      SceneManager.LoadScene(sceneName);
+    }
 }
-
-

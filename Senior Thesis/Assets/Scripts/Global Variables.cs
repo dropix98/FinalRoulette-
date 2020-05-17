@@ -197,6 +197,10 @@ public static class GlobalVariables
     //Music
     public static bool music1Started;
     public static bool music2Started;
+    public static bool music3Started;
+    public static bool music4Started;
+    public static bool music5Started;
+    public static bool music6Started;
 
 
 

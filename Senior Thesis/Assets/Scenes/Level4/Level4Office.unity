@@ -1866,29 +1866,30 @@ MonoBehaviour:
   dialogue:
     name: Group
     sentences:
-    - "See? I told ya she\u2019d make it. Took you long  enough, though."
-    - "See? I told ya she\u2019d make it. Took you long  enough, though."
-    - Hmph. Whatever.
-    - "I\u2019m sorry, what are we waiting for again? Where are we, anyways?"
-    - My office!
-    - '...'
-    - '...'
-    - '...'
-    - "What, we\u2019re not tongue-tied now, are we?"
-    - Is this a joke?
-    - Since when can the janitor speak in full sentences?
-    - Hahaha!!! It is kind of a joke, yes.
-    - "What\u2019s going on?"
-    - "What\u2019s going on is that I\u2019m not a janitor at all! I am\u2026"
-    - JingHui!!!!
-    - Are you kidding me?!
-    - "What the hell\u2026"
-    - "It\u2019s been me the whole time! Hahaha!"
-    - "I don\u2019t know why I\u2019m surprised."
-    - "I don\u2019t know why, either, my old friend. You know me better than my own
-      \rbrother, who seems very quiet for once, might I add.\r\n"
-    - Fuck off.
-    - "Haha! That\u2019s more like it. Now"
+    - "YiZheng: \u201CSee? I told ya she\u2019d make it. Took you long  enough, though.\u201D\n"
+    - "SuRong: \u201CHmph. Whatever.\u201D\n"
+    - "YongRuan: \u201CI\u2019m sorry, what are we waiting for again? Where are we,
+      anyways?\u201D\n"
+    - "Lin Minkai: \u201CMy office!\u201D\n"
+    - "YongRuan: \u201C...\u201D\n"
+    - "SuRong: \u201C...\u201D\n"
+    - "YiZheng: \u201C...\u201D\n"
+    - "Lin Minkai: \u201CWhat, we\u2019re not tongue-tied now, are we?\u201D\n"
+    - "SuRong: \u201CIs this a joke?\u201D\n"
+    - "YiZheng: \u201CSince when can the janitor speak in full sentences?\u201D\n"
+    - "Lin Minkai: \u201CHahaha!!! It is kind of a joke, yes.\u201D\n"
+    - "YongRuan: \u201CWhat\u2019s going on?\u201D\n"
+    - "Lin Minkai: \u201CWhat\u2019s going on is that I\u2019m not a janitor at all!
+      I am\u2026..\u201D"
+    - "\u201CJingHui!!!!\u201D\n"
+    - "YongRuan: \u201CAre you kidding me?!\u201D\n"
+    - "SuRong: \u201CWhat the hell\u2026\u201D\n"
+    - "JingHui: \u201CIt\u2019s been me the whole time! Hahaha!\u201D\n"
+    - "YongRuan: \u201CI don\u2019t know why I\u2019m surprised.\u201D\n"
+    - "JingHui: \u201CI don\u2019t know why, either, my old friend. You know me better
+      than my own brother, who seems very quiet for once, might I add.\u201D\n"
+    - "YiZheng: \u201CFuck off.\u201D\n"
+    - "JingHui: \u201CHaha! That\u2019s more like it. Now\u2026 "
     - "You all have questions for me, yes? Well, let me cover the basics first, before
       you all shout at once. Haha!\r\n"
     - "I brought in my nine lead suspects so that I could find the person who bombed
@@ -1897,7 +1898,7 @@ MonoBehaviour:
     - "I needed someone trustworthy and random enough for you all to feel comfortable
       enough to tell your secrets to, which is our little journalist here.\r\n"
     - "And because she\u2019s such a wonderful detective, I\u2019ll let her ask the
-      questions! Haha! Fire away!\r\n"
+      questions! Haha! Fire away!\""
     characterSprites:
     - {fileID: 0}
 --- !u!4 &243233465
@@ -1913,6 +1914,147 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &268452567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 268452570}
+  - component: {fileID: 268452569}
+  - component: {fileID: 268452568}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &268452568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268452567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f21a8f4fc2f4b8b9e65c56889f05e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 268452567}
+--- !u!82 &268452569
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268452567}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d328ef53d7f2f4344b852a04f063fbba, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &268452570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268452567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 636.7268, y: 417.05154, z: -434.49643}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275016399
 GameObject:
@@ -5510,18 +5652,16 @@ MonoBehaviour:
   dialogue:
     name: Group
     sentences:
-    - "Now, enough blabbering! Too much talk, not enough play! I\u2019m sure you have
-      noticed my roulette table behind me. It is a prized possession of mine. Let\u2019s
-      play a game, shall we?"
-    - "Now, enough blabbering! Too much talk, not enough play! I\u2019m sure you have
-      noticed my roulette table behind me. It is a prized possession of mine. Let\u2019s
-      play a game, shall we?"
-    - "You\u2019re insane. I\u2019m not playing any game with you."
-    - "But you already have! You\u2019ve been playing a game this entire time! Hahahah!!!\r\n"
-    - "This isn\u2019t fair, JingHui. Our fate can\u2019t depend on some girl! It\u2019s
-      fucked up!"
-    - "Language, my brother! Your fate does belong with our journalist here, and I\u2019ll
-      prove it to you through this game!!!\r\n"
+    - "JingHui: \u201CNow, enough blabbering! Too much talk, not enough play! I\u2019m
+      sure you have noticed my roulette table behind me. It is a prized possession
+      of mine. Let\u2019s play a game, shall we?\u201D\n"
+    - "SuRong: \u201CYou\u2019re insane. I\u2019m not playing any game with you.\u201D\n"
+    - "JingHui: \u201CBut you already have! You\u2019ve been playing a game this entire
+      time! Hahahah!!!\u201D"
+    - "YiZheng: \u201CThis isn\u2019t fair, JingHui. Our fate can\u2019t depend on
+      some girl! It\u2019s fucked up!\u201D\n"
+    - "JingHui: \u201CLanguage, my brother! Your fate does belong with our journalist
+      here, and I\u2019ll prove it to you through this game!!!\u201D"
     characterSprites:
     - {fileID: 591249173}
 --- !u!4 &1021950950
@@ -9849,6 +9989,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10023,16 +10173,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Text
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
