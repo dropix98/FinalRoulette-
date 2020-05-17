@@ -24247,7 +24247,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025104836}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -24278,7 +24278,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1c34f40101607634d8047b19120d2406, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b63117f3ef6de84ca2ce4d0862ed0e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -24324,18 +24324,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00062572956, y: 0.021005929}
+  m_Offset: {x: 0.00062572956, y: 0.031570688}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.28, y: 0.16}
     newSize: {x: 10.1, y: 7.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63191485, y: 3.1120734}
+  m_Size: {x: 0.63191485, y: 0.5553813}
   m_EdgeRadius: 0
 --- !u!4 &1025104841
 Transform:
@@ -24345,8 +24345,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025104836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.31, y: 2.41, z: -1.1734356}
-  m_LocalScale: {x: 1.0435059, y: 1.0435059, z: 1.0435059}
+  m_LocalPosition: {x: 15.7301, y: 3.5961, z: -1.1734356}
+  m_LocalScale: {x: 2.1870701, y: 2.8696089, z: 1.0435059}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
@@ -33078,7 +33078,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750710384}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -33109,7 +33109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1c34f40101607634d8047b19120d2406, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f3028bca47613e4fb2554734291e618, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -33135,10 +33135,10 @@ MonoBehaviour:
   dialogue:
     name: Toy
     sentences:
-    - "This must have been a toy belonging to the victim\u2019s child. It\u2019s terrible
-      that he had to see his mother perish like that."
-    - "This must have been a toy belonging to the victim\u2019s child. It\u2019s terrible
-      that he had to see his mother perish like that."
+    - "This must have been the toy belonging to the victim\u2019s child. It\u2019s
+      terrible that he had to see his mother perish like that."
+    - "This must have been the toy belonging to the victim\u2019s child. It\u2019s
+      terrible that he had to see his mother perish like that."
     characterSprites:
     - {fileID: 905871631}
     - {fileID: 0}
@@ -33155,18 +33155,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00062572956, y: 0.021005929}
+  m_Offset: {x: 0.012310356, y: -0.006981477}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.2, y: 0.3}
     newSize: {x: 10.1, y: 7.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63191485, y: 3.1120734}
+  m_Size: {x: 0.28137976, y: 0.40133312}
   m_EdgeRadius: 0
 --- !u!4 &1750710389
 Transform:
@@ -33176,8 +33176,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750710384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.72, y: -6.2, z: -1.1734356}
-  m_LocalScale: {x: 1.0435059, y: 1.0435059, z: 1.0435059}
+  m_LocalPosition: {x: 2.64, y: -5.88, z: -1.1734356}
+  m_LocalScale: {x: 0.96804816, y: 0.94303435, z: 1.0435059}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -33580,7 +33580,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792990175}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -33611,7 +33611,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1c34f40101607634d8047b19120d2406, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7322e5c099ba2486797b9b8ca2444362, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -33637,11 +33637,11 @@ MonoBehaviour:
   dialogue:
     name: Report
     sentences:
-    - "It\u2019s a report from the crime scene. A witness reported seeing a tall male
-      with a suspicious bag coming and going from JingHui\u2019s building a couple
+    - "It\u2019s a news report from the crime scene. A witness reported seeing a tall
+      male with a suspicious bag coming and going from JingHui\u2019s building a couple
       days before the bombing."
-    - "It\u2019s a report from the crime scene. A witness reported seeing a tall male
-      with a suspicious bag coming and going from JingHui\u2019s building a couple
+    - "It\u2019s a news report from the crime scene. A witness reported seeing a tall
+      male with a suspicious bag coming and going from JingHui\u2019s building a couple
       days before the bombing."
     characterSprites:
     - {fileID: 905871631}
@@ -33659,18 +33659,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00062572956, y: 0.021005929}
+  m_Offset: {x: 0.00062572956, y: 0.015173063}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.57, y: 0.34}
     newSize: {x: 10.1, y: 7.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63191485, y: 3.1120734}
+  m_Size: {x: 0.63191485, y: 0.74397576}
   m_EdgeRadius: 0
 --- !u!4 &1792990180
 Transform:
@@ -33680,7 +33680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792990175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.56, y: 3.46, z: -1.1734356}
+  m_LocalPosition: {x: 1.35, y: 3.34, z: -1.1734356}
   m_LocalScale: {x: 1.0435059, y: 1.0435059, z: 1.0435059}
   m_Children: []
   m_Father: {fileID: 0}
