@@ -27,10 +27,10 @@ public class BeginningVideo : MonoBehaviour
     private void checkPlayingVideo()
     {
       currentTime = Animatic.GetComponent<VideoPlayer>().time;
-       if (currentTime >= time)
+       if (currentTime >= time-.042)
        {
            Debug.Log ("Video Over");
-           SceneManager.LoadScene("Floor1Final");
+           SceneManager.LoadScene("LoadingStart");
        }
      }
 }
