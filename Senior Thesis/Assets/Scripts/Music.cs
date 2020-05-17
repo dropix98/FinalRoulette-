@@ -22,13 +22,27 @@ public class Music : MonoBehaviour
         audio.GetComponent<AudioSource>().Play();
         GlobalVariables.music2Started = true;
       }
+      if (currentScene1.name == "Level4" && GlobalVariables.music3Started == false)
+      {
+        DontDestroyOnLoad(audio);
+        audio.GetComponent<AudioSource>().Play();
+        GlobalVariables.music3Started = true;
+      }
     }
 
     // Update is called once per frame
     void Update()
     {
       Scene currentScene = SceneManager.GetActiveScene();
-      if (currentScene.name == "Loading1" || currentScene.name == "Loading3")
+      if (currentScene.name == "Loading1")
+      {
+        audio.GetComponent<AudioSource>().Stop();
+      }
+      if (currentScene.name == "Loading3")
+      {
+        audio.GetComponent<AudioSource>().Stop();
+      }
+      if (currentScene.name == "Level4Office")
       {
         audio.GetComponent<AudioSource>().Stop();
       }
