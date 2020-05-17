@@ -10613,7 +10613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: JingHui
+    name: MinKai
     sentences:
     - Not dead, I say! Not dead! A different plane of existence, once again! All over
       again!
@@ -26792,13 +26792,13 @@ MonoBehaviour:
     sentences:
     - "Hey, I\u2019ve been meaning to talk to you."
     - "Hey, I\u2019ve been meaning to talk to you."
-    - You know that janitor, right?
-    - Well, I know everyone in this building. I sign them in every morning.
+    - You know that janitor, MinKai, right?
+    - Well, I know everyone in JingHui's building. I sign them in every morning.
     - "Trust me when I say I\u2019ve never seen this man before."
-    - "He doesn\u2019t work here, I\u2019m sure of it."
+    - "He doesn\u2019t work there, I\u2019m sure of it."
     - "Oh, that? That\u2019s a magnet, not a medical instrument."
-    - "It\u2019s a strong one, too. I remember some workers using it for one of JingHui\u2019s
-      crazy projects."
+    - "It\u2019s a strong one, too. I remember some workers using one just like it
+      for one of JingHui\u2019s crazy projects."
     characterSprites:
     - {fileID: 2047816089}
     - {fileID: 2047816089}
