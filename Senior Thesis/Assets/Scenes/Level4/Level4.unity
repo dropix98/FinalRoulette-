@@ -26415,7 +26415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NotebookCanvas: {fileID: 470303852}
-  resume: {fileID: 341083607}
+  resume: {fileID: 1501332270}
   impressions: {fileID: 341083607}
   hints: {fileID: 1382945817}
   quit: {fileID: 1598183382}
@@ -26489,40 +26489,40 @@ MonoBehaviour:
   MedicalReportHint: {fileID: 1480294358}
   OrangeHint: {fileID: 2034110801}
   IntroHintText: {fileID: 1364423684}
-  ElevatorHintText: {fileID: 0}
-  FuseHintText: {fileID: 0}
-  DrawerHintText: {fileID: 0}
-  MagnetHintText: {fileID: 0}
-  HoleHintText: {fileID: 0}
-  MedicalReportHintText: {fileID: 0}
-  OrangeHintText: {fileID: 0}
-  MeiImpression3: {fileID: 0}
-  MinKaiImpression3: {fileID: 0}
-  SuRongImpression3: {fileID: 0}
-  YiZhengImpression3: {fileID: 0}
-  YongRuanImpression3: {fileID: 0}
-  MeiImpression3Text: {fileID: 0}
-  MinKaiImpression3Text: {fileID: 0}
-  SuRongImpression3Text: {fileID: 0}
-  YiZhengImpression3Text: {fileID: 0}
-  YongRuanImpression3Text: {fileID: 0}
-  Level3Hints: {fileID: 0}
-  IntroHint2: {fileID: 0}
-  CrowbarHint: {fileID: 0}
-  MonitorHint: {fileID: 0}
-  PhotoHint: {fileID: 0}
-  CCTVHint: {fileID: 0}
-  MeiHealthHint: {fileID: 0}
-  ToolboxKeyHint: {fileID: 0}
-  DNAHint: {fileID: 0}
-  IntroHint2Text: {fileID: 0}
-  CrowbarHintText: {fileID: 0}
-  MonitorHintText: {fileID: 0}
-  PhotoHintText: {fileID: 0}
-  CCTVHintText: {fileID: 0}
-  MeiHealthHintText: {fileID: 0}
-  ToolboxKeyHintText: {fileID: 0}
-  DNAHintText: {fileID: 0}
+  ElevatorHintText: {fileID: 1226233515}
+  FuseHintText: {fileID: 1083997644}
+  DrawerHintText: {fileID: 157785334}
+  MagnetHintText: {fileID: 524612748}
+  HoleHintText: {fileID: 2052357856}
+  MedicalReportHintText: {fileID: 620193038}
+  OrangeHintText: {fileID: 1453190071}
+  MeiImpression3: {fileID: 188320068}
+  MinKaiImpression3: {fileID: 1747130536}
+  SuRongImpression3: {fileID: 1752566046}
+  YiZhengImpression3: {fileID: 635726848}
+  YongRuanImpression3: {fileID: 736072139}
+  MeiImpression3Text: {fileID: 916956458}
+  MinKaiImpression3Text: {fileID: 1826668803}
+  SuRongImpression3Text: {fileID: 1074488184}
+  YiZhengImpression3Text: {fileID: 169111407}
+  YongRuanImpression3Text: {fileID: 1164640709}
+  Level3Hints: {fileID: 627415549}
+  IntroHint2: {fileID: 1412576636}
+  CrowbarHint: {fileID: 410080223}
+  MonitorHint: {fileID: 490940164}
+  PhotoHint: {fileID: 963372603}
+  CCTVHint: {fileID: 516291285}
+  MeiHealthHint: {fileID: 1430634519}
+  ToolboxKeyHint: {fileID: 703267685}
+  DNAHint: {fileID: 881749441}
+  IntroHint2Text: {fileID: 655941002}
+  CrowbarHintText: {fileID: 555026580}
+  MonitorHintText: {fileID: 364559254}
+  PhotoHintText: {fileID: 1923821906}
+  CCTVHintText: {fileID: 440605661}
+  MeiHealthHintText: {fileID: 953363662}
+  ToolboxKeyHintText: {fileID: 704845234}
+  DNAHintText: {fileID: 940752126}
 --- !u!1 &1124981277
 GameObject:
   m_ObjectHideFlags: 0
