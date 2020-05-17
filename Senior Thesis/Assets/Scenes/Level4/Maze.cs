@@ -13,6 +13,11 @@ public class Maze : MonoBehaviour
     public GameObject Text3;
 
     public GameObject Border;
+    public GameObject sprite1;
+    public GameObject sprite2;
+    public GameObject sprite3;
+
+    private bool talked;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +28,12 @@ public class Maze : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      if (talked && GlobalVariables.currentlyTalking == false)
+      {
+        sprite1.SetActive(false);
+        sprite2.SetActive(false);
+        sprite3.SetActive(false);
+      }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -49,5 +59,6 @@ public class Maze : MonoBehaviour
     public void AfterConvo()
     {
       Border.SetActive(false);
+      talked = true;
     }
 }
