@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MinKai
+    name: JingHui
     sentences:
     - Here's your last chance. Make it count.
     characterSprites:
@@ -3283,7 +3283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MinKai
+    name: JingHui
     sentences:
     - Second try. Maybe this time luck will be on your side...
     characterSprites:
@@ -4998,7 +4998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MinKai
+    name: JingHui
     sentences:
     - "Hahaha!! No worries, journalist. The odds of winning are slim, aren\u2019t
       they? How about we do one final roulette game, eh? I\u2019ll make things a 1
@@ -5596,7 +5596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MinKai
+    name: JingHui
     sentences:
     - Let us see how this plays out for you...
     characterSprites:
@@ -5948,7 +5948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: JingHei
+    name: JingHui
     sentences:
     - "Ever played roulette, little journalist? It\u2019s simple. Choose which number
       you think the ball will land on. Numbers 1 - 36. If you win, I\u2019ll let Zhuang
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MinKai
+    name: JingHui
     sentences:
     - Oh well. We all are losers sometimes! And lastly, bet for my brother to leave!
     characterSprites:
@@ -7977,7 +7977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: MinKai
+    name: JingHui
     sentences:
     - 'What a shame, your guess has failed you! '
     - "All right, let\u2019s try again. You may bet for Cheng SuRong to leave now.
