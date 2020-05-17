@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/MainMenuFinal.unity
+    guid: 864d8b2f18c9844409a91e8258fb581e
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: f5acc8f0af74b604a903066bb888eb00
   - enabled: 1
@@ -41,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Floor1/FemaleBathroom1.unity
     guid: 39fd31b41d3bab44dab2358d737ffc9e
+  - enabled: 1
+    path: Assets/Scenes/FinalKeypadSceneTest.unity
+    guid: 8298b7cb53aac824a8a39055ede4ec57
+  - enabled: 1
+    path: Assets/Scenes/TempTBCScene.unity
+    guid: e4ee52a1ce847a54f8c592b0158be64c
   - enabled: 0
     path: Assets/Scenes/Floor1/Floor1MainRoom.unity
     guid: ba316d205371c5d47af9d71c5a7ef793
@@ -161,15 +170,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level3/OminousIntro3.unity
     guid: 6551fa99aba834a6f98cacf8cc0e7260
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Level4/Ignore.unity
     guid: d4b69252e8be54718be3745d0a9fa668
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level4Maze.unity
+    guid: 83d21f8cd957cc44f9b39e0b3cfea744
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level4Room.unity
+    guid: c7e6a0c1218ec4546ad861f63081d847
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level4Scene.unity
+    guid: 10f7a485e4a23408f8e833d52cada3c9
   - enabled: 1
     path: Assets/Scenes/Interrogation/Level3Interrogation.unity
     guid: 036e4bb46b00444ec9fdaf385617794d
   - enabled: 1
     path: Assets/Scenes/LoadingScenes/Loading1.unity
     guid: 09e1025fcf2c5469480c3b2381ba0470
+  - enabled: 1
+    path: Assets/Scenes/Level3/FinishedSimonSays.unity
+    guid: 3c5263668959140e58a85a7bfe83d68c
+  - enabled: 1
+    path: Assets/Scenes/Level3/Test.unity
+    guid: 56bc683dcf8c29d4cb5cc35e4ca4885d
   - enabled: 1
     path: Assets/Scenes/LoadingScenes/Loading2.unity
     guid: 24d0963bacd2a43178f0036e327a9deb
@@ -200,9 +224,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadingScenes/LoadingStart.unity
     guid: 82d522295d116434c8588484ab192ffb
-  - enabled: 1
-    path: Assets/Scenes/MainMenuFinal.unity
-    guid: 864d8b2f18c9844409a91e8258fb581e
   - enabled: 1
     path: Assets/Scenes/BeginAnimatic.unity
     guid: 6af13bf47804d4f6fb51e081ac862d5c
