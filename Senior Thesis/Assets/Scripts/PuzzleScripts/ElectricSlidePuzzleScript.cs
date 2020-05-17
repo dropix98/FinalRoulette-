@@ -163,8 +163,8 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
             }
             lm.UpdateSlide(true);
             fintext.gameObject.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
+
+            if (Input.GetKeyDown(KeyCode.Space)) {
                 SceneManager.LoadScene("FinishedSlidePuzzle");
             }
         }
@@ -192,6 +192,7 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
                 Debug.Log(done);
                 continue;
             }
+
             else
             {
                 done = false;
