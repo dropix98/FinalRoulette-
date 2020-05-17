@@ -25,7 +25,7 @@ public class SlidePuzzleTriggerScript : MonoBehaviour
         if (other.gameObject.name == "Character")
         {
             Debug.Log("Player Detected");
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
             {
                 SceneManager.LoadScene("ElectricSlideTutorial");
             }

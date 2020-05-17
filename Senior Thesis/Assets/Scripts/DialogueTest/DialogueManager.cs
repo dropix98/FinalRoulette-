@@ -199,10 +199,51 @@ public class DialogueManager : MonoBehaviour
 
 
 
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == false || GlobalVariables.hasMedReport == false || GlobalVariables.powerOn == false)
+        {
+            trig[4].gameObject.SetActive(true);
+        }
+
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == true || GlobalVariables.hasMedReport == false || GlobalVariables.powerOn == false)
+        {
+            trig[4].gameObject.SetActive(true);
+        }
+
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == false || GlobalVariables.hasMedReport == true || GlobalVariables.powerOn == false)
+        {
+            trig[4].gameObject.SetActive(true);
+        }
+
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == false || GlobalVariables.hasMedReport == false || GlobalVariables.powerOn == true)
+        {
+            trig[4].gameObject.SetActive(true);
+        }
+
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == true || GlobalVariables.hasMedReport == true || GlobalVariables.powerOn == false)
+        {
+            trig[4].gameObject.SetActive(true);
+        }
+
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == false || GlobalVariables.hasMedReport == true || GlobalVariables.powerOn == true)
+        {
+            trig[4].gameObject.SetActive(true);
+        }
+
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == true || GlobalVariables.hasMedReport == false || GlobalVariables.powerOn == true)
+        {
+            trig[4].gameObject.SetActive(true);
+        }
+
         if (GlobalVariables.switchingFuseColliders == true && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge"))
         {
             //fuse switch
             trig[7].gameObject.SetActive(false);
+            //trig[7].gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else if (GlobalVariables.switchingFuseColliders == false && SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge"))
+        {
+            //fuse switch
+            trig[7].gameObject.SetActive(true);
             //trig[7].gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.powerOn == false)
@@ -229,10 +270,12 @@ public class DialogueManager : MonoBehaviour
         {
             //xjcollider2
             trig[2].gameObject.SetActive(false);
+            trig[3].gameObject.SetActive(true);
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.switchingXJColliders == false)
         {
             trig[3].gameObject.SetActive(false);
+            trig[2].gameObject.SetActive(true);
         }
         if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.hasCube == true)
         {
