@@ -2283,20 +2283,20 @@ MonoBehaviour:
     name: Group
     sentences:
     - "SuRong: \u201CWhere\u2019s Mei Ying?!\u201D\n"
-    - "SuRong: \u201CWhere\u2019s Mei Ying?!\u201D\n"
-    - Probably got snatched.
-    - Snatched?! Could you be any more insensitive?
-    - Hahahahaha!!
-    - Hey, shut the hell up, old man. What a whacko.
-    - Can we all calm down? Geez. Get a hold of yourselves.
-    - "You know what? I\u2019m outta here."
-    - "Oh, that\u2019s a great idea. I wish I thought of that."
-    - "Dude, I don\u2019t need your sarcasm. I\u2019m finding my own way out. Smell
-      ya later.\r"
-    - "Well, fine! I\u2019m leaving, too. But I\u2019m going a different way. Hmfph."
-    - HAHAHAH!!
-    - "Uhhh, yeah. I\u2019m gonna leave, too. Sorry, lady."
-    - Where will YOU go? Hahahah! Where, where?!!
+    - "YiZheng: \u201CProbably got snatched.\u201D\n"
+    - "SuRong: \u201C\u2018Snatched\u2019?! Could you be any more insensitive?\u201D\n"
+    - "Janitor: \u201CHahahahaha!!\u201D\n"
+    - "SuRong: \u201CHey, shut the hell up, old man. What a whacko.\u201D\n"
+    - "YongRuan: \u201CCan we all calm down? Geez. Get a hold of yourselves.\u201D\n"
+    - "YiZheng: \u201CYou know what? I\u2019m outta here.\u201D\n"
+    - "SuRong: \u201COh, that\u2019s a great idea. I wish I thought of that.\u201D\n"
+    - "YiZheng: \u201CDude, I don\u2019t need your sarcasm. I\u2019m finding my own
+      way out. Smell ya later.\u201D\n"
+    - "SuRong: \u201CWell, fine! I\u2019m leaving, too. But I\u2019m going a different
+      way. Hmfph.\u201D\n"
+    - "Janitor: \u201CHAHAHAH!!\u201D\n"
+    - "YongRuan: \u201CUhhh, yeah. I\u2019m gonna leave, too. Sorry, lady.\u201D\n"
+    - "Janitor: \u201CWhere will YOU go? Hahahah! Where, where?!!\u201D\n"
     characterSprites:
     - {fileID: 1488710159}
 --- !u!4 &278851765
