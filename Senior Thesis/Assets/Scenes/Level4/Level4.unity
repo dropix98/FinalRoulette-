@@ -2298,7 +2298,19 @@ MonoBehaviour:
     - "YongRuan: \u201CUhhh, yeah. I\u2019m gonna leave, too. Sorry, lady.\u201D\n"
     - "Janitor: \u201CWhere will YOU go? Hahahah! Where, where?!!\u201D\n"
     characterSprites:
-    - {fileID: 1488710159}
+    - {fileID: 338561803}
+    - {fileID: 1923969995}
+    - {fileID: 338561803}
+    - {fileID: 959355688}
+    - {fileID: 584712666}
+    - {fileID: 498163024}
+    - {fileID: 1734156011}
+    - {fileID: 584712666}
+    - {fileID: 1734156011}
+    - {fileID: 584712666}
+    - {fileID: 959355688}
+    - {fileID: 1543963753}
+    - {fileID: 959355688}
 --- !u!4 &278851765
 Transform:
   m_ObjectHideFlags: 0
@@ -5051,6 +5063,17 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 449.88
       objectReference: {fileID: 0}
+    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ea2bdda770507470482bad147d197d92,
+        type: 3}
     - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5096,17 +5119,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 488589987196548186, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: ea2bdda770507470482bad147d197d92,
-        type: 3}
     - target: {fileID: 6632056279932740593, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_LocalPosition.y
