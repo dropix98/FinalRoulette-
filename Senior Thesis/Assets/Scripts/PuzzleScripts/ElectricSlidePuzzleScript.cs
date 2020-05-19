@@ -157,6 +157,7 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
     {
         if(Check() == true)
         {
+            GlobalVariables.finishWIRE = true;
             if (lm.GetBlock() == false)
             {
                 //DontDestroyOnLoad(GameObject.Find("GameManager"));

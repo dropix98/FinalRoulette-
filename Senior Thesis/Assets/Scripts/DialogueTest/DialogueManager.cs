@@ -246,26 +246,27 @@ public class DialogueManager : MonoBehaviour
             trig[7].gameObject.SetActive(true);
             //trig[7].gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.powerOn == false)
+       /* if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.finishWIRE == false)
         {
             //dragon,snake,rabbit
             trig[11].gameObject.SetActive(false);
             trig[12].gameObject.SetActive(false);
             trig[13].gameObject.SetActive(false);
         }
-        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.powerOn == true)
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.finishWIRE == true)
         {
             trig[11].gameObject.SetActive(true);
             trig[12].gameObject.SetActive(true);
             trig[13].gameObject.SetActive(true);
         }
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == true && GlobalVariables.hasMedReport == true && GlobalVariables.powerOn == true)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.talkedYZ2 == true && GlobalVariables.hasMedReport == true && GlobalVariables.finishWIRE == true)
         {
             //drangon2,snake2,rabbit2 switch
             trig[11].gameObject.SetActive(false);
             trig[12].gameObject.SetActive(false);
             trig[13].gameObject.SetActive(false);
         }
+        */
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Lounge") && GlobalVariables.switchingXJColliders == true)
         {
             //xjcollider2
