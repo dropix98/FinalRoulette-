@@ -156,8 +156,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -267,8 +265,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &8737262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,8 +283,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Second Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -420,6 +414,7 @@ GameObject:
   - component: {fileID: 15057468}
   - component: {fileID: 15057470}
   - component: {fileID: 15057469}
+  - component: {fileID: 15057471}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -458,7 +453,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -478,7 +473,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.23, y: 1.14, z: 0}
   m_MaxChunkCount: 16
@@ -672,6 +667,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &15057471
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15057467}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &17799394
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &17799395
 Transform:
   m_ObjectHideFlags: 0
@@ -757,8 +768,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -868,8 +877,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &43325083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,8 +895,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Toolbox Key
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -1083,8 +1088,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &48165870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,8 +1106,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: XiaoJing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -1261,8 +1262,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "I should get everyone\u2019s DNA to compare it to the DNA on the Jacket
     Fiber from the crime scene."
   m_isRightToLeft: 0
@@ -1458,8 +1457,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &59699960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,8 +1475,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -1673,8 +1668,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &76540117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1693,8 +1686,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: DNA Collection
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -1888,8 +1879,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &88927154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1908,8 +1897,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Medical Instrument
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -2103,8 +2090,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &99838586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,8 +2108,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Broadcast/Machine Rooms Hints
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -2318,8 +2301,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &113506533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2338,8 +2319,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Monitor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -2476,7 +2455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &119963064
 Transform:
   m_ObjectHideFlags: 0
@@ -2590,8 +2569,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &149746190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2610,8 +2587,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Impressions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -2805,8 +2780,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &151345637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2825,8 +2798,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -3020,8 +2991,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &195125926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3040,8 +3009,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Introduction
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -3198,8 +3165,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: The first letter of the passcode is O.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -3356,8 +3321,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -3450,7 +3413,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7630897869082568012, guid: 82adafd91b3f30f46bcbeb6865dada10,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3622,7 +3585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &253902333
 Transform:
   m_ObjectHideFlags: 0
@@ -3679,7 +3642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &267494820
 Transform:
   m_ObjectHideFlags: 0
@@ -3785,8 +3748,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &291531010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3805,8 +3766,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -4115,8 +4074,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: On the News Article I found, the letter S was circled in red.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -4310,8 +4267,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &315148877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4330,8 +4285,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: YiZheng
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -4525,8 +4478,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &315227412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4545,8 +4496,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Second Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -4703,8 +4652,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "I should find the passcode for the TV so I can see what\u2019s on there."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -4928,8 +4875,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: SuRong is a bit awkward, but seems happy to help.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -5086,8 +5031,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: YingHei denies the rumor that someone paid him off to make sure JingHui
     never made it out of the building during the explosion. Is he telling the truth?
   m_isRightToLeft: 0
@@ -5245,8 +5188,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -5319,8 +5260,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "I found a peculiar piece of equipment in the medical wing. It\u2019s heavy
     and only has one button."
   m_isRightToLeft: 0
@@ -5454,6 +5393,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_RichText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 890219272564942297, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
@@ -5615,46 +5594,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 151
       objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272834924778, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_RichText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_BestFit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 890219272831734577, guid: 91701680737a6de49a3ab66ae1542d27,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 35
-      objectReference: {fileID: 0}
     - target: {fileID: 890219272834924776, guid: 91701680737a6de49a3ab66ae1542d27,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5758,7 +5697,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1221818573678325197, guid: 82adafd91b3f30f46bcbeb6865dada10,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5906,8 +5845,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &362283340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5926,8 +5863,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Resume
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -6121,8 +6056,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &376673728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6141,8 +6074,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Second Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -6336,8 +6267,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &386391490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6356,8 +6285,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: SuRong
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -6514,8 +6441,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "- Zhen XiaoJing, the secretary, claims she\u2019s never seen the Janitor
     before. She\u2019s confident he doesn\u2019t work in the building.\n- Zhen XiaoJing
     told me the Odd Medical Instrument is actually a magnet.\n"
@@ -6675,8 +6600,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -6738,7 +6661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405200510}
   m_LocalRotation: {x: -0, y: -0, z: 0.52808833, w: 0.8491895}
-  m_LocalPosition: {x: 4.94, y: 6.77, z: -8.077849}
+  m_LocalPosition: {x: 4.94, y: 6.77, z: 0}
   m_LocalScale: {x: 1.9257333, y: 1.9257333, z: 1.9257333}
   m_Children: []
   m_Father: {fileID: 541139009}
@@ -6835,8 +6758,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &411201339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6855,8 +6776,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: YiZheng
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -7013,8 +6932,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: JingHui despised the color orange.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -7171,8 +7088,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -7282,8 +7197,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &425722345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7302,8 +7215,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Email (2)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -7460,8 +7371,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -7571,8 +7480,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &480601844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7591,8 +7498,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Medical Report
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -7749,8 +7654,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "JingHui\u2019s secretary, XiaoJing, isn\u2019t very talkative. She did
     tell me there is a J in the passcode, though."
   m_isRightToLeft: 0
@@ -7909,8 +7812,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Zhuang YongRuan claims she\u2019s not actually that familiar with the pipeworks
     despite working in them for some time. She seems like she\u2019s hiding something.
     She accuses Lin PinBi of being the culprit so he could have a big case to solve
@@ -8108,8 +8009,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &490890988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8128,8 +8027,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: CCTV Footage
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -8266,7 +8163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &500268203
 Transform:
   m_ObjectHideFlags: 0
@@ -8380,8 +8277,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &512969468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8400,8 +8295,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: ShaoTing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -8595,8 +8488,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &514329586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8615,8 +8506,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: YongRuan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -8761,7 +8650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541139008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.23, y: -0.46, z: -1.6132399}
+  m_LocalPosition: {x: -1.23, y: -0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 553656613}
@@ -8774,8 +8663,8 @@ Transform:
   - {fileID: 1438545165}
   - {fileID: 804358025}
   - {fileID: 1842792556}
-  - {fileID: 2100373968}
   - {fileID: 712388484}
+  - {fileID: 2100373968}
   - {fileID: 1530623154}
   - {fileID: 805486432}
   - {fileID: 17799395}
@@ -8867,8 +8756,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &545067912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8887,8 +8774,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -9045,8 +8930,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Lin PinBi found some Explosive Powder down here. He thinks the culprit
     needs special access to get this sort of powder. He suspects Zhuang YongRuan since
     she\u2019s the most familiar with the pipes. She does seem suspicious."
@@ -9195,7 +9078,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553656612}
   m_LocalRotation: {x: -0, y: -0, z: -0.01187, w: 0.99992955}
-  m_LocalPosition: {x: 3.99, y: 2.47, z: -8.077849}
+  m_LocalPosition: {x: 3.99, y: 2.47, z: 0}
   m_LocalScale: {x: 1.9257333, y: 1.9257333, z: 1.9257333}
   m_Children: []
   m_Father: {fileID: 541139009}
@@ -9292,8 +9175,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &564026398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9312,8 +9193,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Drawer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -9509,7 +9388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566596810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.009, y: -0.576, z: 0}
+  m_LocalPosition: {x: -3.42, y: -1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9531,7 +9410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &575458654
 Transform:
   m_ObjectHideFlags: 0
@@ -9645,8 +9524,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &582659378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9665,8 +9542,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Keycard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -9823,8 +9698,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: '- JingHui said they found a sports jacket fiber at the crime scene. Cheng
     SuRong wears a sports jacket. I should talk to him.
 
@@ -9986,8 +9859,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -10040,7 +9911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &618666259
 Transform:
   m_ObjectHideFlags: 0
@@ -10097,7 +9968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &619081676
 Transform:
   m_ObjectHideFlags: 0
@@ -10174,8 +10045,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: The email said the middle three letters of the passcode are in alphabetical
     order.
   m_isRightToLeft: 0
@@ -10350,7 +10219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639969535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.42, y: -0.04, z: -22.498047}
+  m_LocalPosition: {x: -5.42, y: -0.04, z: 0}
   m_LocalScale: {x: 0.20984, y: 0.20984, z: 0.20984}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10557,8 +10426,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &697205252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10577,8 +10444,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Second Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -10772,8 +10637,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &710914926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10792,8 +10655,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Hole
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -10930,7 +10791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &712388484
 Transform:
   m_ObjectHideFlags: 0
@@ -10943,7 +10804,7 @@ Transform:
   m_LocalScale: {x: 1.9257333, y: 1.9257333, z: 1.9257333}
   m_Children: []
   m_Father: {fileID: 541139009}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 63.753002}
 --- !u!68 &712388485
 EdgeCollider2D:
@@ -10999,8 +10860,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -11110,8 +10969,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &728407269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11130,8 +10987,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -11288,8 +11143,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "There\u2019s a drawer in the Medical Wing with a simple lock."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -11453,8 +11306,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -11527,8 +11378,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "JingHui\u2019s brother was in the building right around the time the bombs
     were suspected to have been planted."
   m_isRightToLeft: 0
@@ -11667,7 +11516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &804358025
 Transform:
   m_ObjectHideFlags: 0
@@ -11724,7 +11573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &805486432
 Transform:
   m_ObjectHideFlags: 0
@@ -11793,8 +11642,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -11867,8 +11714,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -11978,8 +11823,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &874169401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11998,8 +11841,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -12193,8 +12034,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &879748475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12213,8 +12052,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Third Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -12509,8 +12346,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &914734845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12529,8 +12364,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Lounge/Infirmary Hints
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -12687,8 +12520,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -12741,7 +12572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &925942008
 Transform:
   m_ObjectHideFlags: 0
@@ -12750,7 +12581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925942007}
   m_LocalRotation: {x: -0, y: -0, z: 0.49885154, w: 0.8666875}
-  m_LocalPosition: {x: 1.24, y: 0.15, z: -8.077849}
+  m_LocalPosition: {x: 1.24, y: 0.15, z: 0}
   m_LocalScale: {x: 0.5289797, y: 0.5289797, z: 0.5289797}
   m_Children: []
   m_Father: {fileID: 541139009}
@@ -12847,8 +12678,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &935861416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12867,8 +12696,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: PinBi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -13062,8 +12889,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &939198426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13082,8 +12907,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -13277,8 +13100,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &939616684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13297,8 +13118,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Crowbar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -13453,7 +13272,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13585,7 +13404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950542895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.42, y: -0.04, z: -22.498047}
+  m_LocalPosition: {x: -5.42, y: -0.04, z: 0}
   m_LocalScale: {x: 0.20984, y: 0.20984, z: 0.20984}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13658,6 +13477,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7064575215623002833, guid: 33643f9ac5432af4a840f3f618493f71,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064575215623002833, guid: 33643f9ac5432af4a840f3f618493f71,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
     - target: {fileID: 7064575215623002847, guid: 33643f9ac5432af4a840f3f618493f71,
         type: 3}
       propertyPath: FreeFlowTrigger
@@ -13683,11 +13512,6 @@ PrefabInstance:
       propertyPath: MKCollider3_2
       value: 
       objectReference: {fileID: 1549034423}
-    - target: {fileID: 7064575215623002833, guid: 33643f9ac5432af4a840f3f618493f71,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33643f9ac5432af4a840f3f618493f71, type: 3}
 --- !u!4 &966104779 stripped
@@ -13768,8 +13592,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -13842,8 +13664,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Wei ShaoTing and Zhen YingHei have gone missing. There are only seven of
     us left. One must be the culprit.
   m_isRightToLeft: 0
@@ -14001,8 +13821,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -14112,8 +13930,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1035324966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14132,8 +13948,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Fuse
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -14290,8 +14104,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -14364,8 +14176,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Wang YiZheng asked me to fix the vending machine for him.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -14523,8 +14333,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: It seems like Cheng SuRong is oddly protective of Mei Yin. He gives a weak
     alibi for Mei and accuses Wang YiZheng instead for being a jealous brother.
   m_isRightToLeft: 0
@@ -14682,8 +14490,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Look for something to help pry the Pipeworks door open.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -14935,8 +14741,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1133686818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14955,8 +14759,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Office Hints
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -15150,8 +14952,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1139156130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15170,8 +14970,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -15365,8 +15163,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1168034008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15385,8 +15181,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Second Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -15539,6 +15333,7 @@ MonoBehaviour:
   nameText: {fileID: 1243329048}
   dialogueText: {fileID: 1539520015}
   characterSprite: {fileID: 774420422}
+  kc: {fileID: 0}
   trig:
   - {fileID: 1549034423}
   - {fileID: 359234980}
@@ -15550,6 +15345,11 @@ MonoBehaviour:
   pmc: {fileID: 966104780}
   animator: {fileID: 1230981723}
   bounce: {fileID: 966104783}
+  nd:
+    name: 
+    sentences: []
+    characterSprites: []
+  sentCount: 0
 --- !u!4 &1184662240
 Transform:
   m_ObjectHideFlags: 0
@@ -15600,8 +15400,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Find the fuse to turn on the power.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -15758,8 +15556,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -15844,8 +15640,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: I should find something to help Mei Ying feel better.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -16039,8 +15833,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1237675888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16059,8 +15851,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: XiaoJing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -16254,8 +16044,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1242792131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16274,8 +16062,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Email
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -16444,8 +16230,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "- Wang YiZheng is getting anxious. He accused Mei since she apparently
     was having bad relationship problems with JingHui right before the accident.\n-
     JingHui hates the color orange so much he won\u2019t even look at it.\n"
@@ -16605,8 +16389,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Cheng SuRong was near the crime scene before the explosion.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -16800,8 +16582,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1255470495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16820,8 +16600,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Quit
 
 '
@@ -17017,8 +16795,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1270961370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17037,8 +16813,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Third Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -17196,8 +16970,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: MeiYing
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -17345,8 +17117,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!222 &1283587886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17410,8 +17180,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: ShaoTing is pretty eager about this whole case. She seems to think PinBi
     is up to something.
   m_isRightToLeft: 0
@@ -17606,8 +17374,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1295557012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17626,8 +17392,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: News Article
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -17821,7 +17585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304861746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.42, y: -0.04, z: -22.498047}
+  m_LocalPosition: {x: -5.42, y: -0.04, z: 0}
   m_LocalScale: {x: 0.20984, y: 0.20984, z: 0.20984}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17863,8 +17627,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "PinBi doesn\u2019t like me very much. He\u2019s very quick to name names,
     with no good reason. I wonder if he\u2019s just trying to save his own skin."
   m_isRightToLeft: 0
@@ -18023,8 +17785,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "The Janitor is still crazy. He mentioned a \u201Cdifferent plane of existence,\u201D
     whatever that means."
   m_isRightToLeft: 0
@@ -18183,8 +17943,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 1dca2cdf050a04262946aa0d146ec286, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -18366,8 +18124,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "JingHui\u2019s secretary, XiaoJing, isn\u2019t very talkative. She did
     tell me there is a J in the passcode, though."
   m_isRightToLeft: 0
@@ -18526,8 +18282,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: I should find a way to obtain the fuse that is down the hole.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -18664,7 +18418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1438545165
 Transform:
   m_ObjectHideFlags: 0
@@ -18741,8 +18495,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -18815,8 +18567,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: The Voice took Zhen XiaoJing and Lin PinBi. There are five of us left. One
     must be the culprit.
   m_isRightToLeft: 0
@@ -19011,8 +18761,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1470696730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19031,8 +18779,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Janitor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -19226,8 +18972,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1476654335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19246,8 +18990,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -19441,8 +19183,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1477565253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19461,8 +19201,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Mei's Health
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -19620,7 +19358,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19641,7 +19379,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 687a3c5e8918df64fb8d537e81bf004d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 489ebbdf26b37da42be1c4dd1ec42b09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19686,18 +19424,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00030618906, y: -0.00088104606}
+  m_Offset: {x: 0.00030618906, y: -0.03964004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.9, y: 1.5}
     newSize: {x: 10.1, y: 7.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6285645, y: 0.63385016}
+  m_Size: {x: 0.6285645, y: 0.5563322}
   m_EdgeRadius: 0
 --- !u!4 &1488168260
 Transform:
@@ -19707,7 +19445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488168256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: -0.49, z: -1.1734356}
+  m_LocalPosition: {x: 3.66, y: -0.36, z: 0}
   m_LocalScale: {x: 0.90621257, y: 0.90621257, z: 0.90621257}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19882,8 +19620,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1493129602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19902,8 +19638,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: YingHei
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -20097,8 +19831,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1507364703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20117,8 +19849,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Third Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -20275,8 +20005,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "- The elevator is missing a wire. I should try and find it.\n- It\u2019s
     dark in here. I should find a way to turn on the lights.\n"
   m_isRightToLeft: 0
@@ -20435,8 +20163,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -20489,7 +20215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1530623154
 Transform:
   m_ObjectHideFlags: 0
@@ -20550,7 +20276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1548383413
 Transform:
   m_ObjectHideFlags: 0
@@ -20628,7 +20354,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 100efdfe2076410489bbf8e0995d355e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20649,7 +20375,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 687a3c5e8918df64fb8d537e81bf004d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 489ebbdf26b37da42be1c4dd1ec42b09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20695,18 +20421,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00030618906, y: -0.00088104606}
+  m_Offset: {x: 0.00030618906, y: -0.03964004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.9, y: 1.5}
     newSize: {x: 10.1, y: 7.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6285645, y: 0.63385016}
+  m_Size: {x: 0.6285645, y: 0.5563322}
   m_EdgeRadius: 0
 --- !u!4 &1549034427
 Transform:
@@ -20716,7 +20442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549034423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: -0.49, z: -1.1734356}
+  m_LocalPosition: {x: 3.66, y: -0.36, z: 0}
   m_LocalScale: {x: 0.90621257, y: 0.90621257, z: 0.90621257}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20811,8 +20537,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1560960405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20831,8 +20555,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -20969,7 +20691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1591211156
 Transform:
   m_ObjectHideFlags: 0
@@ -21118,8 +20840,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Mei seems friendly enough. Very bubbly. But she\u2019s definitely hiding
     something. She used to date JingHui, after all."
   m_isRightToLeft: 0
@@ -21258,7 +20978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1646166245
 Transform:
   m_ObjectHideFlags: 0
@@ -21307,7 +21027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1654085964
 Transform:
   m_ObjectHideFlags: 0
@@ -21364,7 +21084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1666859193
 Transform:
   m_ObjectHideFlags: 0
@@ -21441,8 +21161,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "- Mei won\u2019t stop crying because Wang YiZheng accused her. She claims
     she loved JingHui.\n- Mei dropped a Bobby Pin. I took it.\n"
   m_isRightToLeft: 0
@@ -21638,8 +21356,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1691835843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21658,8 +21374,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: MinKai
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -21853,8 +21567,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1701332372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21873,8 +21585,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Third Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -22031,8 +21741,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -22142,8 +21850,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1737615964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22162,8 +21868,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -22320,8 +22024,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -22431,8 +22133,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1794593004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22451,8 +22151,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -22646,8 +22344,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1799048515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22666,8 +22362,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -22824,8 +22518,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "The Janitor is kind of odd. He won\u2019t talk to me. He just keeps repeating
     the letter Z."
   m_isRightToLeft: 0
@@ -23021,8 +22713,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1823999953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23041,8 +22731,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Introduction
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -23188,7 +22876,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832003752}
   m_LocalRotation: {x: -0, y: -0, z: 0.002222979, w: 0.99999756}
-  m_LocalPosition: {x: 13.55, y: 3.94, z: -8.077849}
+  m_LocalPosition: {x: 13.55, y: 3.94, z: 0}
   m_LocalScale: {x: 1.9257333, y: 1.9257333, z: 1.9257333}
   m_Children: []
   m_Father: {fileID: 541139009}
@@ -23248,8 +22936,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -23359,8 +23045,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1839106670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23379,8 +23063,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Hints
 
 '
@@ -23519,7 +23201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1842792556
 Transform:
   m_ObjectHideFlags: 0
@@ -23596,8 +23278,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "There\u2019s a photo of a dog, Tobi, and a cat, Lulu, on a desk."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -23792,8 +23472,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1856302331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23812,8 +23490,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Second Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -23950,7 +23626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1859890497
 Transform:
   m_ObjectHideFlags: 0
@@ -23959,7 +23635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859890496}
   m_LocalRotation: {x: -0, y: -0, z: -0.4964031, w: 0.8680922}
-  m_LocalPosition: {x: -3.19, y: -0.42, z: -1398.0973}
+  m_LocalPosition: {x: -3.19, y: -0.42, z: 0}
   m_LocalScale: {x: 0.5536297, y: 0.7736422, z: 0.5536297}
   m_Children: []
   m_Father: {fileID: 541139009}
@@ -24027,8 +23703,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "YiZheng apparently hates his brother. He\u2019s already trying to pin the
     accident on JingHui. Could his hatred be a possible motive? Or is he right about
     JingHui?"
@@ -24188,8 +23862,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: The email said A is the last letter of the passcode.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -24383,8 +24055,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1914862646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24403,8 +24073,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Elevator
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -24561,8 +24229,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -24672,8 +24338,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1936767167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24692,8 +24356,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Photo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -24830,7 +24492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1941376821
 Transform:
   m_ObjectHideFlags: 0
@@ -24907,8 +24569,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: '- JingHui called the police on Zhuang YongRuan several years ago for trespassing
     and assault. Would she hurt him again?
 
@@ -25107,8 +24767,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1952084876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25127,8 +24785,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -25322,8 +24978,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1973596918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25342,8 +24996,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: First Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -25500,8 +25152,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "The Janitor is kind of odd. He won\u2019t talk to me. He just keeps repeating
     the letter Z."
   m_isRightToLeft: 0
@@ -25697,8 +25347,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2035635144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25717,8 +25365,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Second Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -25875,8 +25521,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Mei and Cheng SuRong are having an affair. Did Mei try and get rid of JingHui
     to be with Cheng SuRong?
   m_isRightToLeft: 0
@@ -26024,7 +25668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062400735}
   m_LocalRotation: {x: -0, y: -0, z: 0.51318175, w: 0.85828}
-  m_LocalPosition: {x: -1.55, y: 10.24, z: -8.077849}
+  m_LocalPosition: {x: -1.55, y: 10.24, z: 0}
   m_LocalScale: {x: 1.9257333, y: 1.9257333, z: 1.9257333}
   m_Children: []
   m_Father: {fileID: 541139009}
@@ -26121,8 +25765,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2065306013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26141,8 +25783,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Third Impression
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1d7d2596a4ae2b34a846c95f1189271b, type: 2}
@@ -26299,8 +25939,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
@@ -26373,8 +26011,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "YongRuan and JingHui seem to have some history. She\u2019s worth keeping
     an eye on."
   m_isRightToLeft: 0
@@ -26577,8 +26213,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: The Janitor was sleeping most of the time, but when he woke up he gave me
     the crowbar.
   m_isRightToLeft: 0
@@ -26717,7 +26351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2100373968
 Transform:
   m_ObjectHideFlags: 0
@@ -26730,7 +26364,7 @@ Transform:
   m_LocalScale: {x: 0.09292241, y: 0.09292241, z: 0.09292241}
   m_Children: []
   m_Father: {fileID: 541139009}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.36}
 --- !u!68 &2100373969
 EdgeCollider2D:
@@ -26786,8 +26420,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: I should find the key to the toolbox in the broadcast room.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d39c24c267a6bde4a8da366e87025064, type: 2}
@@ -26944,8 +26576,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_spriteAsset: {fileID: 0}
   m_material: {fileID: 0}
