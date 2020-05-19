@@ -187,21 +187,36 @@ public class ElectricSlidePuzzleScript : MonoBehaviour
         while(i < lanes.Length)
         {
             done = true;
-            if (lanes[i].rotation.z == 0)
+            /*if (i == 8 || i == 10 || i == 15 || i == 18)
             {
-                i++;
+                if(lanes[i].rotation.z == -180)
+                {
+                    i++;
+                    done = true;
+                    
+                }
+                else if(lanes[i].rotation.z == 0){
+                    done = true;
+                    i++;
+                }
+            }
+            else*/ if (lanes[i].rotation.z == 0)
+            {
                 Debug.Log(done);
+                done = true;
+                i++;
                 continue;
             }
 
             else
             {
+                
                 done = false;
                 break;
             }
         }
-
-        if(done == true)
+        Debug.Log(done);
+        if (done == true)
         {
             return true;
         }
