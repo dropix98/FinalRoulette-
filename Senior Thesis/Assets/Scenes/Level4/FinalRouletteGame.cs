@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Video;
 using System;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class FinalRouletteGame : MonoBehaviour
 {
@@ -45,6 +46,11 @@ public class FinalRouletteGame : MonoBehaviour
     private bool lost1 = false;
     private bool lost2 = false;
     private bool lost3 = false;
+
+    private bool pickedYiZheng;
+    private bool pickedYongRuan;
+    private bool pickedSuRong;
+
     //private bool if1 = true;
     //private bool if2 = true;
     //private bool if3 = true;
@@ -143,6 +149,19 @@ public class FinalRouletteGame : MonoBehaviour
         buttonYongRuan.SetActive(true);
         background.SetActive(false);
         background2.SetActive(true);
+      }
+
+      if (GlobalVariables.currentlyTalking == false && pickedYiZheng == true)
+      {
+        SceneManager.LoadScene("Level4Office");
+      }
+      if (GlobalVariables.currentlyTalking == false && pickedYongRuan == true)
+      {
+        SceneManager.LoadScene("Level4Office");
+      }
+      if (GlobalVariables.currentlyTalking == false && pickedSuRong == true)
+      {
+        SceneManager.LoadScene("Credits");
       }
 
       if(SubmitButton.active == false)
@@ -1643,6 +1662,7 @@ public class FinalRouletteGame : MonoBehaviour
        buttonSuRong.SetActive(false);
        buttonYongRuan.SetActive(false);
        accused = true;
+       pickedYiZheng = true;
        YiZhengEnding.GetComponent<DialogueTrigger>().TriggerDialogue();
      }
      public void YongRuanEndingButton()
@@ -1651,6 +1671,7 @@ public class FinalRouletteGame : MonoBehaviour
        buttonSuRong.SetActive(false);
        buttonYongRuan.SetActive(false);
        accused = true;
+       pickedYongRuan = true;
        YongRuanEnding.GetComponent<DialogueTrigger>().TriggerDialogue();
      }
      public void SuRongEndingButton()
@@ -1659,6 +1680,7 @@ public class FinalRouletteGame : MonoBehaviour
        buttonSuRong.SetActive(false);
        buttonYongRuan.SetActive(false);
        accused = true;
+       pickedSuRong = true;
        SuRongEnding.GetComponent<DialogueTrigger>().TriggerDialogue();
      }
 }

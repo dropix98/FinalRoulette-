@@ -54,6 +54,10 @@ public class Tutorial : MonoBehaviour
            {
              SceneManager.LoadScene("BroadcastingRoom");
            }
+           if (currentScene.name == "Credits")
+           {
+             SceneManager.LoadScene("MainMenuFinal");
+           }
        }
      }
 }
