@@ -67,7 +67,7 @@ public static class GlobalVariables
     public static bool inXJCollider2;
     public static bool inJHCollider;
     public static bool inYHCollider;
-
+    public static bool fromFemaleBathroomCollider1;
 
 
 

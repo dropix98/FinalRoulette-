@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public GameObject characterSprite;
+    public GameObject kc;
+
 
     public GameObject[] trig;
 
@@ -91,6 +93,7 @@ public class DialogueManager : MonoBehaviour
         {
             DisplayNextSentence();
         }
+
     }
 
 
@@ -160,6 +163,7 @@ public class DialogueManager : MonoBehaviour
                 trig[i].gameObject.SetActive(true);
             }
         }
+
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Floor1Final"))
         {
             
@@ -457,7 +461,7 @@ public class DialogueManager : MonoBehaviour
             trig[9].gameObject.SetActive(false);
             trig[4].gameObject.SetActive(false);
         }
-
+        
         nameText.text = "";
         sentCount = 0;
         bounce.enabled = true;
@@ -487,4 +491,5 @@ public class DialogueManager : MonoBehaviour
     {
         return done;
     }
+
 }
