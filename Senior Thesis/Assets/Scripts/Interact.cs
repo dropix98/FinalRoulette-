@@ -693,11 +693,13 @@ public class Interact : MonoBehaviour
           Debug.Log("Leaving Male Bathroom Floor 1");
           SceneManager.LoadScene("Floor1Final");
         }
+        */
         if (other.name == "FromFemaleBathroom1")
         {
           Debug.Log("Leaving Female Bathroom Floor 1");
-          SceneManager.LoadScene("Floor1Final");
+          GlobalVariables.fromFemaleBathroomCollider1 = true;
         }
+        /*
         if (other.name == "FromMeetingRoom2")
         {
           Debug.Log("Leaving Meeting Room Floor 2");
