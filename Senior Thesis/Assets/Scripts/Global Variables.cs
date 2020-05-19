@@ -16,6 +16,7 @@ public static class GlobalVariables
     public static bool foundJanitorHint;
     public static bool foundSecretaryHint;
 
+    public static bool finishWIRE;
     public static bool talkedST = false;
     public static bool talkedMY = false;
     public static bool talkedSR = false;
