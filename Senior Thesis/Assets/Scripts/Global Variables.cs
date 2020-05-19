@@ -37,7 +37,7 @@ public static class GlobalVariables
     public static UnityEngine.Vector3 characterPositionInfirmary = new Vector3(-0.91f, 1.21f, 0.0f);
     public static UnityEngine.Vector3 characterPositionLounge = new Vector3(2.34f, -2.85f, 0.0f);
     public static UnityEngine.Vector3 characterPositionBroadcast = new Vector3(-0.26f, -0.7f, 0.0f);
-    public static UnityEngine.Vector3 characterPositionMachineRoom = new Vector3(-0.26f, -0.7f, 0.0f);
+    public static UnityEngine.Vector3 characterPositionMachineRoom = new Vector3(-0.85f, -0.7f, 0.0f);
 
 
     public static string sceneNameSaver;
