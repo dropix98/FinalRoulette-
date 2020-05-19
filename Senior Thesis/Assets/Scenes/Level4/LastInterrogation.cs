@@ -29,6 +29,8 @@ public class LastInterrogation : MonoBehaviour
   public GameObject JingHui51;
   public GameObject JingHui52;
 
+  public GameObject background;
+
   private bool round1Done = false;
   private bool round2Done = false;
   private bool round3Done = false;
@@ -39,6 +41,8 @@ public class LastInterrogation : MonoBehaviour
   private bool startAppeared = false;
   private bool officeDone = false;
   private bool afterTextDone = false;
+
+
 
 
     // Start is called before the first frame update
@@ -89,6 +93,7 @@ public class LastInterrogation : MonoBehaviour
         officeDone = true;
         afterTextDone = true;
         afterInterrogationText.GetComponent<DialogueTrigger>().TriggerDialogue();
+        background.SetActive(true);
       }
       if (officeDone == true && GlobalVariables.currentlyTalking == false)
       {
