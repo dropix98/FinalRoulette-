@@ -15906,6 +15906,10 @@ MonoBehaviour:
       here, and I\u2019ll prove it to you through this game!!!\u201D"
     characterSprites:
     - {fileID: 591249173}
+    - {fileID: 1408276190}
+    - {fileID: 591249173}
+    - {fileID: 2044149552}
+    - {fileID: 591249173}
 --- !u!4 &1021950950
 Transform:
   m_ObjectHideFlags: 0
