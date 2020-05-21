@@ -682,7 +682,7 @@ public class SimonSays : MonoBehaviour
         {
           level7______ = false;
           print ("Beat Simon Says");
-            SceneManager.LoadScene("BroadcastingRoom");
+            SceneManager.LoadScene("FinishedSimonSays");
             GlobalVariables.beatSimonSays = true;
         }
         else if (colors[6] == 'g' || colors[6] == 'p' || colors[6] == 'b' ||
