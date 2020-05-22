@@ -189,6 +189,8 @@ public class Interact : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      //GlobalVariables.talkedYZ2 = true; GlobalVariables.hasMedReport = true; GlobalVariables.powerOn = true;
+
       ToNewArea();
       Scene currentScene = SceneManager.GetActiveScene();
 
@@ -334,7 +336,7 @@ public class Interact : MonoBehaviour
         Snake.SetActive(true);
         Rabbit.SetActive(true);
       }
-      if (currentScene.name == "Lounge" && GlobalVariables.talkedYZ2 == true && GlobalVariables.hasMedReport == true && GlobalVariables.powerOn == true)
+      if (currentScene.name == "Lounge" && GlobalVariables.talkedYZ2 == true && GlobalVariables.powerOn == true)
       {
         //GlobalVariables.level2CanButton = true;
         Dragon.SetActive(false);
@@ -517,7 +519,7 @@ public class Interact : MonoBehaviour
         YZCollider3.SetActive(false);
         YZCollider3_2.SetActive(true);
       }
-      
+
       if (GlobalVariables.beatFreeFlow == true && currentScene.name == "BroadcastingRoom" && GlobalVariables.hasDNAResults == false)
       {
         SRCollider3.SetActive(false);
@@ -528,14 +530,14 @@ public class Interact : MonoBehaviour
         SRCollider3_2.SetActive(false);
         SRCollider3_3.SetActive(true);
       }
-      
+
       if (GlobalVariables.beatSimonSays == true && currentScene.name == "BroadcastingRoom")
       {
         YZCollider3.SetActive(false);
         YZCollider3_2.SetActive(false);
         YZCollider3_3.SetActive(true);
       }
-      
+
       if (GlobalVariables.hasSuRongDNA == true && GlobalVariables.hasYingDNA == true &&
           GlobalVariables.hasYiZhengDNA == true && GlobalVariables.hasYongRuanDNA == true &&
           GlobalVariables.hasJanitorDNA == true && currentScene.name == "MachineRoom")
