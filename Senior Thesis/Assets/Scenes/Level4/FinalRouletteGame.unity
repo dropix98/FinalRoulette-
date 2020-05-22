@@ -9396,18 +9396,18 @@ MonoBehaviour:
       have failed me once again. I have to say, I am disappointed. I expected better
       from you. I felt that you had it this time, why with all my help, laying clues
       out for you!"'
-    - 'JingHui: "I know it may seem silly. My brother here could be lying about his
+    - 'JingHui: "I know it may seem silly. YongRuan here could be lying about her
       innocence, of course."'
     - 'JingHui: "But from testing out this little charade, my results have shown that,
       under the circumstances, the culprit will always confess if he is truly guilty."'
     - "JingHui: \"Oh, well. You can just try again, as long as you\u2019re alive!
       Hahaha!\"\n"
     characterSprites:
-    - {fileID: 295487314}
-    - {fileID: 295487314}
+    - {fileID: 440178722}
+    - {fileID: 1224012121}
     - {fileID: 295487314}
     - {fileID: 155990663}
-    - {fileID: 295487314}
+    - {fileID: 1224012121}
     - {fileID: 155990663}
     - {fileID: 155990663}
     - {fileID: 155990663}
@@ -10297,10 +10297,10 @@ MonoBehaviour:
     - "JingHui: \"Oh, well. You can just try again, as long as you\u2019re alive!
       Hahaha!\""
     characterSprites:
-    - {fileID: 1167258854}
+    - {fileID: 1082476087}
     - {fileID: 155990663}
-    - {fileID: 1167258854}
-    - {fileID: 1167258854}
+    - {fileID: 1082476087}
+    - {fileID: 1082476087}
     - {fileID: 155990663}
     - {fileID: 155990663}
     - {fileID: 155990663}
@@ -11062,19 +11062,19 @@ MonoBehaviour:
     - 'JingHui: "This is all very eye opening information. Thank you, SuRong. At least
       you redeemed yourself slightly through this confession. Goodbye."'
     characterSprites:
-    - {fileID: 1122161061}
+    - {fileID: 211338378}
     - {fileID: 155990663}
-    - {fileID: 1122161061}
+    - {fileID: 1804930014}
     - {fileID: 155990663}
-    - {fileID: 1122161061}
+    - {fileID: 379887369}
     - {fileID: 155990663}
-    - {fileID: 1122161061}
+    - {fileID: 239204237}
     - {fileID: 155990663}
+    - {fileID: 211338378}
     - {fileID: 1122161061}
-    - {fileID: 1122161061}
-    - {fileID: 295487314}
-    - {fileID: 1122161061}
-    - {fileID: 1167258854}
+    - {fileID: 1224012121}
+    - {fileID: 211338378}
+    - {fileID: 1118152093}
     - {fileID: 155990663}
 --- !u!1 &2000174760
 GameObject:
