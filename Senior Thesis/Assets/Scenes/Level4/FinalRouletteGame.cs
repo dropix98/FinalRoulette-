@@ -94,6 +94,10 @@ public class FinalRouletteGame : MonoBehaviour
     public GameObject chip35;
     public GameObject chip36;
 
+    public GameObject music1;
+    public GameObject music2;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,7 +108,6 @@ public class FinalRouletteGame : MonoBehaviour
       Dropdown.SetActive(false);
 
       time = 2.0;// WheelFootage.GetComponent<VideoPlayer>().clip.length;
-
     }
 
     // Update is called once per frame
@@ -149,6 +152,9 @@ public class FinalRouletteGame : MonoBehaviour
         buttonYongRuan.SetActive(true);
         background.SetActive(false);
         background2.SetActive(true);
+        music1.SetActive(false);
+        music2.SetActive(true);
+        accused = true;
       }
 
       if (GlobalVariables.currentlyTalking == false && pickedYiZheng == true)
