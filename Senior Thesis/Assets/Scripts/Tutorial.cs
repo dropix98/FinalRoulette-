@@ -54,6 +54,10 @@ public class Tutorial : MonoBehaviour
            {
              SceneManager.LoadScene("BroadcastingRoom");
            }
+           if (currentScene.name == "OminousIntro4")
+           {
+             SceneManager.LoadScene("Level4");
+           }
            if (currentScene.name == "Credits")
            {
              SceneManager.LoadScene("MainMenuFinal");
