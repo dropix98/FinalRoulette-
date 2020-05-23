@@ -46,6 +46,10 @@ public class Tutorial : MonoBehaviour
            {
              SceneManager.LoadScene("FinalKeycardGuesser");
            }
+           if (currentScene.name == "FreeFlowTutorial")
+           {
+             SceneManager.LoadScene("FreeFlow");
+           }
            if (currentScene.name == "OminousIntro")
            {
              SceneManager.LoadScene("Lounge");
